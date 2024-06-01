@@ -33,19 +33,14 @@ namespace pryCosmetica
             formHijo.Show();
         }
 
-        private void ejemploToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmEjemplo1());
+            abrirFormHijo(new frmEmpleados());
         }
 
-        private void ejemploToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void btnPostulantes_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmEjemplo2());
-        }
-
-        private void ejemploToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            abrirFormHijo(new frmEjemplo3());
+            abrirFormHijo(new frmPostulantes());
         }
     }
 }

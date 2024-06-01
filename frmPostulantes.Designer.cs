@@ -1,6 +1,6 @@
 ﻿namespace pryCosmetica
 {
-    partial class frmEjemplo1
+    partial class frmPostulantes
     {
         /// <summary>
         /// Required designer variable.
@@ -34,17 +34,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(285, 196);
+            this.label1.Location = new System.Drawing.Point(240, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "hola";
+            this.label1.Text = "como";
             // 
-            // frmEjemplo1
+            // frmEjemplo2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.Salmon;
             this.ClientSize = new System.Drawing.Size(1027, 566);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -52,8 +52,8 @@
             this.MaximumSize = new System.Drawing.Size(1027, 566);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1027, 566);
-            this.Name = "frmEjemplo1";
-            this.Text = "frmEjemplo1";
+            this.Name = "frmEjemplo2";
+            this.Text = "frmEjemplo2";
             this.ResumeLayout(false);
             this.PerformLayout();
 

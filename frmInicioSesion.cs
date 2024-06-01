@@ -43,7 +43,7 @@ namespace pryCosmetica
 
             frmMenuPrincipal menuPrincipal = new frmMenuPrincipal();
             menuPrincipal.Show();
-            this.Hide(); // Oculta el formulario actual
+            this.Hide(); // Oculta el formulario actual            
         }
     }
 }

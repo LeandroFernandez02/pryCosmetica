@@ -110,7 +110,7 @@
             this.MinimumSize = new System.Drawing.Size(1043, 629);
             this.Name = "frmInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmInicioSesion";
+            this.Text = "Inicio de Sesion";
             this.mrcInicioSesion.ResumeLayout(false);
             this.mrcInicioSesion.PerformLayout();
             this.ResumeLayout(false);
