@@ -40,19 +40,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "como";
             // 
-            // frmEjemplo2
+            // frmPostulantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Salmon;
-            this.ClientSize = new System.Drawing.Size(1027, 566);
+            this.ClientSize = new System.Drawing.Size(816, 562);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1027, 566);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1027, 566);
-            this.Name = "frmEjemplo2";
+            this.Name = "frmPostulantes";
             this.Text = "frmEjemplo2";
             this.ResumeLayout(false);
             this.PerformLayout();
