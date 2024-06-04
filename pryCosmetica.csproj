@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.9.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.Charts.WinForms.1.0.9\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -41,6 +44,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,17 +56,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmEmpleados.cs">
+    <Compile Include="frmBuscarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEmpleados.Designer.cs">
-      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    <Compile Include="frmBuscarEmpleado.Designer.cs">
+      <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPostulantes.cs">
+    <Compile Include="frmBuscarPostulante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPostulantes.Designer.cs">
-      <DependentUpon>frmPostulantes.cs</DependentUpon>
+    <Compile Include="frmBuscarPostulante.Designer.cs">
+      <DependentUpon>frmBuscarPostulante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarEmpleado.Designer.cs">
+      <DependentUpon>frmCargarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarPostulante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarPostulante.Designer.cs">
+      <DependentUpon>frmCargarPostulante.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInicioSesion.cs">
       <SubType>Form</SubType>
@@ -76,19 +92,34 @@
     <Compile Include="frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportarEmpleado.Designer.cs">
+      <DependentUpon>frmReportarEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmEmpleados.resx">
-      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    <EmbeddedResource Include="frmBuscarEmpleado.resx">
+      <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPostulantes.resx">
-      <DependentUpon>frmPostulantes.cs</DependentUpon>
+    <EmbeddedResource Include="frmBuscarPostulante.resx">
+      <DependentUpon>frmBuscarPostulante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarEmpleado.resx">
+      <DependentUpon>frmCargarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarPostulante.resx">
+      <DependentUpon>frmCargarPostulante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicioSesion.resx">
       <DependentUpon>frmInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportarEmpleado.resx">
+      <DependentUpon>frmReportarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +129,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -112,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo principal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

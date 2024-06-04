@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryCosmetica
 {
-    public partial class frmPostulantes : Form
+    public partial class frmBuscarEmpleado : Form
     {
-        public frmPostulantes()
+        public frmBuscarEmpleado()
         {
             InitializeComponent();
         }

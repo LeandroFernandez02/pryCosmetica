@@ -33,14 +33,83 @@ namespace pryCosmetica
             formHijo.Show();
         }
 
-        private void btnEmpleados_Click(object sender, EventArgs e)
+        // ABRIR Y OCULTAR SUBMENUS   
+
+        private void ocultarSubMenu()
         {
-            abrirFormHijo(new frmEmpleados());
+            if (pnlSubMenuEmpleados.Visible == true)
+            {
+                pnlSubMenuEmpleados.Visible = false;
+            }
+            if (pnlSubMenuPostulante.Visible == true)
+            {
+                pnlSubMenuPostulante.Visible=false;
+            }
+        }
+        private void mostrarSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                ocultarSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
         }
 
-        private void btnPostulantes_Click(object sender, EventArgs e)
+        private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmPostulantes());
+            mostrarSubMenu(pnlSubMenuEmpleados);
+            
+        }
+
+        private void btnPostulante_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(pnlSubMenuPostulante);
+            
+        }
+
+        private void btnCargarEmpleado_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmCargarEmpleado());
+            // codigo
+            ocultarSubMenu();
+        }
+
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmBuscarEmpleado());
+            ocultarSubMenu();
+        }
+
+        private void btnReportarEmpleado_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmReportarEmpleado());
+            ocultarSubMenu();
+        }
+
+        private void btnCargarPostulante_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmCargarPostulante());
+            ocultarSubMenu();
+        }
+
+        private void btnBuscarPostulante_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmBuscarPostulante());
+            ocultarSubMenu();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrarForm_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

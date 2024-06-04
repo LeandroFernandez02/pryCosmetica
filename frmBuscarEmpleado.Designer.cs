@@ -1,6 +1,6 @@
 ﻿namespace pryCosmetica
 {
-    partial class frmPostulantes
+    partial class frmBuscarEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
-            // label1
+            // guna2HtmlLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(240, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "como";
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(79, 191);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 15);
+            this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
-            // frmPostulantes
+            // frmBuscarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Salmon;
-            this.ClientSize = new System.Drawing.Size(964, 595);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(948, 584);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmPostulantes";
-            this.Text = "frmEjemplo2";
+            this.Name = "frmBuscarEmpleado";
+            this.Text = "frmBuscarEmpleado";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +56,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
