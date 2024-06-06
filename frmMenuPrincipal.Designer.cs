@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlSubMenuReportes = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnBuscarReporte = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCargarReporte = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReportes = new Guna.UI2.WinForms.Guna2Button();
             this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlSubMenuPostulante = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBuscarPostulante = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargarPostulante = new Guna.UI2.WinForms.Guna2Button();
             this.btnPostulante = new Guna.UI2.WinForms.Guna2Button();
             this.pnlSubMenuEmpleados = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnReportarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.btnBuscarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.btnEmpleados = new Guna.UI2.WinForms.Guna2Button();
@@ -44,9 +47,10 @@
             this.pnlTitulo = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlPrincipal = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.pnlPrincipal = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlMenu.SuspendLayout();
+            this.pnlSubMenuReportes.SuspendLayout();
             this.pnlSubMenuPostulante.SuspendLayout();
             this.pnlSubMenuEmpleados.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -58,6 +62,8 @@
             // pnlMenu
             // 
             this.pnlMenu.AutoScroll = true;
+            this.pnlMenu.Controls.Add(this.pnlSubMenuReportes);
+            this.pnlMenu.Controls.Add(this.btnReportes);
             this.pnlMenu.Controls.Add(this.btnCerrarSesion);
             this.pnlMenu.Controls.Add(this.pnlSubMenuPostulante);
             this.pnlMenu.Controls.Add(this.btnPostulante);
@@ -69,6 +75,74 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(237, 691);
             this.pnlMenu.TabIndex = 1;
+            // 
+            // pnlSubMenuReportes
+            // 
+            this.pnlSubMenuReportes.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlSubMenuReportes.Controls.Add(this.btnBuscarReporte);
+            this.pnlSubMenuReportes.Controls.Add(this.btnCargarReporte);
+            this.pnlSubMenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubMenuReportes.Location = new System.Drawing.Point(0, 428);
+            this.pnlSubMenuReportes.Name = "pnlSubMenuReportes";
+            this.pnlSubMenuReportes.Size = new System.Drawing.Size(237, 97);
+            this.pnlSubMenuReportes.TabIndex = 7;
+            this.pnlSubMenuReportes.Visible = false;
+            // 
+            // btnBuscarReporte
+            // 
+            this.btnBuscarReporte.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuscarReporte.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuscarReporte.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBuscarReporte.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBuscarReporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuscarReporte.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBuscarReporte.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarReporte.Location = new System.Drawing.Point(0, 45);
+            this.btnBuscarReporte.Name = "btnBuscarReporte";
+            this.btnBuscarReporte.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnBuscarReporte.Size = new System.Drawing.Size(237, 45);
+            this.btnBuscarReporte.TabIndex = 1;
+            this.btnBuscarReporte.Text = "Buscar Reporte";
+            this.btnBuscarReporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBuscarReporte.Click += new System.EventHandler(this.btnBuscarReporte_Click);
+            // 
+            // btnCargarReporte
+            // 
+            this.btnCargarReporte.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCargarReporte.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCargarReporte.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCargarReporte.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCargarReporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCargarReporte.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCargarReporte.ForeColor = System.Drawing.Color.White;
+            this.btnCargarReporte.Location = new System.Drawing.Point(0, 0);
+            this.btnCargarReporte.Name = "btnCargarReporte";
+            this.btnCargarReporte.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCargarReporte.Size = new System.Drawing.Size(237, 45);
+            this.btnCargarReporte.TabIndex = 0;
+            this.btnCargarReporte.Text = "Cargar Reporte";
+            this.btnCargarReporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCargarReporte.Click += new System.EventHandler(this.btnCargarReporte_Click);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReportes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FillColor = System.Drawing.Color.RosyBrown;
+            this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Location = new System.Drawing.Point(0, 383);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(237, 45);
+            this.btnReportes.TabIndex = 6;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnCerrarSesion
             // 
@@ -90,7 +164,7 @@
             this.pnlSubMenuPostulante.Controls.Add(this.btnBuscarPostulante);
             this.pnlSubMenuPostulante.Controls.Add(this.btnCargarPostulante);
             this.pnlSubMenuPostulante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuPostulante.Location = new System.Drawing.Point(0, 331);
+            this.pnlSubMenuPostulante.Location = new System.Drawing.Point(0, 286);
             this.pnlSubMenuPostulante.Name = "pnlSubMenuPostulante";
             this.pnlSubMenuPostulante.Size = new System.Drawing.Size(237, 97);
             this.pnlSubMenuPostulante.TabIndex = 4;
@@ -143,7 +217,7 @@
             this.btnPostulante.FillColor = System.Drawing.Color.RosyBrown;
             this.btnPostulante.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPostulante.ForeColor = System.Drawing.Color.White;
-            this.btnPostulante.Location = new System.Drawing.Point(0, 286);
+            this.btnPostulante.Location = new System.Drawing.Point(0, 241);
             this.btnPostulante.Name = "btnPostulante";
             this.btnPostulante.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnPostulante.Size = new System.Drawing.Size(237, 45);
@@ -155,33 +229,14 @@
             // pnlSubMenuEmpleados
             // 
             this.pnlSubMenuEmpleados.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pnlSubMenuEmpleados.Controls.Add(this.btnReportarEmpleado);
             this.pnlSubMenuEmpleados.Controls.Add(this.btnBuscarEmpleado);
             this.pnlSubMenuEmpleados.Controls.Add(this.btnCargarEmpleado);
             this.pnlSubMenuEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubMenuEmpleados.Location = new System.Drawing.Point(0, 145);
             this.pnlSubMenuEmpleados.Name = "pnlSubMenuEmpleados";
-            this.pnlSubMenuEmpleados.Size = new System.Drawing.Size(237, 141);
+            this.pnlSubMenuEmpleados.Size = new System.Drawing.Size(237, 96);
             this.pnlSubMenuEmpleados.TabIndex = 2;
             this.pnlSubMenuEmpleados.Visible = false;
-            // 
-            // btnReportarEmpleado
-            // 
-            this.btnReportarEmpleado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReportarEmpleado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReportarEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReportarEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReportarEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportarEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnReportarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnReportarEmpleado.Location = new System.Drawing.Point(0, 90);
-            this.btnReportarEmpleado.Name = "btnReportarEmpleado";
-            this.btnReportarEmpleado.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnReportarEmpleado.Size = new System.Drawing.Size(237, 45);
-            this.btnReportarEmpleado.TabIndex = 2;
-            this.btnReportarEmpleado.Text = "Reportar Empleado";
-            this.btnReportarEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReportarEmpleado.Click += new System.EventHandler(this.btnReportarEmpleado_Click);
             // 
             // btnBuscarEmpleado
             // 
@@ -287,24 +342,25 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "titulo";
             // 
-            // pnlPrincipal
-            // 
-            this.pnlPrincipal.Controls.Add(this.label5);
-            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPrincipal.Location = new System.Drawing.Point(237, 74);
-            this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.pnlPrincipal.Size = new System.Drawing.Size(948, 617);
-            this.pnlPrincipal.TabIndex = 3;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(404, 273);
+            this.label5.Location = new System.Drawing.Point(448, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Graficos de Datos";
+            // 
+            // pnlPrincipal
+            // 
+            this.pnlPrincipal.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.pnlPrincipal.Controls.Add(this.label5);
+            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrincipal.Location = new System.Drawing.Point(237, 74);
+            this.pnlPrincipal.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlPrincipal.Name = "pnlPrincipal";
+            this.pnlPrincipal.Size = new System.Drawing.Size(948, 617);
+            this.pnlPrincipal.TabIndex = 3;
             // 
             // frmMenuPrincipal
             // 
@@ -320,6 +376,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.pnlMenu.ResumeLayout(false);
+            this.pnlSubMenuReportes.ResumeLayout(false);
             this.pnlSubMenuPostulante.ResumeLayout(false);
             this.pnlSubMenuEmpleados.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
@@ -339,8 +396,6 @@
         private Guna.UI2.WinForms.Guna2Button btnEmpleados;
         private Guna.UI2.WinForms.Guna2Panel pnlLogo;
         private Guna.UI2.WinForms.Guna2Panel pnlTitulo;
-        private Guna.UI2.WinForms.Guna2Panel pnlPrincipal;
-        private Guna.UI2.WinForms.Guna2Button btnReportarEmpleado;
         private Guna.UI2.WinForms.Guna2Button btnBuscarEmpleado;
         private Guna.UI2.WinForms.Guna2Panel pnlSubMenuPostulante;
         private Guna.UI2.WinForms.Guna2Button btnBuscarPostulante;
@@ -348,8 +403,13 @@
         private Guna.UI2.WinForms.Guna2Button btnPostulante;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button btnCerrarSesion;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel pnlSubMenuReportes;
+        private Guna.UI2.WinForms.Guna2Button btnBuscarReporte;
+        private Guna.UI2.WinForms.Guna2Button btnCargarReporte;
+        private Guna.UI2.WinForms.Guna2Button btnReportes;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Panel pnlPrincipal;
     }
 }

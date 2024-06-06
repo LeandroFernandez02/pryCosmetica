@@ -24,12 +24,12 @@ namespace pryCosmetica
             if (formActivo != null)
                 formActivo.Close();
             formActivo = formHijo;
-            formHijo.TopLevel = false;
+            formHijo.TopLevel = false;        
             formHijo.FormBorderStyle = FormBorderStyle.None;
             formHijo.Dock = DockStyle.Fill;
             pnlPrincipal.Controls.Add(formHijo);
             pnlPrincipal.Tag = formHijo;
-            formHijo.BringToFront();
+            formHijo.BringToFront();           
             formHijo.Show();
         }
 
@@ -44,6 +44,10 @@ namespace pryCosmetica
             if (pnlSubMenuPostulante.Visible == true)
             {
                 pnlSubMenuPostulante.Visible=false;
+            }
+            if(pnlSubMenuReportes.Visible == true)
+            {
+                pnlSubMenuReportes.Visible=false;
             }
         }
         private void mostrarSubMenu(Panel subMenu)
@@ -70,23 +74,22 @@ namespace pryCosmetica
             mostrarSubMenu(pnlSubMenuPostulante);
             
         }
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(pnlSubMenuReportes);
+        }
 
         private void btnCargarEmpleado_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new frmCargarEmpleado());
             // codigo
+            frmCargarEmpleado frm = new frmCargarEmpleado();
             ocultarSubMenu();
         }
 
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new frmBuscarEmpleado());
-            ocultarSubMenu();
-        }
-
-        private void btnReportarEmpleado_Click(object sender, EventArgs e)
-        {
-            abrirFormHijo(new frmReportarEmpleado());
             ocultarSubMenu();
         }
 
@@ -99,6 +102,17 @@ namespace pryCosmetica
         private void btnBuscarPostulante_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new frmBuscarPostulante());
+            ocultarSubMenu();
+        }
+        private void btnCargarReporte_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmCargarReporte());
+            ocultarSubMenu();
+        }
+
+        private void btnBuscarReporte_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmBuscarReporte());
             ocultarSubMenu();
         }
 

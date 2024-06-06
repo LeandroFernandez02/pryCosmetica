@@ -68,6 +68,12 @@
     <Compile Include="frmBuscarPostulante.Designer.cs">
       <DependentUpon>frmBuscarPostulante.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarReporte.Designer.cs">
+      <DependentUpon>frmBuscarReporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCargarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,12 @@
     </Compile>
     <Compile Include="frmCargarPostulante.Designer.cs">
       <DependentUpon>frmCargarPostulante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarReporte.Designer.cs">
+      <DependentUpon>frmCargarReporte.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInicioSesion.cs">
       <SubType>Form</SubType>
@@ -92,12 +104,6 @@
     <Compile Include="frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReportarEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportarEmpleado.Designer.cs">
-      <DependentUpon>frmReportarEmpleado.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBuscarEmpleado.resx">
@@ -106,20 +112,23 @@
     <EmbeddedResource Include="frmBuscarPostulante.resx">
       <DependentUpon>frmBuscarPostulante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarReporte.resx">
+      <DependentUpon>frmBuscarReporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCargarEmpleado.resx">
       <DependentUpon>frmCargarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCargarPostulante.resx">
       <DependentUpon>frmCargarPostulante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarReporte.resx">
+      <DependentUpon>frmCargarReporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicioSesion.resx">
       <DependentUpon>frmInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportarEmpleado.resx">
-      <DependentUpon>frmReportarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
