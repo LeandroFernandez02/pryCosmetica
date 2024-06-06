@@ -17,7 +17,6 @@ namespace pryCosmetica
             InitializeComponent();
             OcultarGroupBox();
         }
-
         private void OcultarGroupBox()
         {
             gbInasistencia.Visible = false;
@@ -26,25 +25,25 @@ namespace pryCosmetica
             gbEvaluaciónDesempeño.Visible = false;
         }
 
-        private void btnInasistencia_Click_1(object sender, EventArgs e)
+        private void btnInasistencia_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
             gbInasistencia.Visible = true;
         }
 
-        private void btnAmonestaciones_Click_1(object sender, EventArgs e)
+        private void btnAmonestaciones_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
             gbAmonestaciones.Visible = true;
         }
 
-        private void btnSuspensiones_Click_1(object sender, EventArgs e)
+        private void btnSuspensiones_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
             gbSuspensión.Visible = true;
         }
 
-        private void btnEvaluaciónDesempeño_Click_1(object sender, EventArgs e)
+        private void btnEvaluaciónDesempeño_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
             gbEvaluaciónDesempeño.Visible = true;

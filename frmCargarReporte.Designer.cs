@@ -305,7 +305,7 @@
             this.btnEvaluaciónDesempeño.Size = new System.Drawing.Size(180, 45);
             this.btnEvaluaciónDesempeño.TabIndex = 42;
             this.btnEvaluaciónDesempeño.Text = "Evaluación Desempeño";
-            this.btnEvaluaciónDesempeño.Click += new System.EventHandler(this.btnEvaluaciónDesempeño_Click_1);
+            this.btnEvaluaciónDesempeño.Click += new System.EventHandler(this.btnEvaluaciónDesempeño_Click);
             // 
             // gbSuspensión
             // 
@@ -322,7 +322,7 @@
             this.gbSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.gbSuspensión.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gbSuspensión.ForeColor = System.Drawing.Color.White;
-            this.gbSuspensión.Location = new System.Drawing.Point(434, 86);
+            this.gbSuspensión.Location = new System.Drawing.Point(434, 68);
             this.gbSuspensión.Name = "gbSuspensión";
             this.gbSuspensión.Size = new System.Drawing.Size(435, 347);
             this.gbSuspensión.TabIndex = 43;
@@ -496,7 +496,7 @@
             this.btnSuspensiones.Size = new System.Drawing.Size(180, 45);
             this.btnSuspensiones.TabIndex = 41;
             this.btnSuspensiones.Text = "Suspensiones";
-            this.btnSuspensiones.Click += new System.EventHandler(this.btnSuspensiones_Click_1);
+            this.btnSuspensiones.Click += new System.EventHandler(this.btnSuspensiones_Click);
             // 
             // btnAmonestaciones
             // 
@@ -513,7 +513,7 @@
             this.btnAmonestaciones.Size = new System.Drawing.Size(180, 45);
             this.btnAmonestaciones.TabIndex = 40;
             this.btnAmonestaciones.Text = "Amonestaciones";
-            this.btnAmonestaciones.Click += new System.EventHandler(this.btnAmonestaciones_Click_1);
+            this.btnAmonestaciones.Click += new System.EventHandler(this.btnAmonestaciones_Click);
             // 
             // btnInasistencia
             // 
@@ -530,21 +530,21 @@
             this.btnInasistencia.Size = new System.Drawing.Size(180, 45);
             this.btnInasistencia.TabIndex = 39;
             this.btnInasistencia.Text = "Inasistencia";
-            this.btnInasistencia.Click += new System.EventHandler(this.btnInasistencia_Click_1);
+            this.btnInasistencia.Click += new System.EventHandler(this.btnInasistencia_Click);
             // 
             // gbInasistencia
             // 
             this.gbInasistencia.BackColor = System.Drawing.Color.White;
             this.gbInasistencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.gbInasistencia.Controls.Add(this.txtNombreInasistencia);
-            this.gbInasistencia.Controls.Add(this.dtpFecha);
             this.gbInasistencia.Controls.Add(this.lblMotivoInasistencia);
             this.gbInasistencia.Controls.Add(this.lblTipoInasistencia);
-            this.gbInasistencia.Controls.Add(this.cbTipoInasistencia);
-            this.gbInasistencia.Controls.Add(this.rbJustificada);
             this.gbInasistencia.Controls.Add(this.lblJustificado);
             this.gbInasistencia.Controls.Add(this.lblFechaInasistencia);
             this.gbInasistencia.Controls.Add(this.lblNombreInasistencia);
+            this.gbInasistencia.Controls.Add(this.txtNombreInasistencia);
+            this.gbInasistencia.Controls.Add(this.dtpFecha);
+            this.gbInasistencia.Controls.Add(this.cbTipoInasistencia);
+            this.gbInasistencia.Controls.Add(this.rbJustificada);
             this.gbInasistencia.Controls.Add(this.rbInjustificada);
             this.gbInasistencia.Controls.Add(this.txtMotivoInasistencia);
             this.gbInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
@@ -599,6 +599,7 @@
             // 
             this.lblMotivoInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblMotivoInasistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotivoInasistencia.ForeColor = System.Drawing.Color.Black;
             this.lblMotivoInasistencia.Location = new System.Drawing.Point(34, 191);
             this.lblMotivoInasistencia.Name = "lblMotivoInasistencia";
             this.lblMotivoInasistencia.Size = new System.Drawing.Size(149, 18);
@@ -609,6 +610,7 @@
             // 
             this.lblTipoInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoInasistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoInasistencia.ForeColor = System.Drawing.Color.Black;
             this.lblTipoInasistencia.Location = new System.Drawing.Point(45, 247);
             this.lblTipoInasistencia.Name = "lblTipoInasistencia";
             this.lblTipoInasistencia.Size = new System.Drawing.Size(138, 18);
@@ -659,6 +661,7 @@
             // 
             this.lblJustificado.BackColor = System.Drawing.Color.Transparent;
             this.lblJustificado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJustificado.ForeColor = System.Drawing.Color.Black;
             this.lblJustificado.Location = new System.Drawing.Point(30, 294);
             this.lblJustificado.Name = "lblJustificado";
             this.lblJustificado.Size = new System.Drawing.Size(153, 18);
@@ -669,6 +672,7 @@
             // 
             this.lblFechaInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaInasistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaInasistencia.ForeColor = System.Drawing.Color.Black;
             this.lblFechaInasistencia.Location = new System.Drawing.Point(35, 135);
             this.lblFechaInasistencia.Name = "lblFechaInasistencia";
             this.lblFechaInasistencia.Size = new System.Drawing.Size(148, 18);
@@ -679,6 +683,7 @@
             // 
             this.lblNombreInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreInasistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreInasistencia.ForeColor = System.Drawing.Color.Black;
             this.lblNombreInasistencia.Location = new System.Drawing.Point(65, 83);
             this.lblNombreInasistencia.Name = "lblNombreInasistencia";
             this.lblNombreInasistencia.Size = new System.Drawing.Size(118, 18);
@@ -872,7 +877,6 @@
             this.ClientSize = new System.Drawing.Size(932, 578);
             this.Controls.Add(this.gbEvaluaciónDesempeño);
             this.Controls.Add(this.btnEvaluaciónDesempeño);
-            this.Controls.Add(this.gbSuspensión);
             this.Controls.Add(this.btnSuspensiones);
             this.Controls.Add(this.btnAmonestaciones);
             this.Controls.Add(this.btnInasistencia);
@@ -880,6 +884,7 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.gbAmonestaciones);
+            this.Controls.Add(this.gbSuspensión);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -929,13 +934,8 @@
         private Guna.UI2.WinForms.Guna2GroupBox gbInasistencia;
         private Guna.UI2.WinForms.Guna2TextBox txtNombreInasistencia;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFecha;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblMotivoInasistencia;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoInasistencia;
         private Guna.UI2.WinForms.Guna2ComboBox cbTipoInasistencia;
         private Guna.UI2.WinForms.Guna2RadioButton rbJustificada;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblJustificado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaInasistencia;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreInasistencia;
         private Guna.UI2.WinForms.Guna2RadioButton rbInjustificada;
         private Guna.UI2.WinForms.Guna2TextBox txtMotivoInasistencia;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
@@ -947,5 +947,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaAmonestación;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreAmonestación;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMotivoInasistencia;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoInasistencia;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblJustificado;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaInasistencia;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreInasistencia;
     }
 }
