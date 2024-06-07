@@ -30,8 +30,7 @@
         {
             this.mrcDireccion = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtNúmeroCalle = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lstProvincia = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblProvincia = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCodPostal = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstCiudad = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCiudad = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstBarrio = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -71,6 +70,7 @@
             this.lblApellido = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCodPostal = new Guna.UI2.WinForms.Guna2TextBox();
             this.mrcDireccion.SuspendLayout();
             this.mcrDatosLaborales.SuspendLayout();
             this.mrcDatosPersonales.SuspendLayout();
@@ -78,9 +78,9 @@
             // 
             // mrcDireccion
             // 
+            this.mrcDireccion.Controls.Add(this.txtCodPostal);
             this.mrcDireccion.Controls.Add(this.txtNúmeroCalle);
-            this.mrcDireccion.Controls.Add(this.lstProvincia);
-            this.mrcDireccion.Controls.Add(this.lblProvincia);
+            this.mrcDireccion.Controls.Add(this.lblCodPostal);
             this.mrcDireccion.Controls.Add(this.lstCiudad);
             this.mrcDireccion.Controls.Add(this.lblCiudad);
             this.mrcDireccion.Controls.Add(this.lstBarrio);
@@ -116,31 +116,16 @@
             this.txtNúmeroCalle.Size = new System.Drawing.Size(94, 36);
             this.txtNúmeroCalle.TabIndex = 35;
             // 
-            // lstProvincia
+            // lblCodPostal
             // 
-            this.lstProvincia.BackColor = System.Drawing.Color.Transparent;
-            this.lstProvincia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstProvincia.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstProvincia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstProvincia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstProvincia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstProvincia.ItemHeight = 30;
-            this.lstProvincia.Location = new System.Drawing.Point(301, 108);
-            this.lstProvincia.Name = "lstProvincia";
-            this.lstProvincia.Size = new System.Drawing.Size(98, 36);
-            this.lstProvincia.TabIndex = 34;
-            // 
-            // lblProvincia
-            // 
-            this.lblProvincia.BackColor = System.Drawing.Color.Transparent;
-            this.lblProvincia.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProvincia.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblProvincia.Location = new System.Drawing.Point(229, 108);
-            this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(66, 22);
-            this.lblProvincia.TabIndex = 33;
-            this.lblProvincia.Text = "Provincia:";
+            this.lblCodPostal.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodPostal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodPostal.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblCodPostal.Location = new System.Drawing.Point(220, 108);
+            this.lblCodPostal.Name = "lblCodPostal";
+            this.lblCodPostal.Size = new System.Drawing.Size(80, 22);
+            this.lblCodPostal.TabIndex = 33;
+            this.lblCodPostal.Text = "Cod. Postal:";
             // 
             // lstCiudad
             // 
@@ -720,6 +705,25 @@
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Cargar datos del empleado";
             // 
+            // txtCodPostal
+            // 
+            this.txtCodPostal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodPostal.DefaultText = "";
+            this.txtCodPostal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCodPostal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCodPostal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCodPostal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCodPostal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCodPostal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCodPostal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCodPostal.Location = new System.Drawing.Point(305, 108);
+            this.txtCodPostal.Name = "txtCodPostal";
+            this.txtCodPostal.PasswordChar = '\0';
+            this.txtCodPostal.PlaceholderText = "";
+            this.txtCodPostal.SelectedText = "";
+            this.txtCodPostal.Size = new System.Drawing.Size(94, 36);
+            this.txtCodPostal.TabIndex = 36;
+            // 
             // frmCargarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -748,8 +752,7 @@
 
         private Guna.UI2.WinForms.Guna2GroupBox mrcDireccion;
         private Guna.UI2.WinForms.Guna2TextBox txtNúmeroCalle;
-        private Guna.UI2.WinForms.Guna2ComboBox lstProvincia;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblProvincia;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCodPostal;
         private Guna.UI2.WinForms.Guna2ComboBox lstCiudad;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCiudad;
         private Guna.UI2.WinForms.Guna2ComboBox lstBarrio;
@@ -789,5 +792,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblApellido;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombre;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
+        private Guna.UI2.WinForms.Guna2TextBox txtCodPostal;
     }
 }
