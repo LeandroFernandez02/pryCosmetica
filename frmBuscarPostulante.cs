@@ -56,11 +56,12 @@ namespace pryCosmetica
                     cmb.Size = txt.Size;
                     cmb.Visible = true;
                     this.Controls.Add(cmb);
-                    cmb.Items.Add("RRHH");
-                    cmb.Items.Add("Finanzas");
-                    cmb.Items.Add("Ventas");
-                    cmb.Items.Add("Inventario");
-                    cmb.Items.Add("Produccion");
+                    cmb.Items.Add("Investigación y Desarrollo");
+                    cmb.Items.Add("Marketing y Ventas");
+                    cmb.Items.Add("Logística y Distribución");
+                    cmb.Items.Add("Administración y Finanzas");
+                    cmb.Items.Add("Recursos Humanos");
+                    cmb.Items.Add("Legal");
                     break;
             }
         }

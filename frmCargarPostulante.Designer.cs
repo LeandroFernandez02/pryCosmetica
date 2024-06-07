@@ -30,24 +30,24 @@
         {
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.mrcDatosContacto = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblCV = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCargarCV = new Guna.UI2.WinForms.Guna2Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
             this.txtTeléfonoPostulante = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.mrcDatosPersonales = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblArea = new System.Windows.Forms.Label();
             this.cmbArea = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDNI = new System.Windows.Forms.Label();
             this.txtDNIPostulante = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
             this.txtApellidoPostulante = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombrePostulante = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GroupBox2.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
+            this.mrcDatosContacto.SuspendLayout();
+            this.mrcDatosPersonales.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -82,23 +82,34 @@
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
             // 
-            // guna2GroupBox2
+            // mrcDatosContacto
             // 
-            this.guna2GroupBox2.BorderRadius = 22;
-            this.guna2GroupBox2.Controls.Add(this.guna2HtmlLabel13);
-            this.guna2GroupBox2.Controls.Add(this.btnCargarCV);
-            this.guna2GroupBox2.Controls.Add(this.label7);
-            this.guna2GroupBox2.Controls.Add(this.txtTeléfonoPostulante);
-            this.guna2GroupBox2.Controls.Add(this.label8);
-            this.guna2GroupBox2.Controls.Add(this.txtCorreo);
-            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(148, 256);
-            this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(637, 178);
-            this.guna2GroupBox2.TabIndex = 12;
-            this.guna2GroupBox2.Text = "Datos de Contacto";
+            this.mrcDatosContacto.BorderRadius = 22;
+            this.mrcDatosContacto.Controls.Add(this.lblCV);
+            this.mrcDatosContacto.Controls.Add(this.btnCargarCV);
+            this.mrcDatosContacto.Controls.Add(this.lblTelefono);
+            this.mrcDatosContacto.Controls.Add(this.txtTeléfonoPostulante);
+            this.mrcDatosContacto.Controls.Add(this.lblCorreo);
+            this.mrcDatosContacto.Controls.Add(this.txtCorreo);
+            this.mrcDatosContacto.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcDatosContacto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcDatosContacto.ForeColor = System.Drawing.Color.White;
+            this.mrcDatosContacto.Location = new System.Drawing.Point(148, 256);
+            this.mrcDatosContacto.Name = "mrcDatosContacto";
+            this.mrcDatosContacto.Size = new System.Drawing.Size(637, 178);
+            this.mrcDatosContacto.TabIndex = 12;
+            this.mrcDatosContacto.Text = "Datos de Contacto";
+            // 
+            // lblCV
+            // 
+            this.lblCV.BackColor = System.Drawing.Color.Transparent;
+            this.lblCV.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCV.Location = new System.Drawing.Point(427, 74);
+            this.lblCV.Name = "lblCV";
+            this.lblCV.Size = new System.Drawing.Size(138, 22);
+            this.lblCV.TabIndex = 5;
+            this.lblCV.Text = "Adjuntar Curriculum:";
             // 
             // btnCargarCV
             // 
@@ -117,17 +128,17 @@
             this.btnCargarCV.TabIndex = 4;
             this.btnCargarCV.Text = "Cargar CV";
             // 
-            // label7
+            // lblTelefono
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.label7.Location = new System.Drawing.Point(25, 124);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 21);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Teléfono:";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblTelefono.Location = new System.Drawing.Point(25, 124);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(71, 21);
+            this.lblTelefono.TabIndex = 3;
+            this.lblTelefono.Text = "Teléfono:";
             // 
             // txtTeléfonoPostulante
             // 
@@ -149,17 +160,17 @@
             this.txtTeléfonoPostulante.Size = new System.Drawing.Size(193, 36);
             this.txtTeléfonoPostulante.TabIndex = 2;
             // 
-            // label8
+            // lblCorreo
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.label8.Location = new System.Drawing.Point(25, 69);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 21);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Correo:";
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorreo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblCorreo.Location = new System.Drawing.Point(25, 69);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(61, 21);
+            this.lblCorreo.TabIndex = 1;
+            this.lblCorreo.Text = "Correo:";
             // 
             // txtCorreo
             // 
@@ -181,37 +192,37 @@
             this.txtCorreo.Size = new System.Drawing.Size(193, 36);
             this.txtCorreo.TabIndex = 0;
             // 
-            // guna2GroupBox1
+            // mrcDatosPersonales
             // 
-            this.guna2GroupBox1.BorderRadius = 22;
-            this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.Controls.Add(this.cmbArea);
-            this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.txtDNIPostulante);
-            this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.txtApellidoPostulante);
-            this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.txtNombrePostulante);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(148, 18);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(637, 178);
-            this.guna2GroupBox1.TabIndex = 10;
-            this.guna2GroupBox1.Text = "Datos Personales";
+            this.mrcDatosPersonales.BorderRadius = 22;
+            this.mrcDatosPersonales.Controls.Add(this.lblArea);
+            this.mrcDatosPersonales.Controls.Add(this.cmbArea);
+            this.mrcDatosPersonales.Controls.Add(this.lblDNI);
+            this.mrcDatosPersonales.Controls.Add(this.txtDNIPostulante);
+            this.mrcDatosPersonales.Controls.Add(this.lblApellido);
+            this.mrcDatosPersonales.Controls.Add(this.txtApellidoPostulante);
+            this.mrcDatosPersonales.Controls.Add(this.lblNombre);
+            this.mrcDatosPersonales.Controls.Add(this.txtNombrePostulante);
+            this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcDatosPersonales.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcDatosPersonales.ForeColor = System.Drawing.Color.White;
+            this.mrcDatosPersonales.Location = new System.Drawing.Point(148, 18);
+            this.mrcDatosPersonales.Name = "mrcDatosPersonales";
+            this.mrcDatosPersonales.Size = new System.Drawing.Size(637, 178);
+            this.mrcDatosPersonales.TabIndex = 10;
+            this.mrcDatosPersonales.Text = "Datos Personales";
             // 
-            // label4
+            // lblArea
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.label4.Location = new System.Drawing.Point(347, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 21);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Area:";
+            this.lblArea.AutoSize = true;
+            this.lblArea.BackColor = System.Drawing.Color.Transparent;
+            this.lblArea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblArea.Location = new System.Drawing.Point(347, 123);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(45, 21);
+            this.lblArea.TabIndex = 7;
+            this.lblArea.Text = "Area:";
             // 
             // cmbArea
             // 
@@ -236,17 +247,17 @@
             this.cmbArea.Size = new System.Drawing.Size(193, 36);
             this.cmbArea.TabIndex = 6;
             // 
-            // label3
+            // lblDNI
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.label3.Location = new System.Drawing.Point(347, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 21);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "DNI:";
+            this.lblDNI.AutoSize = true;
+            this.lblDNI.BackColor = System.Drawing.Color.Transparent;
+            this.lblDNI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDNI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblDNI.Location = new System.Drawing.Point(347, 69);
+            this.lblDNI.Name = "lblDNI";
+            this.lblDNI.Size = new System.Drawing.Size(40, 21);
+            this.lblDNI.TabIndex = 5;
+            this.lblDNI.Text = "DNI:";
             // 
             // txtDNIPostulante
             // 
@@ -268,17 +279,17 @@
             this.txtDNIPostulante.Size = new System.Drawing.Size(193, 36);
             this.txtDNIPostulante.TabIndex = 4;
             // 
-            // label2
+            // lblApellido
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.label2.Location = new System.Drawing.Point(25, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Apellido:";
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.BackColor = System.Drawing.Color.Transparent;
+            this.lblApellido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblApellido.Location = new System.Drawing.Point(25, 124);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(70, 21);
+            this.lblApellido.TabIndex = 3;
+            this.lblApellido.Text = "Apellido:";
             // 
             // txtApellidoPostulante
             // 
@@ -300,17 +311,17 @@
             this.txtApellidoPostulante.Size = new System.Drawing.Size(193, 36);
             this.txtApellidoPostulante.TabIndex = 2;
             // 
-            // label1
+            // lblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(25, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nombre:";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblNombre.Location = new System.Drawing.Point(25, 69);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(71, 21);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre:";
             // 
             // txtNombrePostulante
             // 
@@ -332,17 +343,6 @@
             this.txtNombrePostulante.Size = new System.Drawing.Size(193, 36);
             this.txtNombrePostulante.TabIndex = 0;
             // 
-            // guna2HtmlLabel13
-            // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(427, 74);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(138, 22);
-            this.guna2HtmlLabel13.TabIndex = 5;
-            this.guna2HtmlLabel13.Text = "Adjuntar Curriculum:";
-            // 
             // frmCargarPostulante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,15 +350,15 @@
             this.ClientSize = new System.Drawing.Size(932, 545);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.guna2GroupBox2);
-            this.Controls.Add(this.guna2GroupBox1);
+            this.Controls.Add(this.mrcDatosContacto);
+            this.Controls.Add(this.mrcDatosPersonales);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarPostulante";
             this.Text = "frmCargarPostulante";
-            this.guna2GroupBox2.ResumeLayout(false);
-            this.guna2GroupBox2.PerformLayout();
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
+            this.mrcDatosContacto.ResumeLayout(false);
+            this.mrcDatosContacto.PerformLayout();
+            this.mrcDatosPersonales.ResumeLayout(false);
+            this.mrcDatosPersonales.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -367,21 +367,21 @@
 
         private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcDatosContacto;
         private Guna.UI2.WinForms.Guna2Button btnCargarCV;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTelefono;
         private Guna.UI2.WinForms.Guna2TextBox txtTeléfonoPostulante;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCorreo;
         private Guna.UI2.WinForms.Guna2TextBox txtCorreo;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcDatosPersonales;
+        private System.Windows.Forms.Label lblArea;
         private Guna.UI2.WinForms.Guna2ComboBox cmbArea;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDNI;
         private Guna.UI2.WinForms.Guna2TextBox txtDNIPostulante;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblApellido;
         private Guna.UI2.WinForms.Guna2TextBox txtApellidoPostulante;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtNombrePostulante;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCV;
     }
 }

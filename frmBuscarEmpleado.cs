@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace pryCosmetica
@@ -36,17 +30,18 @@ namespace pryCosmetica
                 else if (selectedValue == "Estado Civil")
                 {
                     crearCmb();
-                    cmb.Items.Add("Soltero");
-                    cmb.Items.Add("Casado");
-                    cmb.Items.Add("Divorciado");
-                    cmb.Items.Add("Viudo");
+                    cmb.Items.Add("Soltero/a");
+                    cmb.Items.Add("Casado/a");
+                    cmb.Items.Add("Divorciado/a");
+                    cmb.Items.Add("Viudo/a");
                 }
                 else if (selectedValue == "Contrato")
                 {
-                    crearCmb();
-                    cmb.Items.Add("Temporal");
-                    cmb.Items.Add("Permanente");
-                    cmb.Items.Add("Consultor");
+                    crearCmb();                 
+                    cmb.Items.Add("Contrato de pasantía");
+                    cmb.Items.Add("Contrato de temporada");
+                    cmb.Items.Add("Contrato por tiempo indeterminado");
+                    cmb.Items.Add("Contrato por tiempo determinado");
                 }
                 else if (selectedValue == "Categoria")
                 {

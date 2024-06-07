@@ -23,6 +23,7 @@ namespace pryCosmetica
             mrcAmonestación.Visible = false;
             mrcSuspensión.Visible = false;
             mrcEvaluaciónDesempeño.Visible = false;
+            mrcDespido.Visible = false;
         }
 
         private void btnInasistencia_Click(object sender, EventArgs e)
@@ -47,6 +48,11 @@ namespace pryCosmetica
         {
             OcultarGroupBox();
             mrcEvaluaciónDesempeño.Visible = true;
+        }
+        private void btnDespido_Click(object sender, EventArgs e)
+        {
+            OcultarGroupBox();
+            mrcDespido.Visible = true;
         }
     }
 }

@@ -31,28 +31,26 @@
             this.mrcDireccion = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtNúmeroCalle = new Guna.UI2.WinForms.Guna2TextBox();
             this.lstProvincia = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblProvincia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstCiudad = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCiudad = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstBarrio = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lstCalle = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCalle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNumeroCalle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBarrio = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCargarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.mcrDatosLaborales = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtpFechaBajaEmpleado = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnCargarCV = new Guna.UI2.WinForms.Guna2Button();
             this.lstTipoContrato = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTipoContrato = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpFechaIngreso = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lstAreaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCV = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCategoria = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblAreaEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblFechaIngreso = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcDatosPersonales = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtTeléfono = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTeléfono = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -64,9 +62,9 @@
             this.txtNombreEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtApellidoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtILegajo = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblFechaNacimiento = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblMail = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblEstadoCivil = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNúmeroDocumento = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTipoDocumento = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblLegajo = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -82,14 +80,14 @@
             // 
             this.mrcDireccion.Controls.Add(this.txtNúmeroCalle);
             this.mrcDireccion.Controls.Add(this.lstProvincia);
-            this.mrcDireccion.Controls.Add(this.guna2HtmlLabel15);
+            this.mrcDireccion.Controls.Add(this.lblProvincia);
             this.mrcDireccion.Controls.Add(this.lstCiudad);
-            this.mrcDireccion.Controls.Add(this.guna2HtmlLabel14);
+            this.mrcDireccion.Controls.Add(this.lblCiudad);
             this.mrcDireccion.Controls.Add(this.lstBarrio);
             this.mrcDireccion.Controls.Add(this.lstCalle);
-            this.mrcDireccion.Controls.Add(this.guna2HtmlLabel19);
-            this.mrcDireccion.Controls.Add(this.guna2HtmlLabel20);
-            this.mrcDireccion.Controls.Add(this.guna2HtmlLabel21);
+            this.mrcDireccion.Controls.Add(this.lblCalle);
+            this.mrcDireccion.Controls.Add(this.lblNumeroCalle);
+            this.mrcDireccion.Controls.Add(this.lblBarrio);
             this.mrcDireccion.CustomBorderColor = System.Drawing.Color.Indigo;
             this.mrcDireccion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.mrcDireccion.ForeColor = System.Drawing.Color.White;
@@ -133,16 +131,16 @@
             this.lstProvincia.Size = new System.Drawing.Size(98, 36);
             this.lstProvincia.TabIndex = 34;
             // 
-            // guna2HtmlLabel15
+            // lblProvincia
             // 
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(229, 108);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(66, 22);
-            this.guna2HtmlLabel15.TabIndex = 33;
-            this.guna2HtmlLabel15.Text = "Provincia:";
+            this.lblProvincia.BackColor = System.Drawing.Color.Transparent;
+            this.lblProvincia.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvincia.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblProvincia.Location = new System.Drawing.Point(229, 108);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(66, 22);
+            this.lblProvincia.TabIndex = 33;
+            this.lblProvincia.Text = "Provincia:";
             // 
             // lstCiudad
             // 
@@ -159,16 +157,16 @@
             this.lstCiudad.Size = new System.Drawing.Size(98, 36);
             this.lstCiudad.TabIndex = 32;
             // 
-            // guna2HtmlLabel14
+            // lblCiudad
             // 
-            this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(231, 46);
-            this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(53, 22);
-            this.guna2HtmlLabel14.TabIndex = 31;
-            this.guna2HtmlLabel14.Text = "Ciudad:";
+            this.lblCiudad.BackColor = System.Drawing.Color.Transparent;
+            this.lblCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiudad.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblCiudad.Location = new System.Drawing.Point(231, 46);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(53, 22);
+            this.lblCiudad.TabIndex = 31;
+            this.lblCiudad.Text = "Ciudad:";
             // 
             // lstBarrio
             // 
@@ -200,38 +198,38 @@
             this.lstCalle.Size = new System.Drawing.Size(98, 36);
             this.lstCalle.TabIndex = 29;
             // 
-            // guna2HtmlLabel19
+            // lblCalle
             // 
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(17, 48);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(39, 22);
-            this.guna2HtmlLabel19.TabIndex = 28;
-            this.guna2HtmlLabel19.Text = "Calle:";
+            this.lblCalle.BackColor = System.Drawing.Color.Transparent;
+            this.lblCalle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalle.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblCalle.Location = new System.Drawing.Point(17, 48);
+            this.lblCalle.Name = "lblCalle";
+            this.lblCalle.Size = new System.Drawing.Size(39, 22);
+            this.lblCalle.TabIndex = 28;
+            this.lblCalle.Text = "Calle:";
             // 
-            // guna2HtmlLabel20
+            // lblNumeroCalle
             // 
-            this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel20.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(17, 108);
-            this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            this.guna2HtmlLabel20.Size = new System.Drawing.Size(97, 22);
-            this.guna2HtmlLabel20.TabIndex = 27;
-            this.guna2HtmlLabel20.Text = "Número Calle:";
+            this.lblNumeroCalle.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroCalle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroCalle.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblNumeroCalle.Location = new System.Drawing.Point(17, 108);
+            this.lblNumeroCalle.Name = "lblNumeroCalle";
+            this.lblNumeroCalle.Size = new System.Drawing.Size(97, 22);
+            this.lblNumeroCalle.TabIndex = 27;
+            this.lblNumeroCalle.Text = "Número Calle:";
             // 
-            // guna2HtmlLabel21
+            // lblBarrio
             // 
-            this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel21.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel21.Location = new System.Drawing.Point(17, 168);
-            this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            this.guna2HtmlLabel21.Size = new System.Drawing.Size(46, 22);
-            this.guna2HtmlLabel21.TabIndex = 26;
-            this.guna2HtmlLabel21.Text = "Barrio:";
+            this.lblBarrio.BackColor = System.Drawing.Color.Transparent;
+            this.lblBarrio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBarrio.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblBarrio.Location = new System.Drawing.Point(17, 168);
+            this.lblBarrio.Name = "lblBarrio";
+            this.lblBarrio.Size = new System.Drawing.Size(46, 22);
+            this.lblBarrio.TabIndex = 26;
+            this.lblBarrio.Text = "Barrio:";
             // 
             // btnCargarEmpleado
             // 
@@ -250,18 +248,16 @@
             // 
             // mcrDatosLaborales
             // 
-            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel1);
-            this.mcrDatosLaborales.Controls.Add(this.dtpFechaBajaEmpleado);
             this.mcrDatosLaborales.Controls.Add(this.btnCargarCV);
             this.mcrDatosLaborales.Controls.Add(this.lstTipoContrato);
-            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel16);
+            this.mcrDatosLaborales.Controls.Add(this.lblTipoContrato);
             this.mcrDatosLaborales.Controls.Add(this.lstCategoría);
             this.mcrDatosLaborales.Controls.Add(this.dtpFechaIngreso);
             this.mcrDatosLaborales.Controls.Add(this.lstAreaEmpleado);
-            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel13);
-            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel12);
-            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel11);
-            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel10);
+            this.mcrDatosLaborales.Controls.Add(this.lblCV);
+            this.mcrDatosLaborales.Controls.Add(this.lblCategoria);
+            this.mcrDatosLaborales.Controls.Add(this.lblAreaEmpleado);
+            this.mcrDatosLaborales.Controls.Add(this.lblFechaIngreso);
             this.mcrDatosLaborales.CustomBorderColor = System.Drawing.Color.Indigo;
             this.mcrDatosLaborales.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.mcrDatosLaborales.ForeColor = System.Drawing.Color.White;
@@ -270,31 +266,6 @@
             this.mcrDatosLaborales.Size = new System.Drawing.Size(519, 272);
             this.mcrDatosLaborales.TabIndex = 7;
             this.mcrDatosLaborales.Text = "Datos Laborales";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(5, 225);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(170, 22);
-            this.guna2HtmlLabel1.TabIndex = 25;
-            this.guna2HtmlLabel1.Text = "Fecha de Baja Empleado:";
-            // 
-            // dtpFechaBajaEmpleado
-            // 
-            this.dtpFechaBajaEmpleado.Checked = true;
-            this.dtpFechaBajaEmpleado.FillColor = System.Drawing.Color.Indigo;
-            this.dtpFechaBajaEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaBajaEmpleado.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaBajaEmpleado.Location = new System.Drawing.Point(185, 223);
-            this.dtpFechaBajaEmpleado.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpFechaBajaEmpleado.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaBajaEmpleado.Name = "dtpFechaBajaEmpleado";
-            this.dtpFechaBajaEmpleado.Size = new System.Drawing.Size(208, 24);
-            this.dtpFechaBajaEmpleado.TabIndex = 24;
-            this.dtpFechaBajaEmpleado.Value = new System.DateTime(2024, 6, 5, 20, 16, 48, 237);
             // 
             // btnCargarCV
             // 
@@ -331,16 +302,16 @@
             this.lstTipoContrato.Size = new System.Drawing.Size(141, 36);
             this.lstTipoContrato.TabIndex = 22;
             // 
-            // guna2HtmlLabel16
+            // lblTipoContrato
             // 
-            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(5, 173);
-            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(119, 22);
-            this.guna2HtmlLabel16.TabIndex = 21;
-            this.guna2HtmlLabel16.Text = "Tipo de Contrato:";
+            this.lblTipoContrato.BackColor = System.Drawing.Color.Transparent;
+            this.lblTipoContrato.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoContrato.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblTipoContrato.Location = new System.Drawing.Point(5, 173);
+            this.lblTipoContrato.Name = "lblTipoContrato";
+            this.lblTipoContrato.Size = new System.Drawing.Size(119, 22);
+            this.lblTipoContrato.TabIndex = 21;
+            this.lblTipoContrato.Text = "Tipo de Contrato:";
             // 
             // lstCategoría
             // 
@@ -352,6 +323,10 @@
             this.lstCategoría.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstCategoría.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstCategoría.ItemHeight = 30;
+            this.lstCategoría.Items.AddRange(new object[] {
+            "Gerente",
+            "Ejecutivo",
+            "Asistente"});
             this.lstCategoría.Location = new System.Drawing.Point(415, 58);
             this.lstCategoría.Name = "lstCategoría";
             this.lstCategoría.Size = new System.Drawing.Size(93, 36);
@@ -393,49 +368,49 @@
             this.lstAreaEmpleado.Size = new System.Drawing.Size(141, 36);
             this.lstAreaEmpleado.TabIndex = 19;
             // 
-            // guna2HtmlLabel13
+            // lblCV
             // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(338, 122);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(138, 22);
-            this.guna2HtmlLabel13.TabIndex = 3;
-            this.guna2HtmlLabel13.Text = "Adjuntar Curriculum:";
+            this.lblCV.BackColor = System.Drawing.Color.Transparent;
+            this.lblCV.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCV.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblCV.Location = new System.Drawing.Point(338, 122);
+            this.lblCV.Name = "lblCV";
+            this.lblCV.Size = new System.Drawing.Size(138, 22);
+            this.lblCV.TabIndex = 3;
+            this.lblCV.Text = "Adjuntar Curriculum:";
             // 
-            // guna2HtmlLabel12
+            // lblCategoria
             // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(338, 60);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(71, 22);
-            this.guna2HtmlLabel12.TabIndex = 2;
-            this.guna2HtmlLabel12.Text = "Categoría:";
+            this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblCategoria.Location = new System.Drawing.Point(338, 60);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(71, 22);
+            this.lblCategoria.TabIndex = 2;
+            this.lblCategoria.Text = "Categoría:";
             // 
-            // guna2HtmlLabel11
+            // lblAreaEmpleado
             // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(11, 120);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(113, 22);
-            this.guna2HtmlLabel11.TabIndex = 1;
-            this.guna2HtmlLabel11.Text = "Area de Trabajo:";
+            this.lblAreaEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblAreaEmpleado.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAreaEmpleado.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblAreaEmpleado.Location = new System.Drawing.Point(11, 120);
+            this.lblAreaEmpleado.Name = "lblAreaEmpleado";
+            this.lblAreaEmpleado.Size = new System.Drawing.Size(113, 22);
+            this.lblAreaEmpleado.TabIndex = 1;
+            this.lblAreaEmpleado.Text = "Area de Trabajo:";
             // 
-            // guna2HtmlLabel10
+            // lblFechaIngreso
             // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(11, 58);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(97, 22);
-            this.guna2HtmlLabel10.TabIndex = 0;
-            this.guna2HtmlLabel10.Text = "Fecha Ingreso:";
+            this.lblFechaIngreso.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaIngreso.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaIngreso.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblFechaIngreso.Location = new System.Drawing.Point(11, 58);
+            this.lblFechaIngreso.Name = "lblFechaIngreso";
+            this.lblFechaIngreso.Size = new System.Drawing.Size(97, 22);
+            this.lblFechaIngreso.TabIndex = 0;
+            this.lblFechaIngreso.Text = "Fecha Ingreso:";
             // 
             // mrcDatosPersonales
             // 
@@ -450,9 +425,9 @@
             this.mrcDatosPersonales.Controls.Add(this.txtNombreEmpleado);
             this.mrcDatosPersonales.Controls.Add(this.txtApellidoEmpleado);
             this.mrcDatosPersonales.Controls.Add(this.txtILegajo);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel9);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel8);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel7);
+            this.mrcDatosPersonales.Controls.Add(this.lblFechaNacimiento);
+            this.mrcDatosPersonales.Controls.Add(this.lblMail);
+            this.mrcDatosPersonales.Controls.Add(this.lblEstadoCivil);
             this.mrcDatosPersonales.Controls.Add(this.lblNúmeroDocumento);
             this.mrcDatosPersonales.Controls.Add(this.lblTipoDocumento);
             this.mrcDatosPersonales.Controls.Add(this.lblLegajo);
@@ -646,38 +621,38 @@
             this.txtILegajo.Size = new System.Drawing.Size(143, 25);
             this.txtILegajo.TabIndex = 9;
             // 
-            // guna2HtmlLabel9
+            // lblFechaNacimiento
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(558, 165);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(146, 22);
-            this.guna2HtmlLabel9.TabIndex = 7;
-            this.guna2HtmlLabel9.Text = "Fecha de Nacimiento:";
+            this.lblFechaNacimiento.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaNacimiento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaNacimiento.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(558, 165);
+            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(146, 22);
+            this.lblFechaNacimiento.TabIndex = 7;
+            this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
             // 
-            // guna2HtmlLabel8
+            // lblMail
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(669, 114);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(35, 22);
-            this.guna2HtmlLabel8.TabIndex = 6;
-            this.guna2HtmlLabel8.Text = "Mail:";
+            this.lblMail.BackColor = System.Drawing.Color.Transparent;
+            this.lblMail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMail.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblMail.Location = new System.Drawing.Point(669, 114);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(35, 22);
+            this.lblMail.TabIndex = 6;
+            this.lblMail.Text = "Mail:";
             // 
-            // guna2HtmlLabel7
+            // lblEstadoCivil
             // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(621, 63);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(83, 22);
-            this.guna2HtmlLabel7.TabIndex = 5;
-            this.guna2HtmlLabel7.Text = "Estado Civil:";
+            this.lblEstadoCivil.BackColor = System.Drawing.Color.Transparent;
+            this.lblEstadoCivil.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoCivil.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblEstadoCivil.Location = new System.Drawing.Point(621, 63);
+            this.lblEstadoCivil.Name = "lblEstadoCivil";
+            this.lblEstadoCivil.Size = new System.Drawing.Size(83, 22);
+            this.lblEstadoCivil.TabIndex = 5;
+            this.lblEstadoCivil.Text = "Estado Civil:";
             // 
             // lblNúmeroDocumento
             // 
@@ -774,26 +749,26 @@
         private Guna.UI2.WinForms.Guna2GroupBox mrcDireccion;
         private Guna.UI2.WinForms.Guna2TextBox txtNúmeroCalle;
         private Guna.UI2.WinForms.Guna2ComboBox lstProvincia;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblProvincia;
         private Guna.UI2.WinForms.Guna2ComboBox lstCiudad;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCiudad;
         private Guna.UI2.WinForms.Guna2ComboBox lstBarrio;
         private Guna.UI2.WinForms.Guna2ComboBox lstCalle;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCalle;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNumeroCalle;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblBarrio;
         private Guna.UI2.WinForms.Guna2Button btnCargarEmpleado;
         private Guna.UI2.WinForms.Guna2GroupBox mcrDatosLaborales;
         private Guna.UI2.WinForms.Guna2Button btnCargarCV;
         private Guna.UI2.WinForms.Guna2ComboBox lstTipoContrato;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoContrato;
         private Guna.UI2.WinForms.Guna2ComboBox lstCategoría;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaIngreso;
         private Guna.UI2.WinForms.Guna2ComboBox lstAreaEmpleado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCV;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCategoria;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblAreaEmpleado;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaIngreso;
         private Guna.UI2.WinForms.Guna2GroupBox mrcDatosPersonales;
         private Guna.UI2.WinForms.Guna2TextBox txtTeléfono;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTeléfono;
@@ -805,16 +780,14 @@
         private Guna.UI2.WinForms.Guna2TextBox txtNombreEmpleado;
         private Guna.UI2.WinForms.Guna2TextBox txtApellidoEmpleado;
         private Guna.UI2.WinForms.Guna2TextBox txtILegajo;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaNacimiento;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMail;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblEstadoCivil;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNúmeroDocumento;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoDocumento;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblLegajo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblApellido;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombre;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaBajaEmpleado;
     }
 }
