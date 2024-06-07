@@ -29,22 +29,24 @@
         private void InitializeComponent()
         {
             this.mrcDireccion = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtNumCalleEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lstProvinciaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtNúmeroCalle = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lstProvincia = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lstCiudadEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstCiudad = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lstBarrioEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lstCalleEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstBarrio = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstCalle = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCargarEmpleado = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.mcrDatosLaborales = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dtpFechaBajaEmpleado = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnCargarCV = new Guna.UI2.WinForms.Guna2Button();
-            this.lstContratoEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstTipoContrato = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lstCategoriaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpFechaIngreso = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lstAreaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,87 +54,84 @@
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcDatosPersonales = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtTelefonoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtGmailEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dtpNacimientoEmpleado = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtTeléfono = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblTeléfono = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtMail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dtpFechaNacimiento = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lstEstadoCivil = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lstTipoDocumento = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lstEstCivilEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtMailEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtNumDocumento = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNúmeroDocumentoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombreEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtApellidoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtIDEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtILegajo = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNúmeroDocumento = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTipoDocumento = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblLegajo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblApellido = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcDireccion.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
+            this.mcrDatosLaborales.SuspendLayout();
             this.mrcDatosPersonales.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcDireccion
             // 
-            this.mrcDireccion.Controls.Add(this.txtNumCalleEmpleado);
-            this.mrcDireccion.Controls.Add(this.lstProvinciaEmpleado);
+            this.mrcDireccion.Controls.Add(this.txtNúmeroCalle);
+            this.mrcDireccion.Controls.Add(this.lstProvincia);
             this.mrcDireccion.Controls.Add(this.guna2HtmlLabel15);
-            this.mrcDireccion.Controls.Add(this.lstCiudadEmpleado);
+            this.mrcDireccion.Controls.Add(this.lstCiudad);
             this.mrcDireccion.Controls.Add(this.guna2HtmlLabel14);
-            this.mrcDireccion.Controls.Add(this.lstBarrioEmpleado);
-            this.mrcDireccion.Controls.Add(this.lstCalleEmpleado);
+            this.mrcDireccion.Controls.Add(this.lstBarrio);
+            this.mrcDireccion.Controls.Add(this.lstCalle);
             this.mrcDireccion.Controls.Add(this.guna2HtmlLabel19);
             this.mrcDireccion.Controls.Add(this.guna2HtmlLabel20);
             this.mrcDireccion.Controls.Add(this.guna2HtmlLabel21);
             this.mrcDireccion.CustomBorderColor = System.Drawing.Color.Indigo;
             this.mrcDireccion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.mrcDireccion.ForeColor = System.Drawing.Color.White;
-            this.mrcDireccion.Location = new System.Drawing.Point(532, 284);
+            this.mrcDireccion.Location = new System.Drawing.Point(532, 308);
             this.mrcDireccion.Name = "mrcDireccion";
             this.mrcDireccion.Size = new System.Drawing.Size(412, 214);
             this.mrcDireccion.TabIndex = 9;
             this.mrcDireccion.Text = "Dirección";
             // 
-            // txtNumCalleEmpleado
+            // txtNúmeroCalle
             // 
-            this.txtNumCalleEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumCalleEmpleado.DefaultText = "";
-            this.txtNumCalleEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNumCalleEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNumCalleEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNumCalleEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNumCalleEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumCalleEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNumCalleEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumCalleEmpleado.Location = new System.Drawing.Point(120, 108);
-            this.txtNumCalleEmpleado.Name = "txtNumCalleEmpleado";
-            this.txtNumCalleEmpleado.PasswordChar = '\0';
-            this.txtNumCalleEmpleado.PlaceholderText = "";
-            this.txtNumCalleEmpleado.SelectedText = "";
-            this.txtNumCalleEmpleado.Size = new System.Drawing.Size(94, 36);
-            this.txtNumCalleEmpleado.TabIndex = 35;
+            this.txtNúmeroCalle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNúmeroCalle.DefaultText = "";
+            this.txtNúmeroCalle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNúmeroCalle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNúmeroCalle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNúmeroCalle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNúmeroCalle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNúmeroCalle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNúmeroCalle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNúmeroCalle.Location = new System.Drawing.Point(120, 108);
+            this.txtNúmeroCalle.Name = "txtNúmeroCalle";
+            this.txtNúmeroCalle.PasswordChar = '\0';
+            this.txtNúmeroCalle.PlaceholderText = "";
+            this.txtNúmeroCalle.SelectedText = "";
+            this.txtNúmeroCalle.Size = new System.Drawing.Size(94, 36);
+            this.txtNúmeroCalle.TabIndex = 35;
             // 
-            // lstProvinciaEmpleado
+            // lstProvincia
             // 
-            this.lstProvinciaEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstProvinciaEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstProvinciaEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstProvinciaEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstProvinciaEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstProvinciaEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstProvinciaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstProvinciaEmpleado.ItemHeight = 30;
-            this.lstProvinciaEmpleado.Items.AddRange(new object[] {
-            "DNI",
-            "Otro"});
-            this.lstProvinciaEmpleado.Location = new System.Drawing.Point(301, 108);
-            this.lstProvinciaEmpleado.Name = "lstProvinciaEmpleado";
-            this.lstProvinciaEmpleado.Size = new System.Drawing.Size(98, 36);
-            this.lstProvinciaEmpleado.TabIndex = 34;
+            this.lstProvincia.BackColor = System.Drawing.Color.Transparent;
+            this.lstProvincia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstProvincia.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstProvincia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstProvincia.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstProvincia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstProvincia.ItemHeight = 30;
+            this.lstProvincia.Location = new System.Drawing.Point(301, 108);
+            this.lstProvincia.Name = "lstProvincia";
+            this.lstProvincia.Size = new System.Drawing.Size(98, 36);
+            this.lstProvincia.TabIndex = 34;
             // 
             // guna2HtmlLabel15
             // 
@@ -145,23 +144,20 @@
             this.guna2HtmlLabel15.TabIndex = 33;
             this.guna2HtmlLabel15.Text = "Provincia:";
             // 
-            // lstCiudadEmpleado
+            // lstCiudad
             // 
-            this.lstCiudadEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstCiudadEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstCiudadEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstCiudadEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCiudadEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCiudadEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstCiudadEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstCiudadEmpleado.ItemHeight = 30;
-            this.lstCiudadEmpleado.Items.AddRange(new object[] {
-            "DNI",
-            "Otro"});
-            this.lstCiudadEmpleado.Location = new System.Drawing.Point(301, 46);
-            this.lstCiudadEmpleado.Name = "lstCiudadEmpleado";
-            this.lstCiudadEmpleado.Size = new System.Drawing.Size(98, 36);
-            this.lstCiudadEmpleado.TabIndex = 32;
+            this.lstCiudad.BackColor = System.Drawing.Color.Transparent;
+            this.lstCiudad.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstCiudad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCiudad.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCiudad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCiudad.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstCiudad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstCiudad.ItemHeight = 30;
+            this.lstCiudad.Location = new System.Drawing.Point(301, 46);
+            this.lstCiudad.Name = "lstCiudad";
+            this.lstCiudad.Size = new System.Drawing.Size(98, 36);
+            this.lstCiudad.TabIndex = 32;
             // 
             // guna2HtmlLabel14
             // 
@@ -174,41 +170,35 @@
             this.guna2HtmlLabel14.TabIndex = 31;
             this.guna2HtmlLabel14.Text = "Ciudad:";
             // 
-            // lstBarrioEmpleado
+            // lstBarrio
             // 
-            this.lstBarrioEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstBarrioEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstBarrioEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstBarrioEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstBarrioEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstBarrioEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstBarrioEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstBarrioEmpleado.ItemHeight = 30;
-            this.lstBarrioEmpleado.Items.AddRange(new object[] {
-            "DNI",
-            "Otro"});
-            this.lstBarrioEmpleado.Location = new System.Drawing.Point(120, 161);
-            this.lstBarrioEmpleado.Name = "lstBarrioEmpleado";
-            this.lstBarrioEmpleado.Size = new System.Drawing.Size(98, 36);
-            this.lstBarrioEmpleado.TabIndex = 30;
+            this.lstBarrio.BackColor = System.Drawing.Color.Transparent;
+            this.lstBarrio.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstBarrio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstBarrio.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstBarrio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstBarrio.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstBarrio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstBarrio.ItemHeight = 30;
+            this.lstBarrio.Location = new System.Drawing.Point(120, 161);
+            this.lstBarrio.Name = "lstBarrio";
+            this.lstBarrio.Size = new System.Drawing.Size(98, 36);
+            this.lstBarrio.TabIndex = 30;
             // 
-            // lstCalleEmpleado
+            // lstCalle
             // 
-            this.lstCalleEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstCalleEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstCalleEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstCalleEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCalleEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCalleEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstCalleEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstCalleEmpleado.ItemHeight = 30;
-            this.lstCalleEmpleado.Items.AddRange(new object[] {
-            "DNI",
-            "Otro"});
-            this.lstCalleEmpleado.Location = new System.Drawing.Point(120, 48);
-            this.lstCalleEmpleado.Name = "lstCalleEmpleado";
-            this.lstCalleEmpleado.Size = new System.Drawing.Size(98, 36);
-            this.lstCalleEmpleado.TabIndex = 29;
+            this.lstCalle.BackColor = System.Drawing.Color.Transparent;
+            this.lstCalle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstCalle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCalle.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCalle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCalle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstCalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstCalle.ItemHeight = 30;
+            this.lstCalle.Location = new System.Drawing.Point(120, 48);
+            this.lstCalle.Name = "lstCalle";
+            this.lstCalle.Size = new System.Drawing.Size(98, 36);
+            this.lstCalle.TabIndex = 29;
             // 
             // guna2HtmlLabel19
             // 
@@ -252,32 +242,59 @@
             this.btnCargarEmpleado.FillColor = System.Drawing.Color.Indigo;
             this.btnCargarEmpleado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnCargarEmpleado.Location = new System.Drawing.Point(641, 504);
+            this.btnCargarEmpleado.Location = new System.Drawing.Point(641, 557);
             this.btnCargarEmpleado.Name = "btnCargarEmpleado";
             this.btnCargarEmpleado.Size = new System.Drawing.Size(295, 37);
             this.btnCargarEmpleado.TabIndex = 8;
             this.btnCargarEmpleado.Text = "Cargar Empleado";
             // 
-            // guna2GroupBox1
+            // mcrDatosLaborales
             // 
-            this.guna2GroupBox1.Controls.Add(this.btnCargarCV);
-            this.guna2GroupBox1.Controls.Add(this.lstContratoEmpleado);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel16);
-            this.guna2GroupBox1.Controls.Add(this.lstCategoriaEmpleado);
-            this.guna2GroupBox1.Controls.Add(this.dtpFechaIngreso);
-            this.guna2GroupBox1.Controls.Add(this.lstAreaEmpleado);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel13);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel11);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Indigo;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(7, 284);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(519, 214);
-            this.guna2GroupBox1.TabIndex = 7;
-            this.guna2GroupBox1.Text = "Datos Laborales";
+            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel1);
+            this.mcrDatosLaborales.Controls.Add(this.dtpFechaBajaEmpleado);
+            this.mcrDatosLaborales.Controls.Add(this.btnCargarCV);
+            this.mcrDatosLaborales.Controls.Add(this.lstTipoContrato);
+            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel16);
+            this.mcrDatosLaborales.Controls.Add(this.lstCategoría);
+            this.mcrDatosLaborales.Controls.Add(this.dtpFechaIngreso);
+            this.mcrDatosLaborales.Controls.Add(this.lstAreaEmpleado);
+            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel13);
+            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel12);
+            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel11);
+            this.mcrDatosLaborales.Controls.Add(this.guna2HtmlLabel10);
+            this.mcrDatosLaborales.CustomBorderColor = System.Drawing.Color.Indigo;
+            this.mcrDatosLaborales.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mcrDatosLaborales.ForeColor = System.Drawing.Color.White;
+            this.mcrDatosLaborales.Location = new System.Drawing.Point(7, 308);
+            this.mcrDatosLaborales.Name = "mcrDatosLaborales";
+            this.mcrDatosLaborales.Size = new System.Drawing.Size(519, 272);
+            this.mcrDatosLaborales.TabIndex = 7;
+            this.mcrDatosLaborales.Text = "Datos Laborales";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkViolet;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(5, 225);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(170, 22);
+            this.guna2HtmlLabel1.TabIndex = 25;
+            this.guna2HtmlLabel1.Text = "Fecha de Baja Empleado:";
+            // 
+            // dtpFechaBajaEmpleado
+            // 
+            this.dtpFechaBajaEmpleado.Checked = true;
+            this.dtpFechaBajaEmpleado.FillColor = System.Drawing.Color.Indigo;
+            this.dtpFechaBajaEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaBajaEmpleado.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpFechaBajaEmpleado.Location = new System.Drawing.Point(185, 223);
+            this.dtpFechaBajaEmpleado.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpFechaBajaEmpleado.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpFechaBajaEmpleado.Name = "dtpFechaBajaEmpleado";
+            this.dtpFechaBajaEmpleado.Size = new System.Drawing.Size(208, 24);
+            this.dtpFechaBajaEmpleado.TabIndex = 24;
+            this.dtpFechaBajaEmpleado.Value = new System.DateTime(2024, 6, 5, 20, 16, 48, 237);
             // 
             // btnCargarCV
             // 
@@ -288,26 +305,31 @@
             this.btnCargarCV.FillColor = System.Drawing.Color.Indigo;
             this.btnCargarCV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarCV.ForeColor = System.Drawing.Color.White;
-            this.btnCargarCV.Location = new System.Drawing.Point(318, 159);
+            this.btnCargarCV.Location = new System.Drawing.Point(327, 168);
             this.btnCargarCV.Name = "btnCargarCV";
             this.btnCargarCV.Size = new System.Drawing.Size(159, 35);
             this.btnCargarCV.TabIndex = 23;
             this.btnCargarCV.Text = "Cargar Curriculum";
             // 
-            // lstContratoEmpleado
+            // lstTipoContrato
             // 
-            this.lstContratoEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstContratoEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstContratoEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstContratoEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstContratoEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstContratoEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstContratoEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstContratoEmpleado.ItemHeight = 30;
-            this.lstContratoEmpleado.Location = new System.Drawing.Point(130, 166);
-            this.lstContratoEmpleado.Name = "lstContratoEmpleado";
-            this.lstContratoEmpleado.Size = new System.Drawing.Size(141, 36);
-            this.lstContratoEmpleado.TabIndex = 22;
+            this.lstTipoContrato.BackColor = System.Drawing.Color.Transparent;
+            this.lstTipoContrato.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstTipoContrato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstTipoContrato.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoContrato.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoContrato.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstTipoContrato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstTipoContrato.ItemHeight = 30;
+            this.lstTipoContrato.Items.AddRange(new object[] {
+            "Contrato de pasantía",
+            "Contrato de temporada",
+            "Contrato por tiempo indeterminado",
+            "Contrato por tiempo determinado"});
+            this.lstTipoContrato.Location = new System.Drawing.Point(130, 166);
+            this.lstTipoContrato.Name = "lstTipoContrato";
+            this.lstTipoContrato.Size = new System.Drawing.Size(141, 36);
+            this.lstTipoContrato.TabIndex = 22;
             // 
             // guna2HtmlLabel16
             // 
@@ -320,20 +342,20 @@
             this.guna2HtmlLabel16.TabIndex = 21;
             this.guna2HtmlLabel16.Text = "Tipo de Contrato:";
             // 
-            // lstCategoriaEmpleado
+            // lstCategoría
             // 
-            this.lstCategoriaEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstCategoriaEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstCategoriaEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstCategoriaEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCategoriaEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCategoriaEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstCategoriaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstCategoriaEmpleado.ItemHeight = 30;
-            this.lstCategoriaEmpleado.Location = new System.Drawing.Point(415, 58);
-            this.lstCategoriaEmpleado.Name = "lstCategoriaEmpleado";
-            this.lstCategoriaEmpleado.Size = new System.Drawing.Size(93, 36);
-            this.lstCategoriaEmpleado.TabIndex = 20;
+            this.lstCategoría.BackColor = System.Drawing.Color.Transparent;
+            this.lstCategoría.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstCategoría.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCategoría.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCategoría.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCategoría.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstCategoría.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstCategoría.ItemHeight = 30;
+            this.lstCategoría.Location = new System.Drawing.Point(415, 58);
+            this.lstCategoría.Name = "lstCategoría";
+            this.lstCategoría.Size = new System.Drawing.Size(93, 36);
+            this.lstCategoría.TabIndex = 20;
             // 
             // dtpFechaIngreso
             // 
@@ -359,6 +381,13 @@
             this.lstAreaEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstAreaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstAreaEmpleado.ItemHeight = 30;
+            this.lstAreaEmpleado.Items.AddRange(new object[] {
+            "Investigación y Desarrollo",
+            "Marketing y Ventas",
+            "Logística y Distribución",
+            "Administración y Finanzas",
+            "Recursos Humanos",
+            "Legal"});
             this.lstAreaEmpleado.Location = new System.Drawing.Point(130, 108);
             this.lstAreaEmpleado.Name = "lstAreaEmpleado";
             this.lstAreaEmpleado.Size = new System.Drawing.Size(141, 36);
@@ -369,7 +398,7 @@
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(318, 120);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(338, 122);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(138, 22);
             this.guna2HtmlLabel13.TabIndex = 3;
@@ -395,7 +424,7 @@
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(113, 22);
             this.guna2HtmlLabel11.TabIndex = 1;
-            this.guna2HtmlLabel11.Text = "Área de Trabajo:";
+            this.guna2HtmlLabel11.Text = "Area de Trabajo:";
             // 
             // guna2HtmlLabel10
             // 
@@ -411,95 +440,115 @@
             // mrcDatosPersonales
             // 
             this.mrcDatosPersonales.BackColor = System.Drawing.SystemColors.Control;
-            this.mrcDatosPersonales.Controls.Add(this.txtTelefonoEmpleado);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel17);
-            this.mrcDatosPersonales.Controls.Add(this.txtGmailEmpleado);
-            this.mrcDatosPersonales.Controls.Add(this.dtpNacimientoEmpleado);
+            this.mrcDatosPersonales.Controls.Add(this.txtTeléfono);
+            this.mrcDatosPersonales.Controls.Add(this.lblTeléfono);
+            this.mrcDatosPersonales.Controls.Add(this.txtMail);
+            this.mrcDatosPersonales.Controls.Add(this.dtpFechaNacimiento);
+            this.mrcDatosPersonales.Controls.Add(this.lstEstadoCivil);
             this.mrcDatosPersonales.Controls.Add(this.lstTipoDocumento);
-            this.mrcDatosPersonales.Controls.Add(this.lstEstCivilEmpleado);
-            this.mrcDatosPersonales.Controls.Add(this.txtMailEmpleado);
-            this.mrcDatosPersonales.Controls.Add(this.txtNumDocumento);
+            this.mrcDatosPersonales.Controls.Add(this.txtNúmeroDocumentoEmpleado);
+            this.mrcDatosPersonales.Controls.Add(this.txtNombreEmpleado);
             this.mrcDatosPersonales.Controls.Add(this.txtApellidoEmpleado);
-            this.mrcDatosPersonales.Controls.Add(this.txtIDEmpleado);
+            this.mrcDatosPersonales.Controls.Add(this.txtILegajo);
             this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel9);
             this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel8);
             this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel7);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel6);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel5);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel4);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel3);
-            this.mrcDatosPersonales.Controls.Add(this.guna2HtmlLabel2);
+            this.mrcDatosPersonales.Controls.Add(this.lblNúmeroDocumento);
+            this.mrcDatosPersonales.Controls.Add(this.lblTipoDocumento);
+            this.mrcDatosPersonales.Controls.Add(this.lblLegajo);
+            this.mrcDatosPersonales.Controls.Add(this.lblApellido);
+            this.mrcDatosPersonales.Controls.Add(this.lblNombre);
             this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.Indigo;
             this.mrcDatosPersonales.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.mrcDatosPersonales.ForeColor = System.Drawing.Color.White;
             this.mrcDatosPersonales.Location = new System.Drawing.Point(7, 44);
             this.mrcDatosPersonales.Name = "mrcDatosPersonales";
-            this.mrcDatosPersonales.Size = new System.Drawing.Size(929, 210);
+            this.mrcDatosPersonales.Size = new System.Drawing.Size(929, 240);
             this.mrcDatosPersonales.TabIndex = 6;
             this.mrcDatosPersonales.Text = "Datos Personales";
             // 
-            // txtTelefonoEmpleado
+            // txtTeléfono
             // 
-            this.txtTelefonoEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefonoEmpleado.DefaultText = "";
-            this.txtTelefonoEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTelefonoEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTelefonoEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefonoEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefonoEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefonoEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTelefonoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefonoEmpleado.Location = new System.Drawing.Point(399, 165);
-            this.txtTelefonoEmpleado.Name = "txtTelefonoEmpleado";
-            this.txtTelefonoEmpleado.PasswordChar = '\0';
-            this.txtTelefonoEmpleado.PlaceholderText = "";
-            this.txtTelefonoEmpleado.SelectedText = "";
-            this.txtTelefonoEmpleado.Size = new System.Drawing.Size(143, 25);
-            this.txtTelefonoEmpleado.TabIndex = 21;
+            this.txtTeléfono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTeléfono.DefaultText = "";
+            this.txtTeléfono.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTeléfono.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTeléfono.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTeléfono.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTeléfono.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTeléfono.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTeléfono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTeléfono.Location = new System.Drawing.Point(399, 165);
+            this.txtTeléfono.Name = "txtTeléfono";
+            this.txtTeléfono.PasswordChar = '\0';
+            this.txtTeléfono.PlaceholderText = "";
+            this.txtTeléfono.SelectedText = "";
+            this.txtTeléfono.Size = new System.Drawing.Size(143, 25);
+            this.txtTeléfono.TabIndex = 21;
             // 
-            // guna2HtmlLabel17
+            // lblTeléfono
             // 
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(327, 165);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(65, 22);
-            this.guna2HtmlLabel17.TabIndex = 20;
-            this.guna2HtmlLabel17.Text = "Teléfono:";
+            this.lblTeléfono.BackColor = System.Drawing.Color.Transparent;
+            this.lblTeléfono.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeléfono.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblTeléfono.Location = new System.Drawing.Point(327, 165);
+            this.lblTeléfono.Name = "lblTeléfono";
+            this.lblTeléfono.Size = new System.Drawing.Size(65, 22);
+            this.lblTeléfono.TabIndex = 20;
+            this.lblTeléfono.Text = "Teléfono:";
             // 
-            // txtGmailEmpleado
+            // txtMail
             // 
-            this.txtGmailEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGmailEmpleado.DefaultText = "";
-            this.txtGmailEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGmailEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGmailEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGmailEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGmailEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGmailEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtGmailEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGmailEmpleado.Location = new System.Drawing.Point(714, 114);
-            this.txtGmailEmpleado.Name = "txtGmailEmpleado";
-            this.txtGmailEmpleado.PasswordChar = '\0';
-            this.txtGmailEmpleado.PlaceholderText = "";
-            this.txtGmailEmpleado.SelectedText = "";
-            this.txtGmailEmpleado.Size = new System.Drawing.Size(143, 25);
-            this.txtGmailEmpleado.TabIndex = 19;
+            this.txtMail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMail.DefaultText = "";
+            this.txtMail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMail.Location = new System.Drawing.Point(714, 114);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.PasswordChar = '\0';
+            this.txtMail.PlaceholderText = "";
+            this.txtMail.SelectedText = "";
+            this.txtMail.Size = new System.Drawing.Size(143, 25);
+            this.txtMail.TabIndex = 19;
             // 
-            // dtpNacimientoEmpleado
+            // dtpFechaNacimiento
             // 
-            this.dtpNacimientoEmpleado.Checked = true;
-            this.dtpNacimientoEmpleado.FillColor = System.Drawing.Color.Indigo;
-            this.dtpNacimientoEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNacimientoEmpleado.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNacimientoEmpleado.Location = new System.Drawing.Point(710, 165);
-            this.dtpNacimientoEmpleado.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpNacimientoEmpleado.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpNacimientoEmpleado.Name = "dtpNacimientoEmpleado";
-            this.dtpNacimientoEmpleado.Size = new System.Drawing.Size(208, 24);
-            this.dtpNacimientoEmpleado.TabIndex = 18;
-            this.dtpNacimientoEmpleado.Value = new System.DateTime(2024, 6, 5, 20, 16, 48, 237);
+            this.dtpFechaNacimiento.Checked = true;
+            this.dtpFechaNacimiento.FillColor = System.Drawing.Color.Indigo;
+            this.dtpFechaNacimiento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(710, 165);
+            this.dtpFechaNacimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpFechaNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(208, 24);
+            this.dtpFechaNacimiento.TabIndex = 18;
+            this.dtpFechaNacimiento.Value = new System.DateTime(2024, 6, 5, 20, 16, 48, 237);
+            // 
+            // lstEstadoCivil
+            // 
+            this.lstEstadoCivil.BackColor = System.Drawing.Color.Transparent;
+            this.lstEstadoCivil.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstEstadoCivil.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstEstadoCivil.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstEstadoCivil.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstEstadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstEstadoCivil.ItemHeight = 30;
+            this.lstEstadoCivil.Items.AddRange(new object[] {
+            "Soltero/a",
+            "Casado/a",
+            "Divorciado/a",
+            "Viudo/a"});
+            this.lstEstadoCivil.Location = new System.Drawing.Point(714, 60);
+            this.lstEstadoCivil.Name = "lstEstadoCivil";
+            this.lstEstadoCivil.Size = new System.Drawing.Size(143, 36);
+            this.lstEstadoCivil.TabIndex = 17;
             // 
             // lstTipoDocumento
             // 
@@ -512,71 +561,52 @@
             this.lstTipoDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstTipoDocumento.ItemHeight = 30;
             this.lstTipoDocumento.Items.AddRange(new object[] {
-            "DNI",
-            "Otro"});
-            this.lstTipoDocumento.Location = new System.Drawing.Point(714, 60);
+            "Libreta Cívica",
+            "Certificado de Pre-identificación",
+            "Documento Nacional de Identidad para Extranjeros",
+            "DNI "});
+            this.lstTipoDocumento.Location = new System.Drawing.Point(399, 60);
             this.lstTipoDocumento.Name = "lstTipoDocumento";
             this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
-            this.lstTipoDocumento.TabIndex = 17;
+            this.lstTipoDocumento.TabIndex = 15;
             // 
-            // lstEstCivilEmpleado
+            // txtNúmeroDocumentoEmpleado
             // 
-            this.lstEstCivilEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lstEstCivilEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstEstCivilEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstEstCivilEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstEstCivilEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstEstCivilEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstEstCivilEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstEstCivilEmpleado.ItemHeight = 30;
-            this.lstEstCivilEmpleado.Items.AddRange(new object[] {
-            "Soltero/a",
-            "Casado/a",
-            "Separado/a",
-            "Divorciado/a",
-            "Viudo/a"});
-            this.lstEstCivilEmpleado.Location = new System.Drawing.Point(399, 60);
-            this.lstEstCivilEmpleado.Name = "lstEstCivilEmpleado";
-            this.lstEstCivilEmpleado.Size = new System.Drawing.Size(143, 36);
-            this.lstEstCivilEmpleado.TabIndex = 15;
+            this.txtNúmeroDocumentoEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNúmeroDocumentoEmpleado.DefaultText = "";
+            this.txtNúmeroDocumentoEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNúmeroDocumentoEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNúmeroDocumentoEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNúmeroDocumentoEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNúmeroDocumentoEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNúmeroDocumentoEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNúmeroDocumentoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNúmeroDocumentoEmpleado.Location = new System.Drawing.Point(399, 114);
+            this.txtNúmeroDocumentoEmpleado.Name = "txtNúmeroDocumentoEmpleado";
+            this.txtNúmeroDocumentoEmpleado.PasswordChar = '\0';
+            this.txtNúmeroDocumentoEmpleado.PlaceholderText = "";
+            this.txtNúmeroDocumentoEmpleado.SelectedText = "";
+            this.txtNúmeroDocumentoEmpleado.Size = new System.Drawing.Size(143, 25);
+            this.txtNúmeroDocumentoEmpleado.TabIndex = 12;
             // 
-            // txtMailEmpleado
+            // txtNombreEmpleado
             // 
-            this.txtMailEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMailEmpleado.DefaultText = "";
-            this.txtMailEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMailEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMailEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMailEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMailEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMailEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMailEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMailEmpleado.Location = new System.Drawing.Point(399, 114);
-            this.txtMailEmpleado.Name = "txtMailEmpleado";
-            this.txtMailEmpleado.PasswordChar = '\0';
-            this.txtMailEmpleado.PlaceholderText = "";
-            this.txtMailEmpleado.SelectedText = "";
-            this.txtMailEmpleado.Size = new System.Drawing.Size(143, 25);
-            this.txtMailEmpleado.TabIndex = 12;
-            // 
-            // txtNumDocumento
-            // 
-            this.txtNumDocumento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumDocumento.DefaultText = "";
-            this.txtNumDocumento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNumDocumento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNumDocumento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNumDocumento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNumDocumento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumDocumento.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNumDocumento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumDocumento.Location = new System.Drawing.Point(91, 60);
-            this.txtNumDocumento.Name = "txtNumDocumento";
-            this.txtNumDocumento.PasswordChar = '\0';
-            this.txtNumDocumento.PlaceholderText = "";
-            this.txtNumDocumento.SelectedText = "";
-            this.txtNumDocumento.Size = new System.Drawing.Size(143, 25);
-            this.txtNumDocumento.TabIndex = 11;
+            this.txtNombreEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreEmpleado.DefaultText = "";
+            this.txtNombreEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(91, 60);
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.PasswordChar = '\0';
+            this.txtNombreEmpleado.PlaceholderText = "";
+            this.txtNombreEmpleado.SelectedText = "";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(143, 25);
+            this.txtNombreEmpleado.TabIndex = 11;
             // 
             // txtApellidoEmpleado
             // 
@@ -597,24 +627,24 @@
             this.txtApellidoEmpleado.Size = new System.Drawing.Size(143, 25);
             this.txtApellidoEmpleado.TabIndex = 10;
             // 
-            // txtIDEmpleado
+            // txtILegajo
             // 
-            this.txtIDEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIDEmpleado.DefaultText = "";
-            this.txtIDEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtIDEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtIDEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtIDEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDEmpleado.Location = new System.Drawing.Point(91, 165);
-            this.txtIDEmpleado.Name = "txtIDEmpleado";
-            this.txtIDEmpleado.PasswordChar = '\0';
-            this.txtIDEmpleado.PlaceholderText = "";
-            this.txtIDEmpleado.SelectedText = "";
-            this.txtIDEmpleado.Size = new System.Drawing.Size(143, 25);
-            this.txtIDEmpleado.TabIndex = 9;
+            this.txtILegajo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtILegajo.DefaultText = "";
+            this.txtILegajo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtILegajo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtILegajo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtILegajo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtILegajo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtILegajo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtILegajo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtILegajo.Location = new System.Drawing.Point(91, 165);
+            this.txtILegajo.Name = "txtILegajo";
+            this.txtILegajo.PasswordChar = '\0';
+            this.txtILegajo.PlaceholderText = "";
+            this.txtILegajo.SelectedText = "";
+            this.txtILegajo.Size = new System.Drawing.Size(143, 25);
+            this.txtILegajo.TabIndex = 9;
             // 
             // guna2HtmlLabel9
             // 
@@ -649,71 +679,71 @@
             this.guna2HtmlLabel7.TabIndex = 5;
             this.guna2HtmlLabel7.Text = "Estado Civil:";
             // 
-            // guna2HtmlLabel6
+            // lblNúmeroDocumento
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(251, 114);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(142, 22);
-            this.guna2HtmlLabel6.TabIndex = 4;
-            this.guna2HtmlLabel6.Text = "Número Documento:";
+            this.lblNúmeroDocumento.BackColor = System.Drawing.Color.Transparent;
+            this.lblNúmeroDocumento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNúmeroDocumento.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblNúmeroDocumento.Location = new System.Drawing.Point(251, 114);
+            this.lblNúmeroDocumento.Name = "lblNúmeroDocumento";
+            this.lblNúmeroDocumento.Size = new System.Drawing.Size(142, 22);
+            this.lblNúmeroDocumento.TabIndex = 4;
+            this.lblNúmeroDocumento.Text = "Número Documento:";
             // 
-            // guna2HtmlLabel5
+            // lblTipoDocumento
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(275, 63);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(118, 22);
-            this.guna2HtmlLabel5.TabIndex = 3;
-            this.guna2HtmlLabel5.Text = "Tipo Documento:";
+            this.lblTipoDocumento.BackColor = System.Drawing.Color.Transparent;
+            this.lblTipoDocumento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDocumento.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblTipoDocumento.Location = new System.Drawing.Point(275, 63);
+            this.lblTipoDocumento.Name = "lblTipoDocumento";
+            this.lblTipoDocumento.Size = new System.Drawing.Size(118, 22);
+            this.lblTipoDocumento.TabIndex = 3;
+            this.lblTipoDocumento.Text = "Tipo Documento:";
             // 
-            // guna2HtmlLabel4
+            // lblLegajo
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(34, 165);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(51, 22);
-            this.guna2HtmlLabel4.TabIndex = 2;
-            this.guna2HtmlLabel4.Text = "Legajo:";
+            this.lblLegajo.BackColor = System.Drawing.Color.Transparent;
+            this.lblLegajo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLegajo.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblLegajo.Location = new System.Drawing.Point(34, 165);
+            this.lblLegajo.Name = "lblLegajo";
+            this.lblLegajo.Size = new System.Drawing.Size(51, 22);
+            this.lblLegajo.TabIndex = 2;
+            this.lblLegajo.Text = "Legajo:";
             // 
-            // guna2HtmlLabel3
+            // lblApellido
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(24, 114);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(63, 22);
-            this.guna2HtmlLabel3.TabIndex = 1;
-            this.guna2HtmlLabel3.Text = "Apellido:";
+            this.lblApellido.BackColor = System.Drawing.Color.Transparent;
+            this.lblApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblApellido.Location = new System.Drawing.Point(24, 114);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(63, 22);
+            this.lblApellido.TabIndex = 1;
+            this.lblApellido.Text = "Apellido:";
             // 
-            // guna2HtmlLabel2
+            // lblNombre
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.DarkViolet;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(24, 60);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(61, 22);
-            this.guna2HtmlLabel2.TabIndex = 0;
-            this.guna2HtmlLabel2.Text = "Nombre:";
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblNombre.Location = new System.Drawing.Point(24, 60);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(61, 22);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre:";
             // 
-            // guna2HtmlLabel1
+            // lblTitulo
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Indigo;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(7, 12);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(230, 26);
-            this.guna2HtmlLabel1.TabIndex = 5;
-            this.guna2HtmlLabel1.Text = "Cargar datos del empleado";
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Indigo;
+            this.lblTitulo.Location = new System.Drawing.Point(7, 12);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(230, 26);
+            this.lblTitulo.TabIndex = 5;
+            this.lblTitulo.Text = "Cargar datos del empleado";
             // 
             // frmCargarEmpleado
             // 
@@ -722,16 +752,16 @@
             this.ClientSize = new System.Drawing.Size(948, 617);
             this.Controls.Add(this.mrcDireccion);
             this.Controls.Add(this.btnCargarEmpleado);
-            this.Controls.Add(this.guna2GroupBox1);
+            this.Controls.Add(this.mcrDatosLaborales);
             this.Controls.Add(this.mrcDatosPersonales);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarEmpleado";
             this.Text = "frmCargarEmpleado";
             this.mrcDireccion.ResumeLayout(false);
             this.mrcDireccion.PerformLayout();
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
+            this.mcrDatosLaborales.ResumeLayout(false);
+            this.mcrDatosLaborales.PerformLayout();
             this.mrcDatosPersonales.ResumeLayout(false);
             this.mrcDatosPersonales.PerformLayout();
             this.ResumeLayout(false);
@@ -742,22 +772,22 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GroupBox mrcDireccion;
-        private Guna.UI2.WinForms.Guna2TextBox txtNumCalleEmpleado;
-        private Guna.UI2.WinForms.Guna2ComboBox lstProvinciaEmpleado;
+        private Guna.UI2.WinForms.Guna2TextBox txtNúmeroCalle;
+        private Guna.UI2.WinForms.Guna2ComboBox lstProvincia;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
-        private Guna.UI2.WinForms.Guna2ComboBox lstCiudadEmpleado;
+        private Guna.UI2.WinForms.Guna2ComboBox lstCiudad;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
-        private Guna.UI2.WinForms.Guna2ComboBox lstBarrioEmpleado;
-        private Guna.UI2.WinForms.Guna2ComboBox lstCalleEmpleado;
+        private Guna.UI2.WinForms.Guna2ComboBox lstBarrio;
+        private Guna.UI2.WinForms.Guna2ComboBox lstCalle;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
         private Guna.UI2.WinForms.Guna2Button btnCargarEmpleado;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2GroupBox mcrDatosLaborales;
         private Guna.UI2.WinForms.Guna2Button btnCargarCV;
-        private Guna.UI2.WinForms.Guna2ComboBox lstContratoEmpleado;
+        private Guna.UI2.WinForms.Guna2ComboBox lstTipoContrato;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
-        private Guna.UI2.WinForms.Guna2ComboBox lstCategoriaEmpleado;
+        private Guna.UI2.WinForms.Guna2ComboBox lstCategoría;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaIngreso;
         private Guna.UI2.WinForms.Guna2ComboBox lstAreaEmpleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
@@ -765,24 +795,26 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2GroupBox mrcDatosPersonales;
-        private Guna.UI2.WinForms.Guna2TextBox txtTelefonoEmpleado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
-        private Guna.UI2.WinForms.Guna2TextBox txtGmailEmpleado;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNacimientoEmpleado;
+        private Guna.UI2.WinForms.Guna2TextBox txtTeléfono;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTeléfono;
+        private Guna.UI2.WinForms.Guna2TextBox txtMail;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaNacimiento;
+        private Guna.UI2.WinForms.Guna2ComboBox lstEstadoCivil;
         private Guna.UI2.WinForms.Guna2ComboBox lstTipoDocumento;
-        private Guna.UI2.WinForms.Guna2ComboBox lstEstCivilEmpleado;
-        private Guna.UI2.WinForms.Guna2TextBox txtMailEmpleado;
-        private Guna.UI2.WinForms.Guna2TextBox txtNumDocumento;
+        private Guna.UI2.WinForms.Guna2TextBox txtNúmeroDocumentoEmpleado;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreEmpleado;
         private Guna.UI2.WinForms.Guna2TextBox txtApellidoEmpleado;
-        private Guna.UI2.WinForms.Guna2TextBox txtIDEmpleado;
+        private Guna.UI2.WinForms.Guna2TextBox txtILegajo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNúmeroDocumento;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoDocumento;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblLegajo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblApellido;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNombre;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaBajaEmpleado;
     }
 }

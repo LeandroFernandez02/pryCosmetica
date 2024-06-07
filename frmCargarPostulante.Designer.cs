@@ -33,18 +33,19 @@
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnCargarCV = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTelefono = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTeléfonoPostulante = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbArea = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDNI = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDNIPostulante = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtApellido = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtApellidoPostulante = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombrePostulante = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -84,9 +85,10 @@
             // guna2GroupBox2
             // 
             this.guna2GroupBox2.BorderRadius = 22;
+            this.guna2GroupBox2.Controls.Add(this.guna2HtmlLabel13);
             this.guna2GroupBox2.Controls.Add(this.btnCargarCV);
             this.guna2GroupBox2.Controls.Add(this.label7);
-            this.guna2GroupBox2.Controls.Add(this.txtTelefono);
+            this.guna2GroupBox2.Controls.Add(this.txtTeléfonoPostulante);
             this.guna2GroupBox2.Controls.Add(this.label8);
             this.guna2GroupBox2.Controls.Add(this.txtCorreo);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
@@ -109,7 +111,7 @@
             this.btnCargarCV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.btnCargarCV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCargarCV.ForeColor = System.Drawing.Color.White;
-            this.btnCargarCV.Location = new System.Drawing.Point(394, 83);
+            this.btnCargarCV.Location = new System.Drawing.Point(406, 106);
             this.btnCargarCV.Name = "btnCargarCV";
             this.btnCargarCV.Size = new System.Drawing.Size(180, 45);
             this.btnCargarCV.TabIndex = 4;
@@ -125,27 +127,27 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 21);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Telefono:";
+            this.label7.Text = "Teléfono:";
             // 
-            // txtTelefono
+            // txtTeléfonoPostulante
             // 
-            this.txtTelefono.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefono.DefaultText = "";
-            this.txtTelefono.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTelefono.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTelefono.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefono.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefono.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefono.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTelefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefono.Location = new System.Drawing.Point(114, 115);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.PasswordChar = '\0';
-            this.txtTelefono.PlaceholderText = "";
-            this.txtTelefono.SelectedText = "";
-            this.txtTelefono.Size = new System.Drawing.Size(193, 36);
-            this.txtTelefono.TabIndex = 2;
+            this.txtTeléfonoPostulante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtTeléfonoPostulante.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTeléfonoPostulante.DefaultText = "";
+            this.txtTeléfonoPostulante.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTeléfonoPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTeléfonoPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTeléfonoPostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTeléfonoPostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTeléfonoPostulante.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTeléfonoPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTeléfonoPostulante.Location = new System.Drawing.Point(114, 115);
+            this.txtTeléfonoPostulante.Name = "txtTeléfonoPostulante";
+            this.txtTeléfonoPostulante.PasswordChar = '\0';
+            this.txtTeléfonoPostulante.PlaceholderText = "";
+            this.txtTeléfonoPostulante.SelectedText = "";
+            this.txtTeléfonoPostulante.Size = new System.Drawing.Size(193, 36);
+            this.txtTeléfonoPostulante.TabIndex = 2;
             // 
             // label8
             // 
@@ -185,11 +187,11 @@
             this.guna2GroupBox1.Controls.Add(this.label4);
             this.guna2GroupBox1.Controls.Add(this.cmbArea);
             this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.txtDNI);
+            this.guna2GroupBox1.Controls.Add(this.txtDNIPostulante);
             this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.txtApellido);
+            this.guna2GroupBox1.Controls.Add(this.txtApellidoPostulante);
             this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.txtNombre);
+            this.guna2GroupBox1.Controls.Add(this.txtNombrePostulante);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
@@ -222,6 +224,13 @@
             this.cmbArea.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbArea.ItemHeight = 30;
+            this.cmbArea.Items.AddRange(new object[] {
+            "Investigación y Desarrollo",
+            "Marketing y Ventas",
+            "Logística y Distribución",
+            "Administración y Finanzas",
+            "Recursos Humanos",
+            "Legal"});
             this.cmbArea.Location = new System.Drawing.Point(406, 115);
             this.cmbArea.Name = "cmbArea";
             this.cmbArea.Size = new System.Drawing.Size(193, 36);
@@ -239,25 +248,25 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "DNI:";
             // 
-            // txtDNI
+            // txtDNIPostulante
             // 
-            this.txtDNI.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtDNI.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDNI.DefaultText = "";
-            this.txtDNI.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDNI.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDNI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDNI.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDNI.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDNI.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDNI.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDNI.Location = new System.Drawing.Point(406, 60);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.PasswordChar = '\0';
-            this.txtDNI.PlaceholderText = "";
-            this.txtDNI.SelectedText = "";
-            this.txtDNI.Size = new System.Drawing.Size(193, 36);
-            this.txtDNI.TabIndex = 4;
+            this.txtDNIPostulante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtDNIPostulante.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDNIPostulante.DefaultText = "";
+            this.txtDNIPostulante.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDNIPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDNIPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDNIPostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDNIPostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDNIPostulante.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDNIPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDNIPostulante.Location = new System.Drawing.Point(406, 60);
+            this.txtDNIPostulante.Name = "txtDNIPostulante";
+            this.txtDNIPostulante.PasswordChar = '\0';
+            this.txtDNIPostulante.PlaceholderText = "";
+            this.txtDNIPostulante.SelectedText = "";
+            this.txtDNIPostulante.Size = new System.Drawing.Size(193, 36);
+            this.txtDNIPostulante.TabIndex = 4;
             // 
             // label2
             // 
@@ -271,25 +280,25 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Apellido:";
             // 
-            // txtApellido
+            // txtApellidoPostulante
             // 
-            this.txtApellido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtApellido.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtApellido.DefaultText = "";
-            this.txtApellido.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtApellido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtApellido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtApellido.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtApellido.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellido.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellido.Location = new System.Drawing.Point(114, 115);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.PasswordChar = '\0';
-            this.txtApellido.PlaceholderText = "";
-            this.txtApellido.SelectedText = "";
-            this.txtApellido.Size = new System.Drawing.Size(193, 36);
-            this.txtApellido.TabIndex = 2;
+            this.txtApellidoPostulante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtApellidoPostulante.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtApellidoPostulante.DefaultText = "";
+            this.txtApellidoPostulante.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtApellidoPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtApellidoPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidoPostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidoPostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtApellidoPostulante.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtApellidoPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtApellidoPostulante.Location = new System.Drawing.Point(114, 115);
+            this.txtApellidoPostulante.Name = "txtApellidoPostulante";
+            this.txtApellidoPostulante.PasswordChar = '\0';
+            this.txtApellidoPostulante.PlaceholderText = "";
+            this.txtApellidoPostulante.SelectedText = "";
+            this.txtApellidoPostulante.Size = new System.Drawing.Size(193, 36);
+            this.txtApellidoPostulante.TabIndex = 2;
             // 
             // label1
             // 
@@ -303,25 +312,36 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre:";
             // 
-            // txtNombre
+            // txtNombrePostulante
             // 
-            this.txtNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombre.DefaultText = "";
-            this.txtNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombre.Location = new System.Drawing.Point(114, 60);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.PasswordChar = '\0';
-            this.txtNombre.PlaceholderText = "";
-            this.txtNombre.SelectedText = "";
-            this.txtNombre.Size = new System.Drawing.Size(193, 36);
-            this.txtNombre.TabIndex = 0;
+            this.txtNombrePostulante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtNombrePostulante.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombrePostulante.DefaultText = "";
+            this.txtNombrePostulante.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombrePostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombrePostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombrePostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombrePostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombrePostulante.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombrePostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombrePostulante.Location = new System.Drawing.Point(114, 60);
+            this.txtNombrePostulante.Name = "txtNombrePostulante";
+            this.txtNombrePostulante.PasswordChar = '\0';
+            this.txtNombrePostulante.PlaceholderText = "";
+            this.txtNombrePostulante.SelectedText = "";
+            this.txtNombrePostulante.Size = new System.Drawing.Size(193, 36);
+            this.txtNombrePostulante.TabIndex = 0;
+            // 
+            // guna2HtmlLabel13
+            // 
+            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(427, 74);
+            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(138, 22);
+            this.guna2HtmlLabel13.TabIndex = 5;
+            this.guna2HtmlLabel13.Text = "Adjuntar Curriculum:";
             // 
             // frmCargarPostulante
             // 
@@ -350,17 +370,18 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private Guna.UI2.WinForms.Guna2Button btnCargarCV;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox txtTelefono;
+        private Guna.UI2.WinForms.Guna2TextBox txtTeléfonoPostulante;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txtCorreo;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ComboBox cmbArea;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtDNI;
+        private Guna.UI2.WinForms.Guna2TextBox txtDNIPostulante;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox txtApellido;
+        private Guna.UI2.WinForms.Guna2TextBox txtApellidoPostulante;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txtNombre;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombrePostulante;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
     }
 }

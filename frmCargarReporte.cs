@@ -19,34 +19,34 @@ namespace pryCosmetica
         }
         private void OcultarGroupBox()
         {
-            gbInasistencia.Visible = false;
-            gbAmonestaciones.Visible = false;
-            gbSuspensión.Visible = false;
-            gbEvaluaciónDesempeño.Visible = false;
+            mrcInasistencia.Visible = false;
+            mrcAmonestación.Visible = false;
+            mrcSuspensión.Visible = false;
+            mrcEvaluaciónDesempeño.Visible = false;
         }
 
         private void btnInasistencia_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
-            gbInasistencia.Visible = true;
+            mrcInasistencia.Visible = true;
         }
 
         private void btnAmonestaciones_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
-            gbAmonestaciones.Visible = true;
+            mrcAmonestación.Visible = true;
         }
 
         private void btnSuspensiones_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
-            gbSuspensión.Visible = true;
+            mrcSuspensión.Visible = true;
         }
 
         private void btnEvaluaciónDesempeño_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();
-            gbEvaluaciónDesempeño.Visible = true;
+            mrcEvaluaciónDesempeño.Visible = true;
         }
     }
 }

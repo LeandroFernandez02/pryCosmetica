@@ -28,85 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbEvaluaciónDesempeño = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.mrcEvaluaciónDesempeño = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lblÁreaEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblObservaciónes = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbÁreaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtObservaciónes = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lstArea = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtObservaciónEvaluación = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCalificación = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCalificación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtpFechaEvaluacion = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblFechaEvaluación = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNombreEvaluador = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreEvaluador = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtNombreEvaluaciónDesempeño = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombreEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnEvaluaciónDesempeño = new Guna.UI2.WinForms.Guna2Button();
-            this.gbSuspensión = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.mrcSuspensión = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lblMotivoSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.gbMotivoSuspensión = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstMotivoSuspensión = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtObservación = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblObservación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.gptFechaFinalización = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.gptHasta = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblFechaFinalización = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.gptFechaInicio = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.gptDesde = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblInicioSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNombreSuspensión = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSuspensiones = new Guna.UI2.WinForms.Guna2Button();
             this.btnAmonestaciones = new Guna.UI2.WinForms.Guna2Button();
             this.btnInasistencia = new Guna.UI2.WinForms.Guna2Button();
-            this.gbInasistencia = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtNombreInasistencia = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dtpFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.mrcInasistencia = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lblMotivoInasistencia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTipoInasistencia = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbTipoInasistencia = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.rbJustificada = new Guna.UI2.WinForms.Guna2RadioButton();
             this.lblJustificado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblFechaInasistencia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNombreInasistencia = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbInjustificada = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txtNombreInasistencia = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgvFechaInasistencia = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lstTipoInasistencia = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.optJustificada = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.optInjustificada = new Guna.UI2.WinForms.Guna2RadioButton();
             this.txtMotivoInasistencia = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargar = new Guna.UI2.WinForms.Guna2Button();
-            this.gbAmonestaciones = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtMotivoAmonestación = new Guna.UI2.WinForms.Guna2TextBox();
+            this.mrcAmonestación = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lblMotivoAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtpInasistencia = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dgvFechaAmonestación = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblFechaAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombreAmonestacion = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.gbEvaluaciónDesempeño.SuspendLayout();
-            this.gbSuspensión.SuspendLayout();
-            this.gbInasistencia.SuspendLayout();
-            this.gbAmonestaciones.SuspendLayout();
+            this.dgvFechaEvaluacion = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lstMotivoAmonestación = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.mrcEvaluaciónDesempeño.SuspendLayout();
+            this.mrcSuspensión.SuspendLayout();
+            this.mrcInasistencia.SuspendLayout();
+            this.mrcAmonestación.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbEvaluaciónDesempeño
+            // mrcEvaluaciónDesempeño
             // 
-            this.gbEvaluaciónDesempeño.Controls.Add(this.lblÁreaEmpleado);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.lblObservaciónes);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.cbÁreaEmpleado);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.txtObservaciónes);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.txtCalificación);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.lblCalificación);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.dtpFechaEvaluacion);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.lblFechaEvaluación);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.txtNombreEvaluador);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.lblNombreEvaluador);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.txtNombreEvaluaciónDesempeño);
-            this.gbEvaluaciónDesempeño.Controls.Add(this.lblNombre);
-            this.gbEvaluaciónDesempeño.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.gbEvaluaciónDesempeño.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
-            this.gbEvaluaciónDesempeño.Location = new System.Drawing.Point(434, 56);
-            this.gbEvaluaciónDesempeño.Name = "gbEvaluaciónDesempeño";
-            this.gbEvaluaciónDesempeño.Size = new System.Drawing.Size(435, 407);
-            this.gbEvaluaciónDesempeño.TabIndex = 45;
-            this.gbEvaluaciónDesempeño.Text = "Evaluación Desempeño";
-            this.gbEvaluaciónDesempeño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbEvaluaciónDesempeño.Visible = false;
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lblÁreaEmpleado);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lblObservaciónes);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lstArea);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.txtObservaciónEvaluación);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.txtCalificación);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lblCalificación);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.dgvFechaEvaluacion);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lblFechaEvaluación);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.txtNombreEvaluador);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lblNombreEvaluador);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.txtNombreEmpleado);
+            this.mrcEvaluaciónDesempeño.Controls.Add(this.lblNombre);
+            this.mrcEvaluaciónDesempeño.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcEvaluaciónDesempeño.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
+            this.mrcEvaluaciónDesempeño.Location = new System.Drawing.Point(434, 40);
+            this.mrcEvaluaciónDesempeño.Name = "mrcEvaluaciónDesempeño";
+            this.mrcEvaluaciónDesempeño.Size = new System.Drawing.Size(435, 396);
+            this.mrcEvaluaciónDesempeño.TabIndex = 45;
+            this.mrcEvaluaciónDesempeño.Text = "Evaluación Desempeño";
+            this.mrcEvaluaciónDesempeño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcEvaluaciónDesempeño.Visible = false;
             // 
             // lblÁreaEmpleado
             // 
@@ -130,46 +130,46 @@
             this.lblObservaciónes.TabIndex = 37;
             this.lblObservaciónes.Text = "Observaciónes";
             // 
-            // cbÁreaEmpleado
+            // lstArea
             // 
-            this.cbÁreaEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.cbÁreaEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbÁreaEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbÁreaEmpleado.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbÁreaEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbÁreaEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbÁreaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbÁreaEmpleado.ItemHeight = 30;
-            this.cbÁreaEmpleado.Items.AddRange(new object[] {
-            "Incumplimiento grave de las normas de seguridad",
-            "Faltas injustificadas",
-            "Comportamiento inapropiado",
-            "Robo o hurto",
-            "Daño intencional a la propiedad",
-            "Divulgación de información confidencial"});
-            this.cbÁreaEmpleado.Location = new System.Drawing.Point(189, 280);
-            this.cbÁreaEmpleado.Name = "cbÁreaEmpleado";
-            this.cbÁreaEmpleado.Size = new System.Drawing.Size(200, 36);
-            this.cbÁreaEmpleado.TabIndex = 36;
+            this.lstArea.BackColor = System.Drawing.Color.Transparent;
+            this.lstArea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstArea.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstArea.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstArea.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstArea.ItemHeight = 30;
+            this.lstArea.Items.AddRange(new object[] {
+            "Investigación y Desarrollo",
+            "Marketing y Ventas",
+            "Logística y Distribución",
+            "Administración y Finanzas",
+            "Recursos Humanos",
+            "Legal"});
+            this.lstArea.Location = new System.Drawing.Point(189, 280);
+            this.lstArea.Name = "lstArea";
+            this.lstArea.Size = new System.Drawing.Size(200, 36);
+            this.lstArea.TabIndex = 36;
             // 
-            // txtObservaciónes
+            // txtObservaciónEvaluación
             // 
-            this.txtObservaciónes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtObservaciónes.DefaultText = "";
-            this.txtObservaciónes.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtObservaciónes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtObservaciónes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtObservaciónes.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtObservaciónes.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtObservaciónes.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtObservaciónes.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtObservaciónes.Location = new System.Drawing.Point(189, 333);
-            this.txtObservaciónes.Name = "txtObservaciónes";
-            this.txtObservaciónes.PasswordChar = '\0';
-            this.txtObservaciónes.PlaceholderText = "";
-            this.txtObservaciónes.SelectedText = "";
-            this.txtObservaciónes.Size = new System.Drawing.Size(200, 36);
-            this.txtObservaciónes.TabIndex = 34;
+            this.txtObservaciónEvaluación.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtObservaciónEvaluación.DefaultText = "";
+            this.txtObservaciónEvaluación.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtObservaciónEvaluación.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtObservaciónEvaluación.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtObservaciónEvaluación.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtObservaciónEvaluación.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtObservaciónEvaluación.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtObservaciónEvaluación.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtObservaciónEvaluación.Location = new System.Drawing.Point(189, 333);
+            this.txtObservaciónEvaluación.Name = "txtObservaciónEvaluación";
+            this.txtObservaciónEvaluación.PasswordChar = '\0';
+            this.txtObservaciónEvaluación.PlaceholderText = "";
+            this.txtObservaciónEvaluación.SelectedText = "";
+            this.txtObservaciónEvaluación.Size = new System.Drawing.Size(200, 36);
+            this.txtObservaciónEvaluación.TabIndex = 34;
             // 
             // txtCalificación
             // 
@@ -200,24 +200,6 @@
             this.lblCalificación.Size = new System.Drawing.Size(161, 18);
             this.lblCalificación.TabIndex = 32;
             this.lblCalificación.Text = "Calificación de Evaluación";
-            // 
-            // dtpFechaEvaluacion
-            // 
-            this.dtpFechaEvaluacion.BackColor = System.Drawing.Color.Transparent;
-            this.dtpFechaEvaluacion.BorderColor = System.Drawing.Color.White;
-            this.dtpFechaEvaluacion.Checked = true;
-            this.dtpFechaEvaluacion.FillColor = System.Drawing.Color.White;
-            this.dtpFechaEvaluacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpFechaEvaluacion.ForeColor = System.Drawing.Color.Black;
-            this.dtpFechaEvaluacion.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaEvaluacion.Location = new System.Drawing.Point(189, 174);
-            this.dtpFechaEvaluacion.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpFechaEvaluacion.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaEvaluacion.Name = "dtpFechaEvaluacion";
-            this.dtpFechaEvaluacion.Size = new System.Drawing.Size(200, 35);
-            this.dtpFechaEvaluacion.TabIndex = 31;
-            this.dtpFechaEvaluacion.UseTransparentBackground = true;
-            this.dtpFechaEvaluacion.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
             // 
             // lblFechaEvaluación
             // 
@@ -260,24 +242,24 @@
             this.lblNombreEvaluador.TabIndex = 28;
             this.lblNombreEvaluador.Text = "Nombre Evaluador";
             // 
-            // txtNombreEvaluaciónDesempeño
+            // txtNombreEmpleado
             // 
-            this.txtNombreEvaluaciónDesempeño.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreEvaluaciónDesempeño.DefaultText = "";
-            this.txtNombreEvaluaciónDesempeño.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombreEvaluaciónDesempeño.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombreEvaluaciónDesempeño.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreEvaluaciónDesempeño.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreEvaluaciónDesempeño.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEvaluaciónDesempeño.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombreEvaluaciónDesempeño.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEvaluaciónDesempeño.Location = new System.Drawing.Point(189, 62);
-            this.txtNombreEvaluaciónDesempeño.Name = "txtNombreEvaluaciónDesempeño";
-            this.txtNombreEvaluaciónDesempeño.PasswordChar = '\0';
-            this.txtNombreEvaluaciónDesempeño.PlaceholderText = "";
-            this.txtNombreEvaluaciónDesempeño.SelectedText = "";
-            this.txtNombreEvaluaciónDesempeño.Size = new System.Drawing.Size(200, 36);
-            this.txtNombreEvaluaciónDesempeño.TabIndex = 27;
+            this.txtNombreEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreEmpleado.DefaultText = "";
+            this.txtNombreEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(189, 62);
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.PasswordChar = '\0';
+            this.txtNombreEmpleado.PlaceholderText = "";
+            this.txtNombreEmpleado.SelectedText = "";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreEmpleado.TabIndex = 27;
             // 
             // lblNombre
             // 
@@ -307,28 +289,29 @@
             this.btnEvaluaciónDesempeño.Text = "Evaluación Desempeño";
             this.btnEvaluaciónDesempeño.Click += new System.EventHandler(this.btnEvaluaciónDesempeño_Click);
             // 
-            // gbSuspensión
+            // mrcSuspensión
             // 
-            this.gbSuspensión.Controls.Add(this.lblMotivoSuspensión);
-            this.gbSuspensión.Controls.Add(this.gbMotivoSuspensión);
-            this.gbSuspensión.Controls.Add(this.txtObservación);
-            this.gbSuspensión.Controls.Add(this.lblObservación);
-            this.gbSuspensión.Controls.Add(this.gptFechaFinalización);
-            this.gbSuspensión.Controls.Add(this.lblFechaFinalización);
-            this.gbSuspensión.Controls.Add(this.gptFechaInicio);
-            this.gbSuspensión.Controls.Add(this.lblInicioSuspensión);
-            this.gbSuspensión.Controls.Add(this.txtNombreSuspensión);
-            this.gbSuspensión.Controls.Add(this.lblNombreSuspensión);
-            this.gbSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.gbSuspensión.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbSuspensión.ForeColor = System.Drawing.Color.White;
-            this.gbSuspensión.Location = new System.Drawing.Point(434, 68);
-            this.gbSuspensión.Name = "gbSuspensión";
-            this.gbSuspensión.Size = new System.Drawing.Size(435, 347);
-            this.gbSuspensión.TabIndex = 43;
-            this.gbSuspensión.Text = "Suspensión";
-            this.gbSuspensión.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbSuspensión.Visible = false;
+            this.mrcSuspensión.Controls.Add(this.lblMotivoSuspensión);
+            this.mrcSuspensión.Controls.Add(this.lstMotivoSuspensión);
+            this.mrcSuspensión.Controls.Add(this.mrcAmonestación);
+            this.mrcSuspensión.Controls.Add(this.txtObservación);
+            this.mrcSuspensión.Controls.Add(this.lblObservación);
+            this.mrcSuspensión.Controls.Add(this.gptHasta);
+            this.mrcSuspensión.Controls.Add(this.lblFechaFinalización);
+            this.mrcSuspensión.Controls.Add(this.gptDesde);
+            this.mrcSuspensión.Controls.Add(this.lblInicioSuspensión);
+            this.mrcSuspensión.Controls.Add(this.txtNombreSuspensión);
+            this.mrcSuspensión.Controls.Add(this.lblNombreSuspensión);
+            this.mrcSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcSuspensión.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcSuspensión.ForeColor = System.Drawing.Color.White;
+            this.mrcSuspensión.Location = new System.Drawing.Point(434, 68);
+            this.mrcSuspensión.Name = "mrcSuspensión";
+            this.mrcSuspensión.Size = new System.Drawing.Size(435, 347);
+            this.mrcSuspensión.TabIndex = 43;
+            this.mrcSuspensión.Text = "Suspensión";
+            this.mrcSuspensión.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcSuspensión.Visible = false;
             // 
             // lblMotivoSuspensión
             // 
@@ -341,27 +324,27 @@
             this.lblMotivoSuspensión.TabIndex = 34;
             this.lblMotivoSuspensión.Text = "Motivo de la Suspensión";
             // 
-            // gbMotivoSuspensión
+            // lstMotivoSuspensión
             // 
-            this.gbMotivoSuspensión.BackColor = System.Drawing.Color.Transparent;
-            this.gbMotivoSuspensión.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gbMotivoSuspensión.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gbMotivoSuspensión.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gbMotivoSuspensión.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gbMotivoSuspensión.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gbMotivoSuspensión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gbMotivoSuspensión.ItemHeight = 30;
-            this.gbMotivoSuspensión.Items.AddRange(new object[] {
+            this.lstMotivoSuspensión.BackColor = System.Drawing.Color.Transparent;
+            this.lstMotivoSuspensión.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstMotivoSuspensión.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstMotivoSuspensión.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstMotivoSuspensión.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstMotivoSuspensión.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstMotivoSuspensión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstMotivoSuspensión.ItemHeight = 30;
+            this.lstMotivoSuspensión.Items.AddRange(new object[] {
             "Incumplimiento grave de las normas de seguridad",
             "Faltas injustificadas",
             "Comportamiento inapropiado",
             "Robo o hurto",
             "Daño intencional a la propiedad",
             "Divulgación de información confidencial"});
-            this.gbMotivoSuspensión.Location = new System.Drawing.Point(189, 280);
-            this.gbMotivoSuspensión.Name = "gbMotivoSuspensión";
-            this.gbMotivoSuspensión.Size = new System.Drawing.Size(200, 36);
-            this.gbMotivoSuspensión.TabIndex = 33;
+            this.lstMotivoSuspensión.Location = new System.Drawing.Point(189, 280);
+            this.lstMotivoSuspensión.Name = "lstMotivoSuspensión";
+            this.lstMotivoSuspensión.Size = new System.Drawing.Size(200, 36);
+            this.lstMotivoSuspensión.TabIndex = 33;
             // 
             // txtObservación
             // 
@@ -393,23 +376,23 @@
             this.lblObservación.TabIndex = 31;
             this.lblObservación.Text = "Observaciónes";
             // 
-            // gptFechaFinalización
+            // gptHasta
             // 
-            this.gptFechaFinalización.BackColor = System.Drawing.Color.Transparent;
-            this.gptFechaFinalización.BorderColor = System.Drawing.Color.White;
-            this.gptFechaFinalización.Checked = true;
-            this.gptFechaFinalización.FillColor = System.Drawing.Color.White;
-            this.gptFechaFinalización.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gptFechaFinalización.ForeColor = System.Drawing.Color.Black;
-            this.gptFechaFinalización.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.gptFechaFinalización.Location = new System.Drawing.Point(189, 172);
-            this.gptFechaFinalización.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gptFechaFinalización.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gptFechaFinalización.Name = "gptFechaFinalización";
-            this.gptFechaFinalización.Size = new System.Drawing.Size(200, 35);
-            this.gptFechaFinalización.TabIndex = 30;
-            this.gptFechaFinalización.UseTransparentBackground = true;
-            this.gptFechaFinalización.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            this.gptHasta.BackColor = System.Drawing.Color.Transparent;
+            this.gptHasta.BorderColor = System.Drawing.Color.White;
+            this.gptHasta.Checked = true;
+            this.gptHasta.FillColor = System.Drawing.Color.White;
+            this.gptHasta.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gptHasta.ForeColor = System.Drawing.Color.Black;
+            this.gptHasta.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.gptHasta.Location = new System.Drawing.Point(189, 172);
+            this.gptHasta.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gptHasta.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gptHasta.Name = "gptHasta";
+            this.gptHasta.Size = new System.Drawing.Size(200, 35);
+            this.gptHasta.TabIndex = 30;
+            this.gptHasta.UseTransparentBackground = true;
+            this.gptHasta.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
             // 
             // lblFechaFinalización
             // 
@@ -422,23 +405,23 @@
             this.lblFechaFinalización.TabIndex = 29;
             this.lblFechaFinalización.Text = "Fecha de Finalización";
             // 
-            // gptFechaInicio
+            // gptDesde
             // 
-            this.gptFechaInicio.BackColor = System.Drawing.Color.Transparent;
-            this.gptFechaInicio.BorderColor = System.Drawing.Color.White;
-            this.gptFechaInicio.Checked = true;
-            this.gptFechaInicio.FillColor = System.Drawing.Color.White;
-            this.gptFechaInicio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gptFechaInicio.ForeColor = System.Drawing.Color.Black;
-            this.gptFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.gptFechaInicio.Location = new System.Drawing.Point(189, 118);
-            this.gptFechaInicio.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gptFechaInicio.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gptFechaInicio.Name = "gptFechaInicio";
-            this.gptFechaInicio.Size = new System.Drawing.Size(200, 35);
-            this.gptFechaInicio.TabIndex = 28;
-            this.gptFechaInicio.UseTransparentBackground = true;
-            this.gptFechaInicio.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            this.gptDesde.BackColor = System.Drawing.Color.Transparent;
+            this.gptDesde.BorderColor = System.Drawing.Color.White;
+            this.gptDesde.Checked = true;
+            this.gptDesde.FillColor = System.Drawing.Color.White;
+            this.gptDesde.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gptDesde.ForeColor = System.Drawing.Color.Black;
+            this.gptDesde.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.gptDesde.Location = new System.Drawing.Point(189, 118);
+            this.gptDesde.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gptDesde.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gptDesde.Name = "gptDesde";
+            this.gptDesde.Size = new System.Drawing.Size(200, 35);
+            this.gptDesde.TabIndex = 28;
+            this.gptDesde.UseTransparentBackground = true;
+            this.gptDesde.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
             // 
             // lblInicioSuspensión
             // 
@@ -532,68 +515,31 @@
             this.btnInasistencia.Text = "Inasistencia";
             this.btnInasistencia.Click += new System.EventHandler(this.btnInasistencia_Click);
             // 
-            // gbInasistencia
+            // mrcInasistencia
             // 
-            this.gbInasistencia.BackColor = System.Drawing.Color.White;
-            this.gbInasistencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.gbInasistencia.Controls.Add(this.lblMotivoInasistencia);
-            this.gbInasistencia.Controls.Add(this.lblTipoInasistencia);
-            this.gbInasistencia.Controls.Add(this.lblJustificado);
-            this.gbInasistencia.Controls.Add(this.lblFechaInasistencia);
-            this.gbInasistencia.Controls.Add(this.lblNombreInasistencia);
-            this.gbInasistencia.Controls.Add(this.txtNombreInasistencia);
-            this.gbInasistencia.Controls.Add(this.dtpFecha);
-            this.gbInasistencia.Controls.Add(this.cbTipoInasistencia);
-            this.gbInasistencia.Controls.Add(this.rbJustificada);
-            this.gbInasistencia.Controls.Add(this.rbInjustificada);
-            this.gbInasistencia.Controls.Add(this.txtMotivoInasistencia);
-            this.gbInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.gbInasistencia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbInasistencia.ForeColor = System.Drawing.Color.White;
-            this.gbInasistencia.Location = new System.Drawing.Point(434, 86);
-            this.gbInasistencia.Name = "gbInasistencia";
-            this.gbInasistencia.Size = new System.Drawing.Size(435, 346);
-            this.gbInasistencia.TabIndex = 38;
-            this.gbInasistencia.Text = "Inasistencia";
-            this.gbInasistencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbInasistencia.Visible = false;
-            // 
-            // txtNombreInasistencia
-            // 
-            this.txtNombreInasistencia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreInasistencia.DefaultText = "";
-            this.txtNombreInasistencia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombreInasistencia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombreInasistencia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreInasistencia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreInasistencia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreInasistencia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombreInasistencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreInasistencia.Location = new System.Drawing.Point(196, 65);
-            this.txtNombreInasistencia.Name = "txtNombreInasistencia";
-            this.txtNombreInasistencia.PasswordChar = '\0';
-            this.txtNombreInasistencia.PlaceholderText = "";
-            this.txtNombreInasistencia.SelectedText = "";
-            this.txtNombreInasistencia.Size = new System.Drawing.Size(200, 36);
-            this.txtNombreInasistencia.TabIndex = 19;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.BackColor = System.Drawing.Color.Transparent;
-            this.dtpFecha.BorderColor = System.Drawing.Color.White;
-            this.dtpFecha.Checked = true;
-            this.dtpFecha.FillColor = System.Drawing.Color.White;
-            this.dtpFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpFecha.ForeColor = System.Drawing.Color.Black;
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFecha.Location = new System.Drawing.Point(196, 118);
-            this.dtpFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 35);
-            this.dtpFecha.TabIndex = 6;
-            this.dtpFecha.UseTransparentBackground = true;
-            this.dtpFecha.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            this.mrcInasistencia.BackColor = System.Drawing.Color.White;
+            this.mrcInasistencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcInasistencia.Controls.Add(this.lblMotivoInasistencia);
+            this.mrcInasistencia.Controls.Add(this.lblTipoInasistencia);
+            this.mrcInasistencia.Controls.Add(this.lblJustificado);
+            this.mrcInasistencia.Controls.Add(this.lblFechaInasistencia);
+            this.mrcInasistencia.Controls.Add(this.lblNombreInasistencia);
+            this.mrcInasistencia.Controls.Add(this.txtNombreInasistencia);
+            this.mrcInasistencia.Controls.Add(this.dgvFechaInasistencia);
+            this.mrcInasistencia.Controls.Add(this.lstTipoInasistencia);
+            this.mrcInasistencia.Controls.Add(this.optJustificada);
+            this.mrcInasistencia.Controls.Add(this.optInjustificada);
+            this.mrcInasistencia.Controls.Add(this.txtMotivoInasistencia);
+            this.mrcInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcInasistencia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcInasistencia.ForeColor = System.Drawing.Color.White;
+            this.mrcInasistencia.Location = new System.Drawing.Point(434, 66);
+            this.mrcInasistencia.Name = "mrcInasistencia";
+            this.mrcInasistencia.Size = new System.Drawing.Size(435, 346);
+            this.mrcInasistencia.TabIndex = 38;
+            this.mrcInasistencia.Text = "Inasistencia";
+            this.mrcInasistencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcInasistencia.Visible = false;
             // 
             // lblMotivoInasistencia
             // 
@@ -616,46 +562,6 @@
             this.lblTipoInasistencia.Size = new System.Drawing.Size(138, 18);
             this.lblTipoInasistencia.TabIndex = 11;
             this.lblTipoInasistencia.Text = "Tipo de la inasistencia";
-            // 
-            // cbTipoInasistencia
-            // 
-            this.cbTipoInasistencia.BackColor = System.Drawing.Color.Transparent;
-            this.cbTipoInasistencia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbTipoInasistencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTipoInasistencia.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbTipoInasistencia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbTipoInasistencia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbTipoInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbTipoInasistencia.ItemHeight = 30;
-            this.cbTipoInasistencia.Items.AddRange(new object[] {
-            "Inasistencias",
-            "Amonestaciones",
-            "Suspensiones"});
-            this.cbTipoInasistencia.Location = new System.Drawing.Point(196, 229);
-            this.cbTipoInasistencia.Name = "cbTipoInasistencia";
-            this.cbTipoInasistencia.Size = new System.Drawing.Size(200, 36);
-            this.cbTipoInasistencia.TabIndex = 16;
-            // 
-            // rbJustificada
-            // 
-            this.rbJustificada.AutoSize = true;
-            this.rbJustificada.BackColor = System.Drawing.Color.Transparent;
-            this.rbJustificada.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbJustificada.CheckedState.BorderThickness = 0;
-            this.rbJustificada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbJustificada.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbJustificada.CheckedState.InnerOffset = -4;
-            this.rbJustificada.ForeColor = System.Drawing.Color.Black;
-            this.rbJustificada.Location = new System.Drawing.Point(215, 292);
-            this.rbJustificada.Name = "rbJustificada";
-            this.rbJustificada.Size = new System.Drawing.Size(80, 19);
-            this.rbJustificada.TabIndex = 14;
-            this.rbJustificada.Text = "Justificada";
-            this.rbJustificada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbJustificada.UncheckedState.BorderThickness = 2;
-            this.rbJustificada.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbJustificada.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbJustificada.UseVisualStyleBackColor = false;
             // 
             // lblJustificado
             // 
@@ -690,26 +596,103 @@
             this.lblNombreInasistencia.TabIndex = 18;
             this.lblNombreInasistencia.Text = "Nombre Empleado";
             // 
-            // rbInjustificada
+            // txtNombreInasistencia
             // 
-            this.rbInjustificada.AutoSize = true;
-            this.rbInjustificada.BackColor = System.Drawing.Color.Transparent;
-            this.rbInjustificada.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbInjustificada.CheckedState.BorderThickness = 0;
-            this.rbInjustificada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbInjustificada.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbInjustificada.CheckedState.InnerOffset = -4;
-            this.rbInjustificada.ForeColor = System.Drawing.Color.Black;
-            this.rbInjustificada.Location = new System.Drawing.Point(307, 293);
-            this.rbInjustificada.Name = "rbInjustificada";
-            this.rbInjustificada.Size = new System.Drawing.Size(89, 19);
-            this.rbInjustificada.TabIndex = 15;
-            this.rbInjustificada.Text = "Injustificada";
-            this.rbInjustificada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbInjustificada.UncheckedState.BorderThickness = 2;
-            this.rbInjustificada.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbInjustificada.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbInjustificada.UseVisualStyleBackColor = false;
+            this.txtNombreInasistencia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreInasistencia.DefaultText = "";
+            this.txtNombreInasistencia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreInasistencia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreInasistencia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreInasistencia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreInasistencia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreInasistencia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreInasistencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreInasistencia.Location = new System.Drawing.Point(196, 65);
+            this.txtNombreInasistencia.Name = "txtNombreInasistencia";
+            this.txtNombreInasistencia.PasswordChar = '\0';
+            this.txtNombreInasistencia.PlaceholderText = "";
+            this.txtNombreInasistencia.SelectedText = "";
+            this.txtNombreInasistencia.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreInasistencia.TabIndex = 19;
+            // 
+            // dgvFechaInasistencia
+            // 
+            this.dgvFechaInasistencia.BackColor = System.Drawing.Color.Transparent;
+            this.dgvFechaInasistencia.BorderColor = System.Drawing.Color.White;
+            this.dgvFechaInasistencia.Checked = true;
+            this.dgvFechaInasistencia.FillColor = System.Drawing.Color.White;
+            this.dgvFechaInasistencia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvFechaInasistencia.ForeColor = System.Drawing.Color.Black;
+            this.dgvFechaInasistencia.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dgvFechaInasistencia.Location = new System.Drawing.Point(196, 118);
+            this.dgvFechaInasistencia.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dgvFechaInasistencia.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dgvFechaInasistencia.Name = "dgvFechaInasistencia";
+            this.dgvFechaInasistencia.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaInasistencia.TabIndex = 6;
+            this.dgvFechaInasistencia.UseTransparentBackground = true;
+            this.dgvFechaInasistencia.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            // 
+            // lstTipoInasistencia
+            // 
+            this.lstTipoInasistencia.BackColor = System.Drawing.Color.Transparent;
+            this.lstTipoInasistencia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstTipoInasistencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstTipoInasistencia.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoInasistencia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoInasistencia.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstTipoInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstTipoInasistencia.ItemHeight = 30;
+            this.lstTipoInasistencia.Items.AddRange(new object[] {
+            "Inasistencias",
+            "Amonestaciones",
+            "Suspensiones"});
+            this.lstTipoInasistencia.Location = new System.Drawing.Point(196, 229);
+            this.lstTipoInasistencia.Name = "lstTipoInasistencia";
+            this.lstTipoInasistencia.Size = new System.Drawing.Size(200, 36);
+            this.lstTipoInasistencia.TabIndex = 16;
+            // 
+            // optJustificada
+            // 
+            this.optJustificada.AutoSize = true;
+            this.optJustificada.BackColor = System.Drawing.Color.Transparent;
+            this.optJustificada.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.optJustificada.CheckedState.BorderThickness = 0;
+            this.optJustificada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.optJustificada.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.optJustificada.CheckedState.InnerOffset = -4;
+            this.optJustificada.ForeColor = System.Drawing.Color.Black;
+            this.optJustificada.Location = new System.Drawing.Point(215, 292);
+            this.optJustificada.Name = "optJustificada";
+            this.optJustificada.Size = new System.Drawing.Size(80, 19);
+            this.optJustificada.TabIndex = 14;
+            this.optJustificada.Text = "Justificada";
+            this.optJustificada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.optJustificada.UncheckedState.BorderThickness = 2;
+            this.optJustificada.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.optJustificada.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.optJustificada.UseVisualStyleBackColor = false;
+            // 
+            // optInjustificada
+            // 
+            this.optInjustificada.AutoSize = true;
+            this.optInjustificada.BackColor = System.Drawing.Color.Transparent;
+            this.optInjustificada.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.optInjustificada.CheckedState.BorderThickness = 0;
+            this.optInjustificada.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.optInjustificada.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.optInjustificada.CheckedState.InnerOffset = -4;
+            this.optInjustificada.ForeColor = System.Drawing.Color.Black;
+            this.optInjustificada.Location = new System.Drawing.Point(307, 293);
+            this.optInjustificada.Name = "optInjustificada";
+            this.optInjustificada.Size = new System.Drawing.Size(89, 19);
+            this.optInjustificada.TabIndex = 15;
+            this.optInjustificada.Text = "Injustificada";
+            this.optInjustificada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.optInjustificada.UncheckedState.BorderThickness = 2;
+            this.optInjustificada.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.optInjustificada.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.optInjustificada.UseVisualStyleBackColor = false;
             // 
             // txtMotivoInasistencia
             // 
@@ -756,49 +739,30 @@
             this.btnCargar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.btnCargar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCargar.ForeColor = System.Drawing.Color.White;
-            this.btnCargar.Location = new System.Drawing.Point(442, 477);
+            this.btnCargar.Location = new System.Drawing.Point(433, 477);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(180, 45);
             this.btnCargar.TabIndex = 36;
             this.btnCargar.Text = "Cargar";
             // 
-            // gbAmonestaciones
+            // mrcAmonestación
             // 
-            this.gbAmonestaciones.Controls.Add(this.txtMotivoAmonestación);
-            this.gbAmonestaciones.Controls.Add(this.lblMotivoAmonestación);
-            this.gbAmonestaciones.Controls.Add(this.dtpInasistencia);
-            this.gbAmonestaciones.Controls.Add(this.lblFechaAmonestación);
-            this.gbAmonestaciones.Controls.Add(this.guna2TextBox1);
-            this.gbAmonestaciones.Controls.Add(this.lblNombreAmonestación);
-            this.gbAmonestaciones.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.gbAmonestaciones.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbAmonestaciones.ForeColor = System.Drawing.Color.White;
-            this.gbAmonestaciones.Location = new System.Drawing.Point(434, 139);
-            this.gbAmonestaciones.Name = "gbAmonestaciones";
-            this.gbAmonestaciones.Size = new System.Drawing.Size(435, 245);
-            this.gbAmonestaciones.TabIndex = 44;
-            this.gbAmonestaciones.Text = "Amonestaciones";
-            this.gbAmonestaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbAmonestaciones.Visible = false;
-            // 
-            // txtMotivoAmonestación
-            // 
-            this.txtMotivoAmonestación.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMotivoAmonestación.DefaultText = "";
-            this.txtMotivoAmonestación.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMotivoAmonestación.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMotivoAmonestación.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMotivoAmonestación.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMotivoAmonestación.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMotivoAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMotivoAmonestación.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMotivoAmonestación.Location = new System.Drawing.Point(194, 171);
-            this.txtMotivoAmonestación.Name = "txtMotivoAmonestación";
-            this.txtMotivoAmonestación.PasswordChar = '\0';
-            this.txtMotivoAmonestación.PlaceholderText = "";
-            this.txtMotivoAmonestación.SelectedText = "";
-            this.txtMotivoAmonestación.Size = new System.Drawing.Size(200, 36);
-            this.txtMotivoAmonestación.TabIndex = 24;
+            this.mrcAmonestación.Controls.Add(this.lstMotivoAmonestación);
+            this.mrcAmonestación.Controls.Add(this.lblMotivoAmonestación);
+            this.mrcAmonestación.Controls.Add(this.dgvFechaAmonestación);
+            this.mrcAmonestación.Controls.Add(this.lblFechaAmonestación);
+            this.mrcAmonestación.Controls.Add(this.txtNombreAmonestacion);
+            this.mrcAmonestación.Controls.Add(this.lblNombreAmonestación);
+            this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcAmonestación.ForeColor = System.Drawing.Color.White;
+            this.mrcAmonestación.Location = new System.Drawing.Point(0, 62);
+            this.mrcAmonestación.Name = "mrcAmonestación";
+            this.mrcAmonestación.Size = new System.Drawing.Size(435, 245);
+            this.mrcAmonestación.TabIndex = 44;
+            this.mrcAmonestación.Text = "Amonestaciones";
+            this.mrcAmonestación.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcAmonestación.Visible = false;
             // 
             // lblMotivoAmonestación
             // 
@@ -811,23 +775,23 @@
             this.lblMotivoAmonestación.TabIndex = 23;
             this.lblMotivoAmonestación.Text = "Razón de la Amonestación";
             // 
-            // dtpInasistencia
+            // dgvFechaAmonestación
             // 
-            this.dtpInasistencia.BackColor = System.Drawing.Color.Transparent;
-            this.dtpInasistencia.BorderColor = System.Drawing.Color.White;
-            this.dtpInasistencia.Checked = true;
-            this.dtpInasistencia.FillColor = System.Drawing.Color.White;
-            this.dtpInasistencia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpInasistencia.ForeColor = System.Drawing.Color.Black;
-            this.dtpInasistencia.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpInasistencia.Location = new System.Drawing.Point(194, 116);
-            this.dtpInasistencia.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpInasistencia.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpInasistencia.Name = "dtpInasistencia";
-            this.dtpInasistencia.Size = new System.Drawing.Size(200, 35);
-            this.dtpInasistencia.TabIndex = 22;
-            this.dtpInasistencia.UseTransparentBackground = true;
-            this.dtpInasistencia.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            this.dgvFechaAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.dgvFechaAmonestación.BorderColor = System.Drawing.Color.White;
+            this.dgvFechaAmonestación.Checked = true;
+            this.dgvFechaAmonestación.FillColor = System.Drawing.Color.White;
+            this.dgvFechaAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvFechaAmonestación.ForeColor = System.Drawing.Color.Black;
+            this.dgvFechaAmonestación.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dgvFechaAmonestación.Location = new System.Drawing.Point(194, 116);
+            this.dgvFechaAmonestación.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dgvFechaAmonestación.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dgvFechaAmonestación.Name = "dgvFechaAmonestación";
+            this.dgvFechaAmonestación.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaAmonestación.TabIndex = 22;
+            this.dgvFechaAmonestación.UseTransparentBackground = true;
+            this.dgvFechaAmonestación.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
             // 
             // lblFechaAmonestación
             // 
@@ -840,24 +804,24 @@
             this.lblFechaAmonestación.TabIndex = 21;
             this.lblFechaAmonestación.Text = "Fecha de la inasistencia";
             // 
-            // guna2TextBox1
+            // txtNombreAmonestacion
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(194, 63);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 20;
+            this.txtNombreAmonestacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreAmonestacion.DefaultText = "";
+            this.txtNombreAmonestacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreAmonestacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreAmonestacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreAmonestacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreAmonestacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreAmonestacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreAmonestacion.Location = new System.Drawing.Point(194, 63);
+            this.txtNombreAmonestacion.Name = "txtNombreAmonestacion";
+            this.txtNombreAmonestacion.PasswordChar = '\0';
+            this.txtNombreAmonestacion.PlaceholderText = "";
+            this.txtNombreAmonestacion.SelectedText = "";
+            this.txtNombreAmonestacion.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreAmonestacion.TabIndex = 20;
             // 
             // lblNombreAmonestación
             // 
@@ -870,87 +834,136 @@
             this.lblNombreAmonestación.TabIndex = 19;
             this.lblNombreAmonestación.Text = "Nombre Empleado";
             // 
+            // dgvFechaEvaluacion
+            // 
+            this.dgvFechaEvaluacion.BackColor = System.Drawing.Color.Transparent;
+            this.dgvFechaEvaluacion.BorderColor = System.Drawing.Color.White;
+            this.dgvFechaEvaluacion.Checked = true;
+            this.dgvFechaEvaluacion.FillColor = System.Drawing.Color.White;
+            this.dgvFechaEvaluacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvFechaEvaluacion.ForeColor = System.Drawing.Color.Black;
+            this.dgvFechaEvaluacion.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dgvFechaEvaluacion.Location = new System.Drawing.Point(189, 174);
+            this.dgvFechaEvaluacion.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dgvFechaEvaluacion.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dgvFechaEvaluacion.Name = "dgvFechaEvaluacion";
+            this.dgvFechaEvaluacion.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaEvaluacion.TabIndex = 31;
+            this.dgvFechaEvaluacion.UseTransparentBackground = true;
+            this.dgvFechaEvaluacion.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            // 
+            // lstMotivoAmonestación
+            // 
+            this.lstMotivoAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.lstMotivoAmonestación.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstMotivoAmonestación.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstMotivoAmonestación.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstMotivoAmonestación.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstMotivoAmonestación.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstMotivoAmonestación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstMotivoAmonestación.ItemHeight = 30;
+            this.lstMotivoAmonestación.Items.AddRange(new object[] {
+            "Incumplimiento grave de las normas de seguridad",
+            "",
+            "",
+            "Faltas injustificadas",
+            "",
+            "",
+            "Comportamiento inapropiado",
+            "",
+            "",
+            "Robo o hurto",
+            "",
+            "",
+            "Daño intencional a la propiedad",
+            "",
+            "",
+            "Divulgación de información confidencial"});
+            this.lstMotivoAmonestación.Location = new System.Drawing.Point(194, 171);
+            this.lstMotivoAmonestación.Name = "lstMotivoAmonestación";
+            this.lstMotivoAmonestación.Size = new System.Drawing.Size(200, 36);
+            this.lstMotivoAmonestación.TabIndex = 24;
+            // 
             // frmCargarReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 578);
-            this.Controls.Add(this.gbEvaluaciónDesempeño);
+            this.Controls.Add(this.mrcSuspensión);
+            this.Controls.Add(this.mrcEvaluaciónDesempeño);
+            this.Controls.Add(this.mrcInasistencia);
             this.Controls.Add(this.btnEvaluaciónDesempeño);
             this.Controls.Add(this.btnSuspensiones);
             this.Controls.Add(this.btnAmonestaciones);
             this.Controls.Add(this.btnInasistencia);
-            this.Controls.Add(this.gbInasistencia);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);
-            this.Controls.Add(this.gbAmonestaciones);
-            this.Controls.Add(this.gbSuspensión);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCargarReporte";
-            this.gbEvaluaciónDesempeño.ResumeLayout(false);
-            this.gbEvaluaciónDesempeño.PerformLayout();
-            this.gbSuspensión.ResumeLayout(false);
-            this.gbSuspensión.PerformLayout();
-            this.gbInasistencia.ResumeLayout(false);
-            this.gbInasistencia.PerformLayout();
-            this.gbAmonestaciones.ResumeLayout(false);
-            this.gbAmonestaciones.PerformLayout();
+            this.mrcEvaluaciónDesempeño.ResumeLayout(false);
+            this.mrcEvaluaciónDesempeño.PerformLayout();
+            this.mrcSuspensión.ResumeLayout(false);
+            this.mrcSuspensión.PerformLayout();
+            this.mrcInasistencia.ResumeLayout(false);
+            this.mrcInasistencia.PerformLayout();
+            this.mrcAmonestación.ResumeLayout(false);
+            this.mrcAmonestación.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GroupBox gbEvaluaciónDesempeño;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcEvaluaciónDesempeño;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblÁreaEmpleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblObservaciónes;
-        private Guna.UI2.WinForms.Guna2ComboBox cbÁreaEmpleado;
-        private Guna.UI2.WinForms.Guna2TextBox txtObservaciónes;
+        private Guna.UI2.WinForms.Guna2ComboBox lstArea;
+        private Guna.UI2.WinForms.Guna2TextBox txtObservaciónEvaluación;
         private Guna.UI2.WinForms.Guna2TextBox txtCalificación;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCalificación;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaEvaluacion;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaEvaluación;
         private Guna.UI2.WinForms.Guna2TextBox txtNombreEvaluador;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreEvaluador;
-        private Guna.UI2.WinForms.Guna2TextBox txtNombreEvaluaciónDesempeño;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreEmpleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombre;
         private Guna.UI2.WinForms.Guna2Button btnEvaluaciónDesempeño;
-        private Guna.UI2.WinForms.Guna2GroupBox gbSuspensión;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcSuspensión;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblMotivoSuspensión;
-        private Guna.UI2.WinForms.Guna2ComboBox gbMotivoSuspensión;
+        private Guna.UI2.WinForms.Guna2ComboBox lstMotivoSuspensión;
         private Guna.UI2.WinForms.Guna2TextBox txtObservación;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblObservación;
-        private Guna.UI2.WinForms.Guna2DateTimePicker gptFechaFinalización;
+        private Guna.UI2.WinForms.Guna2DateTimePicker gptHasta;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaFinalización;
-        private Guna.UI2.WinForms.Guna2DateTimePicker gptFechaInicio;
+        private Guna.UI2.WinForms.Guna2DateTimePicker gptDesde;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblInicioSuspensión;
         private Guna.UI2.WinForms.Guna2TextBox txtNombreSuspensión;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreSuspensión;
         private Guna.UI2.WinForms.Guna2Button btnSuspensiones;
         private Guna.UI2.WinForms.Guna2Button btnAmonestaciones;
         private Guna.UI2.WinForms.Guna2Button btnInasistencia;
-        private Guna.UI2.WinForms.Guna2GroupBox gbInasistencia;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcInasistencia;
         private Guna.UI2.WinForms.Guna2TextBox txtNombreInasistencia;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFecha;
-        private Guna.UI2.WinForms.Guna2ComboBox cbTipoInasistencia;
-        private Guna.UI2.WinForms.Guna2RadioButton rbJustificada;
-        private Guna.UI2.WinForms.Guna2RadioButton rbInjustificada;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dgvFechaInasistencia;
+        private Guna.UI2.WinForms.Guna2ComboBox lstTipoInasistencia;
+        private Guna.UI2.WinForms.Guna2RadioButton optJustificada;
+        private Guna.UI2.WinForms.Guna2RadioButton optInjustificada;
         private Guna.UI2.WinForms.Guna2TextBox txtMotivoInasistencia;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
         private Guna.UI2.WinForms.Guna2Button btnCargar;
-        private Guna.UI2.WinForms.Guna2GroupBox gbAmonestaciones;
-        private Guna.UI2.WinForms.Guna2TextBox txtMotivoAmonestación;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcAmonestación;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblMotivoAmonestación;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpInasistencia;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dgvFechaAmonestación;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaAmonestación;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreAmonestacion;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreAmonestación;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblMotivoInasistencia;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoInasistencia;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblJustificado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaInasistencia;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreInasistencia;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dgvFechaEvaluacion;
+        private Guna.UI2.WinForms.Guna2ComboBox lstMotivoAmonestación;
     }
 }
