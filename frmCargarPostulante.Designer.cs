@@ -32,7 +32,7 @@
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.mrcDatosContacto = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lblCV = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnCargarCV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCargarCv = new Guna.UI2.WinForms.Guna2Button();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtTeléfonoPostulante = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
@@ -86,7 +86,7 @@
             // 
             this.mrcDatosContacto.BorderRadius = 22;
             this.mrcDatosContacto.Controls.Add(this.lblCV);
-            this.mrcDatosContacto.Controls.Add(this.btnCargarCV);
+            this.mrcDatosContacto.Controls.Add(this.btnCargarCv);
             this.mrcDatosContacto.Controls.Add(this.lblTelefono);
             this.mrcDatosContacto.Controls.Add(this.txtTeléfonoPostulante);
             this.mrcDatosContacto.Controls.Add(this.lblCorreo);
@@ -111,22 +111,23 @@
             this.lblCV.TabIndex = 5;
             this.lblCV.Text = "Adjuntar Curriculum:";
             // 
-            // btnCargarCV
+            // btnCargarCv
             // 
-            this.btnCargarCV.BackColor = System.Drawing.Color.Transparent;
-            this.btnCargarCV.BorderRadius = 12;
-            this.btnCargarCV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCargarCV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCargarCV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCargarCV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCargarCV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.btnCargarCV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCargarCV.ForeColor = System.Drawing.Color.White;
-            this.btnCargarCV.Location = new System.Drawing.Point(406, 106);
-            this.btnCargarCV.Name = "btnCargarCV";
-            this.btnCargarCV.Size = new System.Drawing.Size(180, 45);
-            this.btnCargarCV.TabIndex = 4;
-            this.btnCargarCV.Text = "Cargar CV";
+            this.btnCargarCv.BackColor = System.Drawing.Color.Transparent;
+            this.btnCargarCv.BorderRadius = 12;
+            this.btnCargarCv.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCargarCv.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCargarCv.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCargarCv.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCargarCv.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnCargarCv.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCargarCv.ForeColor = System.Drawing.Color.White;
+            this.btnCargarCv.Location = new System.Drawing.Point(406, 106);
+            this.btnCargarCv.Name = "btnCargarCv";
+            this.btnCargarCv.Size = new System.Drawing.Size(180, 45);
+            this.btnCargarCv.TabIndex = 4;
+            this.btnCargarCv.Text = "Cargar CV";
+            this.btnCargarCv.Click += new System.EventHandler(this.btnCargarCV_Click);
             // 
             // lblTelefono
             // 
@@ -235,13 +236,6 @@
             this.cmbArea.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbArea.ItemHeight = 30;
-            this.cmbArea.Items.AddRange(new object[] {
-            "Investigación y Desarrollo",
-            "Marketing y Ventas",
-            "Logística y Distribución",
-            "Administración y Finanzas",
-            "Recursos Humanos",
-            "Legal"});
             this.cmbArea.Location = new System.Drawing.Point(406, 115);
             this.cmbArea.Name = "cmbArea";
             this.cmbArea.Size = new System.Drawing.Size(193, 36);
@@ -368,7 +362,7 @@
         private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private Guna.UI2.WinForms.Guna2GroupBox mrcDatosContacto;
-        private Guna.UI2.WinForms.Guna2Button btnCargarCV;
+        private Guna.UI2.WinForms.Guna2Button btnCargarCv;
         private System.Windows.Forms.Label lblTelefono;
         private Guna.UI2.WinForms.Guna2TextBox txtTeléfonoPostulante;
         private System.Windows.Forms.Label lblCorreo;

@@ -30,7 +30,6 @@
         {
             this.mrcDireccion = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtNúmeroCalle = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblCodPostal = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstCiudad = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCiudad = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstBarrio = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -71,6 +70,7 @@
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCodPostal = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCodPostal = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcDireccion.SuspendLayout();
             this.mcrDatosLaborales.SuspendLayout();
             this.mrcDatosPersonales.SuspendLayout();
@@ -79,8 +79,8 @@
             // mrcDireccion
             // 
             this.mrcDireccion.Controls.Add(this.txtCodPostal);
-            this.mrcDireccion.Controls.Add(this.txtNúmeroCalle);
             this.mrcDireccion.Controls.Add(this.lblCodPostal);
+            this.mrcDireccion.Controls.Add(this.txtNúmeroCalle);
             this.mrcDireccion.Controls.Add(this.lstCiudad);
             this.mrcDireccion.Controls.Add(this.lblCiudad);
             this.mrcDireccion.Controls.Add(this.lstBarrio);
@@ -108,24 +108,13 @@
             this.txtNúmeroCalle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNúmeroCalle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNúmeroCalle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNúmeroCalle.Location = new System.Drawing.Point(120, 108);
+            this.txtNúmeroCalle.Location = new System.Drawing.Point(346, 43);
             this.txtNúmeroCalle.Name = "txtNúmeroCalle";
             this.txtNúmeroCalle.PasswordChar = '\0';
             this.txtNúmeroCalle.PlaceholderText = "";
             this.txtNúmeroCalle.SelectedText = "";
-            this.txtNúmeroCalle.Size = new System.Drawing.Size(94, 36);
+            this.txtNúmeroCalle.Size = new System.Drawing.Size(58, 36);
             this.txtNúmeroCalle.TabIndex = 35;
-            // 
-            // lblCodPostal
-            // 
-            this.lblCodPostal.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodPostal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodPostal.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblCodPostal.Location = new System.Drawing.Point(220, 108);
-            this.lblCodPostal.Name = "lblCodPostal";
-            this.lblCodPostal.Size = new System.Drawing.Size(80, 22);
-            this.lblCodPostal.TabIndex = 33;
-            this.lblCodPostal.Text = "Cod. Postal:";
             // 
             // lstCiudad
             // 
@@ -137,9 +126,9 @@
             this.lstCiudad.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstCiudad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstCiudad.ItemHeight = 30;
-            this.lstCiudad.Location = new System.Drawing.Point(301, 46);
+            this.lstCiudad.Location = new System.Drawing.Point(85, 90);
             this.lstCiudad.Name = "lstCiudad";
-            this.lstCiudad.Size = new System.Drawing.Size(98, 36);
+            this.lstCiudad.Size = new System.Drawing.Size(166, 36);
             this.lstCiudad.TabIndex = 32;
             // 
             // lblCiudad
@@ -147,7 +136,7 @@
             this.lblCiudad.BackColor = System.Drawing.Color.Transparent;
             this.lblCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCiudad.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblCiudad.Location = new System.Drawing.Point(231, 46);
+            this.lblCiudad.Location = new System.Drawing.Point(17, 90);
             this.lblCiudad.Name = "lblCiudad";
             this.lblCiudad.Size = new System.Drawing.Size(53, 22);
             this.lblCiudad.TabIndex = 31;
@@ -163,9 +152,9 @@
             this.lstBarrio.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstBarrio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstBarrio.ItemHeight = 30;
-            this.lstBarrio.Location = new System.Drawing.Point(120, 161);
+            this.lstBarrio.Location = new System.Drawing.Point(85, 132);
             this.lstBarrio.Name = "lstBarrio";
-            this.lstBarrio.Size = new System.Drawing.Size(98, 36);
+            this.lstBarrio.Size = new System.Drawing.Size(166, 36);
             this.lstBarrio.TabIndex = 30;
             // 
             // lstCalle
@@ -178,9 +167,9 @@
             this.lstCalle.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstCalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstCalle.ItemHeight = 30;
-            this.lstCalle.Location = new System.Drawing.Point(120, 48);
+            this.lstCalle.Location = new System.Drawing.Point(85, 48);
             this.lstCalle.Name = "lstCalle";
-            this.lstCalle.Size = new System.Drawing.Size(98, 36);
+            this.lstCalle.Size = new System.Drawing.Size(166, 36);
             this.lstCalle.TabIndex = 29;
             // 
             // lblCalle
@@ -199,18 +188,18 @@
             this.lblNumeroCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblNumeroCalle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroCalle.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblNumeroCalle.Location = new System.Drawing.Point(17, 108);
+            this.lblNumeroCalle.Location = new System.Drawing.Point(262, 48);
             this.lblNumeroCalle.Name = "lblNumeroCalle";
-            this.lblNumeroCalle.Size = new System.Drawing.Size(97, 22);
+            this.lblNumeroCalle.Size = new System.Drawing.Size(78, 22);
             this.lblNumeroCalle.TabIndex = 27;
-            this.lblNumeroCalle.Text = "Número Calle:";
+            this.lblNumeroCalle.Text = "Núm. Calle:";
             // 
             // lblBarrio
             // 
             this.lblBarrio.BackColor = System.Drawing.Color.Transparent;
             this.lblBarrio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBarrio.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblBarrio.Location = new System.Drawing.Point(17, 168);
+            this.lblBarrio.Location = new System.Drawing.Point(17, 132);
             this.lblBarrio.Name = "lblBarrio";
             this.lblBarrio.Size = new System.Drawing.Size(46, 22);
             this.lblBarrio.TabIndex = 26;
@@ -261,11 +250,12 @@
             this.btnCargarCV.FillColor = System.Drawing.Color.Indigo;
             this.btnCargarCV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarCV.ForeColor = System.Drawing.Color.White;
-            this.btnCargarCV.Location = new System.Drawing.Point(327, 168);
+            this.btnCargarCV.Location = new System.Drawing.Point(136, 214);
             this.btnCargarCV.Name = "btnCargarCV";
             this.btnCargarCV.Size = new System.Drawing.Size(159, 35);
             this.btnCargarCV.TabIndex = 23;
             this.btnCargarCV.Text = "Cargar Curriculum";
+            this.btnCargarCV.Click += new System.EventHandler(this.btnCargarCV_Click);
             // 
             // lstTipoContrato
             // 
@@ -277,14 +267,9 @@
             this.lstTipoContrato.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstTipoContrato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstTipoContrato.ItemHeight = 30;
-            this.lstTipoContrato.Items.AddRange(new object[] {
-            "Contrato de pasantía",
-            "Contrato de temporada",
-            "Contrato por tiempo indeterminado",
-            "Contrato por tiempo determinado"});
-            this.lstTipoContrato.Location = new System.Drawing.Point(130, 166);
+            this.lstTipoContrato.Location = new System.Drawing.Point(136, 172);
             this.lstTipoContrato.Name = "lstTipoContrato";
-            this.lstTipoContrato.Size = new System.Drawing.Size(141, 36);
+            this.lstTipoContrato.Size = new System.Drawing.Size(208, 36);
             this.lstTipoContrato.TabIndex = 22;
             // 
             // lblTipoContrato
@@ -292,7 +277,7 @@
             this.lblTipoContrato.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoContrato.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoContrato.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblTipoContrato.Location = new System.Drawing.Point(5, 173);
+            this.lblTipoContrato.Location = new System.Drawing.Point(11, 172);
             this.lblTipoContrato.Name = "lblTipoContrato";
             this.lblTipoContrato.Size = new System.Drawing.Size(119, 22);
             this.lblTipoContrato.TabIndex = 21;
@@ -309,12 +294,10 @@
             this.lstCategoría.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstCategoría.ItemHeight = 30;
             this.lstCategoría.Items.AddRange(new object[] {
-            "Gerente",
-            "Ejecutivo",
-            "Asistente"});
-            this.lstCategoría.Location = new System.Drawing.Point(415, 58);
+            ""});
+            this.lstCategoría.Location = new System.Drawing.Point(136, 88);
             this.lstCategoría.Name = "lstCategoría";
-            this.lstCategoría.Size = new System.Drawing.Size(93, 36);
+            this.lstCategoría.Size = new System.Drawing.Size(208, 36);
             this.lstCategoría.TabIndex = 20;
             // 
             // dtpFechaIngreso
@@ -323,7 +306,7 @@
             this.dtpFechaIngreso.FillColor = System.Drawing.Color.Indigo;
             this.dtpFechaIngreso.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(114, 58);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(136, 48);
             this.dtpFechaIngreso.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFechaIngreso.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
@@ -341,16 +324,9 @@
             this.lstAreaEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstAreaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstAreaEmpleado.ItemHeight = 30;
-            this.lstAreaEmpleado.Items.AddRange(new object[] {
-            "Investigación y Desarrollo",
-            "Marketing y Ventas",
-            "Logística y Distribución",
-            "Administración y Finanzas",
-            "Recursos Humanos",
-            "Legal"});
-            this.lstAreaEmpleado.Location = new System.Drawing.Point(130, 108);
+            this.lstAreaEmpleado.Location = new System.Drawing.Point(136, 130);
             this.lstAreaEmpleado.Name = "lstAreaEmpleado";
-            this.lstAreaEmpleado.Size = new System.Drawing.Size(141, 36);
+            this.lstAreaEmpleado.Size = new System.Drawing.Size(208, 36);
             this.lstAreaEmpleado.TabIndex = 19;
             // 
             // lblCV
@@ -358,18 +334,18 @@
             this.lblCV.BackColor = System.Drawing.Color.Transparent;
             this.lblCV.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCV.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblCV.Location = new System.Drawing.Point(338, 122);
+            this.lblCV.Location = new System.Drawing.Point(15, 214);
             this.lblCV.Name = "lblCV";
-            this.lblCV.Size = new System.Drawing.Size(138, 22);
+            this.lblCV.Size = new System.Drawing.Size(72, 22);
             this.lblCV.TabIndex = 3;
-            this.lblCV.Text = "Adjuntar Curriculum:";
+            this.lblCV.Text = "Cargar CV:";
             // 
             // lblCategoria
             // 
             this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblCategoria.Location = new System.Drawing.Point(338, 60);
+            this.lblCategoria.Location = new System.Drawing.Point(11, 88);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(71, 22);
             this.lblCategoria.TabIndex = 2;
@@ -380,7 +356,7 @@
             this.lblAreaEmpleado.BackColor = System.Drawing.Color.Transparent;
             this.lblAreaEmpleado.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAreaEmpleado.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblAreaEmpleado.Location = new System.Drawing.Point(11, 120);
+            this.lblAreaEmpleado.Location = new System.Drawing.Point(11, 130);
             this.lblAreaEmpleado.Name = "lblAreaEmpleado";
             this.lblAreaEmpleado.Size = new System.Drawing.Size(113, 22);
             this.lblAreaEmpleado.TabIndex = 1;
@@ -391,7 +367,7 @@
             this.lblFechaIngreso.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaIngreso.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaIngreso.ForeColor = System.Drawing.Color.DarkViolet;
-            this.lblFechaIngreso.Location = new System.Drawing.Point(11, 58);
+            this.lblFechaIngreso.Location = new System.Drawing.Point(11, 48);
             this.lblFechaIngreso.Name = "lblFechaIngreso";
             this.lblFechaIngreso.Size = new System.Drawing.Size(97, 22);
             this.lblFechaIngreso.TabIndex = 0;
@@ -500,11 +476,6 @@
             this.lstEstadoCivil.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstEstadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstEstadoCivil.ItemHeight = 30;
-            this.lstEstadoCivil.Items.AddRange(new object[] {
-            "Soltero/a",
-            "Casado/a",
-            "Divorciado/a",
-            "Viudo/a"});
             this.lstEstadoCivil.Location = new System.Drawing.Point(714, 60);
             this.lstEstadoCivil.Name = "lstEstadoCivil";
             this.lstEstadoCivil.Size = new System.Drawing.Size(143, 36);
@@ -521,10 +492,7 @@
             this.lstTipoDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstTipoDocumento.ItemHeight = 30;
             this.lstTipoDocumento.Items.AddRange(new object[] {
-            "Libreta Cívica",
-            "Certificado de Pre-identificación",
-            "Documento Nacional de Identidad para Extranjeros",
-            "DNI "});
+            ""});
             this.lstTipoDocumento.Location = new System.Drawing.Point(399, 60);
             this.lstTipoDocumento.Name = "lstTipoDocumento";
             this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
@@ -668,9 +636,9 @@
             this.lblLegajo.ForeColor = System.Drawing.Color.DarkViolet;
             this.lblLegajo.Location = new System.Drawing.Point(34, 165);
             this.lblLegajo.Name = "lblLegajo";
-            this.lblLegajo.Size = new System.Drawing.Size(51, 22);
+            this.lblLegajo.Size = new System.Drawing.Size(36, 22);
             this.lblLegajo.TabIndex = 2;
-            this.lblLegajo.Text = "Legajo:";
+            this.lblLegajo.Text = "CUIL:";
             // 
             // lblApellido
             // 
@@ -716,13 +684,24 @@
             this.txtCodPostal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodPostal.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCodPostal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCodPostal.Location = new System.Drawing.Point(305, 108);
+            this.txtCodPostal.Location = new System.Drawing.Point(346, 90);
             this.txtCodPostal.Name = "txtCodPostal";
             this.txtCodPostal.PasswordChar = '\0';
             this.txtCodPostal.PlaceholderText = "";
             this.txtCodPostal.SelectedText = "";
-            this.txtCodPostal.Size = new System.Drawing.Size(94, 36);
-            this.txtCodPostal.TabIndex = 36;
+            this.txtCodPostal.Size = new System.Drawing.Size(58, 36);
+            this.txtCodPostal.TabIndex = 37;
+            // 
+            // lblCodPostal
+            // 
+            this.lblCodPostal.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodPostal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodPostal.ForeColor = System.Drawing.Color.DarkViolet;
+            this.lblCodPostal.Location = new System.Drawing.Point(262, 95);
+            this.lblCodPostal.Name = "lblCodPostal";
+            this.lblCodPostal.Size = new System.Drawing.Size(77, 22);
+            this.lblCodPostal.TabIndex = 36;
+            this.lblCodPostal.Text = "Cod. Postal";
             // 
             // frmCargarEmpleado
             // 
@@ -752,7 +731,6 @@
 
         private Guna.UI2.WinForms.Guna2GroupBox mrcDireccion;
         private Guna.UI2.WinForms.Guna2TextBox txtNúmeroCalle;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCodPostal;
         private Guna.UI2.WinForms.Guna2ComboBox lstCiudad;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCiudad;
         private Guna.UI2.WinForms.Guna2ComboBox lstBarrio;
@@ -762,7 +740,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBarrio;
         private Guna.UI2.WinForms.Guna2Button btnCargarEmpleado;
         private Guna.UI2.WinForms.Guna2GroupBox mcrDatosLaborales;
-        private Guna.UI2.WinForms.Guna2Button btnCargarCV;
         private Guna.UI2.WinForms.Guna2ComboBox lstTipoContrato;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoContrato;
         private Guna.UI2.WinForms.Guna2ComboBox lstCategoría;
@@ -792,6 +769,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblApellido;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombre;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
+        private Guna.UI2.WinForms.Guna2Button btnCargarCV;
         private Guna.UI2.WinForms.Guna2TextBox txtCodPostal;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCodPostal;
     }
 }

@@ -43,20 +43,8 @@
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnEvaluaciónDesempeño = new Guna.UI2.WinForms.Guna2Button();
             this.mrcSuspensión = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.mrcDespido = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dtpFechaDespido = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblFechaDespido = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtDocumentoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblDocumentoEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblMotivoSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstMotivoSuspensión = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.mrcAmonestación = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lstMotivoAmonestación = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblMotivoAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dgvFechaAmonestación = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblFechaAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtNombreAmonestacion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblNombreAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtObservación = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblObservación = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gptHasta = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -65,6 +53,18 @@
             this.lblInicioSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNombreSuspensión = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.mrcDespido = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.dtpFechaDespido = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblFechaDespido = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtDocumentoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblDocumentoEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.mrcAmonestación = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lstMotivoAmonestación = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblMotivoAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dgvFechaAmonestación = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblFechaAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtNombreAmonestacion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblNombreAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSuspensiones = new Guna.UI2.WinForms.Guna2Button();
             this.btnAmonestaciones = new Guna.UI2.WinForms.Guna2Button();
             this.btnInasistencia = new Guna.UI2.WinForms.Guna2Button();
@@ -147,13 +147,6 @@
             this.lstArea.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstArea.ItemHeight = 30;
-            this.lstArea.Items.AddRange(new object[] {
-            "Investigación y Desarrollo",
-            "Marketing y Ventas",
-            "Logística y Distribución",
-            "Administración y Finanzas",
-            "Recursos Humanos",
-            "Legal"});
             this.lstArea.Location = new System.Drawing.Point(189, 280);
             this.lstArea.Name = "lstArea";
             this.lstArea.Size = new System.Drawing.Size(200, 36);
@@ -337,82 +330,6 @@
             this.mrcSuspensión.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mrcSuspensión.Visible = false;
             // 
-            // mrcDespido
-            // 
-            this.mrcDespido.Controls.Add(this.dtpFechaDespido);
-            this.mrcDespido.Controls.Add(this.lblFechaDespido);
-            this.mrcDespido.Controls.Add(this.txtDocumentoEmpleado);
-            this.mrcDespido.Controls.Add(this.lblDocumentoEmpleado);
-            this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.mrcDespido.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.mrcDespido.ForeColor = System.Drawing.Color.White;
-            this.mrcDespido.Location = new System.Drawing.Point(433, 111);
-            this.mrcDespido.Name = "mrcDespido";
-            this.mrcDespido.Size = new System.Drawing.Size(435, 203);
-            this.mrcDespido.TabIndex = 45;
-            this.mrcDespido.Text = "Despido";
-            this.mrcDespido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.mrcDespido.Visible = false;
-            // 
-            // dtpFechaDespido
-            // 
-            this.dtpFechaDespido.BackColor = System.Drawing.Color.Transparent;
-            this.dtpFechaDespido.BorderColor = System.Drawing.Color.White;
-            this.dtpFechaDespido.Checked = true;
-            this.dtpFechaDespido.FillColor = System.Drawing.Color.White;
-            this.dtpFechaDespido.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpFechaDespido.ForeColor = System.Drawing.Color.Black;
-            this.dtpFechaDespido.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaDespido.Location = new System.Drawing.Point(194, 125);
-            this.dtpFechaDespido.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpFechaDespido.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaDespido.Name = "dtpFechaDespido";
-            this.dtpFechaDespido.Size = new System.Drawing.Size(200, 35);
-            this.dtpFechaDespido.TabIndex = 22;
-            this.dtpFechaDespido.UseTransparentBackground = true;
-            this.dtpFechaDespido.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
-            // 
-            // lblFechaDespido
-            // 
-            this.lblFechaDespido.BackColor = System.Drawing.Color.Transparent;
-            this.lblFechaDespido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaDespido.ForeColor = System.Drawing.Color.Black;
-            this.lblFechaDespido.Location = new System.Drawing.Point(21, 139);
-            this.lblFechaDespido.Name = "lblFechaDespido";
-            this.lblFechaDespido.Size = new System.Drawing.Size(115, 18);
-            this.lblFechaDespido.TabIndex = 21;
-            this.lblFechaDespido.Text = "Fecha de Despido";
-            // 
-            // txtDocumentoEmpleado
-            // 
-            this.txtDocumentoEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDocumentoEmpleado.DefaultText = "";
-            this.txtDocumentoEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDocumentoEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDocumentoEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDocumentoEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDocumentoEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDocumentoEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDocumentoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDocumentoEmpleado.Location = new System.Drawing.Point(194, 72);
-            this.txtDocumentoEmpleado.Name = "txtDocumentoEmpleado";
-            this.txtDocumentoEmpleado.PasswordChar = '\0';
-            this.txtDocumentoEmpleado.PlaceholderText = "";
-            this.txtDocumentoEmpleado.SelectedText = "";
-            this.txtDocumentoEmpleado.Size = new System.Drawing.Size(200, 36);
-            this.txtDocumentoEmpleado.TabIndex = 20;
-            // 
-            // lblDocumentoEmpleado
-            // 
-            this.lblDocumentoEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lblDocumentoEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDocumentoEmpleado.ForeColor = System.Drawing.Color.Black;
-            this.lblDocumentoEmpleado.Location = new System.Drawing.Point(21, 78);
-            this.lblDocumentoEmpleado.Name = "lblDocumentoEmpleado";
-            this.lblDocumentoEmpleado.Size = new System.Drawing.Size(157, 18);
-            this.lblDocumentoEmpleado.TabIndex = 19;
-            this.lblDocumentoEmpleado.Text = "Documento de Empleado";
-            // 
             // lblMotivoSuspensión
             // 
             this.lblMotivoSuspensión.BackColor = System.Drawing.Color.Transparent;
@@ -434,138 +351,10 @@
             this.lstMotivoSuspensión.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstMotivoSuspensión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstMotivoSuspensión.ItemHeight = 30;
-            this.lstMotivoSuspensión.Items.AddRange(new object[] {
-            "Incumplimiento grave de las normas de seguridad",
-            "Faltas injustificadas",
-            "Comportamiento inapropiado",
-            "Robo o hurto",
-            "Daño intencional a la propiedad",
-            "Divulgación de información confidencial"});
             this.lstMotivoSuspensión.Location = new System.Drawing.Point(189, 280);
             this.lstMotivoSuspensión.Name = "lstMotivoSuspensión";
             this.lstMotivoSuspensión.Size = new System.Drawing.Size(200, 36);
             this.lstMotivoSuspensión.TabIndex = 33;
-            // 
-            // mrcAmonestación
-            // 
-            this.mrcAmonestación.Controls.Add(this.lstMotivoAmonestación);
-            this.mrcAmonestación.Controls.Add(this.lblMotivoAmonestación);
-            this.mrcAmonestación.Controls.Add(this.dgvFechaAmonestación);
-            this.mrcAmonestación.Controls.Add(this.lblFechaAmonestación);
-            this.mrcAmonestación.Controls.Add(this.txtNombreAmonestacion);
-            this.mrcAmonestación.Controls.Add(this.lblNombreAmonestación);
-            this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.mrcAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.mrcAmonestación.ForeColor = System.Drawing.Color.White;
-            this.mrcAmonestación.Location = new System.Drawing.Point(431, 130);
-            this.mrcAmonestación.Name = "mrcAmonestación";
-            this.mrcAmonestación.Size = new System.Drawing.Size(435, 245);
-            this.mrcAmonestación.TabIndex = 44;
-            this.mrcAmonestación.Text = "Amonestaciones";
-            this.mrcAmonestación.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.mrcAmonestación.Visible = false;
-            // 
-            // lstMotivoAmonestación
-            // 
-            this.lstMotivoAmonestación.BackColor = System.Drawing.Color.Transparent;
-            this.lstMotivoAmonestación.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstMotivoAmonestación.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstMotivoAmonestación.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstMotivoAmonestación.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstMotivoAmonestación.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lstMotivoAmonestación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.lstMotivoAmonestación.ItemHeight = 30;
-            this.lstMotivoAmonestación.Items.AddRange(new object[] {
-            "Incumplimiento grave de las normas de seguridad",
-            "",
-            "",
-            "Faltas injustificadas",
-            "",
-            "",
-            "Comportamiento inapropiado",
-            "",
-            "",
-            "Robo o hurto",
-            "",
-            "",
-            "Daño intencional a la propiedad",
-            "",
-            "",
-            "Divulgación de información confidencial"});
-            this.lstMotivoAmonestación.Location = new System.Drawing.Point(194, 171);
-            this.lstMotivoAmonestación.Name = "lstMotivoAmonestación";
-            this.lstMotivoAmonestación.Size = new System.Drawing.Size(200, 36);
-            this.lstMotivoAmonestación.TabIndex = 24;
-            // 
-            // lblMotivoAmonestación
-            // 
-            this.lblMotivoAmonestación.BackColor = System.Drawing.Color.Transparent;
-            this.lblMotivoAmonestación.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotivoAmonestación.ForeColor = System.Drawing.Color.Black;
-            this.lblMotivoAmonestación.Location = new System.Drawing.Point(24, 189);
-            this.lblMotivoAmonestación.Name = "lblMotivoAmonestación";
-            this.lblMotivoAmonestación.Size = new System.Drawing.Size(164, 18);
-            this.lblMotivoAmonestación.TabIndex = 23;
-            this.lblMotivoAmonestación.Text = "Razón de la Amonestación";
-            // 
-            // dgvFechaAmonestación
-            // 
-            this.dgvFechaAmonestación.BackColor = System.Drawing.Color.Transparent;
-            this.dgvFechaAmonestación.BorderColor = System.Drawing.Color.White;
-            this.dgvFechaAmonestación.Checked = true;
-            this.dgvFechaAmonestación.FillColor = System.Drawing.Color.White;
-            this.dgvFechaAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dgvFechaAmonestación.ForeColor = System.Drawing.Color.Black;
-            this.dgvFechaAmonestación.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dgvFechaAmonestación.Location = new System.Drawing.Point(194, 116);
-            this.dgvFechaAmonestación.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dgvFechaAmonestación.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dgvFechaAmonestación.Name = "dgvFechaAmonestación";
-            this.dgvFechaAmonestación.Size = new System.Drawing.Size(200, 35);
-            this.dgvFechaAmonestación.TabIndex = 22;
-            this.dgvFechaAmonestación.UseTransparentBackground = true;
-            this.dgvFechaAmonestación.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
-            // 
-            // lblFechaAmonestación
-            // 
-            this.lblFechaAmonestación.BackColor = System.Drawing.Color.Transparent;
-            this.lblFechaAmonestación.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaAmonestación.ForeColor = System.Drawing.Color.Black;
-            this.lblFechaAmonestación.Location = new System.Drawing.Point(40, 133);
-            this.lblFechaAmonestación.Name = "lblFechaAmonestación";
-            this.lblFechaAmonestación.Size = new System.Drawing.Size(148, 18);
-            this.lblFechaAmonestación.TabIndex = 21;
-            this.lblFechaAmonestación.Text = "Fecha de la inasistencia";
-            // 
-            // txtNombreAmonestacion
-            // 
-            this.txtNombreAmonestacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreAmonestacion.DefaultText = "";
-            this.txtNombreAmonestacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombreAmonestacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombreAmonestacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreAmonestacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreAmonestacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreAmonestacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombreAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreAmonestacion.Location = new System.Drawing.Point(194, 63);
-            this.txtNombreAmonestacion.Name = "txtNombreAmonestacion";
-            this.txtNombreAmonestacion.PasswordChar = '\0';
-            this.txtNombreAmonestacion.PlaceholderText = "";
-            this.txtNombreAmonestacion.SelectedText = "";
-            this.txtNombreAmonestacion.Size = new System.Drawing.Size(200, 36);
-            this.txtNombreAmonestacion.TabIndex = 20;
-            // 
-            // lblNombreAmonestación
-            // 
-            this.lblNombreAmonestación.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombreAmonestación.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreAmonestación.ForeColor = System.Drawing.Color.Black;
-            this.lblNombreAmonestación.Location = new System.Drawing.Point(70, 79);
-            this.lblNombreAmonestación.Name = "lblNombreAmonestación";
-            this.lblNombreAmonestación.Size = new System.Drawing.Size(118, 18);
-            this.lblNombreAmonestación.TabIndex = 19;
-            this.lblNombreAmonestación.Text = "Nombre Empleado";
             // 
             // txtObservación
             // 
@@ -684,6 +473,186 @@
             this.lblNombreSuspensión.Size = new System.Drawing.Size(118, 18);
             this.lblNombreSuspensión.TabIndex = 25;
             this.lblNombreSuspensión.Text = "Nombre Empleado";
+            // 
+            // mrcDespido
+            // 
+            this.mrcDespido.Controls.Add(this.dtpFechaDespido);
+            this.mrcDespido.Controls.Add(this.lblFechaDespido);
+            this.mrcDespido.Controls.Add(this.txtDocumentoEmpleado);
+            this.mrcDespido.Controls.Add(this.lblDocumentoEmpleado);
+            this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcDespido.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcDespido.ForeColor = System.Drawing.Color.White;
+            this.mrcDespido.Location = new System.Drawing.Point(433, 111);
+            this.mrcDespido.Name = "mrcDespido";
+            this.mrcDespido.Size = new System.Drawing.Size(435, 203);
+            this.mrcDespido.TabIndex = 45;
+            this.mrcDespido.Text = "Despido";
+            this.mrcDespido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcDespido.Visible = false;
+            // 
+            // dtpFechaDespido
+            // 
+            this.dtpFechaDespido.BackColor = System.Drawing.Color.Transparent;
+            this.dtpFechaDespido.BorderColor = System.Drawing.Color.White;
+            this.dtpFechaDespido.Checked = true;
+            this.dtpFechaDespido.FillColor = System.Drawing.Color.White;
+            this.dtpFechaDespido.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpFechaDespido.ForeColor = System.Drawing.Color.Black;
+            this.dtpFechaDespido.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpFechaDespido.Location = new System.Drawing.Point(194, 125);
+            this.dtpFechaDespido.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpFechaDespido.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpFechaDespido.Name = "dtpFechaDespido";
+            this.dtpFechaDespido.Size = new System.Drawing.Size(200, 35);
+            this.dtpFechaDespido.TabIndex = 22;
+            this.dtpFechaDespido.UseTransparentBackground = true;
+            this.dtpFechaDespido.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            // 
+            // lblFechaDespido
+            // 
+            this.lblFechaDespido.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaDespido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaDespido.ForeColor = System.Drawing.Color.Black;
+            this.lblFechaDespido.Location = new System.Drawing.Point(21, 139);
+            this.lblFechaDespido.Name = "lblFechaDespido";
+            this.lblFechaDespido.Size = new System.Drawing.Size(115, 18);
+            this.lblFechaDespido.TabIndex = 21;
+            this.lblFechaDespido.Text = "Fecha de Despido";
+            // 
+            // txtDocumentoEmpleado
+            // 
+            this.txtDocumentoEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDocumentoEmpleado.DefaultText = "";
+            this.txtDocumentoEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDocumentoEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDocumentoEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDocumentoEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDocumentoEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDocumentoEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDocumentoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDocumentoEmpleado.Location = new System.Drawing.Point(194, 72);
+            this.txtDocumentoEmpleado.Name = "txtDocumentoEmpleado";
+            this.txtDocumentoEmpleado.PasswordChar = '\0';
+            this.txtDocumentoEmpleado.PlaceholderText = "";
+            this.txtDocumentoEmpleado.SelectedText = "";
+            this.txtDocumentoEmpleado.Size = new System.Drawing.Size(200, 36);
+            this.txtDocumentoEmpleado.TabIndex = 20;
+            // 
+            // lblDocumentoEmpleado
+            // 
+            this.lblDocumentoEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblDocumentoEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumentoEmpleado.ForeColor = System.Drawing.Color.Black;
+            this.lblDocumentoEmpleado.Location = new System.Drawing.Point(21, 78);
+            this.lblDocumentoEmpleado.Name = "lblDocumentoEmpleado";
+            this.lblDocumentoEmpleado.Size = new System.Drawing.Size(157, 18);
+            this.lblDocumentoEmpleado.TabIndex = 19;
+            this.lblDocumentoEmpleado.Text = "Documento de Empleado";
+            // 
+            // mrcAmonestación
+            // 
+            this.mrcAmonestación.Controls.Add(this.lstMotivoAmonestación);
+            this.mrcAmonestación.Controls.Add(this.lblMotivoAmonestación);
+            this.mrcAmonestación.Controls.Add(this.dgvFechaAmonestación);
+            this.mrcAmonestación.Controls.Add(this.lblFechaAmonestación);
+            this.mrcAmonestación.Controls.Add(this.txtNombreAmonestacion);
+            this.mrcAmonestación.Controls.Add(this.lblNombreAmonestación);
+            this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mrcAmonestación.ForeColor = System.Drawing.Color.White;
+            this.mrcAmonestación.Location = new System.Drawing.Point(431, 130);
+            this.mrcAmonestación.Name = "mrcAmonestación";
+            this.mrcAmonestación.Size = new System.Drawing.Size(435, 245);
+            this.mrcAmonestación.TabIndex = 44;
+            this.mrcAmonestación.Text = "Amonestaciones";
+            this.mrcAmonestación.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcAmonestación.Visible = false;
+            // 
+            // lstMotivoAmonestación
+            // 
+            this.lstMotivoAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.lstMotivoAmonestación.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstMotivoAmonestación.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstMotivoAmonestación.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstMotivoAmonestación.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstMotivoAmonestación.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstMotivoAmonestación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lstMotivoAmonestación.ItemHeight = 30;
+            this.lstMotivoAmonestación.Location = new System.Drawing.Point(194, 171);
+            this.lstMotivoAmonestación.Name = "lstMotivoAmonestación";
+            this.lstMotivoAmonestación.Size = new System.Drawing.Size(200, 36);
+            this.lstMotivoAmonestación.TabIndex = 24;
+            // 
+            // lblMotivoAmonestación
+            // 
+            this.lblMotivoAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.lblMotivoAmonestación.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotivoAmonestación.ForeColor = System.Drawing.Color.Black;
+            this.lblMotivoAmonestación.Location = new System.Drawing.Point(24, 189);
+            this.lblMotivoAmonestación.Name = "lblMotivoAmonestación";
+            this.lblMotivoAmonestación.Size = new System.Drawing.Size(164, 18);
+            this.lblMotivoAmonestación.TabIndex = 23;
+            this.lblMotivoAmonestación.Text = "Razón de la Amonestación";
+            // 
+            // dgvFechaAmonestación
+            // 
+            this.dgvFechaAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.dgvFechaAmonestación.BorderColor = System.Drawing.Color.White;
+            this.dgvFechaAmonestación.Checked = true;
+            this.dgvFechaAmonestación.FillColor = System.Drawing.Color.White;
+            this.dgvFechaAmonestación.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvFechaAmonestación.ForeColor = System.Drawing.Color.Black;
+            this.dgvFechaAmonestación.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dgvFechaAmonestación.Location = new System.Drawing.Point(194, 116);
+            this.dgvFechaAmonestación.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dgvFechaAmonestación.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dgvFechaAmonestación.Name = "dgvFechaAmonestación";
+            this.dgvFechaAmonestación.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaAmonestación.TabIndex = 22;
+            this.dgvFechaAmonestación.UseTransparentBackground = true;
+            this.dgvFechaAmonestación.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            // 
+            // lblFechaAmonestación
+            // 
+            this.lblFechaAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaAmonestación.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaAmonestación.ForeColor = System.Drawing.Color.Black;
+            this.lblFechaAmonestación.Location = new System.Drawing.Point(40, 133);
+            this.lblFechaAmonestación.Name = "lblFechaAmonestación";
+            this.lblFechaAmonestación.Size = new System.Drawing.Size(148, 18);
+            this.lblFechaAmonestación.TabIndex = 21;
+            this.lblFechaAmonestación.Text = "Fecha de la inasistencia";
+            // 
+            // txtNombreAmonestacion
+            // 
+            this.txtNombreAmonestacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreAmonestacion.DefaultText = "";
+            this.txtNombreAmonestacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreAmonestacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreAmonestacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreAmonestacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreAmonestacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreAmonestacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreAmonestacion.Location = new System.Drawing.Point(194, 63);
+            this.txtNombreAmonestacion.Name = "txtNombreAmonestacion";
+            this.txtNombreAmonestacion.PasswordChar = '\0';
+            this.txtNombreAmonestacion.PlaceholderText = "";
+            this.txtNombreAmonestacion.SelectedText = "";
+            this.txtNombreAmonestacion.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreAmonestacion.TabIndex = 20;
+            // 
+            // lblNombreAmonestación
+            // 
+            this.lblNombreAmonestación.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombreAmonestación.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreAmonestación.ForeColor = System.Drawing.Color.Black;
+            this.lblNombreAmonestación.Location = new System.Drawing.Point(70, 79);
+            this.lblNombreAmonestación.Name = "lblNombreAmonestación";
+            this.lblNombreAmonestación.Size = new System.Drawing.Size(118, 18);
+            this.lblNombreAmonestación.TabIndex = 19;
+            this.lblNombreAmonestación.Text = "Nombre Empleado";
             // 
             // btnSuspensiones
             // 
@@ -864,10 +833,6 @@
             this.lstTipoInasistencia.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstTipoInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.lstTipoInasistencia.ItemHeight = 30;
-            this.lstTipoInasistencia.Items.AddRange(new object[] {
-            "Inasistencias",
-            "Amonestaciones",
-            "Suspensiones"});
             this.lstTipoInasistencia.Location = new System.Drawing.Point(196, 229);
             this.lstTipoInasistencia.Name = "lstTipoInasistencia";
             this.lstTipoInasistencia.Size = new System.Drawing.Size(200, 36);
@@ -988,18 +953,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 578);
-            this.Controls.Add(this.mrcDespido);
             this.Controls.Add(this.btnDespido);
-            this.Controls.Add(this.mrcAmonestación);
-            this.Controls.Add(this.mrcSuspensión);
-            this.Controls.Add(this.mrcEvaluaciónDesempeño);
-            this.Controls.Add(this.mrcInasistencia);
             this.Controls.Add(this.btnEvaluaciónDesempeño);
             this.Controls.Add(this.btnSuspensiones);
             this.Controls.Add(this.btnAmonestaciones);
             this.Controls.Add(this.btnInasistencia);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);
+            this.Controls.Add(this.mrcAmonestación);
+            this.Controls.Add(this.mrcSuspensión);
+            this.Controls.Add(this.mrcEvaluaciónDesempeño);
+            this.Controls.Add(this.mrcInasistencia);
+            this.Controls.Add(this.mrcDespido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
