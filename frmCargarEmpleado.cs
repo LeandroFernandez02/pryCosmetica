@@ -18,7 +18,7 @@ namespace pryCosmetica
             InitializeComponent();
         }
 
-        private void btnCargarCV_Click(object sender, EventArgs e)
+        private void btnCargarCV_Click_1(object sender, EventArgs e)
         {
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {

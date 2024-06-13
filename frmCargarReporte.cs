@@ -15,7 +15,7 @@ namespace pryCosmetica
         public frmCargarReporte()
         {
             InitializeComponent();
-            OcultarGroupBox();
+            //OcultarGroupBox();
         }
         private void OcultarGroupBox()
         {
@@ -49,6 +49,7 @@ namespace pryCosmetica
             OcultarGroupBox();
             mrcEvaluaciónDesempeño.Visible = true;
         }
+
         private void btnDespido_Click(object sender, EventArgs e)
         {
             OcultarGroupBox();

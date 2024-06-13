@@ -92,7 +92,7 @@
             this.mrcDatosContacto.Controls.Add(this.lblCorreo);
             this.mrcDatosContacto.Controls.Add(this.txtCorreo);
             this.mrcDatosContacto.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.mrcDatosContacto.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcDatosContacto.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.mrcDatosContacto.ForeColor = System.Drawing.Color.White;
             this.mrcDatosContacto.Location = new System.Drawing.Point(148, 256);
             this.mrcDatosContacto.Name = "mrcDatosContacto";
@@ -103,7 +103,7 @@
             // lblCV
             // 
             this.lblCV.BackColor = System.Drawing.Color.Transparent;
-            this.lblCV.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCV.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblCV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCV.Location = new System.Drawing.Point(427, 74);
             this.lblCV.Name = "lblCV";
@@ -120,19 +120,20 @@
             this.btnCargarCv.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCargarCv.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCargarCv.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.btnCargarCv.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCargarCv.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.btnCargarCv.ForeColor = System.Drawing.Color.White;
             this.btnCargarCv.Location = new System.Drawing.Point(406, 106);
             this.btnCargarCv.Name = "btnCargarCv";
             this.btnCargarCv.Size = new System.Drawing.Size(180, 45);
             this.btnCargarCv.TabIndex = 4;
             this.btnCargarCv.Text = "Cargar CV";
+            this.btnCargarCv.Click += new System.EventHandler(this.btnCargarCv_Click_1);
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefono.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblTelefono.Location = new System.Drawing.Point(25, 124);
             this.lblTelefono.Name = "lblTelefono";
@@ -152,9 +153,11 @@
             this.txtTeléfonoPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTeléfonoPostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTeléfonoPostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTeléfonoPostulante.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTeléfonoPostulante.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.txtTeléfonoPostulante.ForeColor = System.Drawing.Color.Black;
             this.txtTeléfonoPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTeléfonoPostulante.Location = new System.Drawing.Point(114, 115);
+            this.txtTeléfonoPostulante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTeléfonoPostulante.Name = "txtTeléfonoPostulante";
             this.txtTeléfonoPostulante.PasswordChar = '\0';
             this.txtTeléfonoPostulante.PlaceholderText = "";
@@ -166,7 +169,7 @@
             // 
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCorreo.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblCorreo.Location = new System.Drawing.Point(25, 69);
             this.lblCorreo.Name = "lblCorreo";
@@ -186,9 +189,11 @@
             this.txtCorreo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCorreo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCorreo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCorreo.Font = new System.Drawing.Font("Bahnschrift", 9F);
+            this.txtCorreo.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.txtCorreo.ForeColor = System.Drawing.Color.Black;
             this.txtCorreo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCorreo.Location = new System.Drawing.Point(114, 60);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.PasswordChar = '\0';
             this.txtCorreo.PlaceholderText = "";
@@ -208,7 +213,7 @@
             this.mrcDatosPersonales.Controls.Add(this.lblNombre);
             this.mrcDatosPersonales.Controls.Add(this.txtNombrePostulante);
             this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.mrcDatosPersonales.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcDatosPersonales.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.mrcDatosPersonales.ForeColor = System.Drawing.Color.White;
             this.mrcDatosPersonales.Location = new System.Drawing.Point(148, 18);
             this.mrcDatosPersonales.Name = "mrcDatosPersonales";
@@ -220,7 +225,7 @@
             // 
             this.lblArea.AutoSize = true;
             this.lblArea.BackColor = System.Drawing.Color.Transparent;
-            this.lblArea.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArea.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblArea.Location = new System.Drawing.Point(347, 123);
             this.lblArea.Name = "lblArea";
@@ -237,7 +242,7 @@
             this.cmbArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbArea.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbArea.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbArea.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.cmbArea.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.cmbArea.ForeColor = System.Drawing.Color.Black;
             this.cmbArea.ItemHeight = 30;
             this.cmbArea.Location = new System.Drawing.Point(406, 115);
@@ -249,7 +254,7 @@
             // 
             this.lblDNI.AutoSize = true;
             this.lblDNI.BackColor = System.Drawing.Color.Transparent;
-            this.lblDNI.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDNI.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblDNI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblDNI.Location = new System.Drawing.Point(347, 69);
             this.lblDNI.Name = "lblDNI";
@@ -269,10 +274,11 @@
             this.txtDNIPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDNIPostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDNIPostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDNIPostulante.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.txtDNIPostulante.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtDNIPostulante.ForeColor = System.Drawing.Color.Black;
             this.txtDNIPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDNIPostulante.Location = new System.Drawing.Point(406, 60);
+            this.txtDNIPostulante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDNIPostulante.Name = "txtDNIPostulante";
             this.txtDNIPostulante.PasswordChar = '\0';
             this.txtDNIPostulante.PlaceholderText = "";
@@ -284,7 +290,7 @@
             // 
             this.lblApellido.AutoSize = true;
             this.lblApellido.BackColor = System.Drawing.Color.Transparent;
-            this.lblApellido.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblApellido.Location = new System.Drawing.Point(25, 124);
             this.lblApellido.Name = "lblApellido";
@@ -304,10 +310,11 @@
             this.txtApellidoPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtApellidoPostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtApellidoPostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellidoPostulante.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.txtApellidoPostulante.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtApellidoPostulante.ForeColor = System.Drawing.Color.Black;
             this.txtApellidoPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtApellidoPostulante.Location = new System.Drawing.Point(114, 115);
+            this.txtApellidoPostulante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellidoPostulante.Name = "txtApellidoPostulante";
             this.txtApellidoPostulante.PasswordChar = '\0';
             this.txtApellidoPostulante.PlaceholderText = "";
@@ -319,7 +326,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblNombre.Location = new System.Drawing.Point(25, 69);
             this.lblNombre.Name = "lblNombre";
@@ -339,10 +346,11 @@
             this.txtNombrePostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombrePostulante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombrePostulante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombrePostulante.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.txtNombrePostulante.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNombrePostulante.ForeColor = System.Drawing.Color.Black;
             this.txtNombrePostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombrePostulante.Location = new System.Drawing.Point(114, 60);
+            this.txtNombrePostulante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombrePostulante.Name = "txtNombrePostulante";
             this.txtNombrePostulante.PasswordChar = '\0';
             this.txtNombrePostulante.PlaceholderText = "";

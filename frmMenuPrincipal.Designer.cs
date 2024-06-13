@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             this.pnlMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlSubMenuReportes = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBuscarReporte = new Guna.UI2.WinForms.Guna2Button();
@@ -49,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pnlPrincipal = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlMenu.SuspendLayout();
             this.pnlSubMenuReportes.SuspendLayout();
             this.pnlSubMenuPostulante.SuspendLayout();
@@ -362,6 +365,11 @@
             this.pnlPrincipal.Size = new System.Drawing.Size(948, 617);
             this.pnlPrincipal.TabIndex = 3;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 22;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,6 +379,7 @@
             this.Controls.Add(this.pnlTitulo);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -411,5 +420,6 @@
         private Guna.UI2.WinForms.Guna2Button btnReportes;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel pnlPrincipal;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
