@@ -17,33 +17,6 @@ namespace pryCosmetica
             InitializeComponent();
         }
 
-        private void cmbFiltro_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbFiltro.SelectedItem != null)
-            {
-                string selectedValue = cmbFiltro.SelectedItem.ToString();
-
-                limpiarControles();
-
-                if (selectedValue == "Inasistencias")
-                {
-                    cmbCondicion.Visible = true;
-                }
-                else if (selectedValue == "Amonestaciones")
-                {
-                    cmbCondicion.Visible = true;
-                }
-                else if (selectedValue == "Suspenciones")
-                {
-                    cmbCondicion.Visible = true;
-                }
-                else if (selectedValue == "Evaluacion de Desempeño")
-                {
-                    cmbCondicion.Visible = true;
-                }
-            }
-        }
-
         private void cmbCondicion_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbCondicion.SelectedItem != null)
@@ -52,61 +25,54 @@ namespace pryCosmetica
 
                 limpiarControles();
 
-                if (selectedValue == "ID")
-                {
-                    crearTxt();
-                }
-                else if (selectedValue == "Nombre")
-                {
-                    crearTxt();
-                }
-                else if (selectedValue == "Documento")
+                if (selectedValue == "ID" || selectedValue == "Nombre" || selectedValue == "Documento")
                 {
                     crearTxt();
                 }
             }
         }
-
-        Guna.UI2.WinForms.Guna2ComboBox cmb = new Guna.UI2.WinForms.Guna2ComboBox();
-        void crearCmb()
-        {
-            cmb.Location = new Point(335, 58);
-            cmb.Size = new Size(200, 36);
-            cmb.Visible = true;
-            this.Controls.Add(cmb);
-            cmb.Focus();
-        }
-
-        Guna.UI2.WinForms.Guna2TextBox txt = new Guna.UI2.WinForms.Guna2TextBox();
+        
         void crearTxt()
         {
+            var txt = new Guna.UI2.WinForms.Guna2TextBox();
             txt.Location = new Point(446, 51);
             txt.Size = new Size(200, 36);
+            txt.ForeColor = Color.Black;
+            txt.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+            txt.BorderRadius = 10;
+            txt.BorderColor = Color.Black;
             txt.Visible = true;
             this.Controls.Add(txt);
-            txt.Focus();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+            txt.BringToFront();
+            txt.Refresh();
+
+            // Ajustar ubicación y tamaño después de agregar el control
+            txt.Location = new Point(446, 51);
+            txt.Size = new Size(200, 36);
         }
 
-        Guna.UI2.WinForms.Guna2DateTimePicker dtp = new Guna.UI2.WinForms.Guna2DateTimePicker();
-        void crearDtp()
-        {
-            dtp.Location = new Point(335, 58);
-            dtp.Size = new Size(200, 36);
-            dtp.Visible = true;
-            this.Controls.Add(dtp);
-            dtp.Focus();
-        }
         void limpiarControles()
         {
-            txt.Visible = false;
-            cmb.Visible = false;
-            cmb.Items.Clear();
-            dtp.Visible = false;
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            // Una vez que se aprete buscar, se deben cargar las columnas correspondientes a cada condicion. EJ: Amonestaciones, lleva tablas: ID - Empleado - Fecha - Motivo.
+            var controlsToRemove = new List<Control>();
+            foreach (Control control in this.Controls)
+            {
+                if ((control is Guna.UI2.WinForms.Guna2TextBox ||
+                     control is Guna.UI2.WinForms.Guna2ComboBox ||
+                     control is Guna.UI2.WinForms.Guna2DateTimePicker) &&
+                     control.Name != "cmbFiltro" && control.Name != "cmbCondicion") // Asegurarse de no eliminar el cmbFiltro
+                {
+                    controlsToRemove.Add(control);
+                }
+            }
+            foreach (var control in controlsToRemove)
+            {
+                this.Controls.Remove(control);
+                control.Dispose();
+            }
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
     }
 }

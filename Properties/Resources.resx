@@ -118,10 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="20240604_190324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20240604_190324.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casale.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Empleado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Empleado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Postulantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Postulantes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="20240604_190324" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20240604_190324.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Iconno_Reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconno_Reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

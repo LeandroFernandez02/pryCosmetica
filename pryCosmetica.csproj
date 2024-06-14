@@ -158,5 +158,17 @@
   <ItemGroup>
     <None Include="Resources\20240604_190324.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono_Empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono_Postulantes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconno_Reportes.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

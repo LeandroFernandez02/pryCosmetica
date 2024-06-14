@@ -66,21 +66,20 @@ namespace pryCosmetica
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(pnlSubMenuEmpleados);
-            
         }
 
         private void btnPostulante_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(pnlSubMenuPostulante);
-            
         }
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            mostrarSubMenu(pnlSubMenuReportes);
+            mostrarSubMenu(pnlSubMenuReportes);           
         }
 
         private void btnCargarEmpleado_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "Cargar Empleado";
             abrirFormHijo(new frmCargarEmpleado());
             // codigo
             frmCargarEmpleado frm = new frmCargarEmpleado();
@@ -88,42 +87,50 @@ namespace pryCosmetica
         }
 
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
-        {
+        { 
+            lblTitulo.Text = "Buscar Empleados";
             abrirFormHijo(new frmBuscarEmpleado());
             ocultarSubMenu();
         }
 
         private void btnCargarPostulante_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "Cargar Postulante";
             abrirFormHijo(new frmCargarPostulante());
             ocultarSubMenu();
         }
 
         private void btnBuscarPostulante_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "Buscar Postulantes";
             abrirFormHijo(new frmBuscarPostulante());
             ocultarSubMenu();
         }
         private void btnCargarReporte_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "Cargar Reporte";
             abrirFormHijo(new frmCargarReporte());
             ocultarSubMenu();
         }
 
         private void btnBuscarReporte_Click(object sender, EventArgs e)
         {
+            lblTitulo.Text = "Buscar Reportes";
             abrirFormHijo(new frmBuscarReporte());
             ocultarSubMenu();
         }
 
-        private void btnMinimizar_Click(object sender, EventArgs e)
+        private void pctLogo_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            if (formActivo != null)
+                formActivo.Close();    
         }
 
-        private void btnCerrarForm_Click(object sender, EventArgs e)
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace pryCosmetica
 {
@@ -17,9 +18,6 @@ namespace pryCosmetica
             InitializeComponent();
         }
 
-        Guna.UI2.WinForms.Guna2TextBox txt = new Guna.UI2.WinForms.Guna2TextBox();
-        Guna.UI2.WinForms.Guna2ComboBox cmb = new Guna.UI2.WinForms.Guna2ComboBox();
-
         private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
         {
             sacarControl();
@@ -28,49 +26,82 @@ namespace pryCosmetica
             switch (seleccion)
             {
                 case 0: //DNI
-                    txt.Location = new Point(266, 29);
-                    txt.Visible = true;
-                    this.Controls.Add(txt);
+                    crearTxt();
                     break;
 
                 case 1: //Nombre
-                    txt.Location = new Point(266, 29);
-                    txt.Visible = true;
-                    this.Controls.Add(txt);
+                    crearTxt();
                     break;
 
                 case 2: //Correo
-                    txt.Location = new Point(266, 29);
-                    txt.Visible = true;
-                    this.Controls.Add(txt);
+                    crearTxt();
                     break;
 
                 case 3: //Telefono
-                    txt.Location = new Point(266, 29);
-                    txt.Visible = true;
-                    this.Controls.Add(txt);
+                    crearTxt();
                     break;
 
                 case 4: //Area
-                    cmb.Location = new Point(266, 29);
-                    cmb.Size = txt.Size;
-                    cmb.Visible = true;
-                    this.Controls.Add(cmb);
-                    cmb.Items.Add("Investigación y Desarrollo");
-                    cmb.Items.Add("Marketing y Ventas");
-                    cmb.Items.Add("Logística y Distribución");
-                    cmb.Items.Add("Administración y Finanzas");
-                    cmb.Items.Add("Recursos Humanos");
-                    cmb.Items.Add("Legal");
+                    crearCmb();
                     break;
             }
         }
+        void crearTxt()
+        {
+            var txt = new Guna.UI2.WinForms.Guna2TextBox();
+            txt.Location = new Point(266, 29);
+            txt.BorderRadius = 10;
+            txt.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+            txt.ForeColor = Color.Black;
+            txt.BorderColor = Color.FromArgb(51, 0, 51);
+            txt.Visible = true;
+            this.Controls.Add(txt);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+            txt.BringToFront();
+            txt.Refresh();
 
+            txt.Location = new Point(266, 29);
+            txt.Size = new Size(200, 36);
+        }
+        void crearCmb()
+        {
+            var cmb = new Guna.UI2.WinForms.Guna2ComboBox();
+            cmb.Location = new Point(266, 29);
+            cmb.BorderRadius = 10;
+            cmb.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+            cmb.ForeColor = Color.Black;
+            cmb.BorderColor = Color.FromArgb(51, 0, 51);
+            cmb.Visible = true;
+            this.Controls.Add(cmb);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+            cmb.BringToFront();
+            cmb.Refresh();
+
+            cmb.Location = new Point(266, 29);
+            cmb.Size = new Size(200, 36);
+        }
         void sacarControl()
         {
-            txt.Visible = false;
-            cmb.Visible = false;
-            cmb.Items.Clear();
+            var controlsToRemove = new List<Control>();
+            foreach (Control control in this.Controls)
+            {
+                if ((control is Guna.UI2.WinForms.Guna2TextBox ||
+                     control is Guna.UI2.WinForms.Guna2ComboBox ||
+                     control is Guna.UI2.WinForms.Guna2DateTimePicker) &&
+                     control.Name != "cmbBusqueda") // Asegurarse de no eliminar el cmbFiltro
+                {
+                    controlsToRemove.Add(control);
+                }
+            }
+            foreach (var control in controlsToRemove)
+            {
+                this.Controls.Remove(control);
+                control.Dispose();
+            }
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
-    }
+    } 
 }
