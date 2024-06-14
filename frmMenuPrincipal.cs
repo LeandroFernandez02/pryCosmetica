@@ -15,6 +15,7 @@ namespace pryCosmetica
         public frmMenuPrincipal()
         {
             InitializeComponent();
+            lblTitulo.Text = "Inicio";
         }
 
         //  ABRIR FORMULARIO DENTRO DEL PRINCIPAL
@@ -123,14 +124,13 @@ namespace pryCosmetica
         private void pctLogo_Click(object sender, EventArgs e)
         {
             if (formActivo != null)
-                formActivo.Close();    
+                formActivo.Close();
+            lblTitulo.Text = "Inicio";
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-
     }
 }
