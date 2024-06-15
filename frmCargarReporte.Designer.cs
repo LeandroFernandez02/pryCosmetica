@@ -97,7 +97,7 @@
             this.btnDespido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDespido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDespido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDespido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnDespido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnDespido.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDespido.ForeColor = System.Drawing.Color.White;
             this.btnDespido.Location = new System.Drawing.Point(749, 27);
@@ -114,7 +114,7 @@
             this.btnEvaluaciónDesempeño.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEvaluaciónDesempeño.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEvaluaciónDesempeño.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEvaluaciónDesempeño.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnEvaluaciónDesempeño.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnEvaluaciónDesempeño.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
             this.btnEvaluaciónDesempeño.Location = new System.Drawing.Point(563, 27);
@@ -131,7 +131,7 @@
             this.btnSuspensiones.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSuspensiones.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSuspensiones.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSuspensiones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnSuspensiones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnSuspensiones.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuspensiones.ForeColor = System.Drawing.Color.White;
             this.btnSuspensiones.Location = new System.Drawing.Point(377, 27);
@@ -148,7 +148,7 @@
             this.btnAmonestaciones.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAmonestaciones.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAmonestaciones.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAmonestaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnAmonestaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnAmonestaciones.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAmonestaciones.ForeColor = System.Drawing.Color.White;
             this.btnAmonestaciones.Location = new System.Drawing.Point(190, 27);
@@ -165,7 +165,7 @@
             this.btnInasistencia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnInasistencia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnInasistencia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnInasistencia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnInasistencia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnInasistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInasistencia.ForeColor = System.Drawing.Color.White;
             this.btnInasistencia.Location = new System.Drawing.Point(4, 27);
@@ -182,7 +182,7 @@
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLimpiar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnLimpiar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Location = new System.Drawing.Point(490, 507);
@@ -198,7 +198,7 @@
             this.btnCargar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCargar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCargar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCargar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnCargar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
             this.btnCargar.Location = new System.Drawing.Point(235, 507);
@@ -209,6 +209,7 @@
             // 
             // mrcEvaluaciónDesempeño
             // 
+            this.mrcEvaluaciónDesempeño.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcEvaluaciónDesempeño.BorderRadius = 15;
             this.mrcEvaluaciónDesempeño.Controls.Add(this.lblÁreaEmpleado);
             this.mrcEvaluaciónDesempeño.Controls.Add(this.lblObservaciónes);
@@ -222,7 +223,7 @@
             this.mrcEvaluaciónDesempeño.Controls.Add(this.lblNombreEvaluador);
             this.mrcEvaluaciónDesempeño.Controls.Add(this.txtNombreEmpleado);
             this.mrcEvaluaciónDesempeño.Controls.Add(this.lblNombre);
-            this.mrcEvaluaciónDesempeño.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcEvaluaciónDesempeño.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcEvaluaciónDesempeño.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
             this.mrcEvaluaciónDesempeño.Location = new System.Drawing.Point(232, 94);
@@ -433,6 +434,7 @@
             // 
             // mrcSuspensión
             // 
+            this.mrcSuspensión.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcSuspensión.BorderRadius = 15;
             this.mrcSuspensión.Controls.Add(this.lblMotivoSuspensión);
             this.mrcSuspensión.Controls.Add(this.lstMotivoSuspensión);
@@ -444,7 +446,7 @@
             this.mrcSuspensión.Controls.Add(this.lblInicioSuspensión);
             this.mrcSuspensión.Controls.Add(this.txtNombreSuspensión);
             this.mrcSuspensión.Controls.Add(this.lblNombreSuspensión);
-            this.mrcSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcSuspensión.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcSuspensión.ForeColor = System.Drawing.Color.White;
             this.mrcSuspensión.Location = new System.Drawing.Point(232, 129);
@@ -615,12 +617,13 @@
             // 
             // mrcDespido
             // 
+            this.mrcDespido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDespido.BorderRadius = 15;
             this.mrcDespido.Controls.Add(this.dtpFechaDespido);
             this.mrcDespido.Controls.Add(this.lblFechaDespido);
             this.mrcDespido.Controls.Add(this.txtDocumentoEmpleado);
             this.mrcDespido.Controls.Add(this.lblDocumentoEmpleado);
-            this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDespido.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcDespido.ForeColor = System.Drawing.Color.White;
             this.mrcDespido.Location = new System.Drawing.Point(232, 197);
@@ -698,6 +701,7 @@
             // mrcInasistencia
             // 
             this.mrcInasistencia.BackColor = System.Drawing.Color.Transparent;
+            this.mrcInasistencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcInasistencia.BorderRadius = 15;
             this.mrcInasistencia.Controls.Add(this.lblMotivoInasistencia);
             this.mrcInasistencia.Controls.Add(this.lblTipoInasistencia);
@@ -710,7 +714,7 @@
             this.mrcInasistencia.Controls.Add(this.optJustificada);
             this.mrcInasistencia.Controls.Add(this.optInjustificada);
             this.mrcInasistencia.Controls.Add(this.txtMotivoInasistencia);
-            this.mrcInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcInasistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcInasistencia.ForeColor = System.Drawing.Color.White;
             this.mrcInasistencia.Location = new System.Drawing.Point(232, 127);
@@ -903,6 +907,7 @@
             // 
             // mrcAmonestación
             // 
+            this.mrcAmonestación.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcAmonestación.BorderRadius = 15;
             this.mrcAmonestación.Controls.Add(this.lstMotivoAmonestación);
             this.mrcAmonestación.Controls.Add(this.lblMotivoAmonestación);
@@ -910,7 +915,7 @@
             this.mrcAmonestación.Controls.Add(this.lblFechaAmonestación);
             this.mrcAmonestación.Controls.Add(this.txtNombreAmonestacion);
             this.mrcAmonestación.Controls.Add(this.lblNombreAmonestación);
-            this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcAmonestación.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcAmonestación.ForeColor = System.Drawing.Color.White;
             this.mrcAmonestación.Location = new System.Drawing.Point(232, 183);
@@ -1017,7 +1022,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(932, 578);
             this.Controls.Add(this.btnDespido);
             this.Controls.Add(this.btnEvaluaciónDesempeño);

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             this.pnlMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlSubMenuReportes = new Guna.UI2.WinForms.Guna2Panel();
@@ -52,6 +56,30 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pnlPrincipal = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pnlEmpleados = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlPostulantes = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlReportes = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.dgvGrilla = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EstadoCivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlMenu.SuspendLayout();
             this.pnlSubMenuReportes.SuspendLayout();
             this.pnlSubMenuPostulante.SuspendLayout();
@@ -61,12 +89,16 @@
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.pnlPrincipal.SuspendLayout();
+            this.pnlEmpleados.SuspendLayout();
+            this.pnlPostulantes.SuspendLayout();
+            this.pnlReportes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.AutoScroll = true;
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.White;
             this.pnlMenu.Controls.Add(this.pnlSubMenuReportes);
             this.pnlMenu.Controls.Add(this.btnCerrarSesion);
             this.pnlMenu.Controls.Add(this.btnReportes);
@@ -143,8 +175,11 @@
             this.btnCerrarSesion.FillColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(53, 600);
+            this.btnCerrarSesion.Image = global::pryCosmetica.Properties.Resources.icono_Log_Out;
+            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(49, 600);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCerrarSesion.Size = new System.Drawing.Size(121, 45);
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Log Out";
@@ -161,9 +196,13 @@
             this.btnReportes.FillColor = System.Drawing.Color.Transparent;
             this.btnReportes.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
             this.btnReportes.ForeColor = System.Drawing.Color.Black;
+            this.btnReportes.Image = global::pryCosmetica.Properties.Resources.Iconno_Reportes;
+            this.btnReportes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportes.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnReportes.ImageSize = new System.Drawing.Size(25, 20);
             this.btnReportes.Location = new System.Drawing.Point(0, 404);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnReportes.Size = new System.Drawing.Size(237, 45);
             this.btnReportes.TabIndex = 6;
             this.btnReportes.Text = "Reportes";
@@ -234,9 +273,11 @@
             this.btnPostulante.FillColor = System.Drawing.Color.Transparent;
             this.btnPostulante.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
             this.btnPostulante.ForeColor = System.Drawing.Color.Black;
+            this.btnPostulante.Image = global::pryCosmetica.Properties.Resources.Icono_Postulantes;
+            this.btnPostulante.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostulante.ImageSize = new System.Drawing.Size(40, 20);
             this.btnPostulante.Location = new System.Drawing.Point(0, 262);
             this.btnPostulante.Name = "btnPostulante";
-            this.btnPostulante.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnPostulante.Size = new System.Drawing.Size(237, 45);
             this.btnPostulante.TabIndex = 3;
             this.btnPostulante.Text = "Postulantes";
@@ -299,6 +340,8 @@
             // btnEmpleados
             // 
             this.btnEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEmpleados.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnEmpleados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEmpleados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEmpleados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -307,9 +350,11 @@
             this.btnEmpleados.FillColor = System.Drawing.Color.Transparent;
             this.btnEmpleados.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
             this.btnEmpleados.ForeColor = System.Drawing.Color.Black;
+            this.btnEmpleados.Image = global::pryCosmetica.Properties.Resources.Icono_Empleado;
+            this.btnEmpleados.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEmpleados.ImageSize = new System.Drawing.Size(40, 20);
             this.btnEmpleados.Location = new System.Drawing.Point(0, 121);
             this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnEmpleados.Size = new System.Drawing.Size(237, 45);
             this.btnEmpleados.TabIndex = 1;
             this.btnEmpleados.Text = "Empleados";
@@ -339,6 +384,7 @@
             // 
             // pnlTitulo
             // 
+            this.pnlTitulo.BackColor = System.Drawing.Color.White;
             this.pnlTitulo.Controls.Add(this.guna2CirclePictureBox1);
             this.pnlTitulo.Controls.Add(this.lblTitulo);
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -370,7 +416,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(448, 278);
+            this.label5.Location = new System.Drawing.Point(430, 356);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 0;
@@ -378,8 +424,12 @@
             // 
             // pnlPrincipal
             // 
-            this.pnlPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.pnlPrincipal.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.pnlPrincipal.Controls.Add(this.dgvGrilla);
+            this.pnlPrincipal.Controls.Add(this.pnlReportes);
+            this.pnlPrincipal.Controls.Add(this.pnlPostulantes);
+            this.pnlPrincipal.Controls.Add(this.pnlEmpleados);
             this.pnlPrincipal.Controls.Add(this.label5);
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(237, 80);
@@ -392,6 +442,231 @@
             // 
             this.guna2Elipse1.BorderRadius = 22;
             this.guna2Elipse1.TargetControl = this;
+            // 
+            // pnlEmpleados
+            // 
+            this.pnlEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            this.pnlEmpleados.Controls.Add(this.label1);
+            this.pnlEmpleados.Location = new System.Drawing.Point(28, 20);
+            this.pnlEmpleados.Name = "pnlEmpleados";
+            this.pnlEmpleados.Size = new System.Drawing.Size(159, 216);
+            this.pnlEmpleados.TabIndex = 1;
+            // 
+            // pnlPostulantes
+            // 
+            this.pnlPostulantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.pnlPostulantes.Controls.Add(this.label2);
+            this.pnlPostulantes.Location = new System.Drawing.Point(213, 20);
+            this.pnlPostulantes.Name = "pnlPostulantes";
+            this.pnlPostulantes.Size = new System.Drawing.Size(159, 216);
+            this.pnlPostulantes.TabIndex = 2;
+            // 
+            // pnlReportes
+            // 
+            this.pnlReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.pnlReportes.Controls.Add(this.label3);
+            this.pnlReportes.Location = new System.Drawing.Point(399, 20);
+            this.pnlReportes.Name = "pnlReportes";
+            this.pnlReportes.Size = new System.Drawing.Size(159, 216);
+            this.pnlReportes.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Total Empleados";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Total Postulantes";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(42, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Total Reportes";
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 22;
+            this.guna2Elipse2.TargetControl = this.pnlEmpleados;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 22;
+            this.guna2Elipse3.TargetControl = this.pnlPostulantes;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 22;
+            this.guna2Elipse4.TargetControl = this.pnlReportes;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 22;
+            // 
+            // dgvGrilla
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvGrilla.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvGrilla.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.dgvGrilla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dgvGrilla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGrilla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvGrilla.ColumnHeadersHeight = 55;
+            this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvGrilla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nombre,
+            this.Apellido,
+            this.Documento,
+            this.EstadoCivil,
+            this.Direccion,
+            this.NumCalle,
+            this.FechaNacimiento,
+            this.Contrato,
+            this.Categoria,
+            this.Mail,
+            this.FechaIngreso});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvGrilla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.dgvGrilla.Location = new System.Drawing.Point(28, 253);
+            this.dgvGrilla.Name = "dgvGrilla";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGrilla.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvGrilla.RowHeadersVisible = false;
+            this.dgvGrilla.Size = new System.Drawing.Size(895, 346);
+            this.dgvGrilla.TabIndex = 5;
+            this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvGrilla.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.dgvGrilla.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.dgvGrilla.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.dgvGrilla.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvGrilla.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.dgvGrilla.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvGrilla.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvGrilla.ThemeStyle.HeaderStyle.Height = 55;
+            this.dgvGrilla.ThemeStyle.ReadOnly = false;
+            this.dgvGrilla.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            this.dgvGrilla.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvGrilla.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.dgvGrilla.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvGrilla.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvGrilla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvGrilla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 22;
+            this.guna2Elipse6.TargetControl = this.dgvGrilla;
+            // 
+            // ID
+            // 
+            this.ID.FillWeight = 45.68527F;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nombre
+            // 
+            this.Nombre.FillWeight = 103.8796F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.FillWeight = 103.8796F;
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Documento
+            // 
+            this.Documento.FillWeight = 103.8796F;
+            this.Documento.HeaderText = "Documento";
+            this.Documento.Name = "Documento";
+            // 
+            // EstadoCivil
+            // 
+            this.EstadoCivil.FillWeight = 103.8796F;
+            this.EstadoCivil.HeaderText = "Estado Civil";
+            this.EstadoCivil.Name = "EstadoCivil";
+            // 
+            // Direccion
+            // 
+            this.Direccion.FillWeight = 103.8796F;
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            // 
+            // NumCalle
+            // 
+            this.NumCalle.FillWeight = 103.8796F;
+            this.NumCalle.HeaderText = "Numero Calle";
+            this.NumCalle.Name = "NumCalle";
+            // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.FillWeight = 103.8796F;
+            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            // 
+            // Contrato
+            // 
+            this.Contrato.FillWeight = 103.8796F;
+            this.Contrato.HeaderText = "Contrato";
+            this.Contrato.Name = "Contrato";
+            // 
+            // Categoria
+            // 
+            this.Categoria.FillWeight = 103.8796F;
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            // 
+            // Mail
+            // 
+            this.Mail.FillWeight = 103.8796F;
+            this.Mail.HeaderText = "Mail";
+            this.Mail.Name = "Mail";
+            // 
+            // FechaIngreso
+            // 
+            this.FechaIngreso.FillWeight = 103.8796F;
+            this.FechaIngreso.HeaderText = "Fecha de Ingreso";
+            this.FechaIngreso.Name = "FechaIngreso";
             // 
             // frmMenuPrincipal
             // 
@@ -417,6 +692,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.pnlPrincipal.ResumeLayout(false);
             this.pnlPrincipal.PerformLayout();
+            this.pnlEmpleados.ResumeLayout(false);
+            this.pnlEmpleados.PerformLayout();
+            this.pnlPostulantes.ResumeLayout(false);
+            this.pnlPostulantes.PerformLayout();
+            this.pnlReportes.ResumeLayout(false);
+            this.pnlReportes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -444,5 +726,29 @@
         private Guna.UI2.WinForms.Guna2Panel pnlPrincipal;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel pnlReportes;
+        private Guna.UI2.WinForms.Guna2Panel pnlPostulantes;
+        private Guna.UI2.WinForms.Guna2Panel pnlEmpleados;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvGrilla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EstadoCivil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumCalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contrato;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaIngreso;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
     }
 }

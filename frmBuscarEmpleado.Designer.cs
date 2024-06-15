@@ -35,6 +35,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cmbFiltro = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvGrilla = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +53,6 @@
             this.CV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaBaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,8 +69,8 @@
             this.cmbFiltro.ForeColor = System.Drawing.Color.Black;
             this.cmbFiltro.ItemHeight = 30;
             this.cmbFiltro.Items.AddRange(new object[] {
+            "CUIL",
             "Nombre",
-            "Documento",
             "Estado Civil",
             "Contrato",
             "Categoria",
@@ -158,96 +158,6 @@
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // ID
-            // 
-            this.ID.FillWeight = 45.68527F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nombre
-            // 
-            this.Nombre.FillWeight = 103.8796F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Apellido
-            // 
-            this.Apellido.FillWeight = 103.8796F;
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            // 
-            // TipoDocumento
-            // 
-            this.TipoDocumento.FillWeight = 103.8796F;
-            this.TipoDocumento.HeaderText = "Tipo de Documento";
-            this.TipoDocumento.Name = "TipoDocumento";
-            // 
-            // Documento
-            // 
-            this.Documento.FillWeight = 103.8796F;
-            this.Documento.HeaderText = "Documento";
-            this.Documento.Name = "Documento";
-            // 
-            // EstadoCivil
-            // 
-            this.EstadoCivil.FillWeight = 103.8796F;
-            this.EstadoCivil.HeaderText = "Estado Civil";
-            this.EstadoCivil.Name = "EstadoCivil";
-            // 
-            // Direccion
-            // 
-            this.Direccion.FillWeight = 103.8796F;
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.Name = "Direccion";
-            // 
-            // NumCalle
-            // 
-            this.NumCalle.FillWeight = 103.8796F;
-            this.NumCalle.HeaderText = "Numero Calle";
-            this.NumCalle.Name = "NumCalle";
-            // 
-            // FechaNacimiento
-            // 
-            this.FechaNacimiento.FillWeight = 103.8796F;
-            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
-            this.FechaNacimiento.Name = "FechaNacimiento";
-            // 
-            // Contrato
-            // 
-            this.Contrato.FillWeight = 103.8796F;
-            this.Contrato.HeaderText = "Contrato";
-            this.Contrato.Name = "Contrato";
-            // 
-            // Categoria
-            // 
-            this.Categoria.FillWeight = 103.8796F;
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.Name = "Categoria";
-            // 
-            // Mail
-            // 
-            this.Mail.FillWeight = 103.8796F;
-            this.Mail.HeaderText = "Mail";
-            this.Mail.Name = "Mail";
-            // 
-            // CV
-            // 
-            this.CV.FillWeight = 103.8796F;
-            this.CV.HeaderText = "CV";
-            this.CV.Name = "CV";
-            // 
-            // FechaIngreso
-            // 
-            this.FechaIngreso.FillWeight = 103.8796F;
-            this.FechaIngreso.HeaderText = "Fecha de Ingreso";
-            this.FechaIngreso.Name = "FechaIngreso";
-            // 
-            // FechaBaja
-            // 
-            this.FechaBaja.FillWeight = 103.8796F;
-            this.FechaBaja.HeaderText = "Fecha de Baja";
-            this.FechaBaja.Name = "FechaBaja";
-            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
@@ -256,7 +166,7 @@
             this.btnBuscar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Location = new System.Drawing.Point(687, 29);
@@ -272,7 +182,7 @@
             this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Location = new System.Drawing.Point(687, 500);
@@ -286,11 +196,101 @@
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this.dgvGrilla;
             // 
+            // ID
+            // 
+            this.ID.FillWeight = 70F;
+            this.ID.HeaderText = "CUIL";
+            this.ID.Name = "ID";
+            // 
+            // Nombre
+            // 
+            this.Nombre.FillWeight = 80.44569F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.FillWeight = 80.44569F;
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // TipoDocumento
+            // 
+            this.TipoDocumento.FillWeight = 80.44569F;
+            this.TipoDocumento.HeaderText = "Tipo de Documento";
+            this.TipoDocumento.Name = "TipoDocumento";
+            // 
+            // Documento
+            // 
+            this.Documento.FillWeight = 80.44569F;
+            this.Documento.HeaderText = "Documento";
+            this.Documento.Name = "Documento";
+            // 
+            // EstadoCivil
+            // 
+            this.EstadoCivil.FillWeight = 80.44569F;
+            this.EstadoCivil.HeaderText = "Estado Civil";
+            this.EstadoCivil.Name = "EstadoCivil";
+            // 
+            // Direccion
+            // 
+            this.Direccion.FillWeight = 80.44569F;
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            // 
+            // NumCalle
+            // 
+            this.NumCalle.FillWeight = 80.44569F;
+            this.NumCalle.HeaderText = "Numero Calle";
+            this.NumCalle.Name = "NumCalle";
+            // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.FillWeight = 80.44569F;
+            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            // 
+            // Contrato
+            // 
+            this.Contrato.FillWeight = 80.44569F;
+            this.Contrato.HeaderText = "Contrato";
+            this.Contrato.Name = "Contrato";
+            // 
+            // Categoria
+            // 
+            this.Categoria.FillWeight = 80.44569F;
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            // 
+            // Mail
+            // 
+            this.Mail.FillWeight = 80.44569F;
+            this.Mail.HeaderText = "Mail";
+            this.Mail.Name = "Mail";
+            // 
+            // CV
+            // 
+            this.CV.FillWeight = 80.44569F;
+            this.CV.HeaderText = "CV";
+            this.CV.Name = "CV";
+            // 
+            // FechaIngreso
+            // 
+            this.FechaIngreso.FillWeight = 80.44569F;
+            this.FechaIngreso.HeaderText = "Fecha de Ingreso";
+            this.FechaIngreso.Name = "FechaIngreso";
+            // 
+            // FechaBaja
+            // 
+            this.FechaBaja.FillWeight = 80.44569F;
+            this.FechaBaja.HeaderText = "Fecha de Baja";
+            this.FechaBaja.Name = "FechaBaja";
+            // 
             // frmBuscarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(948, 584);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnBuscar);
@@ -310,6 +310,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvGrilla;
         private Guna.UI2.WinForms.Guna2Button btnBuscar;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
@@ -325,6 +326,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CV;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaIngreso;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaBaja;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

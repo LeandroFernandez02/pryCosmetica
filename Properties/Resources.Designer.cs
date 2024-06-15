@@ -63,16 +63,6 @@ namespace pryCosmetica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _20240604_190324 {
-            get {
-                object obj = ResourceManager.GetObject("20240604_190324", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap casale {
             get {
                 object obj = ResourceManager.GetObject("casale", resourceCulture);
@@ -103,6 +93,16 @@ namespace pryCosmetica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_Log_Out {
+            get {
+                object obj = ResourceManager.GetObject("icono_Log_Out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_Postulantes {
             get {
                 object obj = ResourceManager.GetObject("Icono_Postulantes", resourceCulture);
@@ -116,6 +116,16 @@ namespace pryCosmetica.Properties {
         internal static System.Drawing.Bitmap logo_principal {
             get {
                 object obj = ResourceManager.GetObject("logo principal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_principal_negro {
+            get {
+                object obj = ResourceManager.GetObject("logo principal negro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

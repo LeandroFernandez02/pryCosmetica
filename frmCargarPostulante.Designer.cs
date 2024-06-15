@@ -57,7 +57,7 @@
             this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnGuardar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(605, 481);
@@ -73,7 +73,7 @@
             this.btnCancelar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancelar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancelar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCancelar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(147, 481);
@@ -84,6 +84,7 @@
             // 
             // mrcDatosContacto
             // 
+            this.mrcDatosContacto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(0)))), ((int)(((byte)(75)))));
             this.mrcDatosContacto.BorderRadius = 15;
             this.mrcDatosContacto.Controls.Add(this.lblCV);
             this.mrcDatosContacto.Controls.Add(this.btnCargarCv);
@@ -91,7 +92,7 @@
             this.mrcDatosContacto.Controls.Add(this.txtTeléfonoPostulante);
             this.mrcDatosContacto.Controls.Add(this.lblCorreo);
             this.mrcDatosContacto.Controls.Add(this.txtCorreo);
-            this.mrcDatosContacto.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcDatosContacto.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDatosContacto.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.mrcDatosContacto.ForeColor = System.Drawing.Color.White;
             this.mrcDatosContacto.Location = new System.Drawing.Point(148, 256);
@@ -104,7 +105,7 @@
             // 
             this.lblCV.BackColor = System.Drawing.Color.Transparent;
             this.lblCV.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.lblCV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.lblCV.Location = new System.Drawing.Point(427, 74);
             this.lblCV.Name = "lblCV";
             this.lblCV.Size = new System.Drawing.Size(140, 20);
@@ -119,7 +120,7 @@
             this.btnCargarCv.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarCv.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCargarCv.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCargarCv.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.btnCargarCv.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargarCv.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.btnCargarCv.ForeColor = System.Drawing.Color.White;
             this.btnCargarCv.Location = new System.Drawing.Point(406, 106);
@@ -203,6 +204,7 @@
             // 
             // mrcDatosPersonales
             // 
+            this.mrcDatosPersonales.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(0)))), ((int)(((byte)(75)))));
             this.mrcDatosPersonales.BorderRadius = 15;
             this.mrcDatosPersonales.Controls.Add(this.lblArea);
             this.mrcDatosPersonales.Controls.Add(this.cmbArea);
@@ -212,7 +214,7 @@
             this.mrcDatosPersonales.Controls.Add(this.txtApellidoPostulante);
             this.mrcDatosPersonales.Controls.Add(this.lblNombre);
             this.mrcDatosPersonales.Controls.Add(this.txtNombrePostulante);
-            this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDatosPersonales.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.mrcDatosPersonales.ForeColor = System.Drawing.Color.White;
             this.mrcDatosPersonales.Location = new System.Drawing.Point(148, 18);
@@ -362,7 +364,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(932, 545);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
