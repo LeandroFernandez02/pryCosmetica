@@ -42,12 +42,10 @@
             this.btnCargarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.mcrDatosLaborales = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dtpFechaIngreso = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btnCargarCV = new Guna.UI2.WinForms.Guna2Button();
             this.lstTipoContrato = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTipoContrato = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lstAreaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblCV = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCategoria = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAreaEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblFechaIngreso = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -267,18 +265,17 @@
             this.btnCargarEmpleado.Size = new System.Drawing.Size(381, 45);
             this.btnCargarEmpleado.TabIndex = 13;
             this.btnCargarEmpleado.Text = "Cargar Empleado";
+            this.btnCargarEmpleado.Click += new System.EventHandler(this.btnCargarEmpleado_Click);
             // 
             // mcrDatosLaborales
             // 
             this.mcrDatosLaborales.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mcrDatosLaborales.BorderRadius = 15;
             this.mcrDatosLaborales.Controls.Add(this.dtpFechaIngreso);
-            this.mcrDatosLaborales.Controls.Add(this.btnCargarCV);
             this.mcrDatosLaborales.Controls.Add(this.lstTipoContrato);
             this.mcrDatosLaborales.Controls.Add(this.lblTipoContrato);
             this.mcrDatosLaborales.Controls.Add(this.lstCategoría);
             this.mcrDatosLaborales.Controls.Add(this.lstAreaEmpleado);
-            this.mcrDatosLaborales.Controls.Add(this.lblCV);
             this.mcrDatosLaborales.Controls.Add(this.lblCategoria);
             this.mcrDatosLaborales.Controls.Add(this.lblAreaEmpleado);
             this.mcrDatosLaborales.Controls.Add(this.lblFechaIngreso);
@@ -287,7 +284,7 @@
             this.mcrDatosLaborales.ForeColor = System.Drawing.Color.White;
             this.mcrDatosLaborales.Location = new System.Drawing.Point(12, 280);
             this.mcrDatosLaborales.Name = "mcrDatosLaborales";
-            this.mcrDatosLaborales.Size = new System.Drawing.Size(468, 272);
+            this.mcrDatosLaborales.Size = new System.Drawing.Size(468, 230);
             this.mcrDatosLaborales.TabIndex = 12;
             this.mcrDatosLaborales.Text = "Datos Laborales";
             // 
@@ -309,24 +306,6 @@
             this.dtpFechaIngreso.TabIndex = 32;
             this.dtpFechaIngreso.UseTransparentBackground = true;
             this.dtpFechaIngreso.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
-            // 
-            // btnCargarCV
-            // 
-            this.btnCargarCV.BackColor = System.Drawing.Color.Transparent;
-            this.btnCargarCV.BorderRadius = 15;
-            this.btnCargarCV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCargarCV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCargarCV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCargarCV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCargarCV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
-            this.btnCargarCV.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarCV.ForeColor = System.Drawing.Color.White;
-            this.btnCargarCV.Location = new System.Drawing.Point(148, 227);
-            this.btnCargarCV.Name = "btnCargarCV";
-            this.btnCargarCV.Size = new System.Drawing.Size(231, 35);
-            this.btnCargarCV.TabIndex = 23;
-            this.btnCargarCV.Text = "Cargar Curriculum";
-            this.btnCargarCV.Click += new System.EventHandler(this.btnCargarCV_Click_1);
             // 
             // lstTipoContrato
             // 
@@ -391,17 +370,6 @@
             this.lstAreaEmpleado.Name = "lstAreaEmpleado";
             this.lstAreaEmpleado.Size = new System.Drawing.Size(231, 36);
             this.lstAreaEmpleado.TabIndex = 19;
-            // 
-            // lblCV
-            // 
-            this.lblCV.BackColor = System.Drawing.Color.Transparent;
-            this.lblCV.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCV.Location = new System.Drawing.Point(49, 232);
-            this.lblCV.Name = "lblCV";
-            this.lblCV.Size = new System.Drawing.Size(73, 20);
-            this.lblCV.TabIndex = 3;
-            this.lblCV.Text = "Cargar CV:";
             // 
             // lblCategoria
             // 
@@ -779,6 +747,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarEmpleado";
             this.Text = "frmCargarEmpleado";
+            this.Load += new System.EventHandler(this.frmCargarEmpleado_Load);
             this.mrcDireccion.ResumeLayout(false);
             this.mrcDireccion.PerformLayout();
             this.mcrDatosLaborales.ResumeLayout(false);
@@ -804,12 +773,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBarrio;
         private Guna.UI2.WinForms.Guna2Button btnCargarEmpleado;
         private Guna.UI2.WinForms.Guna2GroupBox mcrDatosLaborales;
-        private Guna.UI2.WinForms.Guna2Button btnCargarCV;
         private Guna.UI2.WinForms.Guna2ComboBox lstTipoContrato;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoContrato;
         private Guna.UI2.WinForms.Guna2ComboBox lstCategoría;
         private Guna.UI2.WinForms.Guna2ComboBox lstAreaEmpleado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCV;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCategoria;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblAreaEmpleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaIngreso;

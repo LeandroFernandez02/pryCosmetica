@@ -18,40 +18,66 @@ namespace pryCosmetica
             InitializeComponent();
         }
 
-        private void btnCargarCV_Click_1(object sender, EventArgs e)
+        public static string nombreEmpleado;
+        public static string apellidoEmpleado;
+        public static string cuil;
+        public static string tipoDocumento;
+        public static string numeroDocumentoEmpleado;
+        public static string telefonoEmpleado;
+        public static string estadoCivilEmpleado;
+        public static string mailEmpleado;
+        public static DateTime fechaNacimientoEmpleado;
+        public static DateTime fechaIngresoEmpleado;
+        public static string areaDeTrabajo;
+        public static string tipoDeContrato;
+        public static string categoria;
+        public static string calle;
+        public static string ciudad;
+        public static string numeroCalle;
+        public static string codPostal;
+        public static string barrio;
+        public static string filePath;
+
+        private void btnCargarEmpleado_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-            {
-                // Configurar propiedades del SaveFileDialog
-                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
-                saveFileDialog.FilterIndex = 1;
-                saveFileDialog.RestoreDirectory = true;
+            nombreEmpleado = txtNombreEmpleado.Text;
+            apellidoEmpleado = txtApellidoEmpleado.Text;
+            cuil = txtILegajo.Text;
+            estadoCivilEmpleado = lstEstadoCivil.SelectedItem.ToString();
+            tipoDocumento = lstTipoDocumento.SelectedItem.ToString();
+            numeroDocumentoEmpleado = txtNúmeroDocumento.Text;
+            telefonoEmpleado = txtTeléfono.Text;
+            mailEmpleado = txtMail.Text;
+            fechaNacimientoEmpleado = dtpFechaNacimiento.Value;
+            fechaIngresoEmpleado = dtpFechaIngreso.Value;
+            areaDeTrabajo = lstAreaEmpleado.SelectedItem.ToString();
+            tipoDeContrato = lstTipoContrato.SelectedItem.ToString();
+            categoria = lstCategoría.SelectedItem.ToString();
+            calle = lstCalle.SelectedItem.ToString();
+            numeroCalle = txtNúmeroCalle.Text;
+            ciudad = lstCiudad.SelectedItem.ToString();
+            codPostal = txtCodPostal.Text;
+            barrio = lstBarrio.SelectedItem.ToString();
 
-                // Obtener el directorio del ejecutable de la aplicación
-                string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+            clsProcesosBD objProcesos = new clsProcesosBD();
 
-                // Construir la ruta relativa ../../CV
-                string relativePath = Path.Combine(executablePath, @"..\..\CVempleado");
-                string initialDirectory = Path.GetFullPath(relativePath);
+            objProcesos.CargarEmpleado();
 
-                // Verificar si la ruta existe, si no, crearla
-                if (!Directory.Exists(initialDirectory))
-                {
-                    Directory.CreateDirectory(initialDirectory);
-                    MessageBox.Show("La carpeta CV no existía y ha sido creada en: " + initialDirectory);
-                }
+            objProcesos.CargarAreaEmpleado();
+        }
 
-                // Establecer la ruta inicial
-                saveFileDialog.InitialDirectory = initialDirectory;
+        private void frmCargarEmpleado_Load(object sender, EventArgs e)
+        {
+            clsProcesosBD objProcesos = new clsProcesosBD();
 
-                // Mostrar el SaveFileDialog
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Aquí puedes manejar la ruta seleccionada
-                    string filePath = saveFileDialog.FileName;
-                    MessageBox.Show("El archivo será guardado en: " + filePath);
-                }
-            }
+            objProcesos.CargarTipoDocumento(lstTipoDocumento);
+            objProcesos.CargarEstadoCivil(lstEstadoCivil);
+            objProcesos.CargarCategoria(lstCategoría);
+            objProcesos.CargarAreaDeTrabajo(lstAreaEmpleado);
+            objProcesos.CargarTipoDeContrato(lstTipoContrato);
+            objProcesos.CargarCalles(lstCalle);
+            objProcesos.CargarCiudad(lstCiudad);
+            objProcesos.CargarBarrio(lstBarrio);
         }
     }
 }
