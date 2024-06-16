@@ -155,5 +155,38 @@ namespace pryCosmetica
                 e.Handled = true;
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            if (mrcInasistencia.Visible)
+            {
+                txtNombreInasistencia.Clear();
+                txtMotivoInasistencia.Clear();
+            }
+
+            if (mrcAmonestación.Visible)
+            {
+                txtNombreAmonestacion.Clear();
+            }
+
+            if (mrcSuspensión.Visible)
+            {
+                txtNombreSuspensión.Clear();
+                txtObservación.Clear();
+            }
+
+            if (mrcEvaluaciónDesempeño.Visible)
+            {
+                txtNombreEmpleado.Clear();
+                txtNombreEvaluador.Clear();
+                txtCalificación.Clear();
+                txtObservaciónEvaluación.Clear();
+            }
+
+            if (mrcDespido.Visible)
+            {
+                txtDocumentoEmpleado.Clear();
+            }
+        }
     }
 }

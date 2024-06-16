@@ -190,6 +190,7 @@
             this.btnLimpiar.Size = new System.Drawing.Size(180, 45);
             this.btnLimpiar.TabIndex = 50;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnCargar
             // 
@@ -1009,6 +1010,7 @@
             this.txtNombreAmonestacion.ForeColor = System.Drawing.Color.Black;
             this.txtNombreAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreAmonestacion.Location = new System.Drawing.Point(194, 63);
+            this.txtNombreAmonestacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreAmonestacion.Name = "txtNombreAmonestacion";
             this.txtNombreAmonestacion.PasswordChar = '\0';
             this.txtNombreAmonestacion.PlaceholderText = "";
