@@ -100,7 +100,7 @@
             this.cmbFiltro.Items.AddRange(new object[] {
             "Inasistencias",
             "Amonestaciones",
-            "Suspenciones",
+            "Suspensiones",
             "Evaluacion de Desempeño"});
             this.cmbFiltro.Location = new System.Drawing.Point(34, 51);
             this.cmbFiltro.Margin = new System.Windows.Forms.Padding(2);

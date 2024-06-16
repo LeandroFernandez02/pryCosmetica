@@ -31,8 +31,6 @@
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.mrcDatosContacto = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblCV = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnCargarCv = new Guna.UI2.WinForms.Guna2Button();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtTeléfonoPostulante = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
@@ -60,7 +58,7 @@
             this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnGuardar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(605, 481);
+            this.btnGuardar.Location = new System.Drawing.Point(605, 461);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(180, 45);
             this.btnGuardar.TabIndex = 17;
@@ -76,7 +74,7 @@
             this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCancelar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(147, 481);
+            this.btnCancelar.Location = new System.Drawing.Point(148, 461);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(180, 45);
             this.btnCancelar.TabIndex = 15;
@@ -86,8 +84,6 @@
             // 
             this.mrcDatosContacto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(0)))), ((int)(((byte)(75)))));
             this.mrcDatosContacto.BorderRadius = 15;
-            this.mrcDatosContacto.Controls.Add(this.lblCV);
-            this.mrcDatosContacto.Controls.Add(this.btnCargarCv);
             this.mrcDatosContacto.Controls.Add(this.lblTelefono);
             this.mrcDatosContacto.Controls.Add(this.txtTeléfonoPostulante);
             this.mrcDatosContacto.Controls.Add(this.lblCorreo);
@@ -95,40 +91,11 @@
             this.mrcDatosContacto.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDatosContacto.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.mrcDatosContacto.ForeColor = System.Drawing.Color.White;
-            this.mrcDatosContacto.Location = new System.Drawing.Point(148, 256);
+            this.mrcDatosContacto.Location = new System.Drawing.Point(148, 270);
             this.mrcDatosContacto.Name = "mrcDatosContacto";
-            this.mrcDatosContacto.Size = new System.Drawing.Size(637, 178);
+            this.mrcDatosContacto.Size = new System.Drawing.Size(637, 148);
             this.mrcDatosContacto.TabIndex = 16;
             this.mrcDatosContacto.Text = "Datos de Contacto";
-            // 
-            // lblCV
-            // 
-            this.lblCV.BackColor = System.Drawing.Color.Transparent;
-            this.lblCV.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.lblCV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCV.Location = new System.Drawing.Point(427, 74);
-            this.lblCV.Name = "lblCV";
-            this.lblCV.Size = new System.Drawing.Size(140, 20);
-            this.lblCV.TabIndex = 5;
-            this.lblCV.Text = "Adjuntar Curriculum:";
-            // 
-            // btnCargarCv
-            // 
-            this.btnCargarCv.BackColor = System.Drawing.Color.Transparent;
-            this.btnCargarCv.BorderRadius = 15;
-            this.btnCargarCv.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCargarCv.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCargarCv.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCargarCv.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCargarCv.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
-            this.btnCargarCv.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.btnCargarCv.ForeColor = System.Drawing.Color.White;
-            this.btnCargarCv.Location = new System.Drawing.Point(406, 106);
-            this.btnCargarCv.Name = "btnCargarCv";
-            this.btnCargarCv.Size = new System.Drawing.Size(180, 45);
-            this.btnCargarCv.TabIndex = 4;
-            this.btnCargarCv.Text = "Cargar CV";
-            this.btnCargarCv.Click += new System.EventHandler(this.btnCargarCv_Click_1);
             // 
             // lblTelefono
             // 
@@ -136,7 +103,7 @@
             this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefono.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblTelefono.Location = new System.Drawing.Point(25, 124);
+            this.lblTelefono.Location = new System.Drawing.Point(324, 69);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(66, 18);
             this.lblTelefono.TabIndex = 3;
@@ -157,7 +124,7 @@
             this.txtTeléfonoPostulante.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtTeléfonoPostulante.ForeColor = System.Drawing.Color.Black;
             this.txtTeléfonoPostulante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTeléfonoPostulante.Location = new System.Drawing.Point(114, 115);
+            this.txtTeléfonoPostulante.Location = new System.Drawing.Point(406, 60);
             this.txtTeléfonoPostulante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTeléfonoPostulante.Name = "txtTeléfonoPostulante";
             this.txtTeléfonoPostulante.PasswordChar = '\0';
@@ -218,7 +185,7 @@
             this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDatosPersonales.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.mrcDatosPersonales.ForeColor = System.Drawing.Color.White;
-            this.mrcDatosPersonales.Location = new System.Drawing.Point(148, 18);
+            this.mrcDatosPersonales.Location = new System.Drawing.Point(148, 39);
             this.mrcDatosPersonales.Name = "mrcDatosPersonales";
             this.mrcDatosPersonales.Size = new System.Drawing.Size(637, 178);
             this.mrcDatosPersonales.TabIndex = 14;
@@ -391,8 +358,6 @@
         private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private Guna.UI2.WinForms.Guna2GroupBox mrcDatosContacto;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCV;
-        private Guna.UI2.WinForms.Guna2Button btnCargarCv;
         private System.Windows.Forms.Label lblTelefono;
         private Guna.UI2.WinForms.Guna2TextBox txtTeléfonoPostulante;
         private System.Windows.Forms.Label lblCorreo;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.Charts.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace pryCosmetica
             InitializeComponent();
             lblTitulo.Text = "Inicio";
         }
+        #region Formularios-SubMenus
 
         //  ABRIR FORMULARIO DENTRO DEL PRINCIPAL
         private Form formActivo = null;
@@ -132,5 +134,11 @@ namespace pryCosmetica
         {
             Application.Exit();
         }
+
+        #endregion
+
+        #region Charts
+
+        #endregion
     }
 }

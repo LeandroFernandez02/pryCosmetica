@@ -92,7 +92,7 @@
             this.mrcDireccion.ForeColor = System.Drawing.Color.White;
             this.mrcDireccion.Location = new System.Drawing.Point(486, 281);
             this.mrcDireccion.Name = "mrcDireccion";
-            this.mrcDireccion.Size = new System.Drawing.Size(450, 214);
+            this.mrcDireccion.Size = new System.Drawing.Size(450, 229);
             this.mrcDireccion.TabIndex = 14;
             this.mrcDireccion.Text = "Dirección";
             // 
@@ -262,7 +262,7 @@
             this.btnCargarEmpleado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargarEmpleado.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnCargarEmpleado.Location = new System.Drawing.Point(545, 507);
+            this.btnCargarEmpleado.Location = new System.Drawing.Point(555, 527);
             this.btnCargarEmpleado.Name = "btnCargarEmpleado";
             this.btnCargarEmpleado.Size = new System.Drawing.Size(381, 45);
             this.btnCargarEmpleado.TabIndex = 13;
