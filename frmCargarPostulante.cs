@@ -53,5 +53,45 @@ namespace pryCosmetica
                 }
             }
         }
+
+        private void txtNombrePostulante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada no es una letra y no es una tecla de control (como backspace)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Si no es una letra, cancela el evento
+                e.Handled = true;
+            }
+        }
+
+        private void txtApellidoPostulante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada no es una letra y no es una tecla de control (como backspace)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Si no es una letra, cancela el evento
+                e.Handled = true;
+            }
+        }
+
+        private void txtDNIPostulante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada no es un número y no es una tecla de control (como backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Si no es un número, cancela el evento
+                e.Handled = true;
+            }
+        }
+
+        private void txtTeléfonoPostulante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada no es un número y no es una tecla de control (como backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Si no es un número, cancela el evento
+                e.Handled = true;
+            }
+        }
     }
 }

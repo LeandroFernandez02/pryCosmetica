@@ -66,9 +66,9 @@
             this.pnl.Controls.Add(this.guna2HtmlLabel2);
             this.pnl.Controls.Add(this.guna2HtmlLabel1);
             this.pnl.Controls.Add(this.guna2PictureBox1);
-            this.pnl.Location = new System.Drawing.Point(477, -3);
+            this.pnl.Location = new System.Drawing.Point(477, -2);
             this.pnl.Name = "pnl";
-            this.pnl.Size = new System.Drawing.Size(887, 631);
+            this.pnl.Size = new System.Drawing.Size(887, 633);
             this.pnl.TabIndex = 7;
             // 
             // guna2HtmlLabel2
@@ -95,10 +95,10 @@
             // 
             this.guna2PictureBox1.Image = global::pryCosmetica.Properties.Resources.logo_principal;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(116, 119);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(88, 94);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(336, 271);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(395, 308);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -134,6 +134,7 @@
             this.txtCuil.Size = new System.Drawing.Size(304, 38);
             this.txtCuil.TabIndex = 8;
             this.txtCuil.Click += new System.EventHandler(this.txtCuil_Click);
+            this.txtCuil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuil_KeyPress);
             // 
             // txtContraseña
             // 

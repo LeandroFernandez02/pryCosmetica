@@ -296,6 +296,7 @@
             this.txtObservaciónEvaluación.SelectedText = "";
             this.txtObservaciónEvaluación.Size = new System.Drawing.Size(200, 32);
             this.txtObservaciónEvaluación.TabIndex = 34;
+            this.txtObservaciónEvaluación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservaciónEvaluación_KeyPress);
             // 
             // txtCalificación
             // 
@@ -320,6 +321,7 @@
             this.txtCalificación.SelectedText = "";
             this.txtCalificación.Size = new System.Drawing.Size(200, 32);
             this.txtCalificación.TabIndex = 33;
+            this.txtCalificación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCalificación_KeyPress);
             // 
             // lblCalificación
             // 
@@ -385,6 +387,7 @@
             this.txtNombreEvaluador.SelectedText = "";
             this.txtNombreEvaluador.Size = new System.Drawing.Size(200, 32);
             this.txtNombreEvaluador.TabIndex = 29;
+            this.txtNombreEvaluador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEvaluador_KeyPress);
             // 
             // lblNombreEvaluador
             // 
@@ -420,6 +423,7 @@
             this.txtNombreEmpleado.SelectedText = "";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(200, 32);
             this.txtNombreEmpleado.TabIndex = 27;
+            this.txtNombreEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEmpleado_KeyPress);
             // 
             // lblNombre
             // 
@@ -508,6 +512,7 @@
             this.txtObservación.SelectedText = "";
             this.txtObservación.Size = new System.Drawing.Size(200, 36);
             this.txtObservación.TabIndex = 32;
+            this.txtObservación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservación_KeyPress);
             // 
             // lblObservación
             // 
@@ -603,6 +608,7 @@
             this.txtNombreSuspensión.SelectedText = "";
             this.txtNombreSuspensión.Size = new System.Drawing.Size(200, 36);
             this.txtNombreSuspensión.TabIndex = 26;
+            this.txtNombreSuspensión.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreSuspensión_KeyPress);
             // 
             // lblNombreSuspensión
             // 
@@ -686,6 +692,7 @@
             this.txtDocumentoEmpleado.SelectedText = "";
             this.txtDocumentoEmpleado.Size = new System.Drawing.Size(200, 36);
             this.txtDocumentoEmpleado.TabIndex = 20;
+            this.txtDocumentoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumentoEmpleado_KeyPress);
             // 
             // lblDocumentoEmpleado
             // 
@@ -801,6 +808,7 @@
             this.txtNombreInasistencia.SelectedText = "";
             this.txtNombreInasistencia.Size = new System.Drawing.Size(200, 36);
             this.txtNombreInasistencia.TabIndex = 19;
+            this.txtNombreInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreInasistencia_KeyPress);
             // 
             // dgvFechaInasistencia
             // 
@@ -904,6 +912,7 @@
             this.txtMotivoInasistencia.SelectedText = "";
             this.txtMotivoInasistencia.Size = new System.Drawing.Size(200, 36);
             this.txtMotivoInasistencia.TabIndex = 3;
+            this.txtMotivoInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMotivoInasistencia_KeyPress);
             // 
             // mrcAmonestación
             // 
@@ -996,7 +1005,7 @@
             this.txtNombreAmonestacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombreAmonestacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombreAmonestacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreAmonestacion.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreAmonestacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNombreAmonestacion.ForeColor = System.Drawing.Color.Black;
             this.txtNombreAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreAmonestacion.Location = new System.Drawing.Point(194, 63);
@@ -1006,6 +1015,7 @@
             this.txtNombreAmonestacion.SelectedText = "";
             this.txtNombreAmonestacion.Size = new System.Drawing.Size(200, 36);
             this.txtNombreAmonestacion.TabIndex = 20;
+            this.txtNombreAmonestacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreAmonestacion_KeyPress);
             // 
             // lblNombreAmonestación
             // 

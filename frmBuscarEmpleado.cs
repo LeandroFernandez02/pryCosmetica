@@ -23,78 +23,105 @@ namespace pryCosmetica
 
                 limpiarControles();
 
-                if (selectedValue == "Nombre" || selectedValue == "Documento")
+                if (selectedValue == "Nombre")
                 {
-                    crearTxt();
+                    var txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtNombre.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    txtNombre.ForeColor = Color.Black;
+                    txtNombre.BorderRadius = 10;
+                    txtNombre.BorderColor = Color.FromArgb(51, 0, 51);
+                    txtNombre.Visible = true;
+                    this.Controls.Add(txtNombre);
+                    this.ResumeLayout(false);
+                    this.PerformLayout();
+                    txtNombre.BringToFront();
+                    txtNombre.Refresh();
+
+                    // Ajustar ubicación y tamaño después de agregar el control
+                    txtNombre.Location = new Point(297, 29);
+                    txtNombre.Size = new Size(200, 36);
+
+                    // Agregar el manejador del evento KeyPress
+                    txtNombre.KeyPress += new KeyPressEventHandler(txtNombre_KeyPress);
+                }
+                else if (selectedValue == "CUIL")
+                {
+                    var txtDocumento = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtDocumento.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    txtDocumento.ForeColor = Color.Black;
+                    txtDocumento.BorderRadius = 10;
+                    txtDocumento.BorderColor = Color.FromArgb(51, 0, 51);
+                    txtDocumento.Visible = true;
+                    this.Controls.Add(txtDocumento);
+                    this.ResumeLayout(false);
+                    this.PerformLayout();
+                    txtDocumento.BringToFront();
+                    txtDocumento.Refresh();
+
+                    // Ajustar ubicación y tamaño después de agregar el control
+                    txtDocumento.Location = new Point(297, 29);
+                    txtDocumento.Size = new Size(200, 36);
+
+                    // Agregar el manejador del evento KeyPress
+                    txtDocumento.KeyPress += new KeyPressEventHandler(txtDocumento_KeyPress);
                 }
                 else if (selectedValue == "Estado Civil")
                 {
-                    crearCmb();
+                    var cmbEstadoCivil = new Guna.UI2.WinForms.Guna2ComboBox();
+                    cmbEstadoCivil.Location = new Point(297, 29);
+                    cmbEstadoCivil.Size = new Size(200, 36);
+                    cmbEstadoCivil.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    cmbEstadoCivil.ForeColor = Color.Black;
+                    cmbEstadoCivil.BorderRadius = 10;
+                    cmbEstadoCivil.BorderColor = Color.FromArgb(51, 0, 51);
+                    cmbEstadoCivil.Visible = true;
+                    this.Controls.Add(cmbEstadoCivil);
+                    cmbEstadoCivil.BringToFront();
+                    cmbEstadoCivil.Refresh();
                 }
                 else if (selectedValue == "Contrato")
                 {
-                    crearCmb();
+                    var cmbContrato = new Guna.UI2.WinForms.Guna2ComboBox();
+                    cmbContrato.Location = new Point(297, 29);
+                    cmbContrato.Size = new Size(200, 36);
+                    cmbContrato.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    cmbContrato.ForeColor = Color.Black;
+                    cmbContrato.BorderRadius = 10;
+                    cmbContrato.BorderColor = Color.FromArgb(51, 0, 51);
+                    cmbContrato.Visible = true;
+                    this.Controls.Add(cmbContrato);
+                    cmbContrato.BringToFront();
+                    cmbContrato.Refresh();
                 }
                 else if (selectedValue == "Categoria")
                 {
-                    crearCmb();
+                    var cmbCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
+                    cmbCategoria.Location = new Point(297, 29);
+                    cmbCategoria.Size = new Size(200, 36);
+                    cmbCategoria.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    cmbCategoria.ForeColor = Color.Black;
+                    cmbCategoria.BorderRadius = 10;
+                    cmbCategoria.BorderColor = Color.FromArgb(51, 0, 51);
+                    cmbCategoria.Visible = true;
+                    this.Controls.Add(cmbCategoria);
+                    cmbCategoria.BringToFront();
+                    cmbCategoria.Refresh();
                 }
                 else if (selectedValue == "Fecha de Ingreso")
                 {
-                    crearDtp();
+                    var dtpFechaIngresa = new Guna.UI2.WinForms.Guna2DateTimePicker();
+                    dtpFechaIngresa.Location = new Point(297, 29);
+                    dtpFechaIngresa.Size = new Size(224, 36);
+                    dtpFechaIngresa.Font = new Font("Bahnschrift", 9f);
+                    dtpFechaIngresa.BorderRadius = 10;
+                    dtpFechaIngresa.FillColor = Color.FromArgb(51, 0, 51);
+                    dtpFechaIngresa.ForeColor = Color.FromArgb(255, 255, 255);
+                    dtpFechaIngresa.Visible = true;
+                    this.Controls.Add(dtpFechaIngresa);
+                    dtpFechaIngresa.BringToFront();
+                    dtpFechaIngresa.Refresh();
                 }
             }
-        }
-
-        void crearCmb()
-        {
-            var cmb = new Guna.UI2.WinForms.Guna2ComboBox();
-            cmb.Location = new Point(297, 29);
-            cmb.Size = new Size(200, 36);
-            cmb.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
-            cmb.ForeColor = Color.Black;
-            cmb.BorderRadius = 10;
-            cmb.BorderColor = Color.FromArgb(51, 0, 51);
-            cmb.Visible = true;
-            this.Controls.Add(cmb);
-            cmb.BringToFront();
-            cmb.Refresh();
-        }
-
-        void crearTxt()
-        {
-            var txt = new Guna.UI2.WinForms.Guna2TextBox();
-            txt.Location = new Point(297, 29);
-            txt.Size = new Size(200, 36);
-            txt.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
-            txt.ForeColor = Color.Black;
-            txt.BorderRadius = 10;
-            txt.BorderColor = Color.FromArgb(51, 0, 51);
-            txt.Visible = true;
-            this.Controls.Add(txt);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-            txt.BringToFront();
-            txt.Refresh();
-
-            // Ajustar ubicación y tamaño después de agregar el control
-            txt.Location = new Point(297, 29);
-            txt.Size = new Size(200, 36);
-        }
-
-        void crearDtp()
-        {
-            var dtp = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            dtp.Location = new Point(297, 29);
-            dtp.Size = new Size(224, 36);
-            dtp.Font = new Font("Bahnschrift", 9f);
-            dtp.BorderRadius = 10;
-            dtp.FillColor = Color.FromArgb(51, 0, 51);
-            dtp.ForeColor = Color.FromArgb(255, 255, 255);
-            dtp.Visible = true;
-            this.Controls.Add(dtp);
-            dtp.BringToFront();
-            dtp.Refresh();
         }
 
         void limpiarControles()
@@ -117,6 +144,24 @@ namespace pryCosmetica
             }
             this.ResumeLayout(false);
             this.PerformLayout();
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo letras y la tecla de retroceso (Backspace)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos y la tecla de retroceso (Backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

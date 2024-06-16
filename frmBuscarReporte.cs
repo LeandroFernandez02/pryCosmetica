@@ -25,32 +25,47 @@ namespace pryCosmetica
 
                 limpiarControles();
 
-                if (selectedValue == "ID" || selectedValue == "Nombre" || selectedValue == "Documento")
+                if (selectedValue == "CUIL")
                 {
-                    crearTxt();
+                    var txtCUIL = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtCUIL.ForeColor = Color.Black;
+                    txtCUIL.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    txtCUIL.BorderRadius = 10;
+                    txtCUIL.BorderColor = Color.Black;
+                    txtCUIL.Visible = true;
+                    this.Controls.Add(txtCUIL);
+                    this.ResumeLayout(false);
+                    this.PerformLayout();
+                    txtCUIL.BringToFront();
+                    txtCUIL.Refresh();
+
+                    txtCUIL.Location = new Point(446, 51);
+                    txtCUIL.Size = new Size(200, 36);
+
+                    // Agregar el manejador del evento KeyPress
+                    txtCUIL.KeyPress += new KeyPressEventHandler(txtCUIL_KeyPress);
+                }
+                else if (selectedValue == "Nombre")
+                {
+                    var txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtNombre.ForeColor = Color.Black;
+                    txtNombre.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
+                    txtNombre.BorderRadius = 10;
+                    txtNombre.BorderColor = Color.Black;
+                    txtNombre.Visible = true;
+                    this.Controls.Add(txtNombre);
+                    this.ResumeLayout(false);
+                    this.PerformLayout();
+                    txtNombre.BringToFront();
+                    txtNombre.Refresh();
+
+                    txtNombre.Location = new Point(446, 51);
+                    txtNombre.Size = new Size(200, 36);
+
+                    // Agregar el manejador del evento KeyPress
+                    txtNombre.KeyPress += new KeyPressEventHandler(txtNombre_KeyPress);
                 }
             }
-        }
-        
-        void crearTxt()
-        {
-            var txt = new Guna.UI2.WinForms.Guna2TextBox();
-            txt.Location = new Point(446, 51);
-            txt.Size = new Size(200, 36);
-            txt.ForeColor = Color.Black;
-            txt.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
-            txt.BorderRadius = 10;
-            txt.BorderColor = Color.Black;
-            txt.Visible = true;
-            this.Controls.Add(txt);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-            txt.BringToFront();
-            txt.Refresh();
-
-            // Ajustar ubicación y tamaño después de agregar el control
-            txt.Location = new Point(446, 51);
-            txt.Size = new Size(200, 36);
         }
 
         void limpiarControles()
@@ -73,6 +88,24 @@ namespace pryCosmetica
             }
             this.ResumeLayout(false);
             this.PerformLayout();
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo letras y la tecla de retroceso (Backspace)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCUIL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos y la tecla de retroceso (Backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

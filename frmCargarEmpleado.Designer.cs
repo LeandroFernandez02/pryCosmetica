@@ -119,6 +119,7 @@
             this.txtCodPostal.SelectedText = "";
             this.txtCodPostal.Size = new System.Drawing.Size(58, 36);
             this.txtCodPostal.TabIndex = 37;
+            this.txtCodPostal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodPostal_KeyPress);
             // 
             // lblCodPostal
             // 
@@ -154,6 +155,7 @@
             this.txtNúmeroCalle.SelectedText = "";
             this.txtNúmeroCalle.Size = new System.Drawing.Size(58, 36);
             this.txtNúmeroCalle.TabIndex = 35;
+            this.txtNúmeroCalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNúmeroCalle_KeyPress);
             // 
             // lstCiudad
             // 
@@ -478,6 +480,7 @@
             this.txtTeléfono.SelectedText = "";
             this.txtTeléfono.Size = new System.Drawing.Size(143, 37);
             this.txtTeléfono.TabIndex = 21;
+            this.txtTeléfono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeléfono_KeyPress);
             // 
             // lblTeléfono
             // 
@@ -573,6 +576,7 @@
             this.txtNúmeroDocumento.SelectedText = "";
             this.txtNúmeroDocumento.Size = new System.Drawing.Size(143, 37);
             this.txtNúmeroDocumento.TabIndex = 12;
+            this.txtNúmeroDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNúmeroDocumento_KeyPress);
             // 
             // txtNombreEmpleado
             // 
@@ -597,6 +601,7 @@
             this.txtNombreEmpleado.SelectedText = "";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(143, 37);
             this.txtNombreEmpleado.TabIndex = 11;
+            this.txtNombreEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEmpleado_KeyPress);
             // 
             // txtApellidoEmpleado
             // 
@@ -621,6 +626,7 @@
             this.txtApellidoEmpleado.SelectedText = "";
             this.txtApellidoEmpleado.Size = new System.Drawing.Size(143, 37);
             this.txtApellidoEmpleado.TabIndex = 10;
+            this.txtApellidoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoEmpleado_KeyPress);
             // 
             // txtILegajo
             // 
@@ -645,6 +651,7 @@
             this.txtILegajo.SelectedText = "";
             this.txtILegajo.Size = new System.Drawing.Size(143, 37);
             this.txtILegajo.TabIndex = 9;
+            this.txtILegajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtILegajo_KeyPress);
             // 
             // lblFechaNacimiento
             // 

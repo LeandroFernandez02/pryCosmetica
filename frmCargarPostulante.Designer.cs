@@ -165,6 +165,7 @@
             this.txtTeléfonoPostulante.SelectedText = "";
             this.txtTeléfonoPostulante.Size = new System.Drawing.Size(193, 36);
             this.txtTeléfonoPostulante.TabIndex = 2;
+            this.txtTeléfonoPostulante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeléfonoPostulante_KeyPress);
             // 
             // lblCorreo
             // 
@@ -287,6 +288,7 @@
             this.txtDNIPostulante.SelectedText = "";
             this.txtDNIPostulante.Size = new System.Drawing.Size(193, 36);
             this.txtDNIPostulante.TabIndex = 4;
+            this.txtDNIPostulante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDNIPostulante_KeyPress);
             // 
             // lblApellido
             // 
@@ -323,6 +325,7 @@
             this.txtApellidoPostulante.SelectedText = "";
             this.txtApellidoPostulante.Size = new System.Drawing.Size(193, 36);
             this.txtApellidoPostulante.TabIndex = 2;
+            this.txtApellidoPostulante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoPostulante_KeyPress);
             // 
             // lblNombre
             // 
@@ -359,6 +362,7 @@
             this.txtNombrePostulante.SelectedText = "";
             this.txtNombrePostulante.Size = new System.Drawing.Size(193, 36);
             this.txtNombrePostulante.TabIndex = 0;
+            this.txtNombrePostulante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombrePostulante_KeyPress);
             // 
             // frmCargarPostulante
             // 

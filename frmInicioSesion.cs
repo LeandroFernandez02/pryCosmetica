@@ -54,5 +54,15 @@ namespace pryCosmetica
             txtContraseña.Font = new Font("Bahnschrift", 10f, FontStyle.Regular);
             txtContraseña.PasswordChar = '●';
         }
+
+        private void txtCuil_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada no es un número y no es una tecla de control (como backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Si no es un número, cancela el evento
+                e.Handled = true;
+            }
+        }
     }
 }
