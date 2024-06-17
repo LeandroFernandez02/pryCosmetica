@@ -44,7 +44,6 @@
             this.dtpFechaIngreso = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lstTipoContrato = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTipoContrato = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lstAreaEmpleado = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategoria = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAreaEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -55,7 +54,6 @@
             this.lblTeléfono = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtMail = new Guna.UI2.WinForms.Guna2TextBox();
             this.lstEstadoCivil = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lstTipoDocumento = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtNúmeroDocumento = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNombreEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtApellidoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
@@ -69,6 +67,8 @@
             this.lblApellido = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
+            this.lstTipoDocumento = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.mrcDireccion.SuspendLayout();
             this.mcrDatosLaborales.SuspendLayout();
             this.mrcDatosPersonales.SuspendLayout();
@@ -274,10 +274,10 @@
             // 
             this.mcrDatosLaborales.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mcrDatosLaborales.BorderRadius = 15;
+            this.mcrDatosLaborales.Controls.Add(this.lstCategoría);
             this.mcrDatosLaborales.Controls.Add(this.dtpFechaIngreso);
             this.mcrDatosLaborales.Controls.Add(this.lstTipoContrato);
             this.mcrDatosLaborales.Controls.Add(this.lblTipoContrato);
-            this.mcrDatosLaborales.Controls.Add(this.lstCategoría);
             this.mcrDatosLaborales.Controls.Add(this.lstAreaEmpleado);
             this.mcrDatosLaborales.Controls.Add(this.lblCategoria);
             this.mcrDatosLaborales.Controls.Add(this.lblAreaEmpleado);
@@ -338,25 +338,6 @@
             this.lblTipoContrato.TabIndex = 21;
             this.lblTipoContrato.Text = "Tipo de Contrato:";
             // 
-            // lstCategoría
-            // 
-            this.lstCategoría.BackColor = System.Drawing.Color.Transparent;
-            this.lstCategoría.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lstCategoría.BorderRadius = 10;
-            this.lstCategoría.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstCategoría.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstCategoría.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCategoría.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCategoría.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.lstCategoría.ForeColor = System.Drawing.Color.Black;
-            this.lstCategoría.ItemHeight = 30;
-            this.lstCategoría.Items.AddRange(new object[] {
-            ""});
-            this.lstCategoría.Location = new System.Drawing.Point(148, 89);
-            this.lstCategoría.Name = "lstCategoría";
-            this.lstCategoría.Size = new System.Drawing.Size(231, 36);
-            this.lstCategoría.TabIndex = 20;
-            // 
             // lstAreaEmpleado
             // 
             this.lstAreaEmpleado.BackColor = System.Drawing.Color.Transparent;
@@ -412,12 +393,12 @@
             this.mrcDatosPersonales.BackColor = System.Drawing.Color.Transparent;
             this.mrcDatosPersonales.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDatosPersonales.BorderRadius = 15;
+            this.mrcDatosPersonales.Controls.Add(this.lstTipoDocumento);
             this.mrcDatosPersonales.Controls.Add(this.dtpFechaNacimiento);
             this.mrcDatosPersonales.Controls.Add(this.txtTeléfono);
             this.mrcDatosPersonales.Controls.Add(this.lblTeléfono);
             this.mrcDatosPersonales.Controls.Add(this.txtMail);
             this.mrcDatosPersonales.Controls.Add(this.lstEstadoCivil);
-            this.mrcDatosPersonales.Controls.Add(this.lstTipoDocumento);
             this.mrcDatosPersonales.Controls.Add(this.txtNúmeroDocumento);
             this.mrcDatosPersonales.Controls.Add(this.txtNombreEmpleado);
             this.mrcDatosPersonales.Controls.Add(this.txtApellidoEmpleado);
@@ -534,25 +515,6 @@
             this.lstEstadoCivil.Name = "lstEstadoCivil";
             this.lstEstadoCivil.Size = new System.Drawing.Size(143, 36);
             this.lstEstadoCivil.TabIndex = 17;
-            // 
-            // lstTipoDocumento
-            // 
-            this.lstTipoDocumento.BackColor = System.Drawing.Color.Transparent;
-            this.lstTipoDocumento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lstTipoDocumento.BorderRadius = 10;
-            this.lstTipoDocumento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstTipoDocumento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstTipoDocumento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstTipoDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.lstTipoDocumento.ForeColor = System.Drawing.Color.Black;
-            this.lstTipoDocumento.ItemHeight = 30;
-            this.lstTipoDocumento.Items.AddRange(new object[] {
-            ""});
-            this.lstTipoDocumento.Location = new System.Drawing.Point(394, 60);
-            this.lstTipoDocumento.Name = "lstTipoDocumento";
-            this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
-            this.lstTipoDocumento.TabIndex = 15;
             // 
             // txtNúmeroDocumento
             // 
@@ -759,6 +721,40 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // lstTipoDocumento
+            // 
+            this.lstTipoDocumento.BackColor = System.Drawing.Color.Transparent;
+            this.lstTipoDocumento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lstTipoDocumento.BorderRadius = 10;
+            this.lstTipoDocumento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstTipoDocumento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoDocumento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.lstTipoDocumento.ForeColor = System.Drawing.Color.Black;
+            this.lstTipoDocumento.ItemHeight = 30;
+            this.lstTipoDocumento.Location = new System.Drawing.Point(394, 60);
+            this.lstTipoDocumento.Name = "lstTipoDocumento";
+            this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
+            this.lstTipoDocumento.TabIndex = 33;
+            // 
+            // lstCategoría
+            // 
+            this.lstCategoría.BackColor = System.Drawing.Color.Transparent;
+            this.lstCategoría.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lstCategoría.BorderRadius = 10;
+            this.lstCategoría.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstCategoría.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCategoría.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCategoría.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCategoría.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.lstCategoría.ForeColor = System.Drawing.Color.Black;
+            this.lstCategoría.ItemHeight = 30;
+            this.lstCategoría.Location = new System.Drawing.Point(148, 89);
+            this.lstCategoría.Name = "lstCategoría";
+            this.lstCategoría.Size = new System.Drawing.Size(231, 36);
+            this.lstCategoría.TabIndex = 33;
+            // 
             // frmCargarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -801,7 +797,6 @@
         private Guna.UI2.WinForms.Guna2GroupBox mcrDatosLaborales;
         private Guna.UI2.WinForms.Guna2ComboBox lstTipoContrato;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTipoContrato;
-        private Guna.UI2.WinForms.Guna2ComboBox lstCategoría;
         private Guna.UI2.WinForms.Guna2ComboBox lstAreaEmpleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCategoria;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblAreaEmpleado;
@@ -811,7 +806,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTeléfono;
         private Guna.UI2.WinForms.Guna2TextBox txtMail;
         private Guna.UI2.WinForms.Guna2ComboBox lstEstadoCivil;
-        private Guna.UI2.WinForms.Guna2ComboBox lstTipoDocumento;
         private Guna.UI2.WinForms.Guna2TextBox txtNúmeroDocumento;
         private Guna.UI2.WinForms.Guna2TextBox txtNombreEmpleado;
         private Guna.UI2.WinForms.Guna2TextBox txtApellidoEmpleado;
@@ -827,5 +821,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaIngreso;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaNacimiento;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
+        private Guna.UI2.WinForms.Guna2ComboBox lstCategoría;
+        private Guna.UI2.WinForms.Guna2ComboBox lstTipoDocumento;
     }
 }
