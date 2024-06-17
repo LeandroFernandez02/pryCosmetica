@@ -20,6 +20,7 @@ namespace pryCosmetica
 
         private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
         {
+            clsProcesosBD objProcesos = new clsProcesosBD();
             sacarControl();
             int seleccion = cmbBusqueda.SelectedIndex;
 
@@ -87,6 +88,7 @@ namespace pryCosmetica
 
                 case 3: //Area
                     var cmbArea = new Guna.UI2.WinForms.Guna2ComboBox();
+                    objProcesos.CargarAreaDeTrabajo(cmbArea);
                     cmbArea.BorderRadius = 10;
                     cmbArea.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
                     cmbArea.ForeColor = Color.Black;
