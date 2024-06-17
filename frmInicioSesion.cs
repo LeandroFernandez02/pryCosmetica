@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,9 @@ namespace pryCosmetica
         {
             InitializeComponent();
         }
+
+        clsProcesosBD BD = new clsProcesosBD();
+        OleDbDataReader lectorBD;
 
         private void timerCargaPrograma_Tick(object sender, EventArgs e)
         {
@@ -38,7 +42,43 @@ namespace pryCosmetica
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {                    
-            timerCargaPrograma.Start(); // Inicia el Timer            
+            try
+            {
+                BD.conexion.ConnectionString = BD.varCadenaConexion;
+                BD.conexion.Open();
+                BD.comando = new OleDbCommand();
+
+                BD.comando.Connection = BD.conexion;
+                BD.comando.CommandType = System.Data.CommandType.TableDirect;
+                BD.comando.CommandText = "INICIOSESION";
+
+                lectorBD = BD.comando.ExecuteReader();
+
+                if (lectorBD.HasRows)
+                {
+                    while (lectorBD.Read())
+                    {
+                        if (lectorBD[0].ToString() == txtCuil.Text && lectorBD[1].ToString() == txtContraseña.Text)
+                        {
+                            timerCargaPrograma.Start(); // Inicia el Timer  
+                        }
+                        else
+                        {
+                            MessageBox.Show("usuario no existente, Usuario y/o contraseña incorrecto");
+                        }
+
+                    }
+                }
+
+            }
+            catch (Exception error)
+            {
+
+                MessageBox.Show(error.Message);
+            }
+            lectorBD.Close();
+
+            BD.conexion.Close();
         }
 
         private void txtCuil_Click(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,19 @@ namespace pryCosmetica
         public frmBuscarPostulante()
         {
             InitializeComponent();
+
+            dgvGrilla.CellEndEdit += new DataGridViewCellEventHandler(dgvGrilla_CellEndEdit);
+            btnModificar.Click += new EventHandler(btnModificar_Click);
+            dgvGrilla.ReadOnly = true;
         }
+
+        clsProcesosBD BD = new clsProcesosBD();
+        OleDbDataReader lectorBD;
+
+        private Guna.UI2.WinForms.Guna2TextBox txtDNI;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombre;
+        private Guna.UI2.WinForms.Guna2TextBox txtTelefono;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbArea;
 
         private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -27,7 +40,7 @@ namespace pryCosmetica
             switch (seleccion)
             {
                 case 0: //DNI
-                    var txtDNI = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtDNI = new Guna.UI2.WinForms.Guna2TextBox();
                     txtDNI.BorderRadius = 10;
                     txtDNI.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
                     txtDNI.ForeColor = Color.Black;
@@ -47,7 +60,7 @@ namespace pryCosmetica
                     break;
 
                 case 1: //Nombre
-                    var txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
                     txtNombre.BorderRadius = 10;
                     txtNombre.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
                     txtNombre.ForeColor = Color.Black;
@@ -67,7 +80,7 @@ namespace pryCosmetica
                     break;
 
                 case 2: //Telefono
-                    var txtTelefono = new Guna.UI2.WinForms.Guna2TextBox();
+                    txtTelefono = new Guna.UI2.WinForms.Guna2TextBox();
                     txtTelefono.BorderRadius = 10;
                     txtTelefono.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
                     txtTelefono.ForeColor = Color.Black;
@@ -87,7 +100,7 @@ namespace pryCosmetica
                     break;
 
                 case 3: //Area
-                    var cmbArea = new Guna.UI2.WinForms.Guna2ComboBox();
+                    cmbArea = new Guna.UI2.WinForms.Guna2ComboBox();
                     objProcesos.CargarAreaDeTrabajo(cmbArea);
                     cmbArea.BorderRadius = 10;
                     cmbArea.Font = new Font("Bahnschrift", 11.25f, FontStyle.Regular);
@@ -153,6 +166,181 @@ namespace pryCosmetica
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            String Seleccionado = cmbBusqueda.SelectedItem.ToString();
+            try
+            {
+                BD.conexion.ConnectionString = BD.varCadenaConexion;
+                BD.conexion.Open();
+                BD.comando = new OleDbCommand();
+
+                BD.comando.Connection = BD.conexion;
+                BD.comando.CommandType = System.Data.CommandType.Text;
+
+                switch (Seleccionado)
+                {
+                    case "DNI":
+                        BD.comando.CommandText = @"SELECT POSTULANTES.DNI, POSTULANTES.Nombre, POSTULANTES.Apellido, POSTULANTES.Correo, POSTULANTES.Telefono, POSTULANTES.CV, AREA.NombreArea
+                                            FROM AREA INNER JOIN POSTULANTES ON AREA.[IdArea] = POSTULANTES.[IdArea]";
+
+                        lectorBD = BD.comando.ExecuteReader();
+                        dgvGrilla.Rows.Clear();
+                        while (lectorBD.Read())
+                        {
+                            if (lectorBD["DNI"].ToString() == txtDNI.Text)
+                            {
+                                dgvGrilla.Rows.Add(
+                                lectorBD["DNI"].ToString(),
+                                lectorBD["Nombre"].ToString(),
+                                lectorBD["Apellido"].ToString(),
+                                lectorBD["Correo"].ToString(),
+                                lectorBD["Telefono"].ToString(),
+                                lectorBD["CV"].ToString(),
+                                lectorBD["NombreArea"].ToString());
+                            }
+
+                        }
+
+                        break;
+                    case "Nombre":
+                        BD.comando.CommandText = @"SELECT POSTULANTES.DNI, POSTULANTES.Nombre, POSTULANTES.Apellido, POSTULANTES.Correo, POSTULANTES.Telefono, POSTULANTES.CV, AREA.NombreArea
+                                            FROM AREA INNER JOIN POSTULANTES ON AREA.[IdArea] = POSTULANTES.[IdArea]";
+                        lectorBD = BD.comando.ExecuteReader();
+                        dgvGrilla.Rows.Clear();
+                        while (lectorBD.Read())
+                        {
+                            if (lectorBD["Nombre"].ToString() == txtNombre.Text)
+                            {
+                                dgvGrilla.Rows.Add(
+                                lectorBD["DNI"].ToString(),
+                                lectorBD["Nombre"].ToString(),
+                                lectorBD["Apellido"].ToString(),
+                                lectorBD["Correo"].ToString(),
+                                lectorBD["Telefono"].ToString(),
+                                lectorBD["CV"].ToString(),
+                                lectorBD["NombreArea"].ToString());
+                            }
+
+                        }
+                        break;
+                    case "Telefono":
+                        BD.comando.CommandText = @"SELECT POSTULANTES.DNI, POSTULANTES.Nombre, POSTULANTES.Apellido, POSTULANTES.Correo, POSTULANTES.Telefono, POSTULANTES.CV, AREA.NombreArea
+                                            FROM AREA INNER JOIN POSTULANTES ON AREA.[IdArea] = POSTULANTES.[IdArea]";
+                        lectorBD = BD.comando.ExecuteReader();
+                        dgvGrilla.Rows.Clear();
+                        while (lectorBD.Read())
+                        {
+                            if (lectorBD["Telefono"].ToString() == txtTelefono.Text)
+                            {
+                                dgvGrilla.Rows.Add(
+                                lectorBD["DNI"].ToString(),
+                                lectorBD["Nombre"].ToString(),
+                                lectorBD["Apellido"].ToString(),
+                                lectorBD["Correo"].ToString(),
+                                lectorBD["Telefono"].ToString(),
+                                lectorBD["CV"].ToString(),
+                                lectorBD["NombreArea"].ToString());
+                            }
+
+                        }
+
+                        break;
+                    case "Area":
+
+
+                        string SeleccionadoArea = cmbArea.SelectedItem.ToString();
+                        BD.comando.CommandText = @"SELECT POSTULANTES.DNI, POSTULANTES.Nombre, POSTULANTES.Apellido, POSTULANTES.Correo, POSTULANTES.Telefono, POSTULANTES.CV, AREA.NombreArea
+                                            FROM AREA INNER JOIN POSTULANTES ON AREA.[IdArea] = POSTULANTES.[IdArea]";
+                        lectorBD = BD.comando.ExecuteReader();
+                        dgvGrilla.Rows.Clear();
+                        while (lectorBD.Read())
+                        {
+                            if (lectorBD["NombreArea"].ToString() == SeleccionadoArea)
+                            {
+                                dgvGrilla.Rows.Add(
+                                lectorBD["DNI"].ToString(),
+                                lectorBD["Nombre"].ToString(),
+                                lectorBD["Apellido"].ToString(),
+                                lectorBD["Correo"].ToString(),
+                                lectorBD["Telefono"].ToString(),
+                                lectorBD["CV"].ToString(),
+                                lectorBD["NombreArea"].ToString());
+                            }
+
+                        }
+                        break;
+                }
+
+
+            }
+            catch (Exception error)
+            {
+
+                MessageBox.Show(error.Message);
+            }
+            finally
+            {
+                if (lectorBD != null && !lectorBD.IsClosed)
+                {
+                    lectorBD.Close();
+                }
+                if (BD.conexion.State == System.Data.ConnectionState.Open)
+                {
+                    BD.conexion.Close();
+                }
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            dgvGrilla.ReadOnly = false;
+        }
+
+        private void dgvGrilla_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            int columnIndex = e.ColumnIndex;
+
+            if (rowIndex >= 0 && columnIndex >= 0)
+            {
+                string NombreColumna = dgvGrilla.Columns[columnIndex].Name;
+                var NuevoValor = dgvGrilla.Rows[rowIndex].Cells[columnIndex].Value;
+                var ClavePrincipal = dgvGrilla.Rows[rowIndex].Cells["DNI"].Value;
+                DialogResult result = MessageBox.Show("¿Desea hacer esta modificación?", "Confirmar modificación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    ActualizarBase(ClavePrincipal, NombreColumna, NuevoValor);
+
+                }
+                else
+                {
+                    // Revertir el valor en la grilla si la modificación no es confirmada
+                    dgvGrilla.CancelEdit();
+
+
+                }
+            }
+        }
+
+        private void ActualizarBase(object ClavePrincipal, string NombreColumna, object NuevoValor)
+        {
+            using (OleDbConnection conn = new OleDbConnection(BD.varCadenaConexion))
+            {
+                conn.Open();
+                string query = $"UPDATE POSTULANTES SET {NombreColumna} = @NuevoValor WHERE DNI = @ClavePrincipal";
+
+                using (OleDbCommand cmd = new OleDbCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@NuevoValor", NuevoValor);
+                    cmd.Parameters.AddWithValue("@ClavePrincipal", ClavePrincipal);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            dgvGrilla.ReadOnly = true;
         }
     } 
 }
