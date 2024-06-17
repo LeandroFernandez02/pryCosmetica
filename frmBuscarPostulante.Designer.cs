@@ -37,14 +37,14 @@
             this.cmbBusqueda = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.dgvGrilla = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Area = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +59,7 @@
             this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(724, 29);
+            this.btnBuscar.Location = new System.Drawing.Point(723, 50);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(180, 36);
             this.btnBuscar.TabIndex = 9;
@@ -84,7 +84,7 @@
             "Nombre",
             "Telefono",
             "Area"});
-            this.cmbBusqueda.Location = new System.Drawing.Point(40, 29);
+            this.cmbBusqueda.Location = new System.Drawing.Point(39, 50);
             this.cmbBusqueda.Name = "cmbBusqueda";
             this.cmbBusqueda.Size = new System.Drawing.Size(215, 36);
             this.cmbBusqueda.TabIndex = 7;
@@ -101,7 +101,7 @@
             this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(724, 460);
+            this.btnModificar.Location = new System.Drawing.Point(723, 481);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(180, 36);
             this.btnModificar.TabIndex = 6;
@@ -130,10 +130,10 @@
             this.DNI,
             this.Nombre,
             this.Apellido,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11});
+            this.Correo,
+            this.Telefono,
+            this.CV,
+            this.Area});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,7 +143,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvGrilla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvGrilla.Location = new System.Drawing.Point(40, 81);
+            this.dgvGrilla.Location = new System.Drawing.Point(39, 102);
             this.dgvGrilla.Name = "dgvGrilla";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
@@ -179,6 +179,11 @@
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvGrilla.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellEndEdit);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this.dgvGrilla;
+            // 
             // DNI
             // 
             this.DNI.FillWeight = 60F;
@@ -197,30 +202,25 @@
             this.Apellido.HeaderText = "Apellido";
             this.Apellido.Name = "Apellido";
             // 
-            // Column8
+            // Correo
             // 
-            this.Column8.HeaderText = "Correo";
-            this.Column8.Name = "Column8";
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
             // 
-            // Column9
+            // Telefono
             // 
-            this.Column9.HeaderText = "Telefono";
-            this.Column9.Name = "Column9";
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
             // 
-            // Column10
+            // CV
             // 
-            this.Column10.HeaderText = "CV";
-            this.Column10.Name = "Column10";
+            this.CV.HeaderText = "CV";
+            this.CV.Name = "CV";
             // 
-            // Column11
+            // Area
             // 
-            this.Column11.HeaderText = "Area";
-            this.Column11.Name = "Column11";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this.dgvGrilla;
+            this.Area.HeaderText = "Area";
+            this.Area.Name = "Area";
             // 
             // frmBuscarPostulante
             // 
@@ -246,13 +246,13 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbBusqueda;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private Guna.UI2.WinForms.Guna2DataGridView dgvGrilla;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Area;
     }
 }
