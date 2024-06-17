@@ -746,7 +746,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(948, 617);
+            this.ClientSize = new System.Drawing.Size(948, 611);
             this.Controls.Add(this.mrcDireccion);
             this.Controls.Add(this.btnCargarEmpleado);
             this.Controls.Add(this.mcrDatosLaborales);

@@ -16,6 +16,44 @@ namespace pryCosmetica
         {
             InitializeComponent();
         }
+        #region ABM
+        //  ABRIR FORMULARIO DENTRO DEL PRINCIPAL
+        private Form formActivo = null;
+        private void abrirFormHijo(Form formHijo)
+        {
+            if (formActivo != null)
+                formActivo.Close();
+            formActivo = formHijo;
+            formHijo.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            this.Controls.Add(formHijo);
+            this.Tag = formHijo;
+            formHijo.BringToFront();
+            formHijo.Show();
+        }
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmAbmReporte());
+            if (dgvInasistencia.Visible == true)
+            {
+
+            }
+            else if (dgvAmonestacion.Visible == true)
+            {
+
+            }
+            else if (dgvSuspension.Visible == true)
+            {
+
+            }
+            else if (dgvEvaluacion.Visible == true)
+            {
+
+            }
+        }
+        #endregion
+
 
         private void cmbCondicion_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -105,6 +143,45 @@ namespace pryCosmetica
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void cmbFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbFiltro.SelectedItem != null)
+            {
+                string selectedValue = cmbFiltro.SelectedItem.ToString();
+
+                limpiarControles();
+
+                if (selectedValue == "Inasistencias")
+                {
+                    dgvEvaluacion.Visible = false;
+                    dgvSuspension.Visible = false;
+                    dgvAmonestacion.Visible = false;
+                    dgvInasistencia.Visible = true;
+                }
+                else if (selectedValue == "Amonestaciones")
+                {
+                    dgvEvaluacion.Visible = false;
+                    dgvSuspension.Visible = false;
+                    dgvAmonestacion.Visible = true;
+                    dgvInasistencia.Visible = false;
+                }
+                else if (selectedValue == "Suspensiones")
+                {
+                    dgvEvaluacion.Visible = false;
+                    dgvSuspension.Visible = true;
+                    dgvAmonestacion.Visible = false;
+                    dgvInasistencia.Visible = false;
+                }
+                else if (selectedValue == "Evaluacion de Desempeño")
+                {
+                    dgvEvaluacion.Visible = true;
+                    dgvSuspension.Visible = false;
+                    dgvAmonestacion.Visible = false;
+                    dgvInasistencia.Visible = false;
+                }
             }
         }
     }

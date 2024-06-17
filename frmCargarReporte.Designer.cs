@@ -1035,7 +1035,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(932, 578);
+            this.ClientSize = new System.Drawing.Size(948, 611);
             this.Controls.Add(this.btnDespido);
             this.Controls.Add(this.btnEvaluaciónDesempeño);
             this.Controls.Add(this.btnSuspensiones);
