@@ -68,6 +68,7 @@
             this.lblLegajo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblApellido = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.mrcDireccion.SuspendLayout();
             this.mcrDatosLaborales.SuspendLayout();
             this.mrcDatosPersonales.SuspendLayout();
@@ -741,12 +742,30 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BorderRadius = 15;
+            this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLimpiar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
+            this.btnLimpiar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(136, 527);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(381, 45);
+            this.btnLimpiar.TabIndex = 15;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // frmCargarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(948, 611);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.mrcDireccion);
             this.Controls.Add(this.btnCargarEmpleado);
             this.Controls.Add(this.mcrDatosLaborales);
@@ -807,5 +826,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombre;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaIngreso;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaNacimiento;
+        private Guna.UI2.WinForms.Guna2Button btnLimpiar;
     }
 }

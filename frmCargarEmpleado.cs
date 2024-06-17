@@ -149,5 +149,27 @@ namespace pryCosmetica
                 e.Handled = true;
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtNombreEmpleado.Clear();
+            txtApellidoEmpleado.Clear();
+            txtILegajo.Clear();
+            txtNúmeroDocumento.Clear();
+            txtTeléfono.Clear();
+            txtMail.Clear();
+            txtNúmeroCalle.Clear();
+            txtCodPostal.Clear();
+
+            lstTipoDocumento.SelectedIndex = -1;
+            lstEstadoCivil.SelectedIndex = -1;
+            lstCategoría.SelectedIndex = -1;
+            lstAreaEmpleado.SelectedIndex = -1;
+            lstTipoContrato.SelectedIndex = -1;
+            lstCalle.SelectedIndex = -1;
+            lstCiudad.SelectedIndex = -1;
+            lstBarrio.SelectedIndex = -1;
+
+        }
     }
 }
