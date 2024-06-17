@@ -12,11 +12,11 @@ namespace pryCosmetica
 {
     public class clsProcesosBD
     {
-        private OleDbConnection conexion = new OleDbConnection();
-        private OleDbCommand comando = new OleDbCommand();
-        private OleDbDataAdapter adaptador = new OleDbDataAdapter();
+        public OleDbConnection conexion = new OleDbConnection();
+        public OleDbCommand comando = new OleDbCommand();
+        public OleDbDataAdapter adaptador = new OleDbDataAdapter();
 
-        private string varCadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Cosmetica.accdb";
+        public string varCadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Cosmetica.accdb";
 
         public void CargarEmpleado()
         {

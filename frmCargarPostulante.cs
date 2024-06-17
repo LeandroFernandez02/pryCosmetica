@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -13,45 +14,16 @@ namespace pryCosmetica
 {
     public partial class frmCargarPostulante : Form
     {
+
+        private clsProcesosBD procesosBD;
+
         public frmCargarPostulante()
         {
             InitializeComponent();
-        }
 
-        private void btnCargarCv_Click_1(object sender, EventArgs e)
-        {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-            {
-                // Configurar propiedades del SaveFileDialog
-                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
-                saveFileDialog.FilterIndex = 1;
-                saveFileDialog.RestoreDirectory = true;
-
-                // Obtener el directorio del ejecutable de la aplicación
-                string executablePath = AppDomain.CurrentDomain.BaseDirectory;
-
-                // Construir la ruta relativa ../../CV
-                string relativePath = Path.Combine(executablePath, @"..\..\CVpostulante");
-                string initialDirectory = Path.GetFullPath(relativePath);
-
-                // Verificar si la ruta existe, si no, crearla
-                if (!Directory.Exists(initialDirectory))
-                {
-                    Directory.CreateDirectory(initialDirectory);
-                    MessageBox.Show("La carpeta CV no existía y ha sido creada en: " + initialDirectory);
-                }
-
-                // Establecer la ruta inicial
-                saveFileDialog.InitialDirectory = initialDirectory;
-
-                // Mostrar el SaveFileDialog
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Aquí puedes manejar la ruta seleccionada
-                    string filePath = saveFileDialog.FileName;
-                    MessageBox.Show("El archivo será guardado en: " + filePath);
-                }
-            }
+            procesosBD = new clsProcesosBD();
+            procesosBD.conexion.ConnectionString = procesosBD.varCadenaConexion;
+            CargarComboBoxAreas();
         }
 
         private void txtNombrePostulante_KeyPress(object sender, KeyPressEventArgs e)
@@ -92,6 +64,101 @@ namespace pryCosmetica
                 // Si no es un número, cancela el evento
                 e.Handled = true;
             }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            // Obtener los valores de los campos del formulario
+            string nombre = txtNombrePostulante.Text.Trim();
+            string apellido = txtApellidoPostulante.Text.Trim();
+            string correo = txtCorreo.Text.Trim();
+            string dni = txtDNIPostulante.Text.Trim();
+            string telefono = txtTeléfonoPostulante.Text.Trim();
+            string areaSeleccionada = cmbArea.SelectedValue.ToString();
+
+            // Validar que todos los campos obligatorios estén completos
+            if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) ||
+                string.IsNullOrEmpty(correo) || string.IsNullOrEmpty(dni) ||
+                string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(areaSeleccionada))
+            {
+                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Guardar el archivo de CV
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos PDF (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
+            openFileDialog.Title = "Seleccione el archivo del CV";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string nombreArchivo = Path.GetFileName(openFileDialog.FileName);
+                string rutaDestino = Path.Combine(Application.StartupPath, "CVpostulantes", nombreArchivo);
+
+                // Verificar si la carpeta CVpostulantes existe, si no, crearla
+                string carpetaCV = Path.Combine(Application.StartupPath, "CVpostulantes");
+                if (!Directory.Exists(carpetaCV))
+                {
+                    Directory.CreateDirectory(carpetaCV);
+                }
+
+                // Copiar el archivo seleccionado a la carpeta de destino
+                File.Copy(openFileDialog.FileName, rutaDestino, true);
+
+                // Insertar los datos en la base de datos
+                string consulta = "INSERT INTO POSTULANTES (DNI, Nombre, Apellido, Correo, Telefono, CV, IdArea) " +
+                                  "VALUES (@dni, @nombre, @apellido, @correo, @telefono, @cv, @idArea)";
+
+                OleDbCommand cmd = new OleDbCommand(consulta, procesosBD.conexion);
+                cmd.Parameters.AddWithValue("@dni", dni);
+                cmd.Parameters.AddWithValue("@nombre", nombre);
+                cmd.Parameters.AddWithValue("@apellido", apellido);
+                cmd.Parameters.AddWithValue("@correo", correo);
+                cmd.Parameters.AddWithValue("@telefono", telefono);
+                cmd.Parameters.AddWithValue("@cv", rutaDestino);
+                cmd.Parameters.AddWithValue("@idArea", areaSeleccionada);
+
+                try
+                {
+                    procesosBD.conexion.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Datos guardados correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al guardar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    procesosBD.conexion.Close();
+                }
+            }
+        }
+
+        private void CargarComboBoxAreas()
+        {
+            string consulta = "SELECT IdArea, NombreArea FROM AREA";
+            OleDbDataAdapter adapter = new OleDbDataAdapter(consulta, procesosBD.conexion);
+            DataTable dtAreas = new DataTable();
+
+            try
+            {
+                procesosBD.conexion.Open();
+                adapter.Fill(dtAreas);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las áreas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                procesosBD.conexion.Close();
+            }
+
+            // Asignar datos al ComboBox
+            cmbArea.DataSource = dtAreas;
+            cmbArea.DisplayMember = "NombreArea";
+            cmbArea.ValueMember = "IdArea";
         }
     }
 }
