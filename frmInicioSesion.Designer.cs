@@ -157,6 +157,7 @@
             this.txtContraseña.Size = new System.Drawing.Size(304, 38);
             this.txtContraseña.TabIndex = 9;
             this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             // 
             // btnIniciarSesion
             // 

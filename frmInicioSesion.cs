@@ -103,6 +103,70 @@ namespace pryCosmetica
                 // Si no es un número, cancela el evento
                 e.Handled = true;
             }
+
+            
+            // Si se presiona la tecla Enter
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Evitar el sonido 'ding'
+                e.Handled = true;
+
+                // Seleccionar el siguiente control
+                txtContraseña.Clear();
+                txtContraseña.ForeColor = Color.Black;
+                txtContraseña.Font = new Font("Bahnschrift", 10f, FontStyle.Regular);
+                txtContraseña.PasswordChar = '●';
+                txtContraseña.Focus();
+            }
+            
+        }
+
+        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Si se presiona la tecla Enter
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Evitar el sonido 'ding'
+                e.Handled = true;
+
+                try
+                {
+                    BD.conexion.ConnectionString = BD.varCadenaConexion;
+                    BD.conexion.Open();
+                    BD.comando = new OleDbCommand();
+
+                    BD.comando.Connection = BD.conexion;
+                    BD.comando.CommandType = System.Data.CommandType.TableDirect;
+                    BD.comando.CommandText = "INICIOSESION";
+
+                    lectorBD = BD.comando.ExecuteReader();
+
+                    if (lectorBD.HasRows)
+                    {
+                        while (lectorBD.Read())
+                        {
+                            if (lectorBD[0].ToString() == txtCuil.Text && lectorBD[1].ToString() == txtContraseña.Text)
+                            {
+                                timerCargaPrograma.Start(); // Inicia el Timer  
+                            }
+                            else
+                            {
+                                MessageBox.Show("usuario no existente, Usuario y/o contraseña incorrecto");
+                            }
+
+                        }
+                    }
+
+                }
+                catch (Exception error)
+                {
+
+                    MessageBox.Show(error.Message);
+                }
+                lectorBD.Close();
+
+                BD.conexion.Close();
+            }
         }
     }
 }
