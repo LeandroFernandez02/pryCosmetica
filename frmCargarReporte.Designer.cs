@@ -185,7 +185,7 @@
             this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnLimpiar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(490, 507);
+            this.btnLimpiar.Location = new System.Drawing.Point(513, 507);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(180, 45);
             this.btnLimpiar.TabIndex = 50;
@@ -202,7 +202,7 @@
             this.btnCargar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
-            this.btnCargar.Location = new System.Drawing.Point(235, 507);
+            this.btnCargar.Location = new System.Drawing.Point(255, 507);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(180, 45);
             this.btnCargar.TabIndex = 49;
@@ -227,7 +227,7 @@
             this.mrcEvaluaciónDesempeño.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcEvaluaciónDesempeño.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
-            this.mrcEvaluaciónDesempeño.Location = new System.Drawing.Point(232, 94);
+            this.mrcEvaluaciónDesempeño.Location = new System.Drawing.Point(258, 93);
             this.mrcEvaluaciónDesempeño.Name = "mrcEvaluaciónDesempeño";
             this.mrcEvaluaciónDesempeño.Size = new System.Drawing.Size(435, 396);
             this.mrcEvaluaciónDesempeño.TabIndex = 56;
@@ -454,7 +454,7 @@
             this.mrcSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcSuspensión.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcSuspensión.ForeColor = System.Drawing.Color.White;
-            this.mrcSuspensión.Location = new System.Drawing.Point(232, 129);
+            this.mrcSuspensión.Location = new System.Drawing.Point(258, 128);
             this.mrcSuspensión.Name = "mrcSuspensión";
             this.mrcSuspensión.Size = new System.Drawing.Size(435, 347);
             this.mrcSuspensión.TabIndex = 55;
@@ -633,7 +633,7 @@
             this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDespido.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcDespido.ForeColor = System.Drawing.Color.White;
-            this.mrcDespido.Location = new System.Drawing.Point(232, 197);
+            this.mrcDespido.Location = new System.Drawing.Point(258, 196);
             this.mrcDespido.Name = "mrcDespido";
             this.mrcDespido.Size = new System.Drawing.Size(435, 203);
             this.mrcDespido.TabIndex = 59;
@@ -725,7 +725,7 @@
             this.mrcInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcInasistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcInasistencia.ForeColor = System.Drawing.Color.White;
-            this.mrcInasistencia.Location = new System.Drawing.Point(232, 127);
+            this.mrcInasistencia.Location = new System.Drawing.Point(258, 126);
             this.mrcInasistencia.Name = "mrcInasistencia";
             this.mrcInasistencia.Size = new System.Drawing.Size(435, 346);
             this.mrcInasistencia.TabIndex = 58;
@@ -928,7 +928,7 @@
             this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcAmonestación.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcAmonestación.ForeColor = System.Drawing.Color.White;
-            this.mrcAmonestación.Location = new System.Drawing.Point(232, 183);
+            this.mrcAmonestación.Location = new System.Drawing.Point(258, 182);
             this.mrcAmonestación.Name = "mrcAmonestación";
             this.mrcAmonestación.Size = new System.Drawing.Size(435, 245);
             this.mrcAmonestación.TabIndex = 60;
@@ -1036,18 +1036,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(948, 611);
+            this.Controls.Add(this.btnSuspensiones);
             this.Controls.Add(this.btnDespido);
             this.Controls.Add(this.btnEvaluaciónDesempeño);
-            this.Controls.Add(this.btnSuspensiones);
             this.Controls.Add(this.btnAmonestaciones);
             this.Controls.Add(this.btnInasistencia);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);
-            this.Controls.Add(this.mrcEvaluaciónDesempeño);
             this.Controls.Add(this.mrcSuspensión);
             this.Controls.Add(this.mrcDespido);
             this.Controls.Add(this.mrcInasistencia);
             this.Controls.Add(this.mrcAmonestación);
+            this.Controls.Add(this.mrcEvaluaciónDesempeño);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

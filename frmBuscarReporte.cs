@@ -34,23 +34,26 @@ namespace pryCosmetica
         }
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmAbmReporte());
-            if (dgvInasistencia.Visible == true)
-            {
+            string tipoReporte = "";
 
-            }
-            else if (dgvAmonestacion.Visible == true)
+            if (dgvInasistencia.Visible)
             {
-
+                tipoReporte = "Inasistencias";
             }
-            else if (dgvSuspension.Visible == true)
+            else if (dgvAmonestacion.Visible)
             {
-
+                tipoReporte = "Amonestaciones";
             }
-            else if (dgvEvaluacion.Visible == true)
+            else if (dgvSuspension.Visible)
             {
-
+                tipoReporte = "Suspensiones";
             }
+            else if (dgvEvaluacion.Visible)
+            {
+                tipoReporte = "Evaluacion de Desempeño";
+            }
+
+            abrirFormHijo(new frmAbmReporte(tipoReporte));
         }
         #endregion
 
