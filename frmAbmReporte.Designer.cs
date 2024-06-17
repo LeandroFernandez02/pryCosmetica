@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.mrcInasistencia = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblCuilEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCuilInasistencia = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblMotivoInasistencia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTipoInasistencia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblJustificado = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,6 +43,8 @@
             this.optInjustificada = new Guna.UI2.WinForms.Guna2RadioButton();
             this.txtMotivoInasistencia = new Guna.UI2.WinForms.Guna2TextBox();
             this.mrcAmonestación = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtCuilAmonestacion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstMotivoAmonestación = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblMotivoAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvFechaAmonestación = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -48,6 +52,8 @@
             this.txtNombreAmonestacion = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreAmonestación = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcEvaluaciónDesempeño = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtCuilEvaluacion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblÁreaEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblObservaciónes = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstArea = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -61,6 +67,8 @@
             this.txtNombreEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcSuspensión = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCuilSuspencion = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblMotivoSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lstMotivoSuspensión = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtObservación = new Guna.UI2.WinForms.Guna2TextBox();
@@ -71,14 +79,6 @@
             this.lblInicioSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNombreSuspensión = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblCuilEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCuilInasistencia = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCuilSuspencion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCuilEvaluacion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCuilAmonestacion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.mrcInasistencia.SuspendLayout();
@@ -114,6 +114,41 @@
             this.mrcInasistencia.TabIndex = 59;
             this.mrcInasistencia.Text = "Inasistencia";
             this.mrcInasistencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCuilEmpleado
+            // 
+            this.lblCuilEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblCuilEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCuilEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblCuilEmpleado.Location = new System.Drawing.Point(58, 66);
+            this.lblCuilEmpleado.Name = "lblCuilEmpleado";
+            this.lblCuilEmpleado.Size = new System.Drawing.Size(98, 20);
+            this.lblCuilEmpleado.TabIndex = 20;
+            this.lblCuilEmpleado.Text = "Cuil Empleado";
+            // 
+            // txtCuilInasistencia
+            // 
+            this.txtCuilInasistencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtCuilInasistencia.BorderRadius = 10;
+            this.txtCuilInasistencia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCuilInasistencia.DefaultText = "";
+            this.txtCuilInasistencia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCuilInasistencia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCuilInasistencia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilInasistencia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilInasistencia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.txtCuilInasistencia.ForeColor = System.Drawing.Color.Black;
+            this.txtCuilInasistencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilInasistencia.Location = new System.Drawing.Point(199, 50);
+            this.txtCuilInasistencia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCuilInasistencia.Name = "txtCuilInasistencia";
+            this.txtCuilInasistencia.PasswordChar = '\0';
+            this.txtCuilInasistencia.PlaceholderText = "";
+            this.txtCuilInasistencia.SelectedText = "";
+            this.txtCuilInasistencia.Size = new System.Drawing.Size(200, 36);
+            this.txtCuilInasistencia.TabIndex = 21;
+            this.txtCuilInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuilInasistencia_KeyPress);
             // 
             // lblMotivoInasistencia
             // 
@@ -192,6 +227,7 @@
             this.txtNombreInasistencia.SelectedText = "";
             this.txtNombreInasistencia.Size = new System.Drawing.Size(200, 36);
             this.txtNombreInasistencia.TabIndex = 19;
+            this.txtNombreInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreInasistencia_KeyPress);
             // 
             // dgvFechaInasistencia
             // 
@@ -295,6 +331,7 @@
             this.txtMotivoInasistencia.SelectedText = "";
             this.txtMotivoInasistencia.Size = new System.Drawing.Size(200, 36);
             this.txtMotivoInasistencia.TabIndex = 3;
+            this.txtMotivoInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMotivoInasistencia_KeyPress);
             // 
             // mrcAmonestación
             // 
@@ -318,6 +355,42 @@
             this.mrcAmonestación.Text = "Amonestaciones";
             this.mrcAmonestación.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mrcAmonestación.Visible = false;
+            // 
+            // txtCuilAmonestacion
+            // 
+            this.txtCuilAmonestacion.BackColor = System.Drawing.Color.White;
+            this.txtCuilAmonestacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtCuilAmonestacion.BorderRadius = 10;
+            this.txtCuilAmonestacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCuilAmonestacion.DefaultText = "";
+            this.txtCuilAmonestacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCuilAmonestacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCuilAmonestacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilAmonestacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilAmonestacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilAmonestacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.txtCuilAmonestacion.ForeColor = System.Drawing.Color.Black;
+            this.txtCuilAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilAmonestacion.Location = new System.Drawing.Point(211, 50);
+            this.txtCuilAmonestacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCuilAmonestacion.Name = "txtCuilAmonestacion";
+            this.txtCuilAmonestacion.PasswordChar = '\0';
+            this.txtCuilAmonestacion.PlaceholderText = "";
+            this.txtCuilAmonestacion.SelectedText = "";
+            this.txtCuilAmonestacion.Size = new System.Drawing.Size(200, 36);
+            this.txtCuilAmonestacion.TabIndex = 26;
+            this.txtCuilAmonestacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuilAmonestacion_KeyPress);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(71, 66);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(98, 20);
+            this.guna2HtmlLabel3.TabIndex = 25;
+            this.guna2HtmlLabel3.Text = "Cuil Empleado";
             // 
             // lstMotivoAmonestación
             // 
@@ -400,6 +473,7 @@
             this.txtNombreAmonestacion.SelectedText = "";
             this.txtNombreAmonestacion.Size = new System.Drawing.Size(200, 36);
             this.txtNombreAmonestacion.TabIndex = 20;
+            this.txtNombreAmonestacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreAmonestacion_KeyPress);
             // 
             // lblNombreAmonestación
             // 
@@ -440,6 +514,42 @@
             this.mrcEvaluaciónDesempeño.Text = "Evaluación Desempeño";
             this.mrcEvaluaciónDesempeño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mrcEvaluaciónDesempeño.Visible = false;
+            // 
+            // txtCuilEvaluacion
+            // 
+            this.txtCuilEvaluacion.BackColor = System.Drawing.Color.Transparent;
+            this.txtCuilEvaluacion.BorderColor = System.Drawing.Color.Empty;
+            this.txtCuilEvaluacion.BorderRadius = 10;
+            this.txtCuilEvaluacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCuilEvaluacion.DefaultText = "";
+            this.txtCuilEvaluacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCuilEvaluacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCuilEvaluacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilEvaluacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilEvaluacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilEvaluacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuilEvaluacion.ForeColor = System.Drawing.Color.Black;
+            this.txtCuilEvaluacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilEvaluacion.Location = new System.Drawing.Point(194, 48);
+            this.txtCuilEvaluacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCuilEvaluacion.Name = "txtCuilEvaluacion";
+            this.txtCuilEvaluacion.PasswordChar = '\0';
+            this.txtCuilEvaluacion.PlaceholderText = "";
+            this.txtCuilEvaluacion.SelectedText = "";
+            this.txtCuilEvaluacion.Size = new System.Drawing.Size(200, 32);
+            this.txtCuilEvaluacion.TabIndex = 41;
+            this.txtCuilEvaluacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuilEvaluacion_KeyPress);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(61, 60);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(98, 20);
+            this.guna2HtmlLabel2.TabIndex = 40;
+            this.guna2HtmlLabel2.Text = "Cuil Empleado";
             // 
             // lblÁreaEmpleado
             // 
@@ -503,6 +613,7 @@
             this.txtObservaciónEvaluación.SelectedText = "";
             this.txtObservaciónEvaluación.Size = new System.Drawing.Size(200, 32);
             this.txtObservaciónEvaluación.TabIndex = 34;
+            this.txtObservaciónEvaluación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservaciónEvaluación_KeyPress);
             // 
             // txtCalificación
             // 
@@ -527,6 +638,7 @@
             this.txtCalificación.SelectedText = "";
             this.txtCalificación.Size = new System.Drawing.Size(200, 32);
             this.txtCalificación.TabIndex = 33;
+            this.txtCalificación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCalificación_KeyPress);
             // 
             // lblCalificación
             // 
@@ -592,6 +704,7 @@
             this.txtNombreEvaluador.SelectedText = "";
             this.txtNombreEvaluador.Size = new System.Drawing.Size(200, 32);
             this.txtNombreEvaluador.TabIndex = 29;
+            this.txtNombreEvaluador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEvaluador_KeyPress);
             // 
             // lblNombreEvaluador
             // 
@@ -627,6 +740,7 @@
             this.txtNombreEmpleado.SelectedText = "";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(200, 32);
             this.txtNombreEmpleado.TabIndex = 27;
+            this.txtNombreEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEmpleado_KeyPress);
             // 
             // lblNombre
             // 
@@ -665,6 +779,41 @@
             this.mrcSuspensión.Text = "Suspensión";
             this.mrcSuspensión.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mrcSuspensión.Visible = false;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(59, 71);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(98, 20);
+            this.guna2HtmlLabel1.TabIndex = 35;
+            this.guna2HtmlLabel1.Text = "Cuil Empleado";
+            // 
+            // txtCuilSuspencion
+            // 
+            this.txtCuilSuspencion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtCuilSuspencion.BorderRadius = 10;
+            this.txtCuilSuspencion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCuilSuspencion.DefaultText = "";
+            this.txtCuilSuspencion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCuilSuspencion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCuilSuspencion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilSuspencion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCuilSuspencion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilSuspencion.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.txtCuilSuspencion.ForeColor = System.Drawing.Color.Black;
+            this.txtCuilSuspencion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCuilSuspencion.Location = new System.Drawing.Point(200, 55);
+            this.txtCuilSuspencion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCuilSuspencion.Name = "txtCuilSuspencion";
+            this.txtCuilSuspencion.PasswordChar = '\0';
+            this.txtCuilSuspencion.PlaceholderText = "";
+            this.txtCuilSuspencion.SelectedText = "";
+            this.txtCuilSuspencion.Size = new System.Drawing.Size(200, 36);
+            this.txtCuilSuspencion.TabIndex = 36;
+            this.txtCuilSuspencion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuilSuspencion_KeyPress);
             // 
             // lblMotivoSuspensión
             // 
@@ -717,6 +866,7 @@
             this.txtObservación.SelectedText = "";
             this.txtObservación.Size = new System.Drawing.Size(200, 36);
             this.txtObservación.TabIndex = 32;
+            this.txtObservación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservación_KeyPress);
             // 
             // lblObservación
             // 
@@ -812,6 +962,7 @@
             this.txtNombreSuspensión.SelectedText = "";
             this.txtNombreSuspensión.Size = new System.Drawing.Size(200, 36);
             this.txtNombreSuspensión.TabIndex = 26;
+            this.txtNombreSuspensión.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreSuspensión_KeyPress);
             // 
             // lblNombreSuspensión
             // 
@@ -823,144 +974,6 @@
             this.lblNombreSuspensión.Size = new System.Drawing.Size(127, 20);
             this.lblNombreSuspensión.TabIndex = 25;
             this.lblNombreSuspensión.Text = "Nombre Empleado";
-            // 
-            // lblCuilEmpleado
-            // 
-            this.lblCuilEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lblCuilEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCuilEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCuilEmpleado.Location = new System.Drawing.Point(58, 66);
-            this.lblCuilEmpleado.Name = "lblCuilEmpleado";
-            this.lblCuilEmpleado.Size = new System.Drawing.Size(98, 20);
-            this.lblCuilEmpleado.TabIndex = 20;
-            this.lblCuilEmpleado.Text = "Cuil Empleado";
-            // 
-            // txtCuilInasistencia
-            // 
-            this.txtCuilInasistencia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtCuilInasistencia.BorderRadius = 10;
-            this.txtCuilInasistencia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCuilInasistencia.DefaultText = "";
-            this.txtCuilInasistencia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCuilInasistencia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCuilInasistencia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilInasistencia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilInasistencia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.txtCuilInasistencia.ForeColor = System.Drawing.Color.Black;
-            this.txtCuilInasistencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilInasistencia.Location = new System.Drawing.Point(199, 50);
-            this.txtCuilInasistencia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCuilInasistencia.Name = "txtCuilInasistencia";
-            this.txtCuilInasistencia.PasswordChar = '\0';
-            this.txtCuilInasistencia.PlaceholderText = "";
-            this.txtCuilInasistencia.SelectedText = "";
-            this.txtCuilInasistencia.Size = new System.Drawing.Size(200, 36);
-            this.txtCuilInasistencia.TabIndex = 21;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(59, 71);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(98, 20);
-            this.guna2HtmlLabel1.TabIndex = 35;
-            this.guna2HtmlLabel1.Text = "Cuil Empleado";
-            // 
-            // txtCuilSuspencion
-            // 
-            this.txtCuilSuspencion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtCuilSuspencion.BorderRadius = 10;
-            this.txtCuilSuspencion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCuilSuspencion.DefaultText = "";
-            this.txtCuilSuspencion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCuilSuspencion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCuilSuspencion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilSuspencion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilSuspencion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilSuspencion.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.txtCuilSuspencion.ForeColor = System.Drawing.Color.Black;
-            this.txtCuilSuspencion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilSuspencion.Location = new System.Drawing.Point(200, 55);
-            this.txtCuilSuspencion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCuilSuspencion.Name = "txtCuilSuspencion";
-            this.txtCuilSuspencion.PasswordChar = '\0';
-            this.txtCuilSuspencion.PlaceholderText = "";
-            this.txtCuilSuspencion.SelectedText = "";
-            this.txtCuilSuspencion.Size = new System.Drawing.Size(200, 36);
-            this.txtCuilSuspencion.TabIndex = 36;
-            // 
-            // txtCuilEvaluacion
-            // 
-            this.txtCuilEvaluacion.BackColor = System.Drawing.Color.Transparent;
-            this.txtCuilEvaluacion.BorderColor = System.Drawing.Color.Empty;
-            this.txtCuilEvaluacion.BorderRadius = 10;
-            this.txtCuilEvaluacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCuilEvaluacion.DefaultText = "";
-            this.txtCuilEvaluacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCuilEvaluacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCuilEvaluacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilEvaluacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilEvaluacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilEvaluacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuilEvaluacion.ForeColor = System.Drawing.Color.Black;
-            this.txtCuilEvaluacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilEvaluacion.Location = new System.Drawing.Point(194, 48);
-            this.txtCuilEvaluacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCuilEvaluacion.Name = "txtCuilEvaluacion";
-            this.txtCuilEvaluacion.PasswordChar = '\0';
-            this.txtCuilEvaluacion.PlaceholderText = "";
-            this.txtCuilEvaluacion.SelectedText = "";
-            this.txtCuilEvaluacion.Size = new System.Drawing.Size(200, 32);
-            this.txtCuilEvaluacion.TabIndex = 41;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(61, 60);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(98, 20);
-            this.guna2HtmlLabel2.TabIndex = 40;
-            this.guna2HtmlLabel2.Text = "Cuil Empleado";
-            // 
-            // txtCuilAmonestacion
-            // 
-            this.txtCuilAmonestacion.BackColor = System.Drawing.Color.White;
-            this.txtCuilAmonestacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.txtCuilAmonestacion.BorderRadius = 10;
-            this.txtCuilAmonestacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCuilAmonestacion.DefaultText = "";
-            this.txtCuilAmonestacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCuilAmonestacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCuilAmonestacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilAmonestacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCuilAmonestacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilAmonestacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.txtCuilAmonestacion.ForeColor = System.Drawing.Color.Black;
-            this.txtCuilAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuilAmonestacion.Location = new System.Drawing.Point(211, 50);
-            this.txtCuilAmonestacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCuilAmonestacion.Name = "txtCuilAmonestacion";
-            this.txtCuilAmonestacion.PasswordChar = '\0';
-            this.txtCuilAmonestacion.PlaceholderText = "";
-            this.txtCuilAmonestacion.SelectedText = "";
-            this.txtCuilAmonestacion.Size = new System.Drawing.Size(200, 36);
-            this.txtCuilAmonestacion.TabIndex = 26;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(71, 66);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(98, 20);
-            this.guna2HtmlLabel3.TabIndex = 25;
-            this.guna2HtmlLabel3.Text = "Cuil Empleado";
             // 
             // btnLimpiar
             // 
@@ -978,6 +991,7 @@
             this.btnLimpiar.Size = new System.Drawing.Size(180, 36);
             this.btnLimpiar.TabIndex = 65;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGuardar
             // 
