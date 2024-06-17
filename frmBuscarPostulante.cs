@@ -314,14 +314,11 @@ namespace pryCosmetica
                 if (result == DialogResult.Yes)
                 {
                     ActualizarBase(ClavePrincipal, NombreColumna, NuevoValor);
-
                 }
                 else
                 {
                     // Revertir el valor en la grilla si la modificación no es confirmada
                     dgvGrilla.CancelEdit();
-
-
                 }
             }
         }
