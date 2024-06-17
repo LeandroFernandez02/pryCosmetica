@@ -185,7 +185,7 @@
             this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnLimpiar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(513, 507);
+            this.btnLimpiar.Location = new System.Drawing.Point(258, 511);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(180, 45);
             this.btnLimpiar.TabIndex = 50;
@@ -202,7 +202,7 @@
             this.btnCargar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
-            this.btnCargar.Location = new System.Drawing.Point(255, 507);
+            this.btnCargar.Location = new System.Drawing.Point(513, 511);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(180, 45);
             this.btnCargar.TabIndex = 49;
@@ -1043,11 +1043,11 @@
             this.Controls.Add(this.btnInasistencia);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);
+            this.Controls.Add(this.mrcEvaluaciónDesempeño);
             this.Controls.Add(this.mrcSuspensión);
             this.Controls.Add(this.mrcDespido);
             this.Controls.Add(this.mrcInasistencia);
             this.Controls.Add(this.mrcAmonestación);
-            this.Controls.Add(this.mrcEvaluaciónDesempeño);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCargarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -162,17 +162,20 @@ namespace pryCosmetica
             {
                 txtNombreInasistencia.Clear();
                 txtMotivoInasistencia.Clear();
+                lstTipoInasistencia.SelectedIndex = -1;
             }
 
             if (mrcAmonestación.Visible)
             {
                 txtNombreAmonestacion.Clear();
+                lstMotivoAmonestación.SelectedIndex = -1;
             }
 
             if (mrcSuspensión.Visible)
             {
                 txtNombreSuspensión.Clear();
                 txtObservación.Clear();
+                lstMotivoSuspensión.SelectedIndex = -1;
             }
 
             if (mrcEvaluaciónDesempeño.Visible)
@@ -181,6 +184,7 @@ namespace pryCosmetica
                 txtNombreEvaluador.Clear();
                 txtCalificación.Clear();
                 txtObservaciónEvaluación.Clear();
+                lstArea.SelectedIndex = -1;
             }
 
             if (mrcDespido.Visible)

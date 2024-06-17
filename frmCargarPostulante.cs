@@ -160,5 +160,15 @@ namespace pryCosmetica
             cmbArea.DisplayMember = "NombreArea";
             cmbArea.ValueMember = "IdArea";
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtApellidoPostulante.Clear();
+            txtNombrePostulante.Clear();
+            txtDNIPostulante.Clear();
+            txtCorreo.Clear();
+            txtTeléfonoPostulante.Clear();
+            cmbArea.SelectedIndex = -1;
+        }
     }
 }
