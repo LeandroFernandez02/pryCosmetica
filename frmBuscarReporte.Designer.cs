@@ -115,6 +115,7 @@
             this.cmbCondicion.ForeColor = System.Drawing.Color.Black;
             this.cmbCondicion.ItemHeight = 30;
             this.cmbCondicion.Items.AddRange(new object[] {
+            "Todos",
             "CUIL",
             "Nombre"});
             this.cmbCondicion.Location = new System.Drawing.Point(238, 51);
