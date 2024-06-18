@@ -185,10 +185,10 @@ namespace pryCosmetica
                     dgvInasistencia.Visible = false;
                     dgvDespido.Visible = false;
                 }
-                else if (selectedValue == "Suspensiones")
+                else if (selectedValue == "Evaluacion de Desempeño")
                 {
-                    dgvEvaluacion.Visible = false;
-                    dgvSuspension.Visible = true;
+                    dgvEvaluacion.Visible = true;
+                    dgvSuspension.Visible = false;
                     dgvAmonestacion.Visible = false;
                     dgvInasistencia.Visible = false;
                     dgvDespido.Visible = false;
