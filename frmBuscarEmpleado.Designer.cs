@@ -35,14 +35,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cmbFiltro = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvGrilla = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.CUIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumeroDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoCivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumeroCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +53,6 @@
             this.CV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaBaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,10 +103,10 @@
             this.Nombre,
             this.Apellido,
             this.TipoDocumento,
-            this.Documento,
+            this.NumeroDoc,
             this.EstadoCivil,
             this.Direccion,
-            this.NumCalle,
+            this.NumeroCalle,
             this.FechaNacimiento,
             this.Contrato,
             this.Categoria,
@@ -157,6 +157,47 @@
             this.dgvGrilla.ThemeStyle.RowsStyle.Height = 22;
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvGrilla.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellEndEdit);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BorderRadius = 15;
+            this.btnBuscar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuscar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
+            this.btnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(687, 29);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(180, 36);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BorderRadius = 15;
+            this.btnModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
+            this.btnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(687, 500);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(180, 36);
+            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this.dgvGrilla;
             // 
             // CUIL
             // 
@@ -182,11 +223,11 @@
             this.TipoDocumento.HeaderText = "Tipo de Documento";
             this.TipoDocumento.Name = "TipoDocumento";
             // 
-            // Documento
+            // NumeroDoc
             // 
-            this.Documento.FillWeight = 80.44569F;
-            this.Documento.HeaderText = "Documento";
-            this.Documento.Name = "Documento";
+            this.NumeroDoc.FillWeight = 80.44569F;
+            this.NumeroDoc.HeaderText = "Documento";
+            this.NumeroDoc.Name = "NumeroDoc";
             // 
             // EstadoCivil
             // 
@@ -200,11 +241,11 @@
             this.Direccion.HeaderText = "Direccion";
             this.Direccion.Name = "Direccion";
             // 
-            // NumCalle
+            // NumeroCalle
             // 
-            this.NumCalle.FillWeight = 80.44569F;
-            this.NumCalle.HeaderText = "Numero Calle";
-            this.NumCalle.Name = "NumCalle";
+            this.NumeroCalle.FillWeight = 80.44569F;
+            this.NumeroCalle.HeaderText = "Numero Calle";
+            this.NumeroCalle.Name = "NumeroCalle";
             // 
             // FechaNacimiento
             // 
@@ -248,44 +289,6 @@
             this.FechaBaja.HeaderText = "Fecha de Baja";
             this.FechaBaja.Name = "FechaBaja";
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BorderRadius = 15;
-            this.btnBuscar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBuscar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
-            this.btnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(687, 29);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(180, 36);
-            this.btnBuscar.TabIndex = 3;
-            this.btnBuscar.Text = "Buscar";
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BorderRadius = 15;
-            this.btnModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
-            this.btnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(687, 500);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(180, 36);
-            this.btnModificar.TabIndex = 4;
-            this.btnModificar.Text = "Modificar";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this.dgvGrilla;
-            // 
             // frmBuscarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,10 +318,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoDocumento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroDoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoCivil;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumCalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroCalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Contrato;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;

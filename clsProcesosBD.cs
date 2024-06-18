@@ -755,8 +755,91 @@ namespace pryCosmetica
                 MessageBox.Show(ex.Message);
             }
         }
+        public void BuscadorEmpleados(DataGridView Grilla, string ConsultaSQL, string Variable, int comparar)
+        {
+            conexion = new OleDbConnection(varCadenaConexion);
+            comando = new OleDbCommand(ConsultaSQL, conexion);
+            adaptador = new OleDbDataAdapter(comando);
+            conexion.Open();
+            OleDbDataReader lector;
+
+            try
+            {
+                lector = comando.ExecuteReader();
+                Grilla.Rows.Clear();
+                while (lector.Read())
+                {
+                    if (lector[comparar].ToString() == Variable)
+                    {
+                        Grilla.Rows.Add(
+                            lector[0].ToString(), //ID
+                            lector[1].ToString(), //NOMBRE
+                            lector[2].ToString(), //APELLIDO
+                            lector[3].ToString(), //TIPO DOCUMENTO
+                            lector[4].ToString(), //DOCUMENTO
+                            lector[5].ToString(), //ESTADO CIVIL
+                            lector[6].ToString(), //DIRECCION
+                            lector[7].ToString(), //NUMERO DE CALLE
+                            lector[8].ToString(), //FECHA NACIMIENTO
+                            lector[9].ToString(), //CONTRATO
+                            lector[10].ToString(),//CATEGORIA
+                            lector[11].ToString(),//MAIL
+                            lector[12].ToString(),//CV
+                            lector[13].ToString(),//FECHA INGRESO
+                            lector[14].ToString());//FECHA BAJA
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
+        public void BuscadorEmpleados(DataGridView Grilla, string ConsultaSQL)
+        {
+            conexion = new OleDbConnection(varCadenaConexion);
+            comando = new OleDbCommand(ConsultaSQL, conexion);
+            adaptador = new OleDbDataAdapter(comando);
+            conexion.Open();
+            OleDbDataReader lector;
+            try
+            {
+                lector = comando.ExecuteReader();
+                Grilla.Rows.Clear();
+                while (lector.Read())
+                {
+
+                    Grilla.Rows.Add(
+                        lector[0].ToString(), //ID
+                        lector[1].ToString(), //NOMBRE
+                        lector[2].ToString(), //APELLIDO
+                        lector[3].ToString(), //TIPO DOCUMENTO
+                        lector[4].ToString(), //DOCUMENTO
+                        lector[5].ToString(), //ESTADO CIVIL
+                        lector[6].ToString(), //DIRECCION
+                        lector[7].ToString(), //NUMERO DE CALLE
+                        lector[8].ToString(), //FECHA NACIMIENTO
+                        lector[9].ToString(), //CONTRATO
+                        lector[10].ToString(),//CATEGORIA   
+                        lector[11].ToString(),//MAIL
+                        lector[12].ToString(),//CV
+                        lector[13].ToString(),//FECHA INGRESO
+                        lector[14].ToString());//FECHA BAJA
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
     }
-
-
-
 }
