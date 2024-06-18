@@ -177,10 +177,10 @@ namespace pryCosmetica
         private void txtNombreEmpleado_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -193,10 +193,10 @@ namespace pryCosmetica
         private void txtApellidoEmpleado_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -209,10 +209,10 @@ namespace pryCosmetica
         private void txtILegajo_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -225,10 +225,10 @@ namespace pryCosmetica
         private void lstTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -241,10 +241,10 @@ namespace pryCosmetica
         private void txtNúmeroDocumento_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -257,10 +257,10 @@ namespace pryCosmetica
         private void txtTeléfono_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -273,10 +273,10 @@ namespace pryCosmetica
         private void lstEstadoCivil_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -289,10 +289,10 @@ namespace pryCosmetica
         private void txtMail_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -305,10 +305,10 @@ namespace pryCosmetica
         private void lstCategoría_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -321,10 +321,10 @@ namespace pryCosmetica
         private void lstAreaEmpleado_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -337,10 +337,10 @@ namespace pryCosmetica
         private void lstTipoContrato_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -353,10 +353,10 @@ namespace pryCosmetica
         private void lstCalle_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -369,10 +369,10 @@ namespace pryCosmetica
         private void lstCiudad_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -385,10 +385,10 @@ namespace pryCosmetica
         private void lstBarrio_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -401,10 +401,10 @@ namespace pryCosmetica
         private void txtNúmeroCalle_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
@@ -417,10 +417,10 @@ namespace pryCosmetica
         private void txtCodPostal_TextChanged(object sender, EventArgs e)
         {
             if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
-    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
-    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
-    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
-    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+                txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+                lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+                & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+                & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
             {
                 btnCargarEmpleado.Enabled = true;
             }
