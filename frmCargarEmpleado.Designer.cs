@@ -91,9 +91,10 @@
             this.mrcDireccion.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDireccion.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcDireccion.ForeColor = System.Drawing.Color.White;
-            this.mrcDireccion.Location = new System.Drawing.Point(486, 281);
+            this.mrcDireccion.Location = new System.Drawing.Point(648, 346);
+            this.mrcDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcDireccion.Name = "mrcDireccion";
-            this.mrcDireccion.Size = new System.Drawing.Size(450, 229);
+            this.mrcDireccion.Size = new System.Drawing.Size(600, 282);
             this.mrcDireccion.TabIndex = 14;
             this.mrcDireccion.Text = "Dirección";
             // 
@@ -112,14 +113,15 @@
             this.txtCodPostal.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtCodPostal.ForeColor = System.Drawing.Color.Black;
             this.txtCodPostal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCodPostal.Location = new System.Drawing.Point(366, 105);
-            this.txtCodPostal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCodPostal.Location = new System.Drawing.Point(488, 129);
+            this.txtCodPostal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodPostal.Name = "txtCodPostal";
             this.txtCodPostal.PasswordChar = '\0';
             this.txtCodPostal.PlaceholderText = "";
             this.txtCodPostal.SelectedText = "";
-            this.txtCodPostal.Size = new System.Drawing.Size(58, 36);
+            this.txtCodPostal.Size = new System.Drawing.Size(77, 44);
             this.txtCodPostal.TabIndex = 37;
+            this.txtCodPostal.TextChanged += new System.EventHandler(this.txtCodPostal_TextChanged);
             this.txtCodPostal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodPostal_KeyPress);
             // 
             // lblCodPostal
@@ -127,9 +129,10 @@
             this.lblCodPostal.BackColor = System.Drawing.Color.Transparent;
             this.lblCodPostal.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblCodPostal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCodPostal.Location = new System.Drawing.Point(282, 112);
+            this.lblCodPostal.Location = new System.Drawing.Point(376, 138);
+            this.lblCodPostal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblCodPostal.Name = "lblCodPostal";
-            this.lblCodPostal.Size = new System.Drawing.Size(80, 20);
+            this.lblCodPostal.Size = new System.Drawing.Size(102, 25);
             this.lblCodPostal.TabIndex = 36;
             this.lblCodPostal.Text = "Cod. Postal:";
             // 
@@ -148,14 +151,15 @@
             this.txtNúmeroCalle.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNúmeroCalle.ForeColor = System.Drawing.Color.Black;
             this.txtNúmeroCalle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNúmeroCalle.Location = new System.Drawing.Point(366, 48);
-            this.txtNúmeroCalle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNúmeroCalle.Location = new System.Drawing.Point(488, 59);
+            this.txtNúmeroCalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNúmeroCalle.Name = "txtNúmeroCalle";
             this.txtNúmeroCalle.PasswordChar = '\0';
             this.txtNúmeroCalle.PlaceholderText = "";
             this.txtNúmeroCalle.SelectedText = "";
-            this.txtNúmeroCalle.Size = new System.Drawing.Size(58, 36);
+            this.txtNúmeroCalle.Size = new System.Drawing.Size(77, 44);
             this.txtNúmeroCalle.TabIndex = 35;
+            this.txtNúmeroCalle.TextChanged += new System.EventHandler(this.txtNúmeroCalle_TextChanged);
             this.txtNúmeroCalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNúmeroCalle_KeyPress);
             // 
             // lstCiudad
@@ -170,19 +174,22 @@
             this.lstCiudad.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstCiudad.ForeColor = System.Drawing.Color.Black;
             this.lstCiudad.ItemHeight = 30;
-            this.lstCiudad.Location = new System.Drawing.Point(80, 105);
+            this.lstCiudad.Location = new System.Drawing.Point(107, 129);
+            this.lstCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstCiudad.Name = "lstCiudad";
-            this.lstCiudad.Size = new System.Drawing.Size(166, 36);
+            this.lstCiudad.Size = new System.Drawing.Size(220, 36);
             this.lstCiudad.TabIndex = 32;
+            this.lstCiudad.SelectedIndexChanged += new System.EventHandler(this.lstCiudad_SelectedIndexChanged);
             // 
             // lblCiudad
             // 
             this.lblCiudad.BackColor = System.Drawing.Color.Transparent;
             this.lblCiudad.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblCiudad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCiudad.Location = new System.Drawing.Point(12, 112);
+            this.lblCiudad.Location = new System.Drawing.Point(16, 138);
+            this.lblCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(51, 20);
+            this.lblCiudad.Size = new System.Drawing.Size(65, 25);
             this.lblCiudad.TabIndex = 31;
             this.lblCiudad.Text = "Ciudad:";
             // 
@@ -198,10 +205,12 @@
             this.lstBarrio.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstBarrio.ForeColor = System.Drawing.Color.Black;
             this.lstBarrio.ItemHeight = 30;
-            this.lstBarrio.Location = new System.Drawing.Point(80, 163);
+            this.lstBarrio.Location = new System.Drawing.Point(107, 201);
+            this.lstBarrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstBarrio.Name = "lstBarrio";
-            this.lstBarrio.Size = new System.Drawing.Size(166, 36);
+            this.lstBarrio.Size = new System.Drawing.Size(220, 36);
             this.lstBarrio.TabIndex = 30;
+            this.lstBarrio.SelectedIndexChanged += new System.EventHandler(this.lstBarrio_SelectedIndexChanged);
             // 
             // lstCalle
             // 
@@ -215,19 +224,22 @@
             this.lstCalle.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstCalle.ForeColor = System.Drawing.Color.Black;
             this.lstCalle.ItemHeight = 30;
-            this.lstCalle.Location = new System.Drawing.Point(80, 48);
+            this.lstCalle.Location = new System.Drawing.Point(107, 59);
+            this.lstCalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstCalle.Name = "lstCalle";
-            this.lstCalle.Size = new System.Drawing.Size(166, 36);
+            this.lstCalle.Size = new System.Drawing.Size(220, 36);
             this.lstCalle.TabIndex = 29;
+            this.lstCalle.SelectedIndexChanged += new System.EventHandler(this.lstCalle_SelectedIndexChanged);
             // 
             // lblCalle
             // 
             this.lblCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblCalle.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblCalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCalle.Location = new System.Drawing.Point(21, 55);
+            this.lblCalle.Location = new System.Drawing.Point(28, 68);
+            this.lblCalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblCalle.Name = "lblCalle";
-            this.lblCalle.Size = new System.Drawing.Size(39, 20);
+            this.lblCalle.Size = new System.Drawing.Size(51, 25);
             this.lblCalle.TabIndex = 28;
             this.lblCalle.Text = "Calle:";
             // 
@@ -236,9 +248,10 @@
             this.lblNumeroCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblNumeroCalle.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblNumeroCalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNumeroCalle.Location = new System.Drawing.Point(282, 55);
+            this.lblNumeroCalle.Location = new System.Drawing.Point(376, 68);
+            this.lblNumeroCalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNumeroCalle.Name = "lblNumeroCalle";
-            this.lblNumeroCalle.Size = new System.Drawing.Size(78, 20);
+            this.lblNumeroCalle.Size = new System.Drawing.Size(100, 25);
             this.lblNumeroCalle.TabIndex = 27;
             this.lblNumeroCalle.Text = "Núm. Calle:";
             // 
@@ -247,9 +260,10 @@
             this.lblBarrio.BackColor = System.Drawing.Color.Transparent;
             this.lblBarrio.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblBarrio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblBarrio.Location = new System.Drawing.Point(12, 170);
+            this.lblBarrio.Location = new System.Drawing.Point(16, 209);
+            this.lblBarrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblBarrio.Name = "lblBarrio";
-            this.lblBarrio.Size = new System.Drawing.Size(48, 20);
+            this.lblBarrio.Size = new System.Drawing.Size(60, 25);
             this.lblBarrio.TabIndex = 26;
             this.lblBarrio.Text = "Barrio:";
             // 
@@ -263,9 +277,10 @@
             this.btnCargarEmpleado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargarEmpleado.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnCargarEmpleado.Location = new System.Drawing.Point(555, 527);
+            this.btnCargarEmpleado.Location = new System.Drawing.Point(740, 649);
+            this.btnCargarEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCargarEmpleado.Name = "btnCargarEmpleado";
-            this.btnCargarEmpleado.Size = new System.Drawing.Size(381, 45);
+            this.btnCargarEmpleado.Size = new System.Drawing.Size(508, 55);
             this.btnCargarEmpleado.TabIndex = 13;
             this.btnCargarEmpleado.Text = "Cargar Empleado";
             this.btnCargarEmpleado.Click += new System.EventHandler(this.btnCargarEmpleado_Click);
@@ -285,9 +300,10 @@
             this.mcrDatosLaborales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mcrDatosLaborales.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mcrDatosLaborales.ForeColor = System.Drawing.Color.White;
-            this.mcrDatosLaborales.Location = new System.Drawing.Point(12, 280);
+            this.mcrDatosLaborales.Location = new System.Drawing.Point(16, 345);
+            this.mcrDatosLaborales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mcrDatosLaborales.Name = "mcrDatosLaborales";
-            this.mcrDatosLaborales.Size = new System.Drawing.Size(468, 230);
+            this.mcrDatosLaborales.Size = new System.Drawing.Size(624, 283);
             this.mcrDatosLaborales.TabIndex = 12;
             this.mcrDatosLaborales.Text = "Datos Laborales";
             // 
@@ -303,10 +319,12 @@
             this.lstCategoría.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstCategoría.ForeColor = System.Drawing.Color.Black;
             this.lstCategoría.ItemHeight = 30;
-            this.lstCategoría.Location = new System.Drawing.Point(148, 89);
+            this.lstCategoría.Location = new System.Drawing.Point(197, 110);
+            this.lstCategoría.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstCategoría.Name = "lstCategoría";
-            this.lstCategoría.Size = new System.Drawing.Size(231, 36);
+            this.lstCategoría.Size = new System.Drawing.Size(307, 36);
             this.lstCategoría.TabIndex = 33;
+            this.lstCategoría.SelectedIndexChanged += new System.EventHandler(this.lstCategoría_SelectedIndexChanged);
             // 
             // dtpFechaIngreso
             // 
@@ -318,11 +336,12 @@
             this.dtpFechaIngreso.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaIngreso.ForeColor = System.Drawing.Color.Black;
             this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(148, 48);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(197, 59);
+            this.dtpFechaIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaIngreso.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFechaIngreso.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
-            this.dtpFechaIngreso.Size = new System.Drawing.Size(199, 35);
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(265, 43);
             this.dtpFechaIngreso.TabIndex = 32;
             this.dtpFechaIngreso.UseTransparentBackground = true;
             this.dtpFechaIngreso.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -339,19 +358,22 @@
             this.lstTipoContrato.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstTipoContrato.ForeColor = System.Drawing.Color.Black;
             this.lstTipoContrato.ItemHeight = 30;
-            this.lstTipoContrato.Location = new System.Drawing.Point(148, 179);
+            this.lstTipoContrato.Location = new System.Drawing.Point(197, 220);
+            this.lstTipoContrato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstTipoContrato.Name = "lstTipoContrato";
-            this.lstTipoContrato.Size = new System.Drawing.Size(231, 36);
+            this.lstTipoContrato.Size = new System.Drawing.Size(307, 36);
             this.lstTipoContrato.TabIndex = 22;
+            this.lstTipoContrato.SelectedIndexChanged += new System.EventHandler(this.lstTipoContrato_SelectedIndexChanged);
             // 
             // lblTipoContrato
             // 
             this.lblTipoContrato.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoContrato.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblTipoContrato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblTipoContrato.Location = new System.Drawing.Point(8, 185);
+            this.lblTipoContrato.Location = new System.Drawing.Point(11, 228);
+            this.lblTipoContrato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTipoContrato.Name = "lblTipoContrato";
-            this.lblTipoContrato.Size = new System.Drawing.Size(114, 20);
+            this.lblTipoContrato.Size = new System.Drawing.Size(144, 25);
             this.lblTipoContrato.TabIndex = 21;
             this.lblTipoContrato.Text = "Tipo de Contrato:";
             // 
@@ -367,19 +389,22 @@
             this.lstAreaEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstAreaEmpleado.ForeColor = System.Drawing.Color.Black;
             this.lstAreaEmpleado.ItemHeight = 30;
-            this.lstAreaEmpleado.Location = new System.Drawing.Point(148, 132);
+            this.lstAreaEmpleado.Location = new System.Drawing.Point(197, 162);
+            this.lstAreaEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstAreaEmpleado.Name = "lstAreaEmpleado";
-            this.lstAreaEmpleado.Size = new System.Drawing.Size(231, 36);
+            this.lstAreaEmpleado.Size = new System.Drawing.Size(307, 36);
             this.lstAreaEmpleado.TabIndex = 19;
+            this.lstAreaEmpleado.SelectedIndexChanged += new System.EventHandler(this.lstAreaEmpleado_SelectedIndexChanged);
             // 
             // lblCategoria
             // 
             this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoria.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCategoria.Location = new System.Drawing.Point(52, 96);
+            this.lblCategoria.Location = new System.Drawing.Point(69, 118);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(70, 20);
+            this.lblCategoria.Size = new System.Drawing.Size(88, 25);
             this.lblCategoria.TabIndex = 2;
             this.lblCategoria.Text = "Categoría:";
             // 
@@ -388,9 +413,10 @@
             this.lblAreaEmpleado.BackColor = System.Drawing.Color.Transparent;
             this.lblAreaEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblAreaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblAreaEmpleado.Location = new System.Drawing.Point(11, 139);
+            this.lblAreaEmpleado.Location = new System.Drawing.Point(15, 171);
+            this.lblAreaEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblAreaEmpleado.Name = "lblAreaEmpleado";
-            this.lblAreaEmpleado.Size = new System.Drawing.Size(111, 20);
+            this.lblAreaEmpleado.Size = new System.Drawing.Size(139, 25);
             this.lblAreaEmpleado.TabIndex = 1;
             this.lblAreaEmpleado.Text = "Área de Trabajo:";
             // 
@@ -399,9 +425,10 @@
             this.lblFechaIngreso.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaIngreso.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblFechaIngreso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaIngreso.Location = new System.Drawing.Point(23, 55);
+            this.lblFechaIngreso.Location = new System.Drawing.Point(31, 68);
+            this.lblFechaIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaIngreso.Name = "lblFechaIngreso";
-            this.lblFechaIngreso.Size = new System.Drawing.Size(99, 20);
+            this.lblFechaIngreso.Size = new System.Drawing.Size(127, 25);
             this.lblFechaIngreso.TabIndex = 0;
             this.lblFechaIngreso.Text = "Fecha Ingreso:";
             // 
@@ -431,9 +458,10 @@
             this.mrcDatosPersonales.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDatosPersonales.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcDatosPersonales.ForeColor = System.Drawing.Color.White;
-            this.mrcDatosPersonales.Location = new System.Drawing.Point(12, 21);
+            this.mrcDatosPersonales.Location = new System.Drawing.Point(16, 26);
+            this.mrcDatosPersonales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcDatosPersonales.Name = "mrcDatosPersonales";
-            this.mrcDatosPersonales.Size = new System.Drawing.Size(924, 240);
+            this.mrcDatosPersonales.Size = new System.Drawing.Size(1232, 295);
             this.mrcDatosPersonales.TabIndex = 11;
             this.mrcDatosPersonales.Text = "Datos Personales";
             // 
@@ -449,10 +477,12 @@
             this.lstTipoDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstTipoDocumento.ForeColor = System.Drawing.Color.Black;
             this.lstTipoDocumento.ItemHeight = 30;
-            this.lstTipoDocumento.Location = new System.Drawing.Point(394, 60);
+            this.lstTipoDocumento.Location = new System.Drawing.Point(525, 74);
+            this.lstTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstTipoDocumento.Name = "lstTipoDocumento";
-            this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
+            this.lstTipoDocumento.Size = new System.Drawing.Size(189, 36);
             this.lstTipoDocumento.TabIndex = 33;
+            this.lstTipoDocumento.SelectedIndexChanged += new System.EventHandler(this.lstTipoDocumento_SelectedIndexChanged);
             // 
             // dtpFechaNacimiento
             // 
@@ -464,11 +494,12 @@
             this.dtpFechaNacimiento.Font = new System.Drawing.Font("Bahnschrift", 9F);
             this.dtpFechaNacimiento.ForeColor = System.Drawing.Color.Black;
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(698, 165);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(931, 203);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaNacimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFechaNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 35);
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(267, 43);
             this.dtpFechaNacimiento.TabIndex = 32;
             this.dtpFechaNacimiento.UseTransparentBackground = true;
             this.dtpFechaNacimiento.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -488,14 +519,15 @@
             this.txtTeléfono.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtTeléfono.ForeColor = System.Drawing.Color.Black;
             this.txtTeléfono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTeléfono.Location = new System.Drawing.Point(394, 165);
-            this.txtTeléfono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTeléfono.Location = new System.Drawing.Point(525, 203);
+            this.txtTeléfono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTeléfono.Name = "txtTeléfono";
             this.txtTeléfono.PasswordChar = '\0';
             this.txtTeléfono.PlaceholderText = "";
             this.txtTeléfono.SelectedText = "";
-            this.txtTeléfono.Size = new System.Drawing.Size(143, 37);
+            this.txtTeléfono.Size = new System.Drawing.Size(191, 46);
             this.txtTeléfono.TabIndex = 21;
+            this.txtTeléfono.TextChanged += new System.EventHandler(this.txtTeléfono_TextChanged);
             this.txtTeléfono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeléfono_KeyPress);
             // 
             // lblTeléfono
@@ -503,9 +535,10 @@
             this.lblTeléfono.BackColor = System.Drawing.Color.Transparent;
             this.lblTeléfono.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblTeléfono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblTeléfono.Location = new System.Drawing.Point(320, 172);
+            this.lblTeléfono.Location = new System.Drawing.Point(427, 212);
+            this.lblTeléfono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTeléfono.Name = "lblTeléfono";
-            this.lblTeléfono.Size = new System.Drawing.Size(62, 20);
+            this.lblTeléfono.Size = new System.Drawing.Size(79, 25);
             this.lblTeléfono.TabIndex = 20;
             this.lblTeléfono.Text = "Teléfono:";
             // 
@@ -524,14 +557,15 @@
             this.txtMail.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtMail.ForeColor = System.Drawing.Color.Black;
             this.txtMail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMail.Location = new System.Drawing.Point(698, 114);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMail.Location = new System.Drawing.Point(931, 140);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMail.Name = "txtMail";
             this.txtMail.PasswordChar = '\0';
             this.txtMail.PlaceholderText = "";
             this.txtMail.SelectedText = "";
-            this.txtMail.Size = new System.Drawing.Size(143, 37);
+            this.txtMail.Size = new System.Drawing.Size(191, 46);
             this.txtMail.TabIndex = 19;
+            this.txtMail.TextChanged += new System.EventHandler(this.txtMail_TextChanged);
             // 
             // lstEstadoCivil
             // 
@@ -545,10 +579,12 @@
             this.lstEstadoCivil.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstEstadoCivil.ForeColor = System.Drawing.Color.Black;
             this.lstEstadoCivil.ItemHeight = 30;
-            this.lstEstadoCivil.Location = new System.Drawing.Point(698, 60);
+            this.lstEstadoCivil.Location = new System.Drawing.Point(931, 74);
+            this.lstEstadoCivil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstEstadoCivil.Name = "lstEstadoCivil";
-            this.lstEstadoCivil.Size = new System.Drawing.Size(143, 36);
+            this.lstEstadoCivil.Size = new System.Drawing.Size(189, 36);
             this.lstEstadoCivil.TabIndex = 17;
+            this.lstEstadoCivil.SelectedIndexChanged += new System.EventHandler(this.lstEstadoCivil_SelectedIndexChanged);
             // 
             // txtNúmeroDocumento
             // 
@@ -565,14 +601,15 @@
             this.txtNúmeroDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNúmeroDocumento.ForeColor = System.Drawing.Color.Black;
             this.txtNúmeroDocumento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNúmeroDocumento.Location = new System.Drawing.Point(394, 114);
-            this.txtNúmeroDocumento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNúmeroDocumento.Location = new System.Drawing.Point(525, 140);
+            this.txtNúmeroDocumento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNúmeroDocumento.Name = "txtNúmeroDocumento";
             this.txtNúmeroDocumento.PasswordChar = '\0';
             this.txtNúmeroDocumento.PlaceholderText = "";
             this.txtNúmeroDocumento.SelectedText = "";
-            this.txtNúmeroDocumento.Size = new System.Drawing.Size(143, 37);
+            this.txtNúmeroDocumento.Size = new System.Drawing.Size(191, 46);
             this.txtNúmeroDocumento.TabIndex = 12;
+            this.txtNúmeroDocumento.TextChanged += new System.EventHandler(this.txtNúmeroDocumento_TextChanged);
             this.txtNúmeroDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNúmeroDocumento_KeyPress);
             // 
             // txtNombreEmpleado
@@ -590,14 +627,15 @@
             this.txtNombreEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNombreEmpleado.ForeColor = System.Drawing.Color.Black;
             this.txtNombreEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(91, 60);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(121, 74);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
             this.txtNombreEmpleado.PasswordChar = '\0';
             this.txtNombreEmpleado.PlaceholderText = "";
             this.txtNombreEmpleado.SelectedText = "";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(143, 37);
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(191, 46);
             this.txtNombreEmpleado.TabIndex = 11;
+            this.txtNombreEmpleado.TextChanged += new System.EventHandler(this.txtNombreEmpleado_TextChanged);
             this.txtNombreEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEmpleado_KeyPress);
             // 
             // txtApellidoEmpleado
@@ -615,14 +653,15 @@
             this.txtApellidoEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtApellidoEmpleado.ForeColor = System.Drawing.Color.Black;
             this.txtApellidoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellidoEmpleado.Location = new System.Drawing.Point(91, 114);
-            this.txtApellidoEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtApellidoEmpleado.Location = new System.Drawing.Point(121, 140);
+            this.txtApellidoEmpleado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtApellidoEmpleado.Name = "txtApellidoEmpleado";
             this.txtApellidoEmpleado.PasswordChar = '\0';
             this.txtApellidoEmpleado.PlaceholderText = "";
             this.txtApellidoEmpleado.SelectedText = "";
-            this.txtApellidoEmpleado.Size = new System.Drawing.Size(143, 37);
+            this.txtApellidoEmpleado.Size = new System.Drawing.Size(191, 46);
             this.txtApellidoEmpleado.TabIndex = 10;
+            this.txtApellidoEmpleado.TextChanged += new System.EventHandler(this.txtApellidoEmpleado_TextChanged);
             this.txtApellidoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoEmpleado_KeyPress);
             // 
             // txtILegajo
@@ -640,14 +679,15 @@
             this.txtILegajo.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtILegajo.ForeColor = System.Drawing.Color.Black;
             this.txtILegajo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtILegajo.Location = new System.Drawing.Point(91, 165);
-            this.txtILegajo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtILegajo.Location = new System.Drawing.Point(121, 203);
+            this.txtILegajo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtILegajo.Name = "txtILegajo";
             this.txtILegajo.PasswordChar = '\0';
             this.txtILegajo.PlaceholderText = "";
             this.txtILegajo.SelectedText = "";
-            this.txtILegajo.Size = new System.Drawing.Size(143, 37);
+            this.txtILegajo.Size = new System.Drawing.Size(191, 46);
             this.txtILegajo.TabIndex = 9;
+            this.txtILegajo.TextChanged += new System.EventHandler(this.txtILegajo_TextChanged);
             this.txtILegajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtILegajo_KeyPress);
             // 
             // lblFechaNacimiento
@@ -655,9 +695,10 @@
             this.lblFechaNacimiento.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaNacimiento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblFechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(547, 172);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(729, 212);
+            this.lblFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(145, 20);
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(183, 25);
             this.lblFechaNacimiento.TabIndex = 7;
             this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
             // 
@@ -666,9 +707,10 @@
             this.lblMail.BackColor = System.Drawing.Color.Transparent;
             this.lblMail.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblMail.Location = new System.Drawing.Point(658, 121);
+            this.lblMail.Location = new System.Drawing.Point(877, 149);
+            this.lblMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(34, 20);
+            this.lblMail.Size = new System.Drawing.Size(43, 25);
             this.lblMail.TabIndex = 6;
             this.lblMail.Text = "Mail:";
             // 
@@ -677,9 +719,10 @@
             this.lblEstadoCivil.BackColor = System.Drawing.Color.Transparent;
             this.lblEstadoCivil.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblEstadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblEstadoCivil.Location = new System.Drawing.Point(607, 67);
+            this.lblEstadoCivil.Location = new System.Drawing.Point(809, 82);
+            this.lblEstadoCivil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblEstadoCivil.Name = "lblEstadoCivil";
-            this.lblEstadoCivil.Size = new System.Drawing.Size(85, 20);
+            this.lblEstadoCivil.Size = new System.Drawing.Size(107, 25);
             this.lblEstadoCivil.TabIndex = 5;
             this.lblEstadoCivil.Text = "Estado Civil:";
             // 
@@ -688,9 +731,10 @@
             this.lblNúmeroDocumento.BackColor = System.Drawing.Color.Transparent;
             this.lblNúmeroDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblNúmeroDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNúmeroDocumento.Location = new System.Drawing.Point(246, 121);
+            this.lblNúmeroDocumento.Location = new System.Drawing.Point(328, 149);
+            this.lblNúmeroDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNúmeroDocumento.Name = "lblNúmeroDocumento";
-            this.lblNúmeroDocumento.Size = new System.Drawing.Size(139, 20);
+            this.lblNúmeroDocumento.Size = new System.Drawing.Size(175, 25);
             this.lblNúmeroDocumento.TabIndex = 4;
             this.lblNúmeroDocumento.Text = "Número Documento:";
             // 
@@ -699,9 +743,10 @@
             this.lblTipoDocumento.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblTipoDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblTipoDocumento.Location = new System.Drawing.Point(270, 67);
+            this.lblTipoDocumento.Location = new System.Drawing.Point(360, 82);
+            this.lblTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTipoDocumento.Name = "lblTipoDocumento";
-            this.lblTipoDocumento.Size = new System.Drawing.Size(112, 20);
+            this.lblTipoDocumento.Size = new System.Drawing.Size(141, 25);
             this.lblTipoDocumento.TabIndex = 3;
             this.lblTipoDocumento.Text = "Tipo Documento:";
             // 
@@ -710,9 +755,10 @@
             this.lblLegajo.BackColor = System.Drawing.Color.Transparent;
             this.lblLegajo.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblLegajo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblLegajo.Location = new System.Drawing.Point(43, 172);
+            this.lblLegajo.Location = new System.Drawing.Point(57, 212);
+            this.lblLegajo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblLegajo.Name = "lblLegajo";
-            this.lblLegajo.Size = new System.Drawing.Size(38, 20);
+            this.lblLegajo.Size = new System.Drawing.Size(47, 25);
             this.lblLegajo.TabIndex = 2;
             this.lblLegajo.Text = "CUIL:";
             // 
@@ -721,9 +767,10 @@
             this.lblApellido.BackColor = System.Drawing.Color.Transparent;
             this.lblApellido.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblApellido.Location = new System.Drawing.Point(24, 121);
+            this.lblApellido.Location = new System.Drawing.Point(32, 149);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(60, 20);
+            this.lblApellido.Size = new System.Drawing.Size(76, 25);
             this.lblApellido.TabIndex = 1;
             this.lblApellido.Text = "Apellido:";
             // 
@@ -732,9 +779,10 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNombre.Location = new System.Drawing.Point(24, 67);
+            this.lblNombre.Location = new System.Drawing.Point(32, 82);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(60, 20);
+            this.lblNombre.Size = new System.Drawing.Size(74, 25);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -748,25 +796,27 @@
             this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnLimpiar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(136, 527);
+            this.btnLimpiar.Location = new System.Drawing.Point(181, 649);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(381, 45);
+            this.btnLimpiar.Size = new System.Drawing.Size(508, 55);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // frmCargarEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(948, 611);
+            this.ClientSize = new System.Drawing.Size(1264, 752);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.mrcDireccion);
             this.Controls.Add(this.btnCargarEmpleado);
             this.Controls.Add(this.mcrDatosLaborales);
             this.Controls.Add(this.mrcDatosPersonales);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCargarEmpleado";
             this.Text = "frmCargarEmpleado";
             this.Load += new System.EventHandler(this.frmCargarEmpleado_Load);

@@ -78,6 +78,8 @@ namespace pryCosmetica
             objProcesos.CargarCalles(lstCalle);
             objProcesos.CargarCiudad(lstCiudad);
             objProcesos.CargarBarrio(lstBarrio);
+
+            btnCargarEmpleado.Enabled = false;
         }
 
         private void txtNombreEmpleado_KeyPress(object sender, KeyPressEventArgs e)
@@ -170,6 +172,262 @@ namespace pryCosmetica
             lstCiudad.SelectedIndex = -1;
             lstBarrio.SelectedIndex = -1;
 
+        }
+
+        private void txtNombreEmpleado_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtApellidoEmpleado_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtILegajo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtNúmeroDocumento_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtTeléfono_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstEstadoCivil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtMail_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstCategoría_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstAreaEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstTipoContrato_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstCalle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstCiudad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void lstBarrio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtNúmeroCalle_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
+        }
+
+        private void txtCodPostal_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreEmpleado.Text != "" & txtApellidoEmpleado.Text != "" & txtILegajo.Text != "" & txtNúmeroDocumento.Text != "" &
+    txtTeléfono.Text != "" & txtMail.Text != "" & txtNúmeroCalle.Text != "" & txtCodPostal.Text != "" &
+    lstTipoDocumento.SelectedIndex != -1 & lstEstadoCivil.SelectedIndex != -1 & lstCategoría.SelectedIndex != -1
+    & lstAreaEmpleado.SelectedIndex != -1 & lstTipoContrato.SelectedIndex != -1 & lstCalle.SelectedIndex != -1
+    & lstCiudad.SelectedIndex != -1 & lstBarrio.SelectedIndex != -1)
+            {
+                btnCargarEmpleado.Enabled = true;
+            }
+            else
+            {
+                btnCargarEmpleado.Enabled = false;
+            }
         }
     }
 }

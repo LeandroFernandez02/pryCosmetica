@@ -59,9 +59,10 @@
             this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(723, 50);
+            this.btnBuscar.Location = new System.Drawing.Point(964, 62);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(180, 36);
+            this.btnBuscar.Size = new System.Drawing.Size(240, 44);
             this.btnBuscar.TabIndex = 9;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseTransparentBackground = true;
@@ -84,9 +85,10 @@
             "Nombre",
             "Telefono",
             "Area"});
-            this.cmbBusqueda.Location = new System.Drawing.Point(39, 50);
+            this.cmbBusqueda.Location = new System.Drawing.Point(52, 62);
+            this.cmbBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbBusqueda.Name = "cmbBusqueda";
-            this.cmbBusqueda.Size = new System.Drawing.Size(215, 36);
+            this.cmbBusqueda.Size = new System.Drawing.Size(285, 36);
             this.cmbBusqueda.TabIndex = 7;
             this.cmbBusqueda.SelectedIndexChanged += new System.EventHandler(this.cmbBusqueda_SelectedIndexChanged);
             // 
@@ -101,9 +103,10 @@
             this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(723, 481);
+            this.btnModificar.Location = new System.Drawing.Point(964, 592);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(180, 36);
+            this.btnModificar.Size = new System.Drawing.Size(240, 44);
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseTransparentBackground = true;
@@ -143,7 +146,8 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvGrilla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvGrilla.Location = new System.Drawing.Point(39, 102);
+            this.dgvGrilla.Location = new System.Drawing.Point(52, 126);
+            this.dgvGrilla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvGrilla.Name = "dgvGrilla";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
@@ -154,7 +158,8 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvGrilla.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvGrilla.RowHeadersVisible = false;
-            this.dgvGrilla.Size = new System.Drawing.Size(864, 362);
+            this.dgvGrilla.RowHeadersWidth = 51;
+            this.dgvGrilla.Size = new System.Drawing.Size(1152, 446);
             this.dgvGrilla.TabIndex = 11;
             this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvGrilla.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -177,44 +182,52 @@
             this.dgvGrilla.ThemeStyle.RowsStyle.Height = 22;
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvGrilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellClick);
             this.dgvGrilla.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellEndEdit);
             // 
             // DNI
             // 
             this.DNI.FillWeight = 60F;
             this.DNI.HeaderText = "DNI";
+            this.DNI.MinimumWidth = 6;
             this.DNI.Name = "DNI";
             // 
             // Nombre
             // 
             this.Nombre.FillWeight = 103.8796F;
             this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             // 
             // Apellido
             // 
             this.Apellido.FillWeight = 103.8796F;
             this.Apellido.HeaderText = "Apellido";
+            this.Apellido.MinimumWidth = 6;
             this.Apellido.Name = "Apellido";
             // 
             // Correo
             // 
             this.Correo.HeaderText = "Correo";
+            this.Correo.MinimumWidth = 6;
             this.Correo.Name = "Correo";
             // 
             // Telefono
             // 
             this.Telefono.HeaderText = "Telefono";
+            this.Telefono.MinimumWidth = 6;
             this.Telefono.Name = "Telefono";
             // 
             // CV
             // 
             this.CV.HeaderText = "CV";
+            this.CV.MinimumWidth = 6;
             this.CV.Name = "CV";
             // 
             // Area
             // 
             this.Area.HeaderText = "Area";
+            this.Area.MinimumWidth = 6;
             this.Area.Name = "Area";
             // 
             // guna2Elipse1
@@ -224,15 +237,16 @@
             // 
             // frmBuscarPostulante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(948, 611);
+            this.ClientSize = new System.Drawing.Size(1264, 752);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cmbBusqueda);
             this.Controls.Add(this.btnModificar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBuscarPostulante";
             this.Text = "frmBuscarPostulante";
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();

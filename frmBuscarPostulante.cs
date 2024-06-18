@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,10 +18,10 @@ namespace pryCosmetica
         public frmBuscarPostulante()
         {
             InitializeComponent();
-
             dgvGrilla.CellEndEdit += new DataGridViewCellEventHandler(dgvGrilla_CellEndEdit);
             btnModificar.Click += new EventHandler(btnModificar_Click);
             dgvGrilla.ReadOnly = true;
+            dgvGrilla.CellClick += dgvGrilla_CellClick;
         }
 
         clsProcesosBD BD = new clsProcesosBD();
@@ -297,6 +298,7 @@ namespace pryCosmetica
         private void btnModificar_Click(object sender, EventArgs e)
         {
             dgvGrilla.ReadOnly = false;
+            dgvGrilla.Columns[6].ReadOnly = true;
         }
 
         private void dgvGrilla_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -307,18 +309,31 @@ namespace pryCosmetica
             if (rowIndex >= 0 && columnIndex >= 0)
             {
                 string NombreColumna = dgvGrilla.Columns[columnIndex].Name;
-                var NuevoValor = dgvGrilla.Rows[rowIndex].Cells[columnIndex].Value;
+                object NuevoValor = dgvGrilla.Rows[rowIndex].Cells[columnIndex].Value;
                 var ClavePrincipal = dgvGrilla.Rows[rowIndex].Cells["DNI"].Value;
+
+                // Validar que el nombre de la columna sea seguro y permitido
+                var columnasPermitidas = new List<string> { "Nombre", "Apellido", "Telefono", "Correo", "Direccion", "DNI" }; // Lista de columnas permitidas
+                if (!columnasPermitidas.Contains(NombreColumna))
+                {
+                    MessageBox.Show("Nombre de columna no permitido.");
+                    return;
+                }
+
+
                 DialogResult result = MessageBox.Show("¿Desea hacer esta modificación?", "Confirmar modificación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
                     ActualizarBase(ClavePrincipal, NombreColumna, NuevoValor);
+
                 }
                 else
                 {
                     // Revertir el valor en la grilla si la modificación no es confirmada
                     dgvGrilla.CancelEdit();
+
+
                 }
             }
         }
@@ -328,16 +343,46 @@ namespace pryCosmetica
             using (OleDbConnection conn = new OleDbConnection(BD.varCadenaConexion))
             {
                 conn.Open();
-                string query = $"UPDATE POSTULANTES SET {NombreColumna} = @NuevoValor WHERE DNI = @ClavePrincipal";
+                string query = $"UPDATE POSTULANTES SET [{NombreColumna}] = ? WHERE DNI = ?";
 
                 using (OleDbCommand cmd = new OleDbCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@NuevoValor", NuevoValor);
-                    cmd.Parameters.AddWithValue("@ClavePrincipal", ClavePrincipal);
+                    // Agregar los parámetros en el orden correcto
+                    cmd.Parameters.Add(new OleDbParameter("?", NuevoValor));
+                    cmd.Parameters.Add(new OleDbParameter("?", ClavePrincipal));
+
                     cmd.ExecuteNonQuery();
                 }
+                conn.Close();
             }
             dgvGrilla.ReadOnly = true;
+        }
+
+        private void dgvGrilla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verificar si se hizo clic en una celda válida
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                Int32 filaSeleccionada = Convert.ToInt32(dgvGrilla.CurrentCell.RowIndex);
+                if (e.ColumnIndex == 5)
+                {
+
+                    string rutaPDF = dgvGrilla.Rows[filaSeleccionada].Cells[5].Value?.ToString();
+
+                    if (!string.IsNullOrEmpty(rutaPDF))
+                    {
+                        try
+                        {
+                            // Intentar abrir el archivo PDF
+                            Process.Start(rutaPDF);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error al abrir el archivo PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
         }
     } 
 }
