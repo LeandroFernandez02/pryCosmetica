@@ -65,6 +65,10 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlPrincipal = new Guna.UI2.WinForms.Guna2Panel();
+            this.chart = new Guna.Charts.WinForms.GunaChart();
+            this.lineEmpleados = new Guna.Charts.WinForms.GunaLineDataset();
+            this.linePostulantes = new Guna.Charts.WinForms.GunaLineDataset();
+            this.lineReportes = new Guna.Charts.WinForms.GunaLineDataset();
             this.pnlReportes = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlPostulantes = new Guna.UI2.WinForms.Guna2Panel();
@@ -77,11 +81,7 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.chart = new Guna.Charts.WinForms.GunaChart();
             this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.lineEmpleados = new Guna.Charts.WinForms.GunaLineDataset();
-            this.linePostulantes = new Guna.Charts.WinForms.GunaLineDataset();
-            this.lineReportes = new Guna.Charts.WinForms.GunaLineDataset();
             this.pnlMenu.SuspendLayout();
             this.pnlSubMenuReportes.SuspendLayout();
             this.pnlSubMenuPostulante.SuspendLayout();
@@ -416,7 +416,7 @@
             // 
             // pnlPrincipal
             // 
-            this.pnlPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.pnlPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.pnlPrincipal.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.pnlPrincipal.Controls.Add(this.chart);
             this.pnlPrincipal.Controls.Add(this.pnlReportes);
@@ -428,6 +428,65 @@
             this.pnlPrincipal.Name = "pnlPrincipal";
             this.pnlPrincipal.Size = new System.Drawing.Size(948, 611);
             this.pnlPrincipal.TabIndex = 3;
+            // 
+            // chart
+            // 
+            this.chart.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] {
+            this.lineEmpleados,
+            this.linePostulantes,
+            this.lineReportes});
+            chartFont1.FontName = "Bahnschrift";
+            this.chart.Legend.LabelFont = chartFont1;
+            this.chart.Location = new System.Drawing.Point(66, 210);
+            this.chart.Name = "chart";
+            this.chart.Size = new System.Drawing.Size(841, 314);
+            this.chart.TabIndex = 6;
+            chartFont2.FontName = "Arial";
+            chartFont2.Size = 12;
+            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.chart.Title.Font = chartFont2;
+            chartFont3.FontName = "Arial";
+            this.chart.Tooltips.BodyFont = chartFont3;
+            chartFont4.FontName = "Arial";
+            chartFont4.Size = 9;
+            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.chart.Tooltips.TitleFont = chartFont4;
+            this.chart.XAxes.GridLines = grid1;
+            chartFont5.FontName = "Arial";
+            tick1.Font = chartFont5;
+            this.chart.XAxes.Ticks = tick1;
+            this.chart.YAxes.GridLines = grid2;
+            chartFont6.FontName = "Arial";
+            tick2.Font = chartFont6;
+            this.chart.YAxes.Ticks = tick2;
+            this.chart.ZAxes.GridLines = grid3;
+            chartFont7.FontName = "Arial";
+            pointLabel1.Font = chartFont7;
+            this.chart.ZAxes.PointLabels = pointLabel1;
+            chartFont8.FontName = "Arial";
+            tick3.Font = chartFont8;
+            this.chart.ZAxes.Ticks = tick3;
+            // 
+            // lineEmpleados
+            // 
+            this.lineEmpleados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            this.lineEmpleados.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            this.lineEmpleados.Label = "Empleados";
+            this.lineEmpleados.TargetChart = this.chart;
+            // 
+            // linePostulantes
+            // 
+            this.linePostulantes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.linePostulantes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.linePostulantes.Label = "Postulantes";
+            this.linePostulantes.TargetChart = this.chart;
+            // 
+            // lineReportes
+            // 
+            this.lineReportes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.lineReportes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.lineReportes.Label = "Reportes";
+            this.lineReportes.TargetChart = this.chart;
             // 
             // pnlReportes
             // 
@@ -512,69 +571,10 @@
             // 
             this.guna2Elipse6.BorderRadius = 22;
             // 
-            // chart
-            // 
-            this.chart.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] {
-            this.lineEmpleados,
-            this.linePostulantes,
-            this.lineReportes});
-            chartFont1.FontName = "Bahnschrift";
-            this.chart.Legend.LabelFont = chartFont1;
-            this.chart.Location = new System.Drawing.Point(66, 210);
-            this.chart.Name = "chart";
-            this.chart.Size = new System.Drawing.Size(841, 314);
-            this.chart.TabIndex = 6;
-            chartFont2.FontName = "Arial";
-            chartFont2.Size = 12;
-            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.chart.Title.Font = chartFont2;
-            chartFont3.FontName = "Arial";
-            this.chart.Tooltips.BodyFont = chartFont3;
-            chartFont4.FontName = "Arial";
-            chartFont4.Size = 9;
-            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.chart.Tooltips.TitleFont = chartFont4;
-            this.chart.XAxes.GridLines = grid1;
-            chartFont5.FontName = "Arial";
-            tick1.Font = chartFont5;
-            this.chart.XAxes.Ticks = tick1;
-            this.chart.YAxes.GridLines = grid2;
-            chartFont6.FontName = "Arial";
-            tick2.Font = chartFont6;
-            this.chart.YAxes.Ticks = tick2;
-            this.chart.ZAxes.GridLines = grid3;
-            chartFont7.FontName = "Arial";
-            pointLabel1.Font = chartFont7;
-            this.chart.ZAxes.PointLabels = pointLabel1;
-            chartFont8.FontName = "Arial";
-            tick3.Font = chartFont8;
-            this.chart.ZAxes.Ticks = tick3;
-            // 
             // guna2Elipse7
             // 
             this.guna2Elipse7.BorderRadius = 22;
             this.guna2Elipse7.TargetControl = this.chart;
-            // 
-            // lineEmpleados
-            // 
-            this.lineEmpleados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
-            this.lineEmpleados.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
-            this.lineEmpleados.Label = "Empleados";
-            this.lineEmpleados.TargetChart = this.chart;
-            // 
-            // linePostulantes
-            // 
-            this.linePostulantes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
-            this.linePostulantes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
-            this.linePostulantes.Label = "Postulantes";
-            this.linePostulantes.TargetChart = this.chart;
-            // 
-            // lineReportes
-            // 
-            this.lineReportes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lineReportes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lineReportes.Label = "Reportes";
-            this.lineReportes.TargetChart = this.chart;
             // 
             // frmMenuPrincipal
             // 

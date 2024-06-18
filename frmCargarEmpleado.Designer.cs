@@ -41,6 +41,7 @@
             this.lblBarrio = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCargarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.mcrDatosLaborales = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpFechaIngreso = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lstTipoContrato = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTipoContrato = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -49,6 +50,7 @@
             this.lblAreaEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblFechaIngreso = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcDatosPersonales = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lstTipoDocumento = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpFechaNacimiento = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtTeléfono = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTeléfono = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -67,8 +69,6 @@
             this.lblApellido = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
-            this.lstTipoDocumento = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lstCategoría = new Guna.UI2.WinForms.Guna2ComboBox();
             this.mrcDireccion.SuspendLayout();
             this.mcrDatosLaborales.SuspendLayout();
             this.mrcDatosPersonales.SuspendLayout();
@@ -291,6 +291,23 @@
             this.mcrDatosLaborales.TabIndex = 12;
             this.mcrDatosLaborales.Text = "Datos Laborales";
             // 
+            // lstCategoría
+            // 
+            this.lstCategoría.BackColor = System.Drawing.Color.Transparent;
+            this.lstCategoría.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lstCategoría.BorderRadius = 10;
+            this.lstCategoría.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstCategoría.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCategoría.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCategoría.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstCategoría.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.lstCategoría.ForeColor = System.Drawing.Color.Black;
+            this.lstCategoría.ItemHeight = 30;
+            this.lstCategoría.Location = new System.Drawing.Point(148, 89);
+            this.lstCategoría.Name = "lstCategoría";
+            this.lstCategoría.Size = new System.Drawing.Size(231, 36);
+            this.lstCategoría.TabIndex = 33;
+            // 
             // dtpFechaIngreso
             // 
             this.dtpFechaIngreso.BackColor = System.Drawing.Color.Transparent;
@@ -419,6 +436,23 @@
             this.mrcDatosPersonales.Size = new System.Drawing.Size(924, 240);
             this.mrcDatosPersonales.TabIndex = 11;
             this.mrcDatosPersonales.Text = "Datos Personales";
+            // 
+            // lstTipoDocumento
+            // 
+            this.lstTipoDocumento.BackColor = System.Drawing.Color.Transparent;
+            this.lstTipoDocumento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lstTipoDocumento.BorderRadius = 10;
+            this.lstTipoDocumento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lstTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstTipoDocumento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoDocumento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lstTipoDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.lstTipoDocumento.ForeColor = System.Drawing.Color.Black;
+            this.lstTipoDocumento.ItemHeight = 30;
+            this.lstTipoDocumento.Location = new System.Drawing.Point(394, 60);
+            this.lstTipoDocumento.Name = "lstTipoDocumento";
+            this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
+            this.lstTipoDocumento.TabIndex = 33;
             // 
             // dtpFechaNacimiento
             // 
@@ -721,45 +755,11 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // lstTipoDocumento
-            // 
-            this.lstTipoDocumento.BackColor = System.Drawing.Color.Transparent;
-            this.lstTipoDocumento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lstTipoDocumento.BorderRadius = 10;
-            this.lstTipoDocumento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstTipoDocumento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstTipoDocumento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstTipoDocumento.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.lstTipoDocumento.ForeColor = System.Drawing.Color.Black;
-            this.lstTipoDocumento.ItemHeight = 30;
-            this.lstTipoDocumento.Location = new System.Drawing.Point(394, 60);
-            this.lstTipoDocumento.Name = "lstTipoDocumento";
-            this.lstTipoDocumento.Size = new System.Drawing.Size(143, 36);
-            this.lstTipoDocumento.TabIndex = 33;
-            // 
-            // lstCategoría
-            // 
-            this.lstCategoría.BackColor = System.Drawing.Color.Transparent;
-            this.lstCategoría.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lstCategoría.BorderRadius = 10;
-            this.lstCategoría.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lstCategoría.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstCategoría.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCategoría.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lstCategoría.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.lstCategoría.ForeColor = System.Drawing.Color.Black;
-            this.lstCategoría.ItemHeight = 30;
-            this.lstCategoría.Location = new System.Drawing.Point(148, 89);
-            this.lstCategoría.Name = "lstCategoría";
-            this.lstCategoría.Size = new System.Drawing.Size(231, 36);
-            this.lstCategoría.TabIndex = 33;
-            // 
             // frmCargarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(948, 611);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.mrcDireccion);
