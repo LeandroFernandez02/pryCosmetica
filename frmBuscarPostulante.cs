@@ -34,6 +34,11 @@ namespace pryCosmetica
 
         private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbBusqueda.SelectedIndex != -1)
+            {
+                btnBuscar.Enabled = true;
+            }
+            
             clsProcesosBD objProcesos = new clsProcesosBD();
             sacarControl();
             int seleccion = cmbBusqueda.SelectedIndex;
@@ -116,6 +121,7 @@ namespace pryCosmetica
 
                     cmbArea.Location = new Point(279, 50);
                     cmbArea.Size = new Size(200, 36);
+
                     break;
             }
         }
@@ -245,32 +251,39 @@ namespace pryCosmetica
                                 lectorBD["CV"].ToString(),
                                 lectorBD["NombreArea"].ToString());
                             }
-
                         }
 
                         break;
                     case "Area":
 
-
-                        string SeleccionadoArea = cmbArea.SelectedItem.ToString();
-                        BD.comando.CommandText = @"SELECT POSTULANTES.DNI, POSTULANTES.Nombre, POSTULANTES.Apellido, POSTULANTES.Correo, POSTULANTES.Telefono, POSTULANTES.CV, AREA.NombreArea
-                                            FROM AREA INNER JOIN POSTULANTES ON AREA.[IdArea] = POSTULANTES.[IdArea]";
-                        lectorBD = BD.comando.ExecuteReader();
-                        dgvGrilla.Rows.Clear();
-                        while (lectorBD.Read())
+                        if (cmbArea.SelectedIndex != -1)
                         {
-                            if (lectorBD["NombreArea"].ToString() == SeleccionadoArea)
-                            {
-                                dgvGrilla.Rows.Add(
-                                lectorBD["DNI"].ToString(),
-                                lectorBD["Nombre"].ToString(),
-                                lectorBD["Apellido"].ToString(),
-                                lectorBD["Correo"].ToString(),
-                                lectorBD["Telefono"].ToString(),
-                                lectorBD["CV"].ToString(),
-                                lectorBD["NombreArea"].ToString());
-                            }
+                            btnBuscar.Enabled = true;
 
+                            string SeleccionadoArea = cmbArea.SelectedItem.ToString();
+                            BD.comando.CommandText = @"SELECT POSTULANTES.DNI, POSTULANTES.Nombre, POSTULANTES.Apellido, POSTULANTES.Correo, POSTULANTES.Telefono, POSTULANTES.CV, AREA.NombreArea
+                                            FROM AREA INNER JOIN POSTULANTES ON AREA.[IdArea] = POSTULANTES.[IdArea]";
+                            lectorBD = BD.comando.ExecuteReader();
+                            dgvGrilla.Rows.Clear();
+                            while (lectorBD.Read())
+                            {
+                                if (lectorBD["NombreArea"].ToString() == SeleccionadoArea)
+                                {
+                                    dgvGrilla.Rows.Add(
+                                    lectorBD["DNI"].ToString(),
+                                    lectorBD["Nombre"].ToString(),
+                                    lectorBD["Apellido"].ToString(),
+                                    lectorBD["Correo"].ToString(),
+                                    lectorBD["Telefono"].ToString(),
+                                    lectorBD["CV"].ToString(),
+                                    lectorBD["NombreArea"].ToString());
+                                }
+
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No hay ningún área seleccionada.");
                         }
                         break;
                 }
@@ -332,8 +345,6 @@ namespace pryCosmetica
                 {
                     // Revertir el valor en la grilla si la modificación no es confirmada
                     dgvGrilla.CancelEdit();
-
-
                 }
             }
         }
@@ -382,6 +393,24 @@ namespace pryCosmetica
                         }
                     }
                 }
+            }
+        }
+
+        private void frmBuscarPostulante_Load(object sender, EventArgs e)
+        {
+            btnBuscar.Enabled = false;
+            btnModificar.Enabled = false;
+        }
+
+        private void dgvGrilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvGrilla != null)
+            {
+                btnModificar.Enabled = true;
+            }
+            else
+            {
+                btnModificar.Enabled = false;
             }
         }
     } 

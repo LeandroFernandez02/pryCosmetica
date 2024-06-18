@@ -181,6 +181,7 @@
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvGrilla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvGrilla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellClick);
+            this.dgvGrilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellContentClick);
             this.dgvGrilla.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellEndEdit);
             // 
             // DNI
@@ -246,6 +247,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBuscarPostulante";
             this.Text = "frmBuscarPostulante";
+            this.Load += new System.EventHandler(this.frmBuscarPostulante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             this.ResumeLayout(false);
 

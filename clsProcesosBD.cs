@@ -108,7 +108,7 @@ namespace pryCosmetica
 
                         MessageBox.Show("Los datos del empleado se cargaron correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        MessageBox.Show("A continuacón debe cargar el curriculim de dicho empleado");
+                        MessageBox.Show("A continuacón debe cargar el curriculum de dicho empleado.");
 
                         using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                         {

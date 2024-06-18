@@ -64,7 +64,7 @@ namespace pryCosmetica
                         }
                         else
                         {
-                            MessageBox.Show("usuario no existente, Usuario y/o contraseña incorrecto");
+                            MessageBox.Show("Usuario y/o contraseña incorrecto.");
                         }
 
                     }
