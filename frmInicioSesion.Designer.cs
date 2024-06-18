@@ -171,6 +171,7 @@
             this.btnIniciarSesion.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.btnIniciarSesion.BorderThickness = 2;
             this.btnIniciarSesion.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciarSesion.CustomBorderColor = System.Drawing.Color.White;
             this.btnIniciarSesion.CustomBorderThickness = new System.Windows.Forms.Padding(2);
             this.btnIniciarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

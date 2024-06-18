@@ -984,6 +984,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.BorderRadius = 15;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -1002,6 +1003,7 @@
             // btnGuardar
             // 
             this.btnGuardar.BorderRadius = 15;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

@@ -38,16 +38,39 @@
             this.pnlSubMenuReportes = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBuscarReporte = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargarReporte = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReportes = new Guna.UI2.WinForms.Guna2Button();
             this.pnlSubMenuPostulante = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBuscarPostulante = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargarPostulante = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPostulante = new Guna.UI2.WinForms.Guna2Button();
             this.pnlSubMenuEmpleados = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBuscarEmpleado = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargarEmpleado = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEmpleados = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
+            this.pctLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlTitulo = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlPrincipal = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgvCumple = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pnlReportes = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblNumReport = new System.Windows.Forms.Label();
+            this.pctIconReportes = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnlPostulantes = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblNumPostulantes = new System.Windows.Forms.Label();
+            this.pctIconPostulantes = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlEmpleados = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblNumEmpleados = new System.Windows.Forms.Label();
+            this.pctIconEmpleados = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.chartCar = new LiveCharts.WinForms.CartesianChart();
             this.lineEmpleados = new Guna.Charts.WinForms.GunaLineDataset();
             this.linePostulantes = new Guna.Charts.WinForms.GunaLineDataset();
             this.lineReportes = new Guna.Charts.WinForms.GunaLineDataset();
@@ -58,46 +81,23 @@
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dgvCumple = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pnlReportes = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblNumReport = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pnlPostulantes = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblNumPostulantes = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pnlEmpleados = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblNumEmpleados = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.chartCar = new LiveCharts.WinForms.CartesianChart();
-            this.pctIconReportes = new System.Windows.Forms.PictureBox();
-            this.pctIconPostulantes = new System.Windows.Forms.PictureBox();
-            this.pctIconEmpleados = new System.Windows.Forms.PictureBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
-            this.btnReportes = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPostulante = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEmpleados = new Guna.UI2.WinForms.Guna2Button();
-            this.pctLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlSubMenuReportes.SuspendLayout();
             this.pnlSubMenuPostulante.SuspendLayout();
             this.pnlSubMenuEmpleados.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.pnlTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.pnlPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCumple)).BeginInit();
             this.pnlReportes.SuspendLayout();
-            this.pnlPostulantes.SuspendLayout();
-            this.pnlEmpleados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctIconReportes)).BeginInit();
+            this.pnlPostulantes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctIconPostulantes)).BeginInit();
+            this.pnlEmpleados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctIconEmpleados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -135,6 +135,7 @@
             // 
             // btnBuscarReporte
             // 
+            this.btnBuscarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarReporte.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscarReporte.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscarReporte.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -154,6 +155,7 @@
             // 
             // btnCargarReporte
             // 
+            this.btnCargarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCargarReporte.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarReporte.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarReporte.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -170,6 +172,53 @@
             this.btnCargarReporte.Text = "Cargar Reporte";
             this.btnCargarReporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCargarReporte.Click += new System.EventHandler(this.btnCargarReporte_Click);
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSesion.FillColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.Image = global::pryCosmetica.Properties.Resources.icono_Log_Out;
+            this.btnCerrarSesion.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCerrarSesion.ImageOffset = new System.Drawing.Point(50, 0);
+            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 600);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(237, 45);
+            this.btnCerrarSesion.TabIndex = 5;
+            this.btnCerrarSesion.Text = "Log Out";
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReportes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FillColor = System.Drawing.Color.Transparent;
+            this.btnReportes.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnReportes.ForeColor = System.Drawing.Color.Black;
+            this.btnReportes.Image = global::pryCosmetica.Properties.Resources.Iconno_Reportes;
+            this.btnReportes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportes.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnReportes.ImageSize = new System.Drawing.Size(25, 20);
+            this.btnReportes.Location = new System.Drawing.Point(0, 404);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(237, 45);
+            this.btnReportes.TabIndex = 6;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // pnlSubMenuPostulante
             // 
@@ -188,6 +237,7 @@
             // 
             // btnBuscarPostulante
             // 
+            this.btnBuscarPostulante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarPostulante.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscarPostulante.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscarPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -207,6 +257,7 @@
             // 
             // btnCargarPostulante
             // 
+            this.btnCargarPostulante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCargarPostulante.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarPostulante.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -223,6 +274,29 @@
             this.btnCargarPostulante.Text = "Cargar Postulante";
             this.btnCargarPostulante.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCargarPostulante.Click += new System.EventHandler(this.btnCargarPostulante_Click);
+            // 
+            // btnPostulante
+            // 
+            this.btnPostulante.BackColor = System.Drawing.Color.Transparent;
+            this.btnPostulante.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPostulante.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostulante.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPostulante.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPostulante.FillColor = System.Drawing.Color.Transparent;
+            this.btnPostulante.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnPostulante.ForeColor = System.Drawing.Color.Black;
+            this.btnPostulante.Image = global::pryCosmetica.Properties.Resources.Icono_Postulantes;
+            this.btnPostulante.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostulante.ImageSize = new System.Drawing.Size(40, 20);
+            this.btnPostulante.Location = new System.Drawing.Point(0, 262);
+            this.btnPostulante.Name = "btnPostulante";
+            this.btnPostulante.Size = new System.Drawing.Size(237, 45);
+            this.btnPostulante.TabIndex = 3;
+            this.btnPostulante.Text = "Postulantes";
+            this.btnPostulante.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPostulante.Click += new System.EventHandler(this.btnPostulante_Click);
             // 
             // pnlSubMenuEmpleados
             // 
@@ -241,6 +315,7 @@
             // 
             // btnBuscarEmpleado
             // 
+            this.btnBuscarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarEmpleado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscarEmpleado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuscarEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -260,6 +335,7 @@
             // 
             // btnCargarEmpleado
             // 
+            this.btnCargarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCargarEmpleado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarEmpleado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCargarEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -277,6 +353,31 @@
             this.btnCargarEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCargarEmpleado.Click += new System.EventHandler(this.btnCargarEmpleado_Click);
             // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmpleados.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEmpleados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEmpleados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEmpleados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEmpleados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FillColor = System.Drawing.Color.Transparent;
+            this.btnEmpleados.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnEmpleados.ForeColor = System.Drawing.Color.Black;
+            this.btnEmpleados.Image = global::pryCosmetica.Properties.Resources.Icono_Empleado;
+            this.btnEmpleados.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEmpleados.ImageSize = new System.Drawing.Size(40, 20);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 121);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(237, 45);
+            this.btnEmpleados.TabIndex = 1;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            // 
             // pnlLogo
             // 
             this.pnlLogo.Controls.Add(this.pctLogo);
@@ -285,6 +386,19 @@
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(237, 121);
             this.pnlLogo.TabIndex = 0;
+            // 
+            // pctLogo
+            // 
+            this.pctLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctLogo.Image = global::pryCosmetica.Properties.Resources.logo_principal;
+            this.pctLogo.ImageRotate = 0F;
+            this.pctLogo.Location = new System.Drawing.Point(0, 0);
+            this.pctLogo.Name = "pctLogo";
+            this.pctLogo.Size = new System.Drawing.Size(237, 121);
+            this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctLogo.TabIndex = 1;
+            this.pctLogo.TabStop = false;
+            this.pctLogo.Click += new System.EventHandler(this.pctLogo_Click);
             // 
             // pnlTitulo
             // 
@@ -296,6 +410,18 @@
             this.pnlTitulo.Name = "pnlTitulo";
             this.pnlTitulo.Size = new System.Drawing.Size(948, 80);
             this.pnlTitulo.TabIndex = 2;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::pryCosmetica.Properties.Resources.casale;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(876, 21);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(47, 41);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 1;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // lblTitulo
             // 
@@ -321,58 +447,6 @@
             this.pnlPrincipal.Name = "pnlPrincipal";
             this.pnlPrincipal.Size = new System.Drawing.Size(948, 611);
             this.pnlPrincipal.TabIndex = 3;
-            // 
-            // lineEmpleados
-            // 
-            this.lineEmpleados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
-            this.lineEmpleados.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
-            this.lineEmpleados.Label = "Empleados";
-            // 
-            // linePostulantes
-            // 
-            this.linePostulantes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
-            this.linePostulantes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
-            this.linePostulantes.Label = "Postulantes";
-            // 
-            // lineReportes
-            // 
-            this.lineReportes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lineReportes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lineReportes.Label = "Reportes";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 22;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 22;
-            this.guna2Elipse2.TargetControl = this.panel1;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 22;
-            this.guna2Elipse3.TargetControl = this.pnlPostulantes;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 22;
-            this.guna2Elipse4.TargetControl = this.pnlEmpleados;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.BorderRadius = 22;
-            this.guna2Elipse5.TargetControl = this.pnlReportes;
-            // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.BorderRadius = 22;
-            this.guna2Elipse6.TargetControl = this.chartCar;
-            // 
-            // guna2Elipse7
-            // 
-            this.guna2Elipse7.BorderRadius = 22;
             // 
             // panel1
             // 
@@ -491,6 +565,16 @@
             this.lblNumReport.TabIndex = 4;
             this.lblNumReport.Text = "200";
             // 
+            // pctIconReportes
+            // 
+            this.pctIconReportes.Image = global::pryCosmetica.Properties.Resources.icono_reportes_blanco;
+            this.pctIconReportes.Location = new System.Drawing.Point(28, 51);
+            this.pctIconReportes.Name = "pctIconReportes";
+            this.pctIconReportes.Size = new System.Drawing.Size(63, 44);
+            this.pctIconReportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctIconReportes.TabIndex = 4;
+            this.pctIconReportes.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -524,6 +608,16 @@
             this.lblNumPostulantes.TabIndex = 3;
             this.lblNumPostulantes.Text = "200";
             // 
+            // pctIconPostulantes
+            // 
+            this.pctIconPostulantes.Image = global::pryCosmetica.Properties.Resources.Icono_Postulantes;
+            this.pctIconPostulantes.Location = new System.Drawing.Point(23, 49);
+            this.pctIconPostulantes.Name = "pctIconPostulantes";
+            this.pctIconPostulantes.Size = new System.Drawing.Size(77, 52);
+            this.pctIconPostulantes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctIconPostulantes.TabIndex = 3;
+            this.pctIconPostulantes.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -556,6 +650,16 @@
             this.lblNumEmpleados.TabIndex = 1;
             this.lblNumEmpleados.Text = "200";
             // 
+            // pctIconEmpleados
+            // 
+            this.pctIconEmpleados.Image = global::pryCosmetica.Properties.Resources.Icono_Empleado;
+            this.pctIconEmpleados.Location = new System.Drawing.Point(24, 49);
+            this.pctIconEmpleados.Name = "pctIconEmpleados";
+            this.pctIconEmpleados.Size = new System.Drawing.Size(77, 52);
+            this.pctIconEmpleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctIconEmpleados.TabIndex = 2;
+            this.pctIconEmpleados.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -575,148 +679,57 @@
             this.chartCar.TabIndex = 14;
             this.chartCar.Text = "cartesianChart1";
             // 
-            // pctIconReportes
+            // lineEmpleados
             // 
-            this.pctIconReportes.Image = global::pryCosmetica.Properties.Resources.icono_reportes_blanco;
-            this.pctIconReportes.Location = new System.Drawing.Point(28, 51);
-            this.pctIconReportes.Name = "pctIconReportes";
-            this.pctIconReportes.Size = new System.Drawing.Size(63, 44);
-            this.pctIconReportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctIconReportes.TabIndex = 4;
-            this.pctIconReportes.TabStop = false;
+            this.lineEmpleados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            this.lineEmpleados.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(207)))), ((int)(((byte)(205)))));
+            this.lineEmpleados.Label = "Empleados";
             // 
-            // pctIconPostulantes
+            // linePostulantes
             // 
-            this.pctIconPostulantes.Image = global::pryCosmetica.Properties.Resources.Icono_Postulantes;
-            this.pctIconPostulantes.Location = new System.Drawing.Point(23, 49);
-            this.pctIconPostulantes.Name = "pctIconPostulantes";
-            this.pctIconPostulantes.Size = new System.Drawing.Size(77, 52);
-            this.pctIconPostulantes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctIconPostulantes.TabIndex = 3;
-            this.pctIconPostulantes.TabStop = false;
+            this.linePostulantes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.linePostulantes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(135)))), ((int)(((byte)(157)))));
+            this.linePostulantes.Label = "Postulantes";
             // 
-            // pctIconEmpleados
+            // lineReportes
             // 
-            this.pctIconEmpleados.Image = global::pryCosmetica.Properties.Resources.Icono_Empleado;
-            this.pctIconEmpleados.Location = new System.Drawing.Point(24, 49);
-            this.pctIconEmpleados.Name = "pctIconEmpleados";
-            this.pctIconEmpleados.Size = new System.Drawing.Size(77, 52);
-            this.pctIconEmpleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctIconEmpleados.TabIndex = 2;
-            this.pctIconEmpleados.TabStop = false;
+            this.lineReportes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.lineReportes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.lineReportes.Label = "Reportes";
             // 
-            // guna2CirclePictureBox1
+            // guna2Elipse1
             // 
-            this.guna2CirclePictureBox1.Image = global::pryCosmetica.Properties.Resources.casale;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(876, 21);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(47, 41);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 1;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2Elipse1.BorderRadius = 22;
+            this.guna2Elipse1.TargetControl = this;
             // 
-            // btnCerrarSesion
+            // guna2Elipse2
             // 
-            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCerrarSesion.FillColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.Image = global::pryCosmetica.Properties.Resources.icono_Log_Out;
-            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCerrarSesion.Location = new System.Drawing.Point(49, 600);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCerrarSesion.Size = new System.Drawing.Size(121, 45);
-            this.btnCerrarSesion.TabIndex = 5;
-            this.btnCerrarSesion.Text = "Log Out";
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            this.guna2Elipse2.BorderRadius = 22;
+            this.guna2Elipse2.TargetControl = this.panel1;
             // 
-            // btnReportes
+            // guna2Elipse3
             // 
-            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
-            this.btnReportes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReportes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReportes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReportes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportes.FillColor = System.Drawing.Color.Transparent;
-            this.btnReportes.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.btnReportes.ForeColor = System.Drawing.Color.Black;
-            this.btnReportes.Image = global::pryCosmetica.Properties.Resources.Iconno_Reportes;
-            this.btnReportes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReportes.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnReportes.ImageSize = new System.Drawing.Size(25, 20);
-            this.btnReportes.Location = new System.Drawing.Point(0, 404);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(237, 45);
-            this.btnReportes.TabIndex = 6;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            this.guna2Elipse3.BorderRadius = 22;
+            this.guna2Elipse3.TargetControl = this.pnlPostulantes;
             // 
-            // btnPostulante
+            // guna2Elipse4
             // 
-            this.btnPostulante.BackColor = System.Drawing.Color.Transparent;
-            this.btnPostulante.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPostulante.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPostulante.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPostulante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPostulante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPostulante.FillColor = System.Drawing.Color.Transparent;
-            this.btnPostulante.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.btnPostulante.ForeColor = System.Drawing.Color.Black;
-            this.btnPostulante.Image = global::pryCosmetica.Properties.Resources.Icono_Postulantes;
-            this.btnPostulante.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPostulante.ImageSize = new System.Drawing.Size(40, 20);
-            this.btnPostulante.Location = new System.Drawing.Point(0, 262);
-            this.btnPostulante.Name = "btnPostulante";
-            this.btnPostulante.Size = new System.Drawing.Size(237, 45);
-            this.btnPostulante.TabIndex = 3;
-            this.btnPostulante.Text = "Postulantes";
-            this.btnPostulante.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPostulante.Click += new System.EventHandler(this.btnPostulante_Click);
+            this.guna2Elipse4.BorderRadius = 22;
+            this.guna2Elipse4.TargetControl = this.pnlEmpleados;
             // 
-            // btnEmpleados
+            // guna2Elipse5
             // 
-            this.btnEmpleados.BackColor = System.Drawing.Color.Transparent;
-            this.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEmpleados.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEmpleados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmpleados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmpleados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEmpleados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEmpleados.FillColor = System.Drawing.Color.Transparent;
-            this.btnEmpleados.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.btnEmpleados.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpleados.Image = global::pryCosmetica.Properties.Resources.Icono_Empleado;
-            this.btnEmpleados.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEmpleados.ImageSize = new System.Drawing.Size(40, 20);
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 121);
-            this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(237, 45);
-            this.btnEmpleados.TabIndex = 1;
-            this.btnEmpleados.Text = "Empleados";
-            this.btnEmpleados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            this.guna2Elipse5.BorderRadius = 22;
+            this.guna2Elipse5.TargetControl = this.pnlReportes;
             // 
-            // pctLogo
+            // guna2Elipse6
             // 
-            this.pctLogo.Image = global::pryCosmetica.Properties.Resources.logo_principal;
-            this.pctLogo.ImageRotate = 0F;
-            this.pctLogo.Location = new System.Drawing.Point(0, 0);
-            this.pctLogo.Name = "pctLogo";
-            this.pctLogo.Size = new System.Drawing.Size(237, 121);
-            this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctLogo.TabIndex = 1;
-            this.pctLogo.TabStop = false;
-            this.pctLogo.Click += new System.EventHandler(this.pctLogo_Click);
+            this.guna2Elipse6.BorderRadius = 22;
+            this.guna2Elipse6.TargetControl = this.chartCar;
+            // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.BorderRadius = 22;
             // 
             // frmMenuPrincipal
             // 
@@ -737,7 +750,9 @@
             this.pnlSubMenuPostulante.ResumeLayout(false);
             this.pnlSubMenuEmpleados.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.pnlPrincipal.ResumeLayout(false);
             this.pnlPrincipal.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -745,15 +760,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCumple)).EndInit();
             this.pnlReportes.ResumeLayout(false);
             this.pnlReportes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctIconReportes)).EndInit();
             this.pnlPostulantes.ResumeLayout(false);
             this.pnlPostulantes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctIconPostulantes)).EndInit();
             this.pnlEmpleados.ResumeLayout(false);
             this.pnlEmpleados.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctIconReportes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctIconPostulantes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctIconEmpleados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

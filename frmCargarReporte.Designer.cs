@@ -93,6 +93,7 @@
             // btnDespido
             // 
             this.btnDespido.BorderRadius = 15;
+            this.btnDespido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDespido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDespido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDespido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -110,6 +111,7 @@
             // btnEvaluaciónDesempeño
             // 
             this.btnEvaluaciónDesempeño.BorderRadius = 15;
+            this.btnEvaluaciónDesempeño.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEvaluaciónDesempeño.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEvaluaciónDesempeño.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEvaluaciónDesempeño.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -127,6 +129,7 @@
             // btnSuspensiones
             // 
             this.btnSuspensiones.BorderRadius = 15;
+            this.btnSuspensiones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSuspensiones.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSuspensiones.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSuspensiones.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -144,6 +147,7 @@
             // btnAmonestaciones
             // 
             this.btnAmonestaciones.BorderRadius = 15;
+            this.btnAmonestaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmonestaciones.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAmonestaciones.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAmonestaciones.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -161,6 +165,7 @@
             // btnInasistencia
             // 
             this.btnInasistencia.BorderRadius = 15;
+            this.btnInasistencia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInasistencia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnInasistencia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnInasistencia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -178,6 +183,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.BorderRadius = 15;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLimpiar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -195,6 +201,7 @@
             // btnCargar
             // 
             this.btnCargar.BorderRadius = 15;
+            this.btnCargar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCargar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCargar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCargar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
