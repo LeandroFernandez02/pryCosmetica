@@ -708,6 +708,7 @@
             this.dgvDespido.ThemeStyle.RowsStyle.Height = 22;
             this.dgvDespido.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDespido.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvDespido.Visible = false;
             // 
             // Cuil
             // 
