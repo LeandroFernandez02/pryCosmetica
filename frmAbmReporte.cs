@@ -12,6 +12,8 @@ namespace pryCosmetica
 {
     public partial class frmAbmReporte : Form
     {
+
+        string cuilViejo;
         public frmAbmReporte(string tipoReporte)
         {
             InitializeComponent();
@@ -225,6 +227,18 @@ namespace pryCosmetica
                 // Si no es un número, cancela el evento
                 e.Handled = true;
             }
+        }
+        public void SetValues(string cuil, string nombre, string motivo, string justificado, string tipoInasistencia, string fecha)
+        {
+            txtDocumentoEmpleado.Text = cuil;
+
+
+        }
+        clsProcesosBD BD = new clsProcesosBD();
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

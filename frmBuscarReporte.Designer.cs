@@ -118,10 +118,10 @@
             "Todos",
             "CUIL",
             "Nombre"});
-            this.cmbCondicion.Location = new System.Drawing.Point(238, 51);
-            this.cmbCondicion.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCondicion.Location = new System.Drawing.Point(317, 63);
+            this.cmbCondicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCondicion.Name = "cmbCondicion";
-            this.cmbCondicion.Size = new System.Drawing.Size(178, 36);
+            this.cmbCondicion.Size = new System.Drawing.Size(236, 36);
             this.cmbCondicion.TabIndex = 13;
             this.cmbCondicion.SelectedIndexChanged += new System.EventHandler(this.cmbCondicion_SelectedIndexChanged);
             // 
@@ -136,12 +136,13 @@
             this.btnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(718, 51);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Location = new System.Drawing.Point(957, 63);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(180, 36);
+            this.btnBuscar.Size = new System.Drawing.Size(240, 44);
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cmbFiltro
             // 
@@ -161,10 +162,10 @@
             "Suspensiones",
             "Evaluacion de Desempeño",
             "Despidos"});
-            this.cmbFiltro.Location = new System.Drawing.Point(34, 51);
-            this.cmbFiltro.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbFiltro.Location = new System.Drawing.Point(45, 63);
+            this.cmbFiltro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbFiltro.Name = "cmbFiltro";
-            this.cmbFiltro.Size = new System.Drawing.Size(178, 36);
+            this.cmbFiltro.Size = new System.Drawing.Size(236, 36);
             this.cmbFiltro.TabIndex = 10;
             this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.cmbFiltro_SelectedIndexChanged);
             // 
@@ -179,10 +180,10 @@
             this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(718, 482);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Location = new System.Drawing.Point(957, 593);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(180, 36);
+            this.btnModificar.Size = new System.Drawing.Size(240, 44);
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
@@ -226,7 +227,8 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvInasistencia.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInasistencia.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvInasistencia.Location = new System.Drawing.Point(34, 108);
+            this.dgvInasistencia.Location = new System.Drawing.Point(45, 133);
+            this.dgvInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvInasistencia.Name = "dgvInasistencia";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
@@ -237,7 +239,8 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvInasistencia.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvInasistencia.RowHeadersVisible = false;
-            this.dgvInasistencia.Size = new System.Drawing.Size(864, 336);
+            this.dgvInasistencia.RowHeadersWidth = 51;
+            this.dgvInasistencia.Size = new System.Drawing.Size(1152, 414);
             this.dgvInasistencia.TabIndex = 14;
             this.dgvInasistencia.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvInasistencia.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -265,36 +268,43 @@
             // 
             this.ID.FillWeight = 45.68527F;
             this.ID.HeaderText = "ID Inasistencia";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             // 
             // Column1
             // 
             this.Column1.HeaderText = "CUIL Empleado";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Nombre";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Fecha";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Motivo";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Justificado";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Tipo Inasistencia";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             // 
             // btnEliminar
@@ -308,10 +318,10 @@
             this.btnEliminar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(519, 482);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Location = new System.Drawing.Point(692, 593);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(180, 36);
+            this.btnEliminar.Size = new System.Drawing.Size(240, 44);
             this.btnEliminar.TabIndex = 15;
             this.btnEliminar.Text = "Eliminar";
             // 
@@ -347,7 +357,8 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAmonestacion.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvAmonestacion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvAmonestacion.Location = new System.Drawing.Point(34, 108);
+            this.dgvAmonestacion.Location = new System.Drawing.Point(45, 133);
+            this.dgvAmonestacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvAmonestacion.Name = "dgvAmonestacion";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.Black;
@@ -358,7 +369,8 @@
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAmonestacion.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvAmonestacion.RowHeadersVisible = false;
-            this.dgvAmonestacion.Size = new System.Drawing.Size(864, 336);
+            this.dgvAmonestacion.RowHeadersWidth = 51;
+            this.dgvAmonestacion.Size = new System.Drawing.Size(1152, 414);
             this.dgvAmonestacion.TabIndex = 16;
             this.dgvAmonestacion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvAmonestacion.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -387,26 +399,31 @@
             // 
             this.dataGridViewTextBoxColumn1.FillWeight = 45.68527F;
             this.dataGridViewTextBoxColumn1.HeaderText = "ID Amonestacion";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "CUIL Empleado";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Fecha";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Motivo";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             // 
             // dgvSuspension
@@ -443,7 +460,8 @@
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSuspension.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvSuspension.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvSuspension.Location = new System.Drawing.Point(34, 108);
+            this.dgvSuspension.Location = new System.Drawing.Point(45, 133);
+            this.dgvSuspension.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvSuspension.Name = "dgvSuspension";
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.Black;
@@ -454,7 +472,8 @@
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvSuspension.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvSuspension.RowHeadersVisible = false;
-            this.dgvSuspension.Size = new System.Drawing.Size(864, 336);
+            this.dgvSuspension.RowHeadersWidth = 51;
+            this.dgvSuspension.Size = new System.Drawing.Size(1152, 414);
             this.dgvSuspension.TabIndex = 17;
             this.dgvSuspension.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvSuspension.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -483,36 +502,43 @@
             // 
             this.dataGridViewTextBoxColumn5.FillWeight = 45.68527F;
             this.dataGridViewTextBoxColumn5.HeaderText = "ID Suspension";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "CUIL Empleado";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // Column14
             // 
             this.Column14.HeaderText = "Desde";
+            this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
             // 
             // Column15
             // 
             this.Column15.HeaderText = "Hasta";
+            this.Column15.MinimumWidth = 6;
             this.Column15.Name = "Column15";
             // 
             // Column16
             // 
             this.Column16.HeaderText = "Observaciones";
+            this.Column16.MinimumWidth = 6;
             this.Column16.Name = "Column16";
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.HeaderText = "Motivo";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dgvEvaluacion
@@ -550,7 +576,8 @@
             dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvEvaluacion.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvEvaluacion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvEvaluacion.Location = new System.Drawing.Point(34, 108);
+            this.dgvEvaluacion.Location = new System.Drawing.Point(45, 133);
+            this.dgvEvaluacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvEvaluacion.Name = "dgvEvaluacion";
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
@@ -561,7 +588,8 @@
             dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvEvaluacion.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvEvaluacion.RowHeadersVisible = false;
-            this.dgvEvaluacion.Size = new System.Drawing.Size(864, 336);
+            this.dgvEvaluacion.RowHeadersWidth = 51;
+            this.dgvEvaluacion.Size = new System.Drawing.Size(1152, 414);
             this.dgvEvaluacion.TabIndex = 18;
             this.dgvEvaluacion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvEvaluacion.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -590,41 +618,49 @@
             // 
             this.dataGridViewTextBoxColumn9.FillWeight = 45.68527F;
             this.dataGridViewTextBoxColumn9.HeaderText = "ID Evaluacion";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.HeaderText = "CUIL Empleado";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Fecha";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Calificacion";
+            this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Area";
+            this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
             // 
             // Column12
             // 
             this.Column12.HeaderText = "Observacion";
+            this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
             // 
             // Column13
             // 
             this.Column13.HeaderText = "Evaluador";
+            this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
             // 
             // guna2Elipse2
@@ -677,7 +713,8 @@
             dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDespido.DefaultCellStyle = dataGridViewCellStyle19;
             this.dgvDespido.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.dgvDespido.Location = new System.Drawing.Point(34, 108);
+            this.dgvDespido.Location = new System.Drawing.Point(45, 133);
+            this.dgvDespido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDespido.Name = "dgvDespido";
             dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle20.BackColor = System.Drawing.Color.Black;
@@ -688,7 +725,8 @@
             dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDespido.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvDespido.RowHeadersVisible = false;
-            this.dgvDespido.Size = new System.Drawing.Size(864, 336);
+            this.dgvDespido.RowHeadersWidth = 51;
+            this.dgvDespido.Size = new System.Drawing.Size(1152, 414);
             this.dgvDespido.TabIndex = 19;
             this.dgvDespido.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDespido.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -717,16 +755,19 @@
             // 
             this.Cuil.FillWeight = 45.68527F;
             this.Cuil.HeaderText = "CUIL Empleado";
+            this.Cuil.MinimumWidth = 6;
             this.Cuil.Name = "Cuil";
             // 
             // nombre
             // 
             this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 6;
             this.nombre.Name = "nombre";
             // 
             // fecha
             // 
             this.fecha.HeaderText = "Fecha";
+            this.fecha.MinimumWidth = 6;
             this.fecha.Name = "fecha";
             // 
             // guna2Elipse6
@@ -735,10 +776,10 @@
             // 
             // frmBuscarReporte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(948, 611);
+            this.ClientSize = new System.Drawing.Size(1264, 752);
             this.Controls.Add(this.dgvDespido);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbCondicion);
@@ -750,6 +791,7 @@
             this.Controls.Add(this.dgvSuspension);
             this.Controls.Add(this.dgvAmonestacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBuscarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBuscarReporte";

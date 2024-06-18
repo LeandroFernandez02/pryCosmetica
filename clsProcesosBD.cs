@@ -19,6 +19,8 @@ namespace pryCosmetica
 
         public string varCadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Cosmetica.accdb";
 
+        string rutaArchivo;
+        public string estadoConexion;
         public void CargarEmpleado()
         {
             try
@@ -755,6 +757,8 @@ namespace pryCosmetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+
         public void BuscadorEmpleados(DataGridView Grilla, string ConsultaSQL, string Variable, int comparar)
         {
             conexion = new OleDbConnection(varCadenaConexion);
@@ -840,6 +844,230 @@ namespace pryCosmetica
             {
                 conexion.Close();
             }
+        }
+
+        /////Cargar Suspension
+        public clsProcesosBD()
+        {
+            try
+            {
+                DataSet objDS;
+                rutaArchivo = "..\\..\\Resources\\Cosmetica.accdb";
+
+                conexion = new OleDbConnection();
+                conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + rutaArchivo;
+                conexion.Open();
+
+                objDS = new DataSet();
+
+                estadoConexion = "Conectado";
+            }
+            catch (Exception error)
+            {
+                estadoConexion = error.Message;
+            }
+        }
+
+        public void cargarAmonestacion(Int32 Motivo, String empleado, DateTime fecha)
+        {
+            int id = this.buscarIDEmpleado(empleado);
+            fecha.ToShortDateString();
+            MessageBox.Show(id.ToString());
+            if (id == -1) { MessageBox.Show("El Empleado ingresado no esta registrado"); return; }
+            try
+            {
+                DataSet objDS = new DataSet();
+                comando = new OleDbCommand();
+
+                comando.Connection = conexion;
+                comando.CommandType = System.Data.CommandType.TableDirect;
+                comando.CommandText = "AMONESTACIONES";
+
+                adaptador = new OleDbDataAdapter(comando);
+
+                adaptador.Fill(objDS, "AMONESTACIONES");
+
+                DataTable objTabla = objDS.Tables["AMONESTACIONES"];
+                DataRow nuevoRegistro = objTabla.NewRow();
+
+                nuevoRegistro["Cuil"] = id;
+                nuevoRegistro["Fecha"] = fecha;
+                nuevoRegistro["IdMotivoAmonestacion"] = Motivo;
+
+                objTabla.Rows.Add(nuevoRegistro);
+
+                OleDbCommandBuilder constructor = new OleDbCommandBuilder(adaptador);
+                adaptador.Update(objDS, "AMONESTACIONES");
+
+                estadoConexion = "Registro exitoso de amonestacion";
+            }
+            catch (Exception error)
+            {
+                estadoConexion = error.Message;
+            }
+
+        }
+
+        public int buscarIDEmpleado(String nombre)
+        {
+            try
+            {
+                int id = -1;
+
+                DataSet objDS = new DataSet();
+                comando = new OleDbCommand();
+
+                comando.Connection = conexion;
+                comando.CommandType = System.Data.CommandType.TableDirect;
+                comando.CommandText = "EMPLEADO";
+
+                adaptador = new OleDbDataAdapter(comando);
+
+                adaptador.Fill(objDS, "EMPLEADO");
+
+                DataTable objTabla = objDS.Tables["EMPLEADO"];
+                DataRow[] datareader = objTabla.Select("Nombre like '" + nombre + "'");
+
+                foreach (DataRow row in datareader)
+                {
+                    id = row.Field<int>("Cuil");
+                }
+
+
+                return id;
+
+            }
+            catch (Exception error)
+            {
+                estadoConexion = error.Message;
+                MessageBox.Show(estadoConexion);
+                return -2;
+            }
+        }
+
+        public void cargarSuspencion(Int32 Motivo, String empleado, DateTime fecha, DateTime fecha2, String Detalle)
+        {
+            DataSet objDS = new DataSet();
+            int id = this.buscarIDEmpleado(empleado);
+            MessageBox.Show(id.ToString());
+            if (id == -1) { MessageBox.Show("El Empleado ingresado no esta registrado"); return; }
+            try
+            {
+                comando = new OleDbCommand();
+
+                comando.Connection = conexion;
+                comando.CommandType = System.Data.CommandType.TableDirect;
+                comando.CommandText = "SUSPENSIONES";
+
+                adaptador = new OleDbDataAdapter(comando);
+
+                adaptador.Fill(objDS, "SUSPENSIONES");
+
+                DataTable objTabla = objDS.Tables["SUSPENSIONES"];
+                DataRow nuevoRegistro = objTabla.NewRow();
+
+                nuevoRegistro["Cuil"] = id;
+                nuevoRegistro["Desde"] = fecha;
+                nuevoRegistro["Hasta"] = fecha2;
+                nuevoRegistro["IdMotivo"] = Motivo;
+                nuevoRegistro["Observaciones"] = Detalle;
+
+                objTabla.Rows.Add(nuevoRegistro);
+
+                OleDbCommandBuilder constructor = new OleDbCommandBuilder(adaptador);
+                adaptador.Update(objDS, "SUSPENSIONES");
+
+                estadoConexion = "Registro exitoso de suspencion";
+            }
+            catch (Exception error)
+            {
+                estadoConexion = error.Message;
+            }
+
+        }
+
+        public void cargarEvaluacion(String empleado, DateTime fecha, Int32 calificacion, Int32 area, String detalle, String evaluador)
+        {
+            DataSet objDS = new DataSet();
+            int id = this.buscarIDEmpleado(empleado);
+            int idEvaluador = this.buscarIDEmpleado(evaluador);
+            MessageBox.Show(id.ToString());
+            if (id == -1) { MessageBox.Show("El Empleado ingresado no esta registrado"); return; }
+            try
+            {
+                comando = new OleDbCommand();
+
+                comando.Connection = conexion;
+                comando.CommandType = System.Data.CommandType.TableDirect;
+                comando.CommandText = "EVALUACIONDESEMPEÑO";
+
+                adaptador = new OleDbDataAdapter(comando);
+
+                adaptador.Fill(objDS, "EVALUACIONDESEMPEÑO");
+
+                DataTable objTabla = objDS.Tables["EVALUACIONDESEMPEÑO"];
+                DataRow nuevoRegistro = objTabla.NewRow();
+
+                nuevoRegistro["Cuil"] = id;
+                nuevoRegistro["Fecha"] = fecha;
+                nuevoRegistro["IdCalificacion"] = calificacion;
+                nuevoRegistro["IdArea"] = area;
+                nuevoRegistro["Observacion"] = detalle;
+                nuevoRegistro["IdEvaluador"] = idEvaluador;
+
+                objTabla.Rows.Add(nuevoRegistro);
+
+                OleDbCommandBuilder constructor = new OleDbCommandBuilder(adaptador);
+                adaptador.Update(objDS, "EVALUACIONDESEMPEÑO");
+
+                estadoConexion = "Registro exitoso de Evaluacion de Desempeño";
+            }
+            catch (Exception error)
+            {
+                estadoConexion = error.Message;
+            }
+
+        }
+
+        public void cargarInasistencia(String empleado, DateTime fecha, Int32 motivo, Boolean justificado, Int32 tipoInasitencia)
+        {
+            DataSet objDS = new DataSet();
+            int id = this.buscarIDEmpleado(empleado);
+            MessageBox.Show(id.ToString());
+            if (id == -1) { MessageBox.Show("El Empleado ingresado no esta registrado"); return; }
+            try
+            {
+                comando = new OleDbCommand();
+
+                comando.Connection = conexion;
+                comando.CommandType = System.Data.CommandType.TableDirect;
+                comando.CommandText = "INASISTENCIAS";
+
+                adaptador = new OleDbDataAdapter(comando);
+
+                adaptador.Fill(objDS, "INASISTENCIAS");
+
+                DataTable objTabla = objDS.Tables["INASISTENCIAS"];
+                DataRow nuevoRegistro = objTabla.NewRow();
+
+                nuevoRegistro["Cuil"] = id;
+                nuevoRegistro["Fecha"] = fecha;
+                nuevoRegistro["IdMotivo"] = motivo;
+                nuevoRegistro["Justificado"] = justificado;
+                nuevoRegistro["IdTipoInasistencia"] = tipoInasitencia;
+
+                objTabla.Rows.Add(nuevoRegistro);
+
+                OleDbCommandBuilder constructor = new OleDbCommandBuilder(adaptador);
+                adaptador.Update(objDS, "INASISTENCIAS");
+
+                estadoConexion = "Registro exitoso de Evaluacion de Desempeño";
+            }
+            catch (Exception error)
+            {
+                estadoConexion = error.Message;
+            }
+
         }
     }
 }

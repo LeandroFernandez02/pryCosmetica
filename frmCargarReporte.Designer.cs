@@ -101,9 +101,10 @@
             this.btnDespido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnDespido.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDespido.ForeColor = System.Drawing.Color.White;
-            this.btnDespido.Location = new System.Drawing.Point(749, 27);
+            this.btnDespido.Location = new System.Drawing.Point(999, 33);
+            this.btnDespido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDespido.Name = "btnDespido";
-            this.btnDespido.Size = new System.Drawing.Size(180, 45);
+            this.btnDespido.Size = new System.Drawing.Size(240, 55);
             this.btnDespido.TabIndex = 57;
             this.btnDespido.Text = "Despido";
             this.btnDespido.Click += new System.EventHandler(this.btnDespido_Click);
@@ -119,9 +120,10 @@
             this.btnEvaluaciónDesempeño.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnEvaluaciónDesempeño.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
-            this.btnEvaluaciónDesempeño.Location = new System.Drawing.Point(563, 27);
+            this.btnEvaluaciónDesempeño.Location = new System.Drawing.Point(751, 33);
+            this.btnEvaluaciónDesempeño.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEvaluaciónDesempeño.Name = "btnEvaluaciónDesempeño";
-            this.btnEvaluaciónDesempeño.Size = new System.Drawing.Size(180, 45);
+            this.btnEvaluaciónDesempeño.Size = new System.Drawing.Size(240, 55);
             this.btnEvaluaciónDesempeño.TabIndex = 54;
             this.btnEvaluaciónDesempeño.Text = "Evaluación Desempeño";
             this.btnEvaluaciónDesempeño.Click += new System.EventHandler(this.btnEvaluaciónDesempeño_Click);
@@ -137,9 +139,10 @@
             this.btnSuspensiones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnSuspensiones.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuspensiones.ForeColor = System.Drawing.Color.White;
-            this.btnSuspensiones.Location = new System.Drawing.Point(377, 27);
+            this.btnSuspensiones.Location = new System.Drawing.Point(503, 33);
+            this.btnSuspensiones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSuspensiones.Name = "btnSuspensiones";
-            this.btnSuspensiones.Size = new System.Drawing.Size(180, 45);
+            this.btnSuspensiones.Size = new System.Drawing.Size(240, 55);
             this.btnSuspensiones.TabIndex = 53;
             this.btnSuspensiones.Text = "Suspensiones";
             this.btnSuspensiones.Click += new System.EventHandler(this.btnSuspensiones_Click);
@@ -155,9 +158,10 @@
             this.btnAmonestaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnAmonestaciones.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAmonestaciones.ForeColor = System.Drawing.Color.White;
-            this.btnAmonestaciones.Location = new System.Drawing.Point(190, 27);
+            this.btnAmonestaciones.Location = new System.Drawing.Point(253, 33);
+            this.btnAmonestaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAmonestaciones.Name = "btnAmonestaciones";
-            this.btnAmonestaciones.Size = new System.Drawing.Size(180, 45);
+            this.btnAmonestaciones.Size = new System.Drawing.Size(240, 55);
             this.btnAmonestaciones.TabIndex = 52;
             this.btnAmonestaciones.Text = "Amonestaciones";
             this.btnAmonestaciones.Click += new System.EventHandler(this.btnAmonestaciones_Click);
@@ -173,9 +177,10 @@
             this.btnInasistencia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnInasistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInasistencia.ForeColor = System.Drawing.Color.White;
-            this.btnInasistencia.Location = new System.Drawing.Point(4, 27);
+            this.btnInasistencia.Location = new System.Drawing.Point(5, 33);
+            this.btnInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInasistencia.Name = "btnInasistencia";
-            this.btnInasistencia.Size = new System.Drawing.Size(180, 45);
+            this.btnInasistencia.Size = new System.Drawing.Size(240, 55);
             this.btnInasistencia.TabIndex = 51;
             this.btnInasistencia.Text = "Inasistencia";
             this.btnInasistencia.Click += new System.EventHandler(this.btnInasistencia_Click);
@@ -191,9 +196,10 @@
             this.btnLimpiar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnLimpiar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(258, 511);
+            this.btnLimpiar.Location = new System.Drawing.Point(344, 629);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(180, 45);
+            this.btnLimpiar.Size = new System.Drawing.Size(240, 55);
             this.btnLimpiar.TabIndex = 50;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -209,9 +215,10 @@
             this.btnCargar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.btnCargar.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
-            this.btnCargar.Location = new System.Drawing.Point(513, 511);
+            this.btnCargar.Location = new System.Drawing.Point(684, 629);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(180, 45);
+            this.btnCargar.Size = new System.Drawing.Size(240, 55);
             this.btnCargar.TabIndex = 49;
             this.btnCargar.Text = "Cargar";
             // 
@@ -234,9 +241,10 @@
             this.mrcEvaluaciónDesempeño.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcEvaluaciónDesempeño.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcEvaluaciónDesempeño.ForeColor = System.Drawing.Color.White;
-            this.mrcEvaluaciónDesempeño.Location = new System.Drawing.Point(258, 93);
+            this.mrcEvaluaciónDesempeño.Location = new System.Drawing.Point(344, 113);
+            this.mrcEvaluaciónDesempeño.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcEvaluaciónDesempeño.Name = "mrcEvaluaciónDesempeño";
-            this.mrcEvaluaciónDesempeño.Size = new System.Drawing.Size(435, 396);
+            this.mrcEvaluaciónDesempeño.Size = new System.Drawing.Size(580, 487);
             this.mrcEvaluaciónDesempeño.TabIndex = 56;
             this.mrcEvaluaciónDesempeño.Text = "Evaluación Desempeño";
             this.mrcEvaluaciónDesempeño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -247,9 +255,10 @@
             this.lblÁreaEmpleado.BackColor = System.Drawing.Color.Transparent;
             this.lblÁreaEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblÁreaEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblÁreaEmpleado.Location = new System.Drawing.Point(67, 296);
+            this.lblÁreaEmpleado.Location = new System.Drawing.Point(89, 364);
+            this.lblÁreaEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblÁreaEmpleado.Name = "lblÁreaEmpleado";
-            this.lblÁreaEmpleado.Size = new System.Drawing.Size(129, 20);
+            this.lblÁreaEmpleado.Size = new System.Drawing.Size(162, 25);
             this.lblÁreaEmpleado.TabIndex = 39;
             this.lblÁreaEmpleado.Text = "Área del Empleado";
             // 
@@ -258,9 +267,10 @@
             this.lblObservaciónes.BackColor = System.Drawing.Color.Transparent;
             this.lblObservaciónes.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblObservaciónes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblObservaciónes.Location = new System.Drawing.Point(91, 350);
+            this.lblObservaciónes.Location = new System.Drawing.Point(121, 431);
+            this.lblObservaciónes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblObservaciónes.Name = "lblObservaciónes";
-            this.lblObservaciónes.Size = new System.Drawing.Size(102, 20);
+            this.lblObservaciónes.Size = new System.Drawing.Size(128, 25);
             this.lblObservaciónes.TabIndex = 37;
             this.lblObservaciónes.Text = "Observaciónes";
             // 
@@ -276,9 +286,10 @@
             this.lstArea.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstArea.ForeColor = System.Drawing.Color.Black;
             this.lstArea.ItemHeight = 30;
-            this.lstArea.Location = new System.Drawing.Point(200, 280);
+            this.lstArea.Location = new System.Drawing.Point(267, 345);
+            this.lstArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstArea.Name = "lstArea";
-            this.lstArea.Size = new System.Drawing.Size(200, 36);
+            this.lstArea.Size = new System.Drawing.Size(265, 36);
             this.lstArea.TabIndex = 36;
             // 
             // txtObservaciónEvaluación
@@ -296,13 +307,13 @@
             this.txtObservaciónEvaluación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciónEvaluación.ForeColor = System.Drawing.Color.Black;
             this.txtObservaciónEvaluación.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtObservaciónEvaluación.Location = new System.Drawing.Point(200, 338);
-            this.txtObservaciónEvaluación.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtObservaciónEvaluación.Location = new System.Drawing.Point(267, 416);
+            this.txtObservaciónEvaluación.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtObservaciónEvaluación.Name = "txtObservaciónEvaluación";
             this.txtObservaciónEvaluación.PasswordChar = '\0';
             this.txtObservaciónEvaluación.PlaceholderText = "";
             this.txtObservaciónEvaluación.SelectedText = "";
-            this.txtObservaciónEvaluación.Size = new System.Drawing.Size(200, 32);
+            this.txtObservaciónEvaluación.Size = new System.Drawing.Size(267, 39);
             this.txtObservaciónEvaluación.TabIndex = 34;
             this.txtObservaciónEvaluación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservaciónEvaluación_KeyPress);
             // 
@@ -321,13 +332,13 @@
             this.txtCalificación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCalificación.ForeColor = System.Drawing.Color.Black;
             this.txtCalificación.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCalificación.Location = new System.Drawing.Point(200, 233);
-            this.txtCalificación.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCalificación.Location = new System.Drawing.Point(267, 287);
+            this.txtCalificación.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCalificación.Name = "txtCalificación";
             this.txtCalificación.PasswordChar = '\0';
             this.txtCalificación.PlaceholderText = "";
             this.txtCalificación.SelectedText = "";
-            this.txtCalificación.Size = new System.Drawing.Size(200, 32);
+            this.txtCalificación.Size = new System.Drawing.Size(267, 39);
             this.txtCalificación.TabIndex = 33;
             this.txtCalificación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCalificación_KeyPress);
             // 
@@ -336,9 +347,10 @@
             this.lblCalificación.BackColor = System.Drawing.Color.Transparent;
             this.lblCalificación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalificación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblCalificación.Location = new System.Drawing.Point(19, 245);
+            this.lblCalificación.Location = new System.Drawing.Point(25, 302);
+            this.lblCalificación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblCalificación.Name = "lblCalificación";
-            this.lblCalificación.Size = new System.Drawing.Size(175, 20);
+            this.lblCalificación.Size = new System.Drawing.Size(224, 25);
             this.lblCalificación.TabIndex = 32;
             this.lblCalificación.Text = "Calificación de Evaluación";
             // 
@@ -352,11 +364,12 @@
             this.dgvFechaEvaluacion.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvFechaEvaluacion.ForeColor = System.Drawing.Color.Black;
             this.dgvFechaEvaluacion.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dgvFechaEvaluacion.Location = new System.Drawing.Point(200, 174);
+            this.dgvFechaEvaluacion.Location = new System.Drawing.Point(267, 214);
+            this.dgvFechaEvaluacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvFechaEvaluacion.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dgvFechaEvaluacion.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dgvFechaEvaluacion.Name = "dgvFechaEvaluacion";
-            this.dgvFechaEvaluacion.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaEvaluacion.Size = new System.Drawing.Size(267, 43);
             this.dgvFechaEvaluacion.TabIndex = 31;
             this.dgvFechaEvaluacion.UseTransparentBackground = true;
             this.dgvFechaEvaluacion.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -366,9 +379,10 @@
             this.lblFechaEvaluación.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaEvaluación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaEvaluación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaEvaluación.Location = new System.Drawing.Point(54, 189);
+            this.lblFechaEvaluación.Location = new System.Drawing.Point(72, 233);
+            this.lblFechaEvaluación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaEvaluación.Name = "lblFechaEvaluación";
-            this.lblFechaEvaluación.Size = new System.Drawing.Size(138, 20);
+            this.lblFechaEvaluación.Size = new System.Drawing.Size(177, 25);
             this.lblFechaEvaluación.TabIndex = 30;
             this.lblFechaEvaluación.Text = "Fecha de Evaluación ";
             // 
@@ -387,13 +401,13 @@
             this.txtNombreEvaluador.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEvaluador.ForeColor = System.Drawing.Color.Black;
             this.txtNombreEvaluador.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEvaluador.Location = new System.Drawing.Point(200, 120);
-            this.txtNombreEvaluador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombreEvaluador.Location = new System.Drawing.Point(267, 148);
+            this.txtNombreEvaluador.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreEvaluador.Name = "txtNombreEvaluador";
             this.txtNombreEvaluador.PasswordChar = '\0';
             this.txtNombreEvaluador.PlaceholderText = "";
             this.txtNombreEvaluador.SelectedText = "";
-            this.txtNombreEvaluador.Size = new System.Drawing.Size(200, 32);
+            this.txtNombreEvaluador.Size = new System.Drawing.Size(267, 39);
             this.txtNombreEvaluador.TabIndex = 29;
             this.txtNombreEvaluador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEvaluador_KeyPress);
             // 
@@ -402,9 +416,10 @@
             this.lblNombreEvaluador.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreEvaluador.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreEvaluador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNombreEvaluador.Location = new System.Drawing.Point(67, 132);
+            this.lblNombreEvaluador.Location = new System.Drawing.Point(89, 162);
+            this.lblNombreEvaluador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNombreEvaluador.Name = "lblNombreEvaluador";
-            this.lblNombreEvaluador.Size = new System.Drawing.Size(128, 20);
+            this.lblNombreEvaluador.Size = new System.Drawing.Size(161, 25);
             this.lblNombreEvaluador.TabIndex = 28;
             this.lblNombreEvaluador.Text = "Nombre Evaluador";
             // 
@@ -423,13 +438,13 @@
             this.txtNombreEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEmpleado.ForeColor = System.Drawing.Color.Black;
             this.txtNombreEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(199, 66);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(265, 81);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
             this.txtNombreEmpleado.PasswordChar = '\0';
             this.txtNombreEmpleado.PlaceholderText = "";
             this.txtNombreEmpleado.SelectedText = "";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(200, 32);
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(267, 39);
             this.txtNombreEmpleado.TabIndex = 27;
             this.txtNombreEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEmpleado_KeyPress);
             // 
@@ -438,9 +453,10 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNombre.Location = new System.Drawing.Point(66, 78);
+            this.lblNombre.Location = new System.Drawing.Point(88, 96);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(127, 20);
+            this.lblNombre.Size = new System.Drawing.Size(158, 25);
             this.lblNombre.TabIndex = 26;
             this.lblNombre.Text = "Nombre Empleado";
             // 
@@ -461,9 +477,10 @@
             this.mrcSuspensión.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcSuspensión.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcSuspensión.ForeColor = System.Drawing.Color.White;
-            this.mrcSuspensión.Location = new System.Drawing.Point(258, 128);
+            this.mrcSuspensión.Location = new System.Drawing.Point(344, 133);
+            this.mrcSuspensión.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcSuspensión.Name = "mrcSuspensión";
-            this.mrcSuspensión.Size = new System.Drawing.Size(435, 347);
+            this.mrcSuspensión.Size = new System.Drawing.Size(580, 427);
             this.mrcSuspensión.TabIndex = 55;
             this.mrcSuspensión.Text = "Suspensión";
             this.mrcSuspensión.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -474,9 +491,10 @@
             this.lblMotivoSuspensión.BackColor = System.Drawing.Color.Transparent;
             this.lblMotivoSuspensión.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMotivoSuspensión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblMotivoSuspensión.Location = new System.Drawing.Point(12, 296);
+            this.lblMotivoSuspensión.Location = new System.Drawing.Point(16, 364);
+            this.lblMotivoSuspensión.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMotivoSuspensión.Name = "lblMotivoSuspensión";
-            this.lblMotivoSuspensión.Size = new System.Drawing.Size(165, 20);
+            this.lblMotivoSuspensión.Size = new System.Drawing.Size(210, 25);
             this.lblMotivoSuspensión.TabIndex = 34;
             this.lblMotivoSuspensión.Text = "Motivo de la Suspensión";
             // 
@@ -492,9 +510,10 @@
             this.lstMotivoSuspensión.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstMotivoSuspensión.ForeColor = System.Drawing.Color.Black;
             this.lstMotivoSuspensión.ItemHeight = 30;
-            this.lstMotivoSuspensión.Location = new System.Drawing.Point(189, 280);
+            this.lstMotivoSuspensión.Location = new System.Drawing.Point(252, 345);
+            this.lstMotivoSuspensión.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstMotivoSuspensión.Name = "lstMotivoSuspensión";
-            this.lstMotivoSuspensión.Size = new System.Drawing.Size(200, 36);
+            this.lstMotivoSuspensión.Size = new System.Drawing.Size(265, 36);
             this.lstMotivoSuspensión.TabIndex = 33;
             // 
             // txtObservación
@@ -512,13 +531,13 @@
             this.txtObservación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservación.ForeColor = System.Drawing.Color.Black;
             this.txtObservación.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtObservación.Location = new System.Drawing.Point(189, 227);
-            this.txtObservación.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtObservación.Location = new System.Drawing.Point(252, 279);
+            this.txtObservación.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtObservación.Name = "txtObservación";
             this.txtObservación.PasswordChar = '\0';
             this.txtObservación.PlaceholderText = "";
             this.txtObservación.SelectedText = "";
-            this.txtObservación.Size = new System.Drawing.Size(200, 36);
+            this.txtObservación.Size = new System.Drawing.Size(267, 44);
             this.txtObservación.TabIndex = 32;
             this.txtObservación.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservación_KeyPress);
             // 
@@ -527,9 +546,10 @@
             this.lblObservación.BackColor = System.Drawing.Color.Transparent;
             this.lblObservación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblObservación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblObservación.Location = new System.Drawing.Point(75, 243);
+            this.lblObservación.Location = new System.Drawing.Point(100, 299);
+            this.lblObservación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblObservación.Name = "lblObservación";
-            this.lblObservación.Size = new System.Drawing.Size(102, 20);
+            this.lblObservación.Size = new System.Drawing.Size(128, 25);
             this.lblObservación.TabIndex = 31;
             this.lblObservación.Text = "Observaciónes";
             // 
@@ -543,11 +563,12 @@
             this.gptHasta.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gptHasta.ForeColor = System.Drawing.Color.Black;
             this.gptHasta.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.gptHasta.Location = new System.Drawing.Point(189, 172);
+            this.gptHasta.Location = new System.Drawing.Point(252, 212);
+            this.gptHasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gptHasta.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gptHasta.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gptHasta.Name = "gptHasta";
-            this.gptHasta.Size = new System.Drawing.Size(200, 35);
+            this.gptHasta.Size = new System.Drawing.Size(267, 43);
             this.gptHasta.TabIndex = 30;
             this.gptHasta.UseTransparentBackground = true;
             this.gptHasta.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -557,9 +578,10 @@
             this.lblFechaFinalización.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaFinalización.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaFinalización.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaFinalización.Location = new System.Drawing.Point(33, 187);
+            this.lblFechaFinalización.Location = new System.Drawing.Point(44, 230);
+            this.lblFechaFinalización.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaFinalización.Name = "lblFechaFinalización";
-            this.lblFechaFinalización.Size = new System.Drawing.Size(144, 20);
+            this.lblFechaFinalización.Size = new System.Drawing.Size(186, 25);
             this.lblFechaFinalización.TabIndex = 29;
             this.lblFechaFinalización.Text = "Fecha de Finalización";
             // 
@@ -573,11 +595,12 @@
             this.gptDesde.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gptDesde.ForeColor = System.Drawing.Color.Black;
             this.gptDesde.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.gptDesde.Location = new System.Drawing.Point(189, 118);
+            this.gptDesde.Location = new System.Drawing.Point(252, 145);
+            this.gptDesde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gptDesde.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gptDesde.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gptDesde.Name = "gptDesde";
-            this.gptDesde.Size = new System.Drawing.Size(200, 35);
+            this.gptDesde.Size = new System.Drawing.Size(267, 43);
             this.gptDesde.TabIndex = 28;
             this.gptDesde.UseTransparentBackground = true;
             this.gptDesde.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -587,9 +610,10 @@
             this.lblInicioSuspensión.BackColor = System.Drawing.Color.Transparent;
             this.lblInicioSuspensión.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInicioSuspensión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblInicioSuspensión.Location = new System.Drawing.Point(76, 133);
+            this.lblInicioSuspensión.Location = new System.Drawing.Point(101, 164);
+            this.lblInicioSuspensión.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblInicioSuspensión.Name = "lblInicioSuspensión";
-            this.lblInicioSuspensión.Size = new System.Drawing.Size(101, 20);
+            this.lblInicioSuspensión.Size = new System.Drawing.Size(129, 25);
             this.lblInicioSuspensión.TabIndex = 27;
             this.lblInicioSuspensión.Text = "Fecha de Inicio ";
             // 
@@ -608,13 +632,13 @@
             this.txtNombreSuspensión.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNombreSuspensión.ForeColor = System.Drawing.Color.Black;
             this.txtNombreSuspensión.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreSuspensión.Location = new System.Drawing.Point(189, 62);
-            this.txtNombreSuspensión.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombreSuspensión.Location = new System.Drawing.Point(252, 76);
+            this.txtNombreSuspensión.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreSuspensión.Name = "txtNombreSuspensión";
             this.txtNombreSuspensión.PasswordChar = '\0';
             this.txtNombreSuspensión.PlaceholderText = "";
             this.txtNombreSuspensión.SelectedText = "";
-            this.txtNombreSuspensión.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreSuspensión.Size = new System.Drawing.Size(267, 44);
             this.txtNombreSuspensión.TabIndex = 26;
             this.txtNombreSuspensión.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreSuspensión_KeyPress);
             // 
@@ -623,9 +647,10 @@
             this.lblNombreSuspensión.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreSuspensión.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreSuspensión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNombreSuspensión.Location = new System.Drawing.Point(50, 78);
+            this.lblNombreSuspensión.Location = new System.Drawing.Point(67, 96);
+            this.lblNombreSuspensión.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNombreSuspensión.Name = "lblNombreSuspensión";
-            this.lblNombreSuspensión.Size = new System.Drawing.Size(127, 20);
+            this.lblNombreSuspensión.Size = new System.Drawing.Size(158, 25);
             this.lblNombreSuspensión.TabIndex = 25;
             this.lblNombreSuspensión.Text = "Nombre Empleado";
             // 
@@ -640,9 +665,10 @@
             this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcDespido.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcDespido.ForeColor = System.Drawing.Color.White;
-            this.mrcDespido.Location = new System.Drawing.Point(258, 196);
+            this.mrcDespido.Location = new System.Drawing.Point(344, 131);
+            this.mrcDespido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcDespido.Name = "mrcDespido";
-            this.mrcDespido.Size = new System.Drawing.Size(435, 203);
+            this.mrcDespido.Size = new System.Drawing.Size(580, 250);
             this.mrcDespido.TabIndex = 59;
             this.mrcDespido.Text = "Despido";
             this.mrcDespido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -658,11 +684,12 @@
             this.dtpFechaDespido.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaDespido.ForeColor = System.Drawing.Color.Black;
             this.dtpFechaDespido.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFechaDespido.Location = new System.Drawing.Point(194, 125);
+            this.dtpFechaDespido.Location = new System.Drawing.Point(259, 154);
+            this.dtpFechaDespido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaDespido.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFechaDespido.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFechaDespido.Name = "dtpFechaDespido";
-            this.dtpFechaDespido.Size = new System.Drawing.Size(200, 35);
+            this.dtpFechaDespido.Size = new System.Drawing.Size(267, 43);
             this.dtpFechaDespido.TabIndex = 22;
             this.dtpFechaDespido.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
             // 
@@ -671,9 +698,10 @@
             this.lblFechaDespido.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaDespido.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaDespido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaDespido.Location = new System.Drawing.Point(66, 140);
+            this.lblFechaDespido.Location = new System.Drawing.Point(88, 172);
+            this.lblFechaDespido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaDespido.Name = "lblFechaDespido";
-            this.lblFechaDespido.Size = new System.Drawing.Size(120, 20);
+            this.lblFechaDespido.Size = new System.Drawing.Size(151, 25);
             this.lblFechaDespido.TabIndex = 21;
             this.lblFechaDespido.Text = "Fecha de Despido";
             // 
@@ -692,13 +720,13 @@
             this.txtDocumentoEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumentoEmpleado.ForeColor = System.Drawing.Color.Black;
             this.txtDocumentoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDocumentoEmpleado.Location = new System.Drawing.Point(194, 72);
-            this.txtDocumentoEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDocumentoEmpleado.Location = new System.Drawing.Point(259, 89);
+            this.txtDocumentoEmpleado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDocumentoEmpleado.Name = "txtDocumentoEmpleado";
             this.txtDocumentoEmpleado.PasswordChar = '\0';
             this.txtDocumentoEmpleado.PlaceholderText = "";
             this.txtDocumentoEmpleado.SelectedText = "";
-            this.txtDocumentoEmpleado.Size = new System.Drawing.Size(200, 36);
+            this.txtDocumentoEmpleado.Size = new System.Drawing.Size(267, 44);
             this.txtDocumentoEmpleado.TabIndex = 20;
             this.txtDocumentoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumentoEmpleado_KeyPress);
             // 
@@ -707,9 +735,10 @@
             this.lblDocumentoEmpleado.BackColor = System.Drawing.Color.Transparent;
             this.lblDocumentoEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDocumentoEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblDocumentoEmpleado.Location = new System.Drawing.Point(18, 88);
+            this.lblDocumentoEmpleado.Location = new System.Drawing.Point(24, 108);
+            this.lblDocumentoEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblDocumentoEmpleado.Name = "lblDocumentoEmpleado";
-            this.lblDocumentoEmpleado.Size = new System.Drawing.Size(168, 20);
+            this.lblDocumentoEmpleado.Size = new System.Drawing.Size(211, 25);
             this.lblDocumentoEmpleado.TabIndex = 19;
             this.lblDocumentoEmpleado.Text = "Documento de Empleado";
             // 
@@ -729,12 +758,14 @@
             this.mrcInasistencia.Controls.Add(this.optJustificada);
             this.mrcInasistencia.Controls.Add(this.optInjustificada);
             this.mrcInasistencia.Controls.Add(this.txtMotivoInasistencia);
+            this.mrcInasistencia.Controls.Add(this.mrcAmonestación);
             this.mrcInasistencia.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcInasistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcInasistencia.ForeColor = System.Drawing.Color.White;
-            this.mrcInasistencia.Location = new System.Drawing.Point(258, 126);
+            this.mrcInasistencia.Location = new System.Drawing.Point(344, 133);
+            this.mrcInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcInasistencia.Name = "mrcInasistencia";
-            this.mrcInasistencia.Size = new System.Drawing.Size(435, 346);
+            this.mrcInasistencia.Size = new System.Drawing.Size(580, 426);
             this.mrcInasistencia.TabIndex = 58;
             this.mrcInasistencia.Text = "Inasistencia";
             this.mrcInasistencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -744,9 +775,10 @@
             this.lblMotivoInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblMotivoInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMotivoInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblMotivoInasistencia.Location = new System.Drawing.Point(20, 189);
+            this.lblMotivoInasistencia.Location = new System.Drawing.Point(27, 233);
+            this.lblMotivoInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMotivoInasistencia.Name = "lblMotivoInasistencia";
-            this.lblMotivoInasistencia.Size = new System.Drawing.Size(164, 20);
+            this.lblMotivoInasistencia.Size = new System.Drawing.Size(208, 25);
             this.lblMotivoInasistencia.TabIndex = 8;
             this.lblMotivoInasistencia.Text = "Razón de la inasistencia";
             // 
@@ -755,9 +787,10 @@
             this.lblTipoInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblTipoInasistencia.Location = new System.Drawing.Point(35, 245);
+            this.lblTipoInasistencia.Location = new System.Drawing.Point(47, 302);
+            this.lblTipoInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTipoInasistencia.Name = "lblTipoInasistencia";
-            this.lblTipoInasistencia.Size = new System.Drawing.Size(150, 20);
+            this.lblTipoInasistencia.Size = new System.Drawing.Size(190, 25);
             this.lblTipoInasistencia.TabIndex = 11;
             this.lblTipoInasistencia.Text = "Tipo de la inasistencia";
             // 
@@ -766,9 +799,10 @@
             this.lblJustificado.BackColor = System.Drawing.Color.Transparent;
             this.lblJustificado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJustificado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblJustificado.Location = new System.Drawing.Point(17, 292);
+            this.lblJustificado.Location = new System.Drawing.Point(23, 359);
+            this.lblJustificado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblJustificado.Name = "lblJustificado";
-            this.lblJustificado.Size = new System.Drawing.Size(169, 20);
+            this.lblJustificado.Size = new System.Drawing.Size(213, 25);
             this.lblJustificado.TabIndex = 9;
             this.lblJustificado.Text = "Estado de la inasistencia";
             // 
@@ -777,9 +811,10 @@
             this.lblFechaInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaInasistencia.Location = new System.Drawing.Point(23, 133);
+            this.lblFechaInasistencia.Location = new System.Drawing.Point(31, 164);
+            this.lblFechaInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaInasistencia.Name = "lblFechaInasistencia";
-            this.lblFechaInasistencia.Size = new System.Drawing.Size(162, 20);
+            this.lblFechaInasistencia.Size = new System.Drawing.Size(207, 25);
             this.lblFechaInasistencia.TabIndex = 7;
             this.lblFechaInasistencia.Text = "Fecha de la inasistencia";
             // 
@@ -788,9 +823,10 @@
             this.lblNombreInasistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreInasistencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNombreInasistencia.Location = new System.Drawing.Point(55, 81);
+            this.lblNombreInasistencia.Location = new System.Drawing.Point(73, 100);
+            this.lblNombreInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNombreInasistencia.Name = "lblNombreInasistencia";
-            this.lblNombreInasistencia.Size = new System.Drawing.Size(127, 20);
+            this.lblNombreInasistencia.Size = new System.Drawing.Size(158, 25);
             this.lblNombreInasistencia.TabIndex = 18;
             this.lblNombreInasistencia.Text = "Nombre Empleado";
             // 
@@ -808,13 +844,13 @@
             this.txtNombreInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNombreInasistencia.ForeColor = System.Drawing.Color.Black;
             this.txtNombreInasistencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreInasistencia.Location = new System.Drawing.Point(196, 65);
-            this.txtNombreInasistencia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombreInasistencia.Location = new System.Drawing.Point(261, 80);
+            this.txtNombreInasistencia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreInasistencia.Name = "txtNombreInasistencia";
             this.txtNombreInasistencia.PasswordChar = '\0';
             this.txtNombreInasistencia.PlaceholderText = "";
             this.txtNombreInasistencia.SelectedText = "";
-            this.txtNombreInasistencia.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreInasistencia.Size = new System.Drawing.Size(267, 44);
             this.txtNombreInasistencia.TabIndex = 19;
             this.txtNombreInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreInasistencia_KeyPress);
             // 
@@ -828,11 +864,12 @@
             this.dgvFechaInasistencia.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvFechaInasistencia.ForeColor = System.Drawing.Color.Black;
             this.dgvFechaInasistencia.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dgvFechaInasistencia.Location = new System.Drawing.Point(196, 118);
+            this.dgvFechaInasistencia.Location = new System.Drawing.Point(261, 145);
+            this.dgvFechaInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvFechaInasistencia.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dgvFechaInasistencia.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dgvFechaInasistencia.Name = "dgvFechaInasistencia";
-            this.dgvFechaInasistencia.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaInasistencia.Size = new System.Drawing.Size(267, 43);
             this.dgvFechaInasistencia.TabIndex = 6;
             this.dgvFechaInasistencia.UseTransparentBackground = true;
             this.dgvFechaInasistencia.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -849,9 +886,10 @@
             this.lstTipoInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstTipoInasistencia.ForeColor = System.Drawing.Color.Black;
             this.lstTipoInasistencia.ItemHeight = 30;
-            this.lstTipoInasistencia.Location = new System.Drawing.Point(196, 229);
+            this.lstTipoInasistencia.Location = new System.Drawing.Point(261, 282);
+            this.lstTipoInasistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstTipoInasistencia.Name = "lstTipoInasistencia";
-            this.lstTipoInasistencia.Size = new System.Drawing.Size(200, 36);
+            this.lstTipoInasistencia.Size = new System.Drawing.Size(265, 36);
             this.lstTipoInasistencia.TabIndex = 16;
             // 
             // optJustificada
@@ -865,9 +903,10 @@
             this.optJustificada.CheckedState.InnerOffset = -4;
             this.optJustificada.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optJustificada.ForeColor = System.Drawing.Color.Black;
-            this.optJustificada.Location = new System.Drawing.Point(196, 293);
+            this.optJustificada.Location = new System.Drawing.Point(261, 361);
+            this.optJustificada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.optJustificada.Name = "optJustificada";
-            this.optJustificada.Size = new System.Drawing.Size(99, 22);
+            this.optJustificada.Size = new System.Drawing.Size(123, 27);
             this.optJustificada.TabIndex = 14;
             this.optJustificada.Text = "Justificada";
             this.optJustificada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -887,9 +926,10 @@
             this.optInjustificada.CheckedState.InnerOffset = -4;
             this.optInjustificada.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optInjustificada.ForeColor = System.Drawing.Color.Black;
-            this.optInjustificada.Location = new System.Drawing.Point(301, 293);
+            this.optInjustificada.Location = new System.Drawing.Point(401, 361);
+            this.optInjustificada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.optInjustificada.Name = "optInjustificada";
-            this.optInjustificada.Size = new System.Drawing.Size(107, 22);
+            this.optInjustificada.Size = new System.Drawing.Size(134, 27);
             this.optInjustificada.TabIndex = 15;
             this.optInjustificada.Text = "Injustificada";
             this.optInjustificada.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -912,13 +952,13 @@
             this.txtMotivoInasistencia.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtMotivoInasistencia.ForeColor = System.Drawing.Color.Black;
             this.txtMotivoInasistencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMotivoInasistencia.Location = new System.Drawing.Point(196, 173);
-            this.txtMotivoInasistencia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMotivoInasistencia.Location = new System.Drawing.Point(261, 213);
+            this.txtMotivoInasistencia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMotivoInasistencia.Name = "txtMotivoInasistencia";
             this.txtMotivoInasistencia.PasswordChar = '\0';
             this.txtMotivoInasistencia.PlaceholderText = "";
             this.txtMotivoInasistencia.SelectedText = "";
-            this.txtMotivoInasistencia.Size = new System.Drawing.Size(200, 36);
+            this.txtMotivoInasistencia.Size = new System.Drawing.Size(267, 44);
             this.txtMotivoInasistencia.TabIndex = 3;
             this.txtMotivoInasistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMotivoInasistencia_KeyPress);
             // 
@@ -935,9 +975,10 @@
             this.mrcAmonestación.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
             this.mrcAmonestación.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcAmonestación.ForeColor = System.Drawing.Color.White;
-            this.mrcAmonestación.Location = new System.Drawing.Point(258, 182);
+            this.mrcAmonestación.Location = new System.Drawing.Point(0, 26);
+            this.mrcAmonestación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mrcAmonestación.Name = "mrcAmonestación";
-            this.mrcAmonestación.Size = new System.Drawing.Size(435, 245);
+            this.mrcAmonestación.Size = new System.Drawing.Size(580, 302);
             this.mrcAmonestación.TabIndex = 60;
             this.mrcAmonestación.Text = "Amonestaciones";
             this.mrcAmonestación.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -955,9 +996,10 @@
             this.lstMotivoAmonestación.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.lstMotivoAmonestación.ForeColor = System.Drawing.Color.Black;
             this.lstMotivoAmonestación.ItemHeight = 30;
-            this.lstMotivoAmonestación.Location = new System.Drawing.Point(194, 171);
+            this.lstMotivoAmonestación.Location = new System.Drawing.Point(259, 210);
+            this.lstMotivoAmonestación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstMotivoAmonestación.Name = "lstMotivoAmonestación";
-            this.lstMotivoAmonestación.Size = new System.Drawing.Size(200, 36);
+            this.lstMotivoAmonestación.Size = new System.Drawing.Size(265, 36);
             this.lstMotivoAmonestación.TabIndex = 24;
             // 
             // lblMotivoAmonestación
@@ -965,9 +1007,10 @@
             this.lblMotivoAmonestación.BackColor = System.Drawing.Color.Transparent;
             this.lblMotivoAmonestación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMotivoAmonestación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblMotivoAmonestación.Location = new System.Drawing.Point(6, 187);
+            this.lblMotivoAmonestación.Location = new System.Drawing.Point(8, 230);
+            this.lblMotivoAmonestación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMotivoAmonestación.Name = "lblMotivoAmonestación";
-            this.lblMotivoAmonestación.Size = new System.Drawing.Size(179, 20);
+            this.lblMotivoAmonestación.Size = new System.Drawing.Size(226, 25);
             this.lblMotivoAmonestación.TabIndex = 23;
             this.lblMotivoAmonestación.Text = "Razón de la Amonestación";
             // 
@@ -981,11 +1024,12 @@
             this.dgvFechaAmonestación.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvFechaAmonestación.ForeColor = System.Drawing.Color.Black;
             this.dgvFechaAmonestación.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dgvFechaAmonestación.Location = new System.Drawing.Point(194, 116);
+            this.dgvFechaAmonestación.Location = new System.Drawing.Point(259, 143);
+            this.dgvFechaAmonestación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvFechaAmonestación.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dgvFechaAmonestación.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dgvFechaAmonestación.Name = "dgvFechaAmonestación";
-            this.dgvFechaAmonestación.Size = new System.Drawing.Size(200, 35);
+            this.dgvFechaAmonestación.Size = new System.Drawing.Size(267, 43);
             this.dgvFechaAmonestación.TabIndex = 22;
             this.dgvFechaAmonestación.UseTransparentBackground = true;
             this.dgvFechaAmonestación.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
@@ -995,9 +1039,10 @@
             this.lblFechaAmonestación.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaAmonestación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaAmonestación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblFechaAmonestación.Location = new System.Drawing.Point(20, 131);
+            this.lblFechaAmonestación.Location = new System.Drawing.Point(27, 161);
+            this.lblFechaAmonestación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblFechaAmonestación.Name = "lblFechaAmonestación";
-            this.lblFechaAmonestación.Size = new System.Drawing.Size(162, 20);
+            this.lblFechaAmonestación.Size = new System.Drawing.Size(207, 25);
             this.lblFechaAmonestación.TabIndex = 21;
             this.lblFechaAmonestación.Text = "Fecha de la inasistencia";
             // 
@@ -1016,13 +1061,13 @@
             this.txtNombreAmonestacion.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.txtNombreAmonestacion.ForeColor = System.Drawing.Color.Black;
             this.txtNombreAmonestacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreAmonestacion.Location = new System.Drawing.Point(194, 63);
-            this.txtNombreAmonestacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombreAmonestacion.Location = new System.Drawing.Point(259, 78);
+            this.txtNombreAmonestacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreAmonestacion.Name = "txtNombreAmonestacion";
             this.txtNombreAmonestacion.PasswordChar = '\0';
             this.txtNombreAmonestacion.PlaceholderText = "";
             this.txtNombreAmonestacion.SelectedText = "";
-            this.txtNombreAmonestacion.Size = new System.Drawing.Size(200, 36);
+            this.txtNombreAmonestacion.Size = new System.Drawing.Size(267, 44);
             this.txtNombreAmonestacion.TabIndex = 20;
             this.txtNombreAmonestacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreAmonestacion_KeyPress);
             // 
@@ -1031,18 +1076,19 @@
             this.lblNombreAmonestación.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreAmonestación.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreAmonestación.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.lblNombreAmonestación.Location = new System.Drawing.Point(54, 79);
+            this.lblNombreAmonestación.Location = new System.Drawing.Point(72, 97);
+            this.lblNombreAmonestación.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNombreAmonestación.Name = "lblNombreAmonestación";
-            this.lblNombreAmonestación.Size = new System.Drawing.Size(127, 20);
+            this.lblNombreAmonestación.Size = new System.Drawing.Size(158, 25);
             this.lblNombreAmonestación.TabIndex = 19;
             this.lblNombreAmonestación.Text = "Nombre Empleado";
             // 
             // frmCargarReporte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(948, 611);
+            this.ClientSize = new System.Drawing.Size(1427, 850);
             this.Controls.Add(this.btnSuspensiones);
             this.Controls.Add(this.btnDespido);
             this.Controls.Add(this.btnEvaluaciónDesempeño);
@@ -1054,8 +1100,8 @@
             this.Controls.Add(this.mrcSuspensión);
             this.Controls.Add(this.mrcDespido);
             this.Controls.Add(this.mrcInasistencia);
-            this.Controls.Add(this.mrcAmonestación);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCargarReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCargarReporte";
