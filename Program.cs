@@ -16,7 +16,7 @@ namespace pryCosmetica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmBuscarEmpleado());
+            Application.Run(new frmInicioSesion());
         }
     }
 }
