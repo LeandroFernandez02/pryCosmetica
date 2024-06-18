@@ -52,7 +52,7 @@ namespace pryCosmetica
                     txtDNI.BringToFront();
                     txtDNI.Refresh();
 
-                    txtDNI.Location = new Point(266, 29);
+                    txtDNI.Location = new Point(279, 50);
                     txtDNI.Size = new Size(200, 36);
 
                     // Agregar el manejador del evento KeyPress
@@ -72,7 +72,7 @@ namespace pryCosmetica
                     txtNombre.BringToFront();
                     txtNombre.Refresh();
 
-                    txtNombre.Location = new Point(266, 29);
+                    txtNombre.Location = new Point(279, 50);
                     txtNombre.Size = new Size(200, 36);
 
                     // Agregar el manejador del evento KeyPress
@@ -92,7 +92,7 @@ namespace pryCosmetica
                     txtTelefono.BringToFront();
                     txtTelefono.Refresh();
 
-                    txtTelefono.Location = new Point(266, 29);
+                    txtTelefono.Location = new Point(279, 50);
                     txtTelefono.Size = new Size(200, 36);
 
                     // Agregar el manejador del evento KeyPress
@@ -113,7 +113,7 @@ namespace pryCosmetica
                     cmbArea.BringToFront();
                     cmbArea.Refresh();
 
-                    cmbArea.Location = new Point(266, 29);
+                    cmbArea.Location = new Point(279, 50);
                     cmbArea.Size = new Size(200, 36);
                     break;
             }

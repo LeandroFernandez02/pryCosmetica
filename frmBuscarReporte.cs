@@ -167,6 +167,7 @@ namespace pryCosmetica
                     dgvSuspension.Visible = false;
                     dgvAmonestacion.Visible = false;
                     dgvInasistencia.Visible = true;
+                    dgvDespido.Visible = false;
                 }
                 else if (selectedValue == "Amonestaciones")
                 {
@@ -174,6 +175,7 @@ namespace pryCosmetica
                     dgvSuspension.Visible = false;
                     dgvAmonestacion.Visible = true;
                     dgvInasistencia.Visible = false;
+                    dgvDespido.Visible = false;
                 }
                 else if (selectedValue == "Suspensiones")
                 {
@@ -181,6 +183,7 @@ namespace pryCosmetica
                     dgvSuspension.Visible = true;
                     dgvAmonestacion.Visible = false;
                     dgvInasistencia.Visible = false;
+                    dgvDespido.Visible = false;
                 }
                 else if (selectedValue == "Suspensiones")
                 {
@@ -188,6 +191,7 @@ namespace pryCosmetica
                     dgvSuspension.Visible = true;
                     dgvAmonestacion.Visible = false;
                     dgvInasistencia.Visible = false;
+                    dgvDespido.Visible = false;
                 }
                 else if (selectedValue == "Despidos")
                 {
