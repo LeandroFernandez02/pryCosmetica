@@ -137,8 +137,5 @@ namespace pryCosmetica
 
         #endregion
 
-        #region Charts
-
-        #endregion
     }
 }

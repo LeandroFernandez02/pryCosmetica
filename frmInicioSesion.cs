@@ -103,8 +103,7 @@ namespace pryCosmetica
                 // Si no es un número, cancela el evento
                 e.Handled = true;
             }
-
-            
+           
             // Si se presiona la tecla Enter
             if (e.KeyChar == (char)Keys.Enter)
             {
@@ -118,7 +117,6 @@ namespace pryCosmetica
                 txtContraseña.PasswordChar = '●';
                 txtContraseña.Focus();
             }
-            
         }
 
         private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
@@ -166,6 +164,42 @@ namespace pryCosmetica
                 lectorBD.Close();
 
                 BD.conexion.Close();
+            }
+        }
+
+        private void txtCuil_PreviewKeyDown_1(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                // Cancela la tecla Tab
+                e.IsInputKey = true;
+            }
+        }
+
+        private void txtContraseña_PreviewKeyDown_1(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                // Cancela la tecla Tab
+                e.IsInputKey = true;
+            }
+        }
+
+        private void txtCuil_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                e.Handled = true; // Evita el sonido
+                e.SuppressKeyPress = true; // Evita el sonido
+            }
+        }
+
+        private void txtContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                e.Handled = true; // Evita el sonido
+                e.SuppressKeyPress = true; // Evita el sonido
             }
         }
     }

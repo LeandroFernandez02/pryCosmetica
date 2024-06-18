@@ -134,7 +134,9 @@
             this.txtCuil.Size = new System.Drawing.Size(304, 38);
             this.txtCuil.TabIndex = 8;
             this.txtCuil.Click += new System.EventHandler(this.txtCuil_Click);
+            this.txtCuil.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCuil_KeyDown);
             this.txtCuil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuil_KeyPress);
+            this.txtCuil.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtCuil_PreviewKeyDown_1);
             // 
             // txtContraseña
             // 
@@ -157,7 +159,9 @@
             this.txtContraseña.Size = new System.Drawing.Size(304, 38);
             this.txtContraseña.TabIndex = 9;
             this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
+            this.txtContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContraseña_KeyDown);
             this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
+            this.txtContraseña.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtContraseña_PreviewKeyDown_1);
             // 
             // btnIniciarSesion
             // 

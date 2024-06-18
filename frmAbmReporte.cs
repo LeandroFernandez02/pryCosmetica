@@ -41,6 +41,9 @@ namespace pryCosmetica
                 case "Evaluacion de Desempeño":
                     mrcEvaluaciónDesempeño.Visible = true;
                     break;
+                case "Despidos":
+                    mrcDespido.Visible = true;
+                    break;
             }
         }
 
@@ -78,7 +81,10 @@ namespace pryCosmetica
                 txtObservaciónEvaluación.Clear();
                 lstArea.SelectedIndex = -1;
             }
-
+            if (mrcDespido.Visible)
+            {
+                txtDocumentoEmpleado.Clear();
+            }
         }
 
         private void txtNombreInasistencia_KeyPress(object sender, KeyPressEventArgs e)
@@ -211,6 +217,14 @@ namespace pryCosmetica
             }
         }
 
-       
+        private void txtDocumentoEmpleado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada no es un número y no es una tecla de control (como backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Si no es un número, cancela el evento
+                e.Handled = true;
+            }
+        }
     }
 }

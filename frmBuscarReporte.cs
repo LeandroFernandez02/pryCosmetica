@@ -52,6 +52,10 @@ namespace pryCosmetica
             {
                 tipoReporte = "Evaluacion de Desempeño";
             }
+            else if (dgvDespido.Visible)
+            {
+                tipoReporte = "Despidos";
+            }
 
             abrirFormHijo(new frmAbmReporte(tipoReporte));
         }
@@ -178,12 +182,20 @@ namespace pryCosmetica
                     dgvAmonestacion.Visible = false;
                     dgvInasistencia.Visible = false;
                 }
-                else if (selectedValue == "Evaluacion de Desempeño")
+                else if (selectedValue == "Suspensiones")
                 {
-                    dgvEvaluacion.Visible = true;
+                    dgvEvaluacion.Visible = false;
+                    dgvSuspension.Visible = true;
+                    dgvAmonestacion.Visible = false;
+                    dgvInasistencia.Visible = false;
+                }
+                else if (selectedValue == "Despidos")
+                {
+                    dgvEvaluacion.Visible = false;
                     dgvSuspension.Visible = false;
                     dgvAmonestacion.Visible = false;
                     dgvInasistencia.Visible = false;
+                    dgvDespido.Visible = true;
                 }
             }
         }

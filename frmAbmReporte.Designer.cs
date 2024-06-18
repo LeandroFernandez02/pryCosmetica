@@ -81,10 +81,16 @@
             this.lblNombreSuspensión = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLimpiar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.mrcDespido = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.dtpFechaDespido = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblFechaDespido = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtDocumentoEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblDocumentoEmpleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mrcInasistencia.SuspendLayout();
             this.mrcAmonestación.SuspendLayout();
             this.mrcEvaluaciónDesempeño.SuspendLayout();
             this.mrcSuspensión.SuspendLayout();
+            this.mrcDespido.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcInasistencia
@@ -1010,11 +1016,96 @@
             this.btnGuardar.TabIndex = 64;
             this.btnGuardar.Text = "Guardar";
             // 
+            // mrcDespido
+            // 
+            this.mrcDespido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
+            this.mrcDespido.BorderRadius = 15;
+            this.mrcDespido.Controls.Add(this.dtpFechaDespido);
+            this.mrcDespido.Controls.Add(this.lblFechaDespido);
+            this.mrcDespido.Controls.Add(this.txtDocumentoEmpleado);
+            this.mrcDespido.Controls.Add(this.lblDocumentoEmpleado);
+            this.mrcDespido.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(0)))), ((int)(((byte)(65)))));
+            this.mrcDespido.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcDespido.ForeColor = System.Drawing.Color.White;
+            this.mrcDespido.Location = new System.Drawing.Point(257, 204);
+            this.mrcDespido.Name = "mrcDespido";
+            this.mrcDespido.Size = new System.Drawing.Size(435, 203);
+            this.mrcDespido.TabIndex = 66;
+            this.mrcDespido.Text = "Despido";
+            this.mrcDespido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mrcDespido.Visible = false;
+            // 
+            // dtpFechaDespido
+            // 
+            this.dtpFechaDespido.BackColor = System.Drawing.Color.Transparent;
+            this.dtpFechaDespido.BorderColor = System.Drawing.Color.White;
+            this.dtpFechaDespido.BorderRadius = 10;
+            this.dtpFechaDespido.Checked = true;
+            this.dtpFechaDespido.FillColor = System.Drawing.Color.White;
+            this.dtpFechaDespido.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaDespido.ForeColor = System.Drawing.Color.Black;
+            this.dtpFechaDespido.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpFechaDespido.Location = new System.Drawing.Point(194, 125);
+            this.dtpFechaDespido.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpFechaDespido.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpFechaDespido.Name = "dtpFechaDespido";
+            this.dtpFechaDespido.Size = new System.Drawing.Size(200, 35);
+            this.dtpFechaDespido.TabIndex = 22;
+            this.dtpFechaDespido.Value = new System.DateTime(2024, 6, 4, 23, 0, 38, 803);
+            // 
+            // lblFechaDespido
+            // 
+            this.lblFechaDespido.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaDespido.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaDespido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblFechaDespido.Location = new System.Drawing.Point(66, 140);
+            this.lblFechaDespido.Name = "lblFechaDespido";
+            this.lblFechaDespido.Size = new System.Drawing.Size(120, 20);
+            this.lblFechaDespido.TabIndex = 21;
+            this.lblFechaDespido.Text = "Fecha de Despido";
+            // 
+            // txtDocumentoEmpleado
+            // 
+            this.txtDocumentoEmpleado.BackColor = System.Drawing.Color.White;
+            this.txtDocumentoEmpleado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.txtDocumentoEmpleado.BorderRadius = 10;
+            this.txtDocumentoEmpleado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDocumentoEmpleado.DefaultText = "";
+            this.txtDocumentoEmpleado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDocumentoEmpleado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDocumentoEmpleado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDocumentoEmpleado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDocumentoEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDocumentoEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDocumentoEmpleado.ForeColor = System.Drawing.Color.Black;
+            this.txtDocumentoEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDocumentoEmpleado.Location = new System.Drawing.Point(194, 72);
+            this.txtDocumentoEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDocumentoEmpleado.Name = "txtDocumentoEmpleado";
+            this.txtDocumentoEmpleado.PasswordChar = '\0';
+            this.txtDocumentoEmpleado.PlaceholderText = "";
+            this.txtDocumentoEmpleado.SelectedText = "";
+            this.txtDocumentoEmpleado.Size = new System.Drawing.Size(200, 36);
+            this.txtDocumentoEmpleado.TabIndex = 20;
+            this.txtDocumentoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumentoEmpleado_KeyPress);
+            // 
+            // lblDocumentoEmpleado
+            // 
+            this.lblDocumentoEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblDocumentoEmpleado.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumentoEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.lblDocumentoEmpleado.Location = new System.Drawing.Point(80, 88);
+            this.lblDocumentoEmpleado.Name = "lblDocumentoEmpleado";
+            this.lblDocumentoEmpleado.Size = new System.Drawing.Size(105, 20);
+            this.lblDocumentoEmpleado.TabIndex = 19;
+            this.lblDocumentoEmpleado.Text = "CUIL Empleado";
+            // 
             // frmAbmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 611);
+            this.Controls.Add(this.mrcDespido);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.mrcInasistencia);
@@ -1032,6 +1123,8 @@
             this.mrcEvaluaciónDesempeño.PerformLayout();
             this.mrcSuspensión.ResumeLayout(false);
             this.mrcSuspensión.PerformLayout();
+            this.mrcDespido.ResumeLayout(false);
+            this.mrcDespido.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1091,5 +1184,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCuilSuspencion;
         private Guna.UI2.WinForms.Guna2Button btnLimpiar;
         private Guna.UI2.WinForms.Guna2Button btnGuardar;
+        private Guna.UI2.WinForms.Guna2GroupBox mrcDespido;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFechaDespido;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblFechaDespido;
+        private Guna.UI2.WinForms.Guna2TextBox txtDocumentoEmpleado;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDocumentoEmpleado;
     }
 }
