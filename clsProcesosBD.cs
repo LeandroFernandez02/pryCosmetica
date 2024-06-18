@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -623,5 +624,139 @@ namespace pryCosmetica
                 MessageBox.Show("Error al guardar la ruta del CV en la base de datos: " + ex.Message);
             }
         }
+        public int totalConsulta;
+        public void ContarEmpleados()
+        {
+
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(varCadenaConexion))
+                {
+                    conexion.Open();
+
+                    using (OleDbCommand comando = new OleDbCommand())
+                    {
+                        comando.Connection = conexion;
+                        comando.CommandType = CommandType.Text;
+                        comando.CommandText = "SELECT COUNT(*) FROM EMPLEADO";
+
+
+                        totalConsulta = (int)comando.ExecuteScalar();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void ContarPostulantes()
+        {
+
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(varCadenaConexion))
+                {
+                    conexion.Open();
+
+                    using (OleDbCommand comando = new OleDbCommand())
+                    {
+                        comando.Connection = conexion;
+                        comando.CommandType = CommandType.Text;
+                        comando.CommandText = "SELECT COUNT(*) FROM POSTULANTES";
+
+
+                        totalConsulta = (int)comando.ExecuteScalar();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void ContarReportes()
+        {
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(varCadenaConexion))
+                {
+                    conexion.Open();
+
+                    using (OleDbCommand comando = new OleDbCommand())
+                    {
+                        comando.Connection = conexion;
+                        comando.CommandType = CommandType.Text;
+                        comando.CommandText = "SELECT COUNT(*) FROM INASISTENCIAS";
+
+
+                        // Consulta para contar inasistencias
+                        comando.CommandText = "SELECT COUNT(*) FROM INASISTENCIAS";
+                        totalConsulta += (int)comando.ExecuteScalar();
+
+                        // Consulta para contar amonestaciones
+                        comando.CommandText = "SELECT COUNT(*) FROM AMONESTACIONES";
+                        totalConsulta += (int)comando.ExecuteScalar();
+
+                        // Consulta para contar evaluaciones de desempeño
+                        comando.CommandText = "SELECT COUNT(*) FROM EVALUACIONDESEMPEÑO";
+                        totalConsulta += (int)comando.ExecuteScalar();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void CumpleEmpleados(Guna2DataGridView grilla)
+        {
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(varCadenaConexion))
+                {
+                    conexion.Open();
+
+                    using (OleDbCommand comando = new OleDbCommand())
+                    {
+                        comando.Connection = conexion;
+                        comando.CommandType = CommandType.Text;
+
+                        // Consulta SQL ajustada para incluir Apellido y limitar a los primeros 6 resultados
+                        comando.CommandText = @"
+        SELECT TOP 5 Nombre, Apellido, FechaNacimiento
+        FROM EMPLEADO
+        ORDER BY 
+            IIF(
+                DATEPART('y', FechaNacimiento) >= DATEPART('y', DATE()),
+                DATEPART('y', FechaNacimiento) - DATEPART('y', DATE()),
+                365 + DATEPART('y', FechaNacimiento) - DATEPART('y', DATE())
+            )
+        ";
+
+                        OleDbDataAdapter adaptador = new OleDbDataAdapter(comando);
+                        DataTable tablaEmpleados = new DataTable();
+                        adaptador.Fill(tablaEmpleados);
+
+                        grilla.DataSource = tablaEmpleados;
+
+                        // Configurar columnas del DataGridView
+                        grilla.Columns[0].HeaderText = "Nombre";
+                        grilla.Columns[1].HeaderText = "Apellido";
+                        grilla.Columns[2].HeaderText = "Fecha de Nacimiento";
+                        grilla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
+
+
+
 }

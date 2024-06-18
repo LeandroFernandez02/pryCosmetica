@@ -113,6 +113,16 @@ namespace pryCosmetica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_reportes_blanco {
+            get {
+                object obj = ResourceManager.GetObject("icono_reportes_blanco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_principal {
             get {
                 object obj = ResourceManager.GetObject("logo principal", resourceCulture);
